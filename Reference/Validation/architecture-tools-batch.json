@@ -1,0 +1,115 @@
+{
+  "name": "技能快照、奖励入口与动作编辑工具",
+  "utc": "2026-10-22T08:49:00Z",
+  "passed": true,
+  "reportCount": 6,
+  "totalCheckGroups": 45,
+  "reports": [
+    {
+      "path": "Reference/Validation/architecture-boundaries.json",
+      "passed": true,
+      "checkGroups": 5,
+      "utc": "2026-10-22T08:42:51.5470350Z",
+      "sha256": "1cb506b497925ead50db85ba43731696cc925bd6bacf5cb542152f93778b1227"
+    },
+    {
+      "path": "Reference/Validation/editable-workflow.json",
+      "passed": true,
+      "checkGroups": 7,
+      "utc": "2026-10-22T08:47:04.7671660Z",
+      "sha256": "37e3010331c190ee98d3396ff88bbf8f35f5620fda14e36dbc113b03c3cc5c55"
+    },
+    {
+      "path": "Reference/Validation/animation-authoring.json",
+      "passed": true,
+      "checkGroups": 4,
+      "utc": "2026-10-22T08:47:52.5731460Z",
+      "sha256": "2af9747c236e404e3b44670ac1ffe1e91dd3f962e6d5877020c93f9769d157e2"
+    },
+    {
+      "path": "Reference/Validation/support-skills.json",
+      "passed": true,
+      "checkGroups": 9,
+      "utc": "2026-10-22T08:47:15.3402420Z",
+      "sha256": "d5b67b0ff7d8d855ece3fa7cf3b12511394538ddcd4b5187770433db4d4e9b81"
+    },
+    {
+      "path": "Reference/Validation/attack-skills.json",
+      "passed": true,
+      "checkGroups": 13,
+      "utc": "2026-10-22T08:47:25.8158770Z",
+      "sha256": "7f4f5f0c48a41fc513b0dcf743f891889751834ca9bfe506591b81eb679a51f0"
+    },
+    {
+      "path": "Reference/Validation/baked-assets.json",
+      "passed": true,
+      "checkGroups": 7,
+      "utc": "2026-10-22T08:47:26.9706990Z",
+      "sha256": "78b77f4fed4176721a47b13dae22721ff2eb45c9f6190cff52e9740b97423a00"
+    }
+  ],
+  "productionConfiguration": {
+    "issueCount": 0
+  },
+  "playerData": [
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-save.json",
+      "baselineSha256": "0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5",
+      "currentSha256": "0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-sms-global.json",
+      "baselineSha256": "a4bf0cc846b6fb6f345f373113aa344b688dd8f128c3587183ca8e098d4813da",
+      "currentSha256": "a4bf0cc846b6fb6f345f373113aa344b688dd8f128c3587183ca8e098d4813da",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-sms-global.json.bak",
+      "baselineSha256": "2901ee85c18af000c5bac49d5a98b86b250e114cbcaf11b2c6d6e3c41d3e140c",
+      "currentSha256": "2901ee85c18af000c5bac49d5a98b86b250e114cbcaf11b2c6d6e3c41d3e140c",
+      "unchanged": true
+    }
+  ],
+  "changedSources": [
+    "UnityProject/Assets/Scripts/GuJianGame.cs",
+    "UnityProject/Assets/Scripts/EditableAnimation.cs",
+    "UnityProject/Assets/Scripts/OriginalData.cs",
+    "UnityProject/Assets/Editor/AnimationAuthoring.cs",
+    "UnityProject/Assets/Editor/AnimationAuthoringValidation.cs",
+    "UnityProject/Assets/Editor/ArchitectureBoundaryValidation.cs",
+    "UnityProject/Assets/Editor/EditableWorkflowValidation.cs"
+  ],
+  "sourceSha256": {
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "b355414144f50ffc561450294ad1cfb148e8d284d3a75ab63d121523b8d08ba2",
+    "UnityProject/Assets/Scripts/EditableAnimation.cs": "70831e26fe7429dc563633cf1c4331afa2e8bb3d2e6176bf0eb58b0d0f85dd59",
+    "UnityProject/Assets/Scripts/OriginalData.cs": "6c00596dfeb77e6b9b2d1d02e880a5c07486077c2db38ab60c84e24ddf649e23",
+    "UnityProject/Assets/Editor/AnimationAuthoring.cs": "8d1006fbd83c77468c22b4c0a0174885706db930f015cc9043ffc0cc0386c65d",
+    "UnityProject/Assets/Editor/AnimationAuthoringValidation.cs": "b7772f7174c17668cb9062ecc8353af873c77e777100219d7f287293ca2586b1",
+    "UnityProject/Assets/Editor/ArchitectureBoundaryValidation.cs": "5eccd13cfc57f372586404516fc77d4438713c6ff9498221d102cab62a2121a5",
+    "UnityProject/Assets/Editor/EditableWorkflowValidation.cs": "7ab04555cfc7d1c73d47307c4f3228b5e1ecd9d10f8a9b63a8579dafc7cae8f1"
+  },
+  "documentationSha256": {
+    "Reference/还原工作清单.md": "cb4fdb11eeeba7ae6f4fd5128ce37f464274ac8cab7630a913d38aa62807c1f8",
+    "Reference/工程优化与架构评估.md": "e9c29f1f9e623b8f21e85d9606c38da78971a05f6e35341faf389935188f0f28",
+    "Reference/内容扩建与配置指南.md": "8f17d20a40fd223de9b1af72df87a15c17f99f1ddb887d859774848a43ed3f4d"
+  },
+  "editor": {
+    "project": "/Users/mac/Documents/ChatGPT/古剑/UnityProject",
+    "instance": "UnityProject@df84d794fc72e697",
+    "scene": "Assets/Scenes/GuJian.unity",
+    "playing": false,
+    "focused": false,
+    "packaged": false,
+    "compileErrors": 0,
+    "consoleErrors": 0
+  },
+  "limits": [
+    "Controlled module and production workflow checks; no full normal-difficulty replay",
+    "Animation authoring window was not manually opened for visual/physical interaction acceptance",
+    "Existing production reward callsites were source-audited; the audit does not replace normal playthrough reward coverage",
+    "UI business coupling, complete transient-state lifecycle audit and whole-save restore coordination remain open",
+    "No new runtime fixed resources or third-party dependencies were added"
+  ],
+  "restorationPercentageChanged": false
+}

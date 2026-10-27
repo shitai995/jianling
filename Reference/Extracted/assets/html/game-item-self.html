@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>游戏详情_QQ游戏</title>
+<link rel="stylesheet" href="css/g.css" type="text/css">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="YES" />
+
+</head>
+<body>
+
+
+<script type="text/javascript" src='comm_js/util.js'></script>
+<script type="text/javascript" src='comm_js/game-util.js'></script>
+<script type="text/javascript">
+p_util.loginIfNotHasSid();
+</script>
+
+
+  <section class="game-item">
+  	<section class="game-title">
+  	  <script type='text/tmpl' id='tmpl-game-title'>
+    	<figure>
+            	<a href="#" class="icon-shine"><img src="<#= p_util.getLogoUrl(gameInfo.logo) #>" alt="<#= gameInfo.name #>" width="62" height="62"></a>
+                <figcaption>
+                	<h1><a href="#"><#= gameInfo.name #></a></h1>
+				<p>
+                    <!--体验过游戏-->
+                  <a class="btn-getmore" href="share.html?cpId=<#= gameInfo.cpId #>&gameId=<#= gameInfo.gameId #>">推荐给好友</a>
+				  <a href='#' onClick="p_pkg.startGame(<#= gameInfo.cpId #>, <#= gameInfo.gameId #>, '<#= gameInfo.pkgName #>'); return false;" class="btn-green">返回游戏</a>
+				</p>
+                </figcaption>
+         </figure>
+      </script>
+      
+      <figure>
+            	<a href="#" class="icon-shine"><img src="" alt="loading..." width="62" height="62"></a>
+                <figcaption>
+                	<h1><a href="games-list.html">loading...</a></h1>
+
+                  <p><a class="btn-getmore">推荐给好友</a>
+                  <a class="btn-green">返回游戏</a></p>
+                </figcaption>
+         </figure>
+    </section>
+
+    <section class="pay" style="display: none;">   
+    <p class="tips-confirm">活动推荐</p>
+    </section>
+    
+    
+    <script type='text/tmpl' id='tmpl-game-operation-1'>
+	
+			<# if(gameInfo.rankNum > 0){ #>
+        	<li onclick="window.location = 'game-ranking.html?sid=<#= sid #>&cpId=<#= cpId #>&gameId=<#= gameId #>'">
+                <h1><a href="javascript:void(0);">分数排行</a></h1>
+                <p><# if(userRank > 0){ #>您排在第<#= userRank #>位<# } #>(共<#= allPlayerNum #>位玩家)</p>
+            </li>
+			<#} if(gameInfo.achNum > 0){ #>
+        	<li class="achievement" onclick="window.location = 'game-achievement.html?sid=<#= sid #>&cpId=<#= cpId #>&gameId=<#= gameId #>'">
+                <h1><a href="javascript:void(0);">游戏成就</a></h1>
+                <p>共达成<#= achNum #>个成就(共<#= gameInfo.achNum #>个)，得分<#= achScore #></p>
+            </li>
+			<#}#>
+ 	</script>
+  	<section class="game-operation" id="game-operation-1">
+  		<ul class="operation-list">
+ 	        <li onclick="window.location = 'game-ranking.html?sid=' + sid + '&cpId=' + cpId + '&gameId=' + gameId">
+                <h1><a href="javascript:void(0);">分数排行</a></h1>
+                <p>&nbsp;　</p>
+            </li>
+        	<li class="achievement" onclick="window.location = 'game-achievement.html?sid=' + sid + '&cpId=' + cpId + '&gameId=' + gameId">
+                <h1><a href="javascript:void(0);">游戏成就</a></h1>
+                <p>共达成&nbsp;个成就，成就总分：&nbsp;</p>
+            </li>
+ 	 </ul> 
+ 	  
+    </section>
+
+    
+   <section class="feed-list">
+	<h1>玩家动态</h1>
+	  <ul>
+		<script type='text/tmpl' id='tmpl-feed'>
+		<li onclick="window.location = 'profile.html?sid=<#= sid #>&uin=<#= uin #>'">
+		  <figure>
+			<a class="icon-shine"><img src="<#= p_util.getAvatarUrl(avatar) #>"  alt="<#= avatar #>" width="44" height="44"></a>
+				<figcaption>
+		<# if(type == ACTION_ID_GAIN_ACHIVEMENT){ #>
+           	    <h1>恭喜<a><#= nickName #></a>在<a href="game-item.html?cpId=<#= content.cpId #>&gameId=<#= content.gameId #>&sid=<#= sid #>"><#= gameName #></a>游戏中达成"<#= content.achName #>"成就。</h1>
+                <p><img src="<#=  p_util.getAchLogoUrl(resId, content.achId)  #>" alt="<#= gameName #>" width="40" height="40"></p>
+
+		<#} else if(type == ACTION_ID_BECOME_FRIEND){ #>
+           	    <h1><a><#= nickName #></a>已和玩家<a href="profile.html?sid=<#= sid #>&uin=<#= content.uin #>"><#= content.nickName #></a>成为朋友。 </h1>
+                <p><a href="profile.html?sid=<#= sid #>&uin=<#= content.uin #>"><img src="<#= p_util.getAvatarUrl(content.avatar) #>"  alt="<#= content.nickName #>" width="44" height="44"></a>
+				</p>
+
+		<#} else if(type == ACTION_ID_COMMENT_GAME ){ #>
+           	    <h1><a><#= nickName #></a>对<a href="game-item.html?cpId=<#= content.cpId #>&gameId=<#= content.gameId #>&sid=<#= sid #>"><#= gameName #></a>游戏发表的评论是：“<#= content.comment #>”。     </h1>
+
+		<#} else if(type == ACTION_ID_GAIN_HIGH_SORT ){ #>
+           	    <h1>恭喜<a><#= nickName #></a>在<a href="game-item.html?cpId=<#= content.cpId #>&gameId=<#= content.gameId #>&sid=<#= sid #>"><#= gameName #></a>游戏中进入"<#= content.tagName #>"<#= extInfo #>前200位，现在排在第<#= content.userScoreList[0].rank #>位。</h1>
+				<p><img src="img/tmp/icon-ranking.jpg" alt="<#= gameName #>" width="40" height="40">
+				</p>
+		<#} else if(type == ACTION_ID_SIGNATURE ){ #>
+				<h1><a><#= nickName #></a>更新了签名：“<#= content.sign #>”。     </h1>
+		<#}#>
+                <p class=""><time><#= addTime #></time></p>
+			</figcaption>
+          </figure>
+		</li>
+    	</script>
+      </ul>
+	  <div class="btn-wrapper clearfix" id="btn-all" style="display: none;">
+	     <div class="btn-gray fl" id="btn-prev"><a href="#" onclick='javascript: return false;'>上一页</a></div>
+	     <div class="btn-gray fl" id="btn-1st"><a href="#" onclick='javascript: return false;'>首页</a></div>
+	     <div class="btn-gray fl" id="btn-next"><a href="#" onclick='javascript: return false;'>下一页</a></div>
+	  </div>
+    </section>
+    
+    <section class="nodata-wrapper" style="display: none;">
+		<p class="warn">暂无动态</p>
+	</section>
+	
+  	<script type='text/tmpl' id='tmpl-game-operation-2'>
+        	<li class="player" onclick="window.location = 'player-list.html?sid=<#= sid #>&cpId=<#= cpId #>&gameId=<#= gameId #>'">
+                <h1><a href="javascript:void(0);">看看谁在玩</a></h1>
+                <p>共有<#= friendsNum #>位好友，共有<#= allPlayerNum #>位玩家</p>
+            </li>
+        	<li class="comments" onclick="window.location = 'game-mark.html?cpId=<#= cpId #>&gameId=<#= gameId #>'">
+                <h1><a href="javascript:void(0);">评分</a></h1>
+                <p>共有<#= gameInfo.scoreUserCount #>位玩家评分</p>
+            </li>
+         
+ 	</script>
+  	<section class="game-operation" id="game-operation-2">
+  		<ul class="operation-list">
+        	<li class="player" onclick="window.location = 'player-list.html?sid=' + sid + '&cpId=' + cpId + '&gameId=' + gameId">
+                <h1><a href="javascript:void(0);">看看谁在玩</a></h1>
+                <p>共有&nbsp;位好友，共有&nbsp;位玩家</p>
+            </li>
+        	<li class="comments" onclick="window.location = 'game-mark.html?sid=' + sid + '&cpId=' + cpId + '&gameId=' + gameId">
+                <h1><a href="javascript:void(0);">评分</a></h1>
+                <p>共有&nbsp;位玩家评分</p>
+            </li>
+ 	 </ul> 
+    </section>
+
+  </section>
+  
+  
+  
+    
+  <!-- ^^^ 公用js -->
+  <script type="text/javascript" src='comm_js/simple.min.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingCircular.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingPageBtn.js'></script>
+  <script type="text/javascript" src='comm_js/js-tmpl-min.js'></script>
+  <script type="text/javascript" src='comm_js/pkg.js'></script>
+  <script type="text/javascript" src='comm_js/update.js'></script>
+  
+  <script type="text/javascript" src='js/game-item-self.js'></script>
+  
+  
+  
+  
+</body>
+</html>

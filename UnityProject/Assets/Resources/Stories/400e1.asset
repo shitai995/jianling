@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb3ab722a2214741835d675e99bc225, type: 3}
+  m_Name: 400e1
+  m_EditorClassIdentifier: 
+  scriptId: 400e1
+  displayName: 400e1
+  notes: 
+  instructions:
+  - x2F(30,250,"r")
+  - x3A(197,0,1,true,true)
+  - x2A("/2.mid")
+  - x22()
+  - x4C()
+  - x3A(197,2,9,true,true)
+  - x3D(-2,5,1)
+  - x5E(14)
+  - "x27(\"\u7075\u513F\",\"\u7D2B\u8349\u575E\uFF1F\u8FD9\u662F\u60F3\u5229\u7528\u502D\u5BC7\u6765\u5BF9\u4ED8\u54B1\u4EEC\u4E48\uFF1F\")"
+  - x3D(-1,1,1)
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u5B89\u5566~\u502D\u5BC7\u6CA1\u51E0\u4E2A\u80FD\u6253\u7684~\")"
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u8FFD\u4E0A\u90A3\u4E24\u4E2A\u8349\u5305\u5427\")"
+  - x09("event",804)
+  - "x28(\"\u4E3B\u7EBF\u4EFB\u52A1\u53D8\u66F4\u4E3A\u2018\u8FFD\u51FB\u5D14\u5351\u2019\")"
+  - 'reward[2]:'
+  - reward[0]=150000
+  - reward[1]=6000
+  - "x5A(\"\u8FFD\u51FB\u5D14\u5351\",\"\u5728\u7D2B\u8349\u575E\u8FFD\u51FB\u5D14\u5351\",reward)"
+  - x95(408)
+  - "x28(\"\u63A8\u8350\u4E3B\u89D2\u8FBE\u5230<c=ffff00>27\u7EA7</c>\uFF0C\u88C5\u5907<c=00ff00>\u96F7\u5207+9</c>\uFF0C\u547D\u4E2D<c=ffff00>189</c>\",2400)"
+  - "x28(\"\u63A8\u8350\u5251\u7075\u8FBE\u5230<c=ffff00>13\u7EA7</c>\",2400)"
+  - if(x77()>25)
+  - if(x99()>11)
+  - ret
+  - endif
+  - endif
+  - x78(1)

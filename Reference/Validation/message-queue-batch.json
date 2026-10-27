@@ -1,0 +1,64 @@
+{
+  "utc": "2026-10-20T10:55:24.204981+00:00",
+  "passed": true,
+  "checks": {
+    "queue_asset": 9,
+    "message_regression": 9,
+    "hint_pixels": 7,
+    "total": 25
+  },
+  "scope": "Original message queue/timing/VM behavior and original continue hint animation in background Unity GameView; no build.",
+  "final_state": [
+    {
+      "success": true,
+      "message": "Retrieved 0 log entries.",
+      "data": []
+    },
+    {
+      "success": true,
+      "message": "Code executed successfully.",
+      "data": {
+        "result": {
+          "title": true,
+          "timeScale": 1,
+          "playing": true,
+          "sceneDirty": false,
+          "focused": false,
+          "background": true
+        },
+        "compiler": "codedom"
+      }
+    }
+  ],
+  "remaining": [
+    "Reward prompt call sites",
+    "Text background and fontType outlines",
+    "Original-device font metrics, physical input and frame-aligned recording"
+  ],
+  "sha256": {
+    "UnityProject/Assets/Scripts/OriginalMessages.cs": "71f44bcad40c02e17c348482ef122b0aa2183ab5a7f26b9c170b8ea54adf87a1",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "739325016cb777cdf920e89d5c918c6af42272922d7870454602aaa5471dbdaa",
+    "UnityProject/Assets/Scripts/OriginalUiLayout.cs": "a34b0d91233ada81d772500ebf0b0bd9d4e649bf5b2bc6334bc73ce28a4abd5f",
+    "UnityProject/Assets/Editor/UiAssetSetup.cs": "5de50839b7bf8388b3d0de3e2e628006ca2ae8050781d5e9b19860afa3106b41",
+    "UnityProject/Assets/Scripts/OriginalGui.cs": "0242c161641cc9cd83a843ccbc6e9fdd450fd63cbae1f76e899fea0f41ab365a",
+    "UnityProject/Assets/Resources/OriginalUiLayout.asset": "bad177ee31a0899ee1aa7ea02bbfd3e3e34aadd89755eba584f593eb6348e9ef",
+    "UnityProject/Assets/Resources/Original/Animations/action/jiantou.json": "47448f5767b3b809e04dd6372caf14614a8d67997155a72667f9e5c41fd9aac6",
+    "UnityProject/Assets/Resources/Original/action/jiantou.png": "f25028c944c3262e1afb0bd3a4136618f98ae3462a0064b8279512ff9d1c5612",
+    "Reference/Decompiled/sources/com/dobetter/client/GameCanvas.java": "d2a3f5e8085b76f65b1fb41ede376965e5b5375408998c490fb846329bcfebf4",
+    "Reference/Decompiled/sources/com/dobetter/action/ActionSet.java": "cc61426a89c629a774e1448cff1fff793eea2fc5c16cc6cf2f64472afe0a6266",
+    "Tools/validation/check_message_hint.py": "a3618b5d150b1fae338a2dd07f50cf79c17812c78518b58a6092cd8ac1e303ad",
+    "Reference/Validation/message-queue-queue.json": "03f315e630bb490a52d3d3e914ed921365a17d0b8ecfa14da286b42a9447b563",
+    "Reference/Validation/message-queue-regression.json": "e85a7bc6a2ceb49bc2718f421fab151f149b1db67b22e7b3330685a269011db1",
+    "Reference/Validation/message-queue-capture.json": "cc9f4abc178db904b9e60722cdf08dd0b48d5b61c01634c0cfa5ab93d100b54d",
+    "Reference/Validation/message-hint-pixels.json": "180c195f4a4d684f4aaddfea6ae333bf4cece28bcb873d8af4ed6a4056366727",
+    "Reference/Validation/message-queue-final-state.json": "ec054c5de74e2e5059675172c4403a7cf9af6e5df899ef8f1751d85c6d99d414",
+    "Reference/Validation/message-hint-none.png": "204ca01061f70d0793f56366fe99e553d2b24d9dbbd306bfb1cdae7a7efacb98",
+    "Reference/Validation/message-hint-0.png": "cb7f906f343b811edf2d616a55d60252a3a17305b9b7ce1ee6299c668e1ec457",
+    "Reference/Validation/message-hint-1.png": "cb7f906f343b811edf2d616a55d60252a3a17305b9b7ce1ee6299c668e1ec457",
+    "Reference/Validation/message-hint-2.png": "d04903cf35515d5cd16cb31e77b88b31cb72f9f317e57591dfb00215af36dff6",
+    "Reference/Validation/message-hint-3.png": "d04903cf35515d5cd16cb31e77b88b31cb72f9f317e57591dfb00215af36dff6",
+    "Reference/Validation/message-hint-return.png": "204ca01061f70d0793f56366fe99e553d2b24d9dbbd306bfb1cdae7a7efacb98",
+    "Reference/Validation/message-hint-fullscreen-0.png": "44a087a2934645f0ac0b54549ef5532d9a68e16a2cfae0ec6d86526a11ee0dd0",
+    "Reference/Validation/message-hint-fullscreen-2.png": "44a087a2934645f0ac0b54549ef5532d9a68e16a2cfae0ec6d86526a11ee0dd0"
+  }
+}

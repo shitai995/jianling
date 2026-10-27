@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>好友列表_QQ游戏</title>
+<link rel="stylesheet" href="css/g.css" type="text/css">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="YES" />
+</head>
+<body>
+  <section>
+      <menu id="main-nav">
+        <ul class="sec-nav">
+            <li><a class="cur">所有玩家</a></li>
+            <li><a href="#">我的好友</a></li>
+            <li><a href="#">附近玩家</a></li>
+        </ul>
+      </menu>
+
+    <script type='text/tmpl' id='tmpl-single-rank'>
+   	  	<li onclick="window.location = 'profile.html?sid=<#= sid #>&uin=<#= uin #>'">
+       	  <figure>
+           	<a class="icon-shine"><img src="<#= p_util.getAvatarUrl(avtarImage)#>" alt="<#= nickName #>头像" width="44" height="44"></a>
+            <figcaption>
+           	    <h1><a><#= nickName #></a></h1>
+
+				<p>
+				<# if(playerType != PLAYER_TYPE_ID_NEAR) {#>
+					<#if(gameName != ""){#>最近在玩 <span class="t-deepgray"><#= gameName #></span><#}#>
+				<#} else{ #>
+					<span class="t-deepgray"> <#= p_util.getDistance(myGpsX, myGpsY, gpsX, gpsY ) #></span>
+				<#}#>
+				</p>
+
+                <p class="badge"><#= exScore.score #></p>
+            </figcaption>
+        </figure>
+     	</li>
+	</script>
+    <ul class="player-single-rank-list">
+    </ul>
+    <section class="nodata-wrapper" style="display: none;">
+    	<p class="warn">暂无玩家上传成就</p>
+  	</section>
+    <div class="btn-wrapper clearfix" id="btn-all" style="display: none;">
+         <div class="btn-gray fl" id="btn-prev"><a href="#" onclick='javascript: return false;'>上一页</a></div>
+         <div class="btn-gray fl" id="btn-1st"><a href="#" onclick='javascript: return false;'>首页</a></div>
+         <div class="btn-gray fl" id="btn-next"><a href="#" onclick='javascript: return false;'>下一页</a></div>
+    </div>
+</section>
+
+    
+  <!-- ^^^ 公用js -->
+  <script type="text/javascript" src='comm_js/simple.min.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingCircular.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingPageBtn.js'></script>
+  <script type="text/javascript" src='comm_js/js-tmpl-min.js'></script>
+  <script type="text/javascript" src='comm_js/util.js'></script>
+  <script type="text/javascript" src='comm_js/game-util.js'></script>
+  <script type="text/javascript" src='comm_js/pkg.js'></script>
+  <script type="text/javascript" src='comm_js/update.js'></script>
+  
+  
+  <script type="text/javascript" src='js/game-ach-single.js'></script>
+</body>
+</html>

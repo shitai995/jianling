@@ -1,0 +1,123 @@
+{
+  "passed": true,
+  "utc": "2026-10-21T01:50:30.570338+00:00",
+  "scope": "原版暴击覆盖反馈、指定Boss调用点及受影响模块定向回归",
+  "reports": {
+    "critical-hit-feedback.json": {
+      "passed": true,
+      "utc": "2026-10-21T01:44:07.8234240Z",
+      "checks": 13
+    },
+    "critical-hit-live.json": {
+      "passed": true,
+      "utc": "2026-10-21T01:40:43.7473400Z",
+      "checks": 4
+    },
+    "critical-hit-pixels.json": {
+      "passed": true,
+      "utc": "2026-10-21T01:44:44.060176+00:00",
+      "checks": 4
+    },
+    "combo-break.json": {
+      "passed": true,
+      "utc": "2026-10-21T01:36:45.4379750Z",
+      "checks": 11
+    },
+    "attack-skills.json": {
+      "passed": true,
+      "utc": "2026-10-21T01:36:47.3018310Z",
+      "checks": 13
+    },
+    "support-skills.json": {
+      "passed": true,
+      "utc": "2026-10-21T01:36:47.6980210Z",
+      "checks": 9
+    },
+    "rewards.json": {
+      "passed": true,
+      "utc": "2026-10-21T01:36:47.7582600Z",
+      "checks": 6
+    },
+    "progression.json": {
+      "passed": true,
+      "utc": "2026-10-21T01:44:59.3442320Z",
+      "checks": 10
+    },
+    "combat-feedback.json": {
+      "passed": true,
+      "utc": "2026-10-21T01:35:17.4397870Z",
+      "checks": 8
+    },
+    "control-presentation.json": {
+      "passed": true,
+      "utc": "2026-10-21T01:35:18.0738900Z",
+      "checks": 9
+    },
+    "boss-families.json": {
+      "passed": true,
+      "utc": "2026-10-21T01:44:43.5367500Z",
+      "checks": 25
+    }
+  },
+  "totalChecks": 112,
+  "originalEvidence": [
+    "GameCanvas.java: setCriticalEffect / cycle / drawScene",
+    "Role.java: processAttack（逐目标调用）",
+    "Enemy.java: 指定Boss绝杀触发点"
+  ],
+  "screenshots": [
+    "critical-hit-0.png",
+    "critical-hit-1.png",
+    "critical-hit-2.png",
+    "critical-hit-3.png",
+    "critical-hit-4.png",
+    "critical-hit-5.png",
+    "critical-hit-6.png",
+    "critical-hit-contact.png"
+  ],
+  "formalSaveSha256": "0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5",
+  "lastRecordedEditorState": {
+    "source": "本批完成时的编辑器检查记录，非汇总生成时重新取样",
+    "instance": "UnityProject@df84d794fc72e697",
+    "playing": true,
+    "focused": false,
+    "scene": "Assets/Scenes/GuJian.unity",
+    "sceneDirty": false,
+    "timeScale": 1,
+    "atTitle": true,
+    "compiling": false,
+    "consoleErrors": 0,
+    "existingMissingScriptWarnings": 8,
+    "existingMcpWarnings": 1
+  },
+  "limits": [
+    "仅Unity Editor后台GameView；本批未打包或启动外部Player",
+    "定向夹具与确定性tick验证不证明全部Boss正常属性完整实战或正常难度全通",
+    "真实键鼠／触屏输入、可选路线与脚本完整参数路径仍待验收",
+    "原设备字体、实体听音及全局逐帧音画对照仍待验收",
+    "95/100保留历史工作量估算含义，不作为还原准确率"
+  ],
+  "sha256": {
+    "Reference/Validation/critical-hit-feedback.json": "1f8fbfdd8e4306ebb31d0850d6026ed6711315c1714065afec86cac3d1a6e091",
+    "Reference/Validation/critical-hit-live.json": "5002b919f77740e4e1560f8a60eef257a157a80b4d258a46246d3f8b2f681265",
+    "Reference/Validation/critical-hit-pixels.json": "7c50c2fb777decec4dc7a2e56d49115eed6374503543e584c2adb2ac68e883fb",
+    "Reference/Validation/combo-break.json": "8f7f4b0ab269885dc33f114dcb0704fea31a7f3c9ecab2acc764886a9ae35537",
+    "Reference/Validation/attack-skills.json": "d351f213a997acb3cd84b0ae458fe80a72ce915f3de1fa7d2d97db9e3c6fb3a4",
+    "Reference/Validation/support-skills.json": "6a1d5e4e0251aed58f386a8a87d191541dfd32ffcd8eb4035f82117a6936870a",
+    "Reference/Validation/rewards.json": "665d16bd876727e85093050324d3d9adb1cfaccc81b19f22eee7e4a6aa7b4509",
+    "Reference/Validation/progression.json": "cd6747566415facdfbea962b74558f498565b5a95049737ce9a8e73f531ebca3",
+    "Reference/Validation/combat-feedback.json": "e36343f351f913cc2850cc093ff8db71daa94dd0e4ad4d35d458c662cf21d783",
+    "Reference/Validation/control-presentation.json": "92693ed064edd97c9bf1c74ac8771565096b8d81f66c83d8c19e3c3fc6faf484",
+    "Reference/Validation/boss-families.json": "299a2611211a796ee19cb31edef3bd5ef5fac2711b210a971ad93e144857fc83",
+    "UnityProject/Assets/Scripts/OriginalUiLayout.cs": "068121c25f6e76e4981a9a90472534641783a56512d69854b91d02d09a0897d5",
+    "UnityProject/Assets/Editor/UiAssetSetup.cs": "ed01f3c9778573d9097182df47561304e519b196f52083b7ffd041e0c6f987b3",
+    "UnityProject/Assets/Scripts/OriginalCombatFeedback.cs": "4760eb945d4b96688a7f81656feb7ae5921595a7930d4241b513f006b566f6a8",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "b3f945829bf81b89ce70e1ff4701815c47111eed4d35c5c01c20bcc014daa46f",
+    "UnityProject/Assets/Scripts/OriginalCombat.cs": "88346c3b477ffeb4f07c30edd91107b12b63848591fe59e4829d6fb697bc2720",
+    "UnityProject/Assets/Scripts/OriginalCritical.cs": "baa4efc3af70916ba4f63819c4228c69bf92ca2e991130bc0218851a80d5f34d",
+    "UnityProject/Assets/Editor/CriticalHitFeedbackValidation.cs": "0ad9173a2c268005b5856d98bb3aade61865b4c2c646519973e33034757e7134",
+    "UnityProject/Assets/Editor/CriticalHitLiveValidation.cs": "aaa78ee6d5b3b05a10c8942c6636744b8607a3918b649f214221d1db457db5e6",
+    "Tools/validation/check_critical_hit.py": "5f63fa5832f4d73057656ec486167e8139e0fee54b3114d8dccb14d56db86d4c",
+    "UnityProject/Assets/Resources/OriginalUiLayout.asset": "738176d0c3b2b78d5c7e873bc929c7f90ca448800fe4685b63d319af6ef322a0"
+  }
+}

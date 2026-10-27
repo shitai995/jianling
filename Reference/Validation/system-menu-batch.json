@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "utc": "2026-10-20T17:57:49.558281+00:00",
+  "scope": "系统六项、独立设置、帮助、双槽读取删除、随身商店返回及相关回归；商城只验证初始目录和失败返回",
+  "reports": {
+    "system-menu.json": 17,
+    "items-shop.json": 11,
+    "spirit.json": 8,
+    "spirit-absorption.json": 6,
+    "menu-state.json": 14,
+    "spirit-menu.json": 16,
+    "system-menu-pixels.json": 3,
+    "spirit-menu-pixels.json": 3
+  },
+  "totalChecks": 78,
+  "finalState": {
+    "play": true,
+    "title": true,
+    "scale": 1.0,
+    "scene": "Assets/Scenes/GuJian.unity",
+    "sceneDirty": false,
+    "compiling": false,
+    "save": "gujian-save.json",
+    "records": [
+      {
+        "slot": 0,
+        "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-save.json",
+        "sha256": "0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5"
+      },
+      {
+        "slot": 1,
+        "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-save-slot1.json",
+        "sha256": null
+      }
+    ],
+    "editorFocused": false
+  },
+  "console": {
+    "errors": 0,
+    "existingMissingScriptWarnings": 8
+  },
+  "inputEvidence": "共用生产原键码与公开PressControl入口，后台Unity GameView取帧；未执行实体键鼠或触屏",
+  "remaining": [
+    "商城成功购买、数量金额、武器预览、礼包与经验倍率及原平台状态尚未移植",
+    "角色技能预览键18",
+    "交易独立堆叠出售、按住调量、原数量箭头与金额绘制",
+    "剑灵候选品级色与图标背景、原设备字体、输入与逐帧时序",
+    "其他脚本分支、音频触发、全部Boss正常属性自主战斗及正常难度全通",
+    "既存8条缺失脚本警告来源待定位"
+  ],
+  "sha256": {
+    "UnityProject/Assets/Scripts/OriginalSystemMenus.cs": "e13390bd47ca95e9b6196cc1ea9263047106ab4b7450e7d5dbd6361231cc964c",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "23965ec5ee5f4a4a3683aa6879eb332d535702e7cd785a6b97a551f47bf5f5bd",
+    "UnityProject/Assets/Scripts/OriginalGameMenus.cs": "9370dc4c2ce73db03064faf91dce738f8bdae6dab1ac58d6e63ae792dbd41c6d",
+    "UnityProject/Assets/Scripts/OriginalAtlasMenus.cs": "0ebde553516f097ea513adc3cc0ca0fbda67a37a9054b35d7916f628dca917d5",
+    "UnityProject/Assets/Scripts/OriginalUiLayout.cs": "7ac63d4b6c6644af75bbb9536bcbcbb82bf3f4f3b58c8ce1f9d73d5e5286b249",
+    "UnityProject/Assets/Scripts/OriginalShop.cs": "bf24a93833344a9522891aad4bc36b7db4e00ccfac2657eb298a248498999e1f",
+    "UnityProject/Assets/Editor/SystemMenuValidation.cs": "09b5bace5a69f9d6fed7769ec7f48881f59921b8f0c7cc7714b7875a4a281bf1",
+    "UnityProject/Assets/Editor/UiAssetSetup.cs": "7a5ba6f9c5be106943177bf0a4db9819349241dffc85710660f7c3a795979200",
+    "UnityProject/Assets/Editor/ItemShopValidation.cs": "98d962ac1fec4f8ebc81d05d6dd820a3e9dd3e1544a7c81f13bc428c6f6938d6",
+    "UnityProject/Assets/Editor/SpiritValidation.cs": "e1a74464715501f55b5388d1808f166efc97acebea21442719cb33e3399c0207",
+    "UnityProject/Assets/Editor/SpiritAbsorptionValidation.cs": "e25b699ac073ee2bc558e8356081ada4563f12a677aeb5c33fe3a94a09e71a78",
+    "UnityProject/Assets/Editor/MenuStateValidation.cs": "49eab738f45eb279bfee200e916cd052cc6863be5bd725f1c03f3f6645218c4e",
+    "UnityProject/Assets/Editor/SpiritMenuValidation.cs": "0b92e28323426a3307113746b17cdffd90a1d0e65416e794b9038d3fc46a72c1",
+    "Tools/validation/check_system_menu.py": "005418b3488cce04096d908f345eae3a8d736f7d56838940ac42c87a9907b389",
+    "Tools/validation/check_spirit_menu.py": "cf2d059a5861f5c69603559829d49b1f403f511f4723b234831c4d347781f5e3",
+    "UnityProject/Assets/Resources/OriginalUiLayout.asset": "5f7d245d22a431dda470acb6260ede8b2a89fc3f2bec1b10307296134dbe4002",
+    "Reference/Decompiled/sources/com/dobetter/client/GameCanvas.java": "d2a3f5e8085b76f65b1fb41ede376965e5b5375408998c490fb846329bcfebf4",
+    "Reference/Validation/system-menu.json": "68f4c520c201673e290f546df0dbf6c45ce2fdc33c3962a15eceeb5678166f5b",
+    "Reference/Validation/items-shop.json": "95986c488c695545ee7254674e0ed6d61808b67c6613f3c8521e6db26b04a611",
+    "Reference/Validation/spirit.json": "6f47356568ef85e4765fae7cbd2b0f2af4b44bebcedec12bb3b309bcb3976883",
+    "Reference/Validation/spirit-absorption.json": "02e10310429f4666fe633bd15f5d40028a80995fc917a0283bbd1a6b3058de2e",
+    "Reference/Validation/menu-state.json": "912df2070f58acc442618244f960d213cb7dd09088327a9a328bc74b14169708",
+    "Reference/Validation/spirit-menu.json": "76be05d47595f4240ad966335341c10b988448335ec5fdb26290c5424fed1bb1",
+    "Reference/Validation/system-menu-pixels.json": "d8a8e5d472818c6f739b2a117ba38d573342b73d6ec15ae81f6d394bd03bf4d9",
+    "Reference/Validation/spirit-menu-pixels.json": "a0d4c14e5b4562865e6636d6ebe40fce523eb1bfe007a33ca3cfb85d7cb773e1",
+    "Reference/Validation/system-help-start.png": "b8644c0e5ceb6c59690445993da43be566083bf5c3b9bf942f2aa1abcd506783",
+    "Reference/Validation/system-settings-recovery.png": "c45d1b7d8c2b788a2fd4970b904dbcc9cc817227770136e5401cf3ffaf8e725c",
+    "Reference/Validation/system-portable-shop.png": "36113d8019acbe09654b30edc8de336a7017a45b700d206399adf1c2688b21e8",
+    "Reference/Validation/system-help-visible.png": "872321b2d86c6e130d56b3c480aea0f0a72974fb268c93322e148064df9769f1",
+    "Reference/Validation/system-help-probe.png": "1ed3d438ab4cae0658e824ddabe34859222a5242d5ef9e8fe0c333ae22c014e5",
+    "Reference/Validation/system-marketplace.png": "fa227b78c80c245b14dc384f607c176edb0f8d9482640312ba40c82841a447b3",
+    "Reference/Validation/system-records.png": "e4d8650e0185a716be5a702e17ca397daa2f21483929f957bb36bf4f1c8fc42e",
+    "Reference/Validation/system-record-popup.png": "863c2216488126b7c2f321fb09d97c2eaa83bc0488cf1096ec954d0f1fa94883",
+    "Reference/Validation/system-menu-contact.png": "13d3ce888e83b0146f059099861af082ec4125d67409af36aa28a85b5186b76d",
+    "Reference/Validation/system-root-5.png": "eb05c7785f7597409e375606b8417ec94c1407c0c48806aaad74a189103f4e24",
+    "Reference/Validation/system-root-4.png": "95c2f014a322f951e04d33758a83f5b751ddefbeaeb801de84f4d0630c930dfd",
+    "Reference/Validation/system-record-deleted.png": "d844cb35db1da395027f45c695cb3939c6b045e74477589c3d27f80a6176471d",
+    "Reference/Validation/system-root-0.png": "ac6c28fec82394f5de9d79642095c2731ce82bc0555dfc93ecf3e6e2b212d333",
+    "Reference/Validation/system-root-1.png": "52848ebd592dfdb55d64315f320dff0fe13581c3bfcc89d612d4a09aa2a2cff8",
+    "Reference/Validation/system-root-3.png": "c09cfccbf91fd51df4fd69dc225fd6fab36a5ed4d485dd3e28ce5ccd2ac9730d",
+    "Reference/Validation/system-root-2.png": "7520128b466b5e741c2c32665ab44efa5d4e69dc8161b22453a3e43c23741eba",
+    "Reference/Validation/system-settings-muted.png": "a11e2d5d64131e52b986ad4905d7aa016c9ba090df69ef57201de01b811c52c7",
+    "Reference/Validation/system-menu-final-state.json": "279ffa25a58a7ef63aa3809d04f854edecf39964b4d945b4491229ca8496960b"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "utc": "2026-10-19T12:18:34.872288+00:00",
+  "scope": "任务奖励显示、剩余目标、任务存档与19种支线流程；整体仍约80%工作量估算",
+  "checks": 73,
+  "reports": [
+    {
+      "file": "missions.json",
+      "passed": true,
+      "utc": "2026-10-19T12:12:38.0265900Z",
+      "checks": 21
+    },
+    {
+      "file": "spirit.json",
+      "passed": true,
+      "utc": "2026-10-19T12:13:46.0074820Z",
+      "checks": 8
+    },
+    {
+      "file": "items-shop.json",
+      "passed": true,
+      "utc": "2026-10-19T12:13:46.1347180Z",
+      "checks": 10
+    },
+    {
+      "file": "opening-playback.json",
+      "passed": true,
+      "utc": "2026-10-19T12:13:47.6068790Z",
+      "checks": 3
+    },
+    {
+      "file": "battle-save.json",
+      "passed": true,
+      "utc": "2026-10-19T12:14:13.1388070Z",
+      "checks": 4
+    },
+    {
+      "file": "progression.json",
+      "passed": true,
+      "utc": "2026-10-19T12:14:33.5370960Z",
+      "checks": 10
+    },
+    {
+      "file": "chapters.json",
+      "passed": true,
+      "utc": "2026-10-19T12:15:11.5747770Z",
+      "checks": 12
+    },
+    {
+      "file": "player-smoke.json",
+      "passed": true,
+      "utc": "2026-10-19T12:18:10.0209410Z",
+      "checks": 5
+    }
+  ],
+  "build": {
+    "result": "succeeded",
+    "unity": "2022.3.62f3",
+    "platform": "StandaloneOSX",
+    "development": true,
+    "output_path": "UnityProject/Builds/macOS/古剑魂梦.app",
+    "duration_seconds": 4.596798,
+    "total_size_mb": 452.27,
+    "errors": 0,
+    "warnings": 0,
+    "started_at": "2026-10-19T12:17:28.717628Z",
+    "completed_at": "2026-10-19T12:17:33.314426Z"
+  },
+  "sources": [
+    {
+      "file": "UnityProject/Assets/Scripts/OriginalMissions.cs",
+      "sha256": "50b92aec5d47920e6806bafffbcdb1bc5be4beb813cccd5bf4eca8a9f991daaf"
+    },
+    {
+      "file": "UnityProject/Assets/Scripts/GuJianGame.cs",
+      "sha256": "9d4eabb2a9ef0920cda5f2033f43b3589a1eae867072c6cd333c2a4ac77ba625"
+    },
+    {
+      "file": "UnityProject/Assets/Scripts/OriginalGameMenus.cs",
+      "sha256": "e758749ce0ece8dea35140074f846fc67d44c720224f2661e4392331018b7c03"
+    },
+    {
+      "file": "UnityProject/Assets/Scripts/OriginalPlayerValidation.cs",
+      "sha256": "2273bde7b9abb0863578f34b3177622c95c63d606402490df17141963b7c2c44"
+    },
+    {
+      "file": "UnityProject/Assets/Editor/MissionValidation.cs",
+      "sha256": "a7c1a74a949e21b4ed36c3cabd61de3d964458101fc52a675188be3439197506"
+    }
+  ],
+  "editor": {
+    "playing": false,
+    "compiling": false,
+    "scene": "Assets/Scenes/GuJian.unity",
+    "dirty": false,
+    "console_errors": 0
+  },
+  "limitations": [
+    "任务专项使用独立测试存档，跳过演出延时；15种击杀任务直接调用生产计数器，不代表正常实战通关。",
+    "4种送货任务通过原地图商人交互回调完成。",
+    "保留原任务11/12说明与实际装备发放的差异，未穷举随机额外道具分支。",
+    "尚未从新存档连续完成全部主线与支线，Android真机与全部原菜单图集仍待验收。"
+  ],
+  "artifacts": [
+    "UnityProject/Builds/macOS/古剑魂梦.app",
+    "Reference/Validation/missions-menu.png",
+    "Reference/Validation/missions-objectives.png"
+  ]
+}

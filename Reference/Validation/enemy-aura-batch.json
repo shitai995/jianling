@@ -1,0 +1,149 @@
+{
+  "passed": true,
+  "utc": "2026-10-20T08:16:22.750428+00:00",
+  "reportCount": 4,
+  "checkCount": 29,
+  "reports": [
+    {
+      "path": "Reference/Validation/enemy-back-effect.json",
+      "utc": "2026-10-20T07:57:57.2204930Z",
+      "checkCount": 8,
+      "sha256": "55e7765d3629aa0b045b2f9f46a4b2ed8382791682fddab533a449e987978fe4"
+    },
+    {
+      "path": "Reference/Validation/enemy-aura-pixels.json",
+      "utc": "2026-10-20T08:10:10.611669+00:00",
+      "checkCount": 4,
+      "sha256": "047b0f44bd1167432f2e72b826ec5409d94989ca74a74f8ae2bf9bf720f5a616"
+    },
+    {
+      "path": "Reference/Validation/world-presentation.json",
+      "utc": "2026-10-20T08:10:12.5927490Z",
+      "checkCount": 9,
+      "sha256": "5367e24f4822a2f1cb4999ff97ab174568898c908211502870b2f3ddbb7800d2"
+    },
+    {
+      "path": "Reference/Validation/enemy-health.json",
+      "utc": "2026-10-20T08:10:12.7370110Z",
+      "checkCount": 8,
+      "sha256": "a29edcd74b1a2b9f9920ab0bee81ee9ba715598d30290a21da446093b201d2d2"
+    }
+  ],
+  "files": [
+    {
+      "path": "UnityProject/Assets/Scripts/OriginalActor.cs",
+      "sha256": "87fd8c7f5a84a07d4cd10b6cf025b7a28c0accc5cfdca4bde816720fa56341cd"
+    },
+    {
+      "path": "UnityProject/Assets/Scripts/OriginalScenePresentation.cs",
+      "sha256": "9e2fd960fe8c7e628ea237a25e95f362f16070637eb6e88e8dc5d9744b1c34b5"
+    },
+    {
+      "path": "UnityProject/Assets/Editor/WorldPresentationSetup.cs",
+      "sha256": "7ddbd94dd4c09796d3ec8e18d3331a4cd01f8e04e6a9fd11101134af8ee1a082"
+    },
+    {
+      "path": "UnityProject/Assets/Editor/OriginalAssetBaker.cs",
+      "sha256": "3c5b4ed36a9a31ba37ea3003d5b9906174c353b4d10badc083e91607d7ebbd82"
+    },
+    {
+      "path": "UnityProject/Assets/Editor/EnemyBackEffectValidation.cs",
+      "sha256": "7c50f1d7e7e0b6cb65679029ff460adad29e7fdeca138f46354c7e88c45b36c6"
+    },
+    {
+      "path": "Tools/validation/check_enemy_aura.py",
+      "sha256": "7e305337c2798db2089cb8d2f46a39eb0175bb18115783e8483e81b19d7dafe6"
+    },
+    {
+      "path": "UnityProject/Assets/Resources/OriginalAssetCatalog.asset",
+      "sha256": "f37f79b69223c10a90e028b99077d8bcf52b479615606ea87280434ff49bdd06"
+    },
+    {
+      "path": "UnityProject/Assets/Resources/Baked/SpriteLibrary.asset",
+      "sha256": "7dc499246a7c06e7b8a6edbe7d2277470689883206ec8de037ff32babd919330"
+    },
+    {
+      "path": "UnityProject/Assets/Resources/Baked/Effects/s_36.prefab",
+      "sha256": "13c6c4178350f5e98444a9774f04fe343ec9e1e1d44037579989a166e9d9bb05"
+    },
+    {
+      "path": "UnityProject/Assets/Resources/Baked/Actors/203.prefab",
+      "sha256": "9c2b50a8300c35e379163efaacfb70b742d14c7537b87d43bd045d0e72387b24"
+    },
+    {
+      "path": "UnityProject/Assets/Resources/Baked/Actors/206.prefab",
+      "sha256": "ddba3d1987fa8632fed6593d545665093b9e7b00a3f983b9682cbb3ef2a46c7d"
+    },
+    {
+      "path": "UnityProject/Assets/Resources/Baked/Actors/209.prefab",
+      "sha256": "b5ba76f1933e7e562a560efab83c065b5ccefe6e363afcd7ff81e1c3b6cdfa84"
+    },
+    {
+      "path": "UnityProject/Assets/Resources/Baked/Actors/212.prefab",
+      "sha256": "7e1c2a346842b850b42fcedc9c856f651e207bd2463243a3f486e4382639d52d"
+    },
+    {
+      "path": "UnityProject/Assets/Resources/Baked/Actors/215.prefab",
+      "sha256": "d1c16c0988f1dcde8adcf0470739bb35d365b9a1fb52fc292227a0c97fb98aec"
+    },
+    {
+      "path": "UnityProject/Assets/Resources/Baked/Actors/216.prefab",
+      "sha256": "eed4069e53c98758ea631b129eb7b50a9b1acc4ab176b7b9ff97f0b25d442931"
+    },
+    {
+      "path": "UnityProject/Assets/Resources/Baked/Actors/217.prefab",
+      "sha256": "8edd3c10c8321541fd4009f42f5b9986a9592388851df59dc8194840e106dfd7"
+    },
+    {
+      "path": "UnityProject/Assets/Resources/Baked/Actors/218.prefab",
+      "sha256": "15656bf1a0727d6c569dfe67ac6f8c538eac4dc828d736fe520231e0e2bfc5f6"
+    },
+    {
+      "path": "UnityProject/Assets/Resources/Baked/Actors/219.prefab",
+      "sha256": "2385a010bb4066ed0e8f3e104d6547da69381dacf3fb04fa7d5514990d2a54a2"
+    },
+    {
+      "path": "UnityProject/Assets/Resources/Baked/Actors/220.prefab",
+      "sha256": "3fd98e5fd38192a987a6082b298a5633739177ffcf3275ff0f6532c1c0f32218"
+    },
+    {
+      "path": "Reference/Validation/enemy-aura-critical.png",
+      "sha256": "3f007f3b7ebf12575c04a989a91c4df1fa771badea3eb0d761dcd2dfc0d880f8"
+    },
+    {
+      "path": "Reference/Validation/enemy-aura-hideui.png",
+      "sha256": "2d09fb5f061fd4e01a2c782f012febc4790de590c4a08df8ddfbac65a718d46a"
+    },
+    {
+      "path": "Reference/Validation/enemy-aura-covered-blank.png",
+      "sha256": "0d1ec145e039717edab6ef2d5a556ed6c9eecef7fc20e1bbe6742d4613f08b5a"
+    },
+    {
+      "path": "Reference/Validation/enemy-aura-contact.png",
+      "sha256": "e36aaf15e63052f5e7798ade9e7e0d91ce08a244d0d6f3e7c07c7dd6f9973de8"
+    },
+    {
+      "path": "Reference/Validation/enemy-aura-visible.png",
+      "sha256": "cd51f266b78191ebf11471985446210dad810d6c5f110d9d1a34120d73693104"
+    },
+    {
+      "path": "Reference/Validation/enemy-aura-blank.png",
+      "sha256": "5908ba45bc929f378640452a85d138584adfb3fb7414936a642ea1aad2afdabb"
+    },
+    {
+      "path": "Reference/Validation/enemy-aura-covered.png",
+      "sha256": "a940a01793f600ab2cfddba3bdcd520a848371e00fbd588b3ed01b1e2cfb2a5b"
+    }
+  ],
+  "scope": "Type11 saved aura, actual GameView occlusion and affected world-presentation/health regressions; no full-journey rerun.",
+  "finalEditorState": {
+    "playing": true,
+    "title": true,
+    "timeScale": 1,
+    "sceneDirty": false,
+    "consoleErrors": 0
+  },
+  "limitations": [
+    "No original-device frame-by-frame comparison; this batch does not prove full-game fidelity."
+  ]
+}

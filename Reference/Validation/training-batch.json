@@ -1,0 +1,59 @@
+{
+  "utc": "2026-10-20T04:07:37.002383+00:00",
+  "scope": "Unity Editor background training, five-boss challenge and regression",
+  "passed": true,
+  "checks": 23,
+  "reports": [
+    {
+      "name": "training",
+      "passed": true,
+      "checks": 5,
+      "utc": "2026-10-20T04:03:15.2640970Z",
+      "sha256": "78e381ea8a5842cb4f6d2ce4665d2a1c07ddb5c3c2c3b344fafbe301131edd95"
+    },
+    {
+      "name": "training-live",
+      "passed": true,
+      "checks": 4,
+      "utc": "2026-10-20T04:03:19.7414310Z",
+      "sha256": "a0cc29aabffca76edf02146ffa42592f26ca5f4dc0db54b5ebb0feb82979711a"
+    },
+    {
+      "name": "combat-behaviour",
+      "passed": true,
+      "checks": 9,
+      "utc": "2026-10-20T04:05:20.0932350Z",
+      "sha256": "226d8ff61782e4ed7401a1610f04701c301617e8fa3e52e8e509c295eb017f35"
+    },
+    {
+      "name": "editable-workflow",
+      "passed": true,
+      "checks": 5,
+      "utc": "2026-10-20T04:06:35.8888400Z",
+      "sha256": "09f868ec5c7d7f64fecacc122c0bc9bdfcd6cd22d0269fb3e61a51c580db7096"
+    }
+  ],
+  "sources": {
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "f0ff2c07a7209a7c0d30ab41327dba828265d977d64181243218445ce0aec2d5",
+    "UnityProject/Assets/Scripts/OriginalCombat.cs": "ab899e0fca9936b2900b4299586fcfd328449a508052d1de103a962f831aba9f",
+    "UnityProject/Assets/Editor/TrainingValidation.cs": "d6ada6fc23ba2d461da148b0c3ff5300568a8f2a6ab33db9bed16989b1a4cc35",
+    "UnityProject/Assets/Editor/CombatBehaviourValidation.cs": "1af8bc8a6197c26d94b3e2f98f252855d78017ade7d7229e56be85fc770dddef",
+    "UnityProject/Assets/Resources/Original/script/training.txt": "d817a494b57e594dbdf14266cb6055e7b5ca4a4fc7f60d768f69fe1e8fb61e1c",
+    "UnityProject/Assets/Resources/Original/script/100.txt": "7cac1dfd8996b3b5511a60bc0371d31ee1f501824cdada0b3831b06b7962d8a9",
+    "UnityProject/Assets/Resources/Original/script/200.txt": "46267a320995a88e2b322cd1ed92bc565fcda47fe474c2b87084579d2514579c",
+    "UnityProject/Assets/Resources/Original/script/201.txt": "5a0e79407c6e6317fc158d5431b93d1b9789252cf546de0acbf0baf695ac2c15",
+    "UnityProject/Assets/Resources/Original/script/exproom.txt": "7a8e18ae64e2f34467600d4ec14525b9a16d637f8a350dfde4747cb836017ee0",
+    "UnityProject/Assets/Resources/Original/script/100n0.txt": "7eeff2775ac91f008200157678d76191b3270f626357b22f80861dd97dfb930d"
+  },
+  "visuals": {
+    "training-arena.png": "db6054cda325e67c083e16c7241145327136c279e92fa3cdc530c23cf86b8c29"
+  },
+  "consoleErrorsAfterClearingHistoricalSchedulingError": 0,
+  "limits": [
+    "Synchronous script checks skip presentation waits and set starting stats/positions; production NPC/exit/death/script/save paths are retained",
+    "Live arena checks use real Update but lock actor input and disable drops",
+    "Normal difficulty five-boss completion and original frame-by-frame fidelity remain unverified",
+    "Prior overlapping asynchronous tests produced a scheduling failure; combat regression was rerun alone to completion",
+    "Reward variance/order and physical drop pickup presentation remain to be restored"
+  ]
+}

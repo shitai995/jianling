@@ -1,0 +1,189 @@
+{
+  "passed": true,
+  "utc": "2026-10-20T07:41:45.566946+00:00",
+  "reportCount": 10,
+  "checkCount": 92,
+  "reports": [
+    {
+      "path": "Reference/Validation/enemy-health.json",
+      "utc": "2026-10-20T07:27:56.7064710Z",
+      "checkCount": 8,
+      "sha256": "7ca83a16a4e14354724d6aa7e62d289e4d6479d6b6946f2b83cc76532f43cd50"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-live.json",
+      "utc": "2026-10-20T07:11:23.3745010Z",
+      "checkCount": 4,
+      "sha256": "94f167f6ab5255e97a16bc8b5937b99a7ac3212e9791b9f3a02842a857ae2779"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-pixels.json",
+      "utc": "2026-10-20T07:26:47.931086+00:00",
+      "checkCount": 5,
+      "sha256": "f4c6c407a097ee898400ad084ec53224f1320d8096376d9ccdb04ff946f55a7c"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-idempotence.json",
+      "utc": "2026-10-20T07:35:33.182990+00:00",
+      "checkCount": 2,
+      "sha256": "ec70b015a9388b48c3c75ae2330e6de43e86bf04e7b95e38edce7fda80b6ed4c"
+    },
+    {
+      "path": "Reference/Validation/world-presentation.json",
+      "utc": "2026-10-20T07:27:56.9004190Z",
+      "checkCount": 9,
+      "sha256": "9c7b22443c414f9b66f984b4f68e381921de8ddf4b527cc5ff2de23d7efe27c6"
+    },
+    {
+      "path": "Reference/Validation/combat-feedback.json",
+      "utc": "2026-10-20T07:27:57.1079990Z",
+      "checkCount": 8,
+      "sha256": "16975f8f1f1f297030cc4862f30b84be9247d0ddb16c58da02c9c41633ffbff9"
+    },
+    {
+      "path": "Reference/Validation/attack-skills.json",
+      "utc": "2026-10-20T07:27:58.9478850Z",
+      "checkCount": 13,
+      "sha256": "a0f499964aece26dca033103b5e68d64b7917abebc90e47aa2ad75bd5ebe4bb0"
+    },
+    {
+      "path": "Reference/Validation/boss-families.json",
+      "utc": "2026-10-20T07:28:02.2073390Z",
+      "checkCount": 25,
+      "sha256": "e6d6340329983491f2f5abc9e50d19389a4ab5ec66a7c1c5f3f67bf8919eb204"
+    },
+    {
+      "path": "Reference/Validation/baked-assets.json",
+      "utc": "2026-10-20T07:28:02.2117790Z",
+      "checkCount": 7,
+      "sha256": "407266cc46ba9010ffd763b5330269940a9c4293271b56df9ed5ba6e88ebc0f2"
+    },
+    {
+      "path": "Reference/Validation/full-journey.json",
+      "utc": "2026-10-20T07:39:24.1832230Z",
+      "checkCount": 11,
+      "sha256": "bc841799b55309dba48899d2550d4da23b4a9f45fc8b3484fdd291ee95385fd3"
+    }
+  ],
+  "files": [
+    {
+      "path": "UnityProject/Assets/Scripts/OriginalUiLayout.cs",
+      "sha256": "9b147f6cfb0de0999ef2be6c61a45640c3fba076f5029210af4ee9fe8a2d7efe"
+    },
+    {
+      "path": "UnityProject/Assets/Scripts/OriginalWorldFeedback.cs",
+      "sha256": "904c9dace967c6a2e19afa713c52ae6ead4bf9d88b07030e822ff65457deee74"
+    },
+    {
+      "path": "UnityProject/Assets/Scripts/OriginalScenePresentation.cs",
+      "sha256": "2fc307de4e640e68a75e2b00da0a7fc9f51548d50538b08fba28362e51eff08f"
+    },
+    {
+      "path": "UnityProject/Assets/Editor/WorldPresentationSetup.cs",
+      "sha256": "49d09ab75db24aa55d1195898d4db51abeff094956a18bd277842e205eff9415"
+    },
+    {
+      "path": "UnityProject/Assets/Editor/EnemyHealthValidation.cs",
+      "sha256": "fb1e92b723d29e94fa91569db1fc88be9e9ea960196e2585677cf906b60f4b21"
+    },
+    {
+      "path": "Tools/validation/check_enemy_health.py",
+      "sha256": "5386e074909ca2f9ea0182dfcf5a77736fe96fc526ca970a939a929ebc9182f5"
+    },
+    {
+      "path": "Reference/Decompiled/sources/com/dobetter/client/Enemy.java",
+      "sha256": "e7003654ae9c6671cb8d48dd7e491fd9affd5947b37f0adf303088c1b5a9ac48"
+    },
+    {
+      "path": "UnityProject/Assets/Resources/OriginalUiLayout.asset",
+      "sha256": "e589e037c27ddfdbeadcde05d2a64acc44b747ee85f9a71351d1c95bb43f6b7a"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-map-covered.png",
+      "sha256": "a183db45fa9ce0f332dfa58c7714c31194ba0768d82d5283725ad1741f0d0736"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-map-above.png",
+      "sha256": "158a62dce3093c2a4374c3c1e02e816a51c6af3954d52abf2ea7900a2e81d25c"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-contact.png",
+      "sha256": "8b91abe9072f4cf84bbab6e68fe6dea6fcfdc88bfe7001cc6f757a6fdd723de5"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-map-above-blank.png",
+      "sha256": "4a60896ebe6f5b07f3b754de7d55b3decd1e2400760948970b1220344b96201f"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-52.png",
+      "sha256": "773e7f39d58e2bc7c316a30821bdb9019e8eb2149dae9a39fa0595d1bf3cbda8"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-500.png",
+      "sha256": "4a0040a1a8d60c6c04cfe83e8b901ba1a6adbad7a759b074dc718f57dd00d949"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-53.png",
+      "sha256": "a95e1121c9b665d06928641a4cf4fa839a40a2c2072e923b594f6498a77a8e8f"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-hideui.png",
+      "sha256": "6376e0651115e9d03393ddd1619ba940d55447168d70db36c7285f2d1256a75c"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-mirror.png",
+      "sha256": "5ad2d6820aec0f39895d57611b4989fe810ec9d1cffd8428bdcc2e70332ec57d"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-blank.png",
+      "sha256": "d59f99523e7688fab055d485cdd7aeedaf5566a4850260d89ee210d1d6e4a355"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-map-contact.png",
+      "sha256": "8493bd723b0cb4d4164cf41046cee1a201b8c9a4d452dd3ed9bd96be4ac4b73f"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-1.png",
+      "sha256": "773e7f39d58e2bc7c316a30821bdb9019e8eb2149dae9a39fa0595d1bf3cbda8"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-0.png",
+      "sha256": "773e7f39d58e2bc7c316a30821bdb9019e8eb2149dae9a39fa0595d1bf3cbda8"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-map-covered-blank.png",
+      "sha256": "0ef2dbb774ebfde10bc804fd2b1d28b00ebe181f52e7080a63066f277c2e9327"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-999.png",
+      "sha256": "dc9bd2f866088e1add9f9a36ddf5319792d49a5ebe69e3038d855c890750e5a2"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-1000.png",
+      "sha256": "b525f6120d394ffa25f137cf747815bfe3ad4f146ec5f271251057c34b90e423"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-capture.json",
+      "sha256": "4f111610bf5cf14dcaefddba144b9931400c45ea12b13cbb5833f1c13ab9a82d"
+    },
+    {
+      "path": "Reference/Validation/enemy-health-map-capture.json",
+      "sha256": "69110dc23532e53fdea21fbcc5734460bfee93fcaa717198d51e7581fcdf48f6"
+    }
+  ],
+  "finalEditorState": {
+    "playing": true,
+    "title": true,
+    "timeScale": 1,
+    "focused": false,
+    "sceneDirty": false,
+    "consoleErrors": 0
+  },
+  "limitations": [
+    "Counts are verification groups, not measured fidelity.",
+    "Original Android Canvas hairline raster endpoints are not yet compared on the original device.",
+    "Full journey uses combat fixtures and does not prove normal difficulty completion.",
+    "Type11 s_36 looping back effect remains missing and is the next source-confirmed feature gap."
+  ],
+  "verificationPolicy": "Select affected scene/module checks by change; use full journey for cross-module story/transition/save/lifecycle changes or final acceptance."
+}

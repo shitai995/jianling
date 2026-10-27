@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "utc": "2026-10-20T16:10:54.264253+00:00",
+  "scope": "原版x93等级重置、独立灵剑sheet1及x64初始化；原334->334e1真实Update、自动存档和读档；吞噬及分段吸收回归",
+  "checks": {
+    "spirit-level.json": 8,
+    "spirit.json": 8,
+    "spirit-absorption.json": 6
+  },
+  "totalChecks": 22,
+  "renderEvidence": "39688个创建/边界/等级重置下实际Renderer拼片引用检查，以及7216个升级/存读档拼片引用检查；均为已有Unity Sprite资产，角色节点容量不增加",
+  "testCorrection": "旧外观断言查images[4]，现查独立sheet1与普通sheet4；新Renderer专项包含收剑可见性规则。旧耐久不减断言同步到已证实的x7C补满语义。",
+  "finalState": {
+    "play": true,
+    "title": true,
+    "scale": 1.0,
+    "scene": "Assets/Scenes/GuJian.unity",
+    "sceneDirty": false,
+    "save": "gujian-save.json",
+    "focused": false,
+    "compiling": false
+  },
+  "console": {
+    "errors": 0,
+    "existingMissingScriptWarnings": 8,
+    "existingMcpWarning": 1
+  },
+  "limitations": [
+    "真实Update剧情以timeScale8加速并自动发送生产确认，未验收实体键鼠/触屏",
+    "GameView截图和Sprite引用不证明原Android设备逐帧、字体或音色一致",
+    "x64已存在剑灵时的替换语义仍待审计；其他指令参数与状态分支仍开放",
+    "全部Boss正常实战、正常难度全程与其他可选路径仍待验收"
+  ],
+  "sha256": {
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "a13ef3935a156656faa2b8ff807523d2471ee1ac13ef738e7486806d8dcc67f4",
+    "UnityProject/Assets/Scripts/OriginalSpirit.cs": "97d01d91d15fe7fe040704718a74c0f933c4cd5f20332c3edcb6806339358046",
+    "UnityProject/Assets/Scripts/OriginalActor.cs": "c0a3b02423f48f7fb015b1e3cf30ed9d1f2f7f41e19fc878e973df7a156fd4bf",
+    "UnityProject/Assets/Scripts/OriginalGameMenus.cs": "88bad2d6604af8a0bf987330eac6e953cb52b0f324a21247768d4b375b664a6c",
+    "UnityProject/Assets/Editor/SpiritLevelValidation.cs": "b8bbff7f918ed0c25576dfb2ba5f212dd0a165d64c01f8e29c44e61ee8c466a1",
+    "UnityProject/Assets/Editor/SpiritValidation.cs": "e1a74464715501f55b5388d1808f166efc97acebea21442719cb33e3399c0207",
+    "UnityProject/Assets/Editor/SpiritAbsorptionValidation.cs": "e25b699ac073ee2bc558e8356081ada4563f12a677aeb5c33fe3a94a09e71a78",
+    "Reference/Decompiled/sources/com/dobetter/client/Famulus.java": "d04160a52b96b6cf111cfd613c2aabc0ecee12582ec52010ac2b115cf8521db8",
+    "Reference/Decompiled/sources/com/dobetter/client/GameCanvas.java": "d2a3f5e8085b76f65b1fb41ede376965e5b5375408998c490fb846329bcfebf4",
+    "Reference/Validation/spirit-level.json": "f3ee3d72b830b76fedca4bd657aa736153b85e93cd353e05dadef9217c49821e",
+    "Reference/Validation/spirit.json": "66155ca630e4d82e01391db107181083e53e687bb8c10f4d3d57b878858e69bd",
+    "Reference/Validation/spirit-absorption.json": "e99a3904a945e9aa2dbbfc638ea349d530483d9f8e554be1a7597a19d8164b5d",
+    "Reference/Validation/spirit-level-final-state.json": "0d915993ce2701916beeaeac85e1ffd6d70dc37c353975c68aea4817bd8addfa",
+    "Reference/Validation/spirit-swords-contact.png": "3a2c8f55ba1bbae96561f8a0957983617edd67eff772d2358050325fcf5b3786",
+    "Reference/Validation/spirit-reset-story.png": "43f2ae54514eafd3c75c827712bf53bf6d6162c32259f81e073a02617993910f",
+    "Reference/Validation/spirit-reset-result.png": "f292456226d513a4ce24d499773ece2277b9ed58928fc48724e2429ecdf14f6d",
+    "Reference/Validation/spirit-sword-1.png": "5ddfe378459bb685e636053ece0e0a4ca6b21f7787c494e5f574f1b4404c7863",
+    "Reference/Validation/spirit-sword-11.png": "49bbc9a6a79939c320f13b0bfca645f5428d3035a9dad3973f68d0f6b673af9a",
+    "Reference/Validation/spirit-sword-21.png": "e345bbb1f4ab8895ca3fbdba1681176588795ddac7b858806064010656d7febe",
+    "Reference/Validation/spirit-sword-31.png": "f0f214b6e02d7197e2d9b7fc3c153906fef77ee178ef7634f527dd22da45113f"
+  }
+}

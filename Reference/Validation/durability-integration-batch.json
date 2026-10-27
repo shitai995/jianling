@@ -1,0 +1,282 @@
+{
+  "name": "耐久、修理与合体映射架构优化",
+  "utc": "2026-10-22T02:09:09.652144+00:00",
+  "passed": true,
+  "reportCount": 19,
+  "reports": [
+    {
+      "path": "Reference/Validation/durability-modules.json",
+      "passed": true,
+      "checkGroups": 6,
+      "utc": "2026-10-22T02:01:17.4058070Z",
+      "sha256": "ef32ea87046ccc60c0bcf5dc1daea82a5fc737ef76023a3f11aa8b090b8043dc"
+    },
+    {
+      "path": "Reference/Validation/equipment-modules.json",
+      "passed": true,
+      "checkGroups": 8,
+      "utc": "2026-10-22T02:01:17.4377460Z",
+      "sha256": "706c9484be0eb95355ede42020e60337d751d7113a0d25b0d2c86224689285f7"
+    },
+    {
+      "path": "Reference/Validation/durability-module-integration.json",
+      "passed": true,
+      "checkGroups": 3,
+      "utc": "2026-10-22T02:01:32.2444750Z",
+      "sha256": "19d2aaf605b5eb015b1e215ecd0cab1c3e52ab20d183b89822616a249438caab"
+    },
+    {
+      "path": "Reference/Validation/sword-break.json",
+      "passed": true,
+      "checkGroups": 10,
+      "utc": "2026-10-22T02:01:45.6432250Z",
+      "sha256": "b1305373b5dbb4ad8b82d2f7dd96a040a1d511ee7b2eb9c49ed2e57834dde2fd"
+    },
+    {
+      "path": "Reference/Validation/combo-break.json",
+      "passed": true,
+      "checkGroups": 11,
+      "utc": "2026-10-22T02:01:46.0781600Z",
+      "sha256": "3631956629e5d9274512abfa6fc95796d5257189a97192b7c9181d12b8968af5"
+    },
+    {
+      "path": "Reference/Validation/attack-skills.json",
+      "passed": true,
+      "checkGroups": 13,
+      "utc": "2026-10-22T02:01:48.1298990Z",
+      "sha256": "a22a132227410f2b3802f0647b9980a58f47e1bb6624eea34fc1b569f504473e"
+    },
+    {
+      "path": "Reference/Validation/support-skills.json",
+      "passed": true,
+      "checkGroups": 9,
+      "utc": "2026-10-22T02:01:48.5288760Z",
+      "sha256": "5ac6f30e07b16629361f9ca00f06f3531096d154960e53b6616d409310f394a0"
+    },
+    {
+      "path": "Reference/Validation/spirit.json",
+      "passed": true,
+      "checkGroups": 8,
+      "utc": "2026-10-22T02:02:03.2165560Z",
+      "sha256": "3a963f415fd6cbe14db0a8b7dcc6f39c6f0b68e2739d984a90e152e9783d2960"
+    },
+    {
+      "path": "Reference/Validation/spirit-absorption.json",
+      "passed": true,
+      "checkGroups": 6,
+      "utc": "2026-10-22T02:02:03.2203430Z",
+      "sha256": "42cd6675f61af8c1ca1d896925066d7ba80a38317d940904c8ccb438294b7b90"
+    },
+    {
+      "path": "Reference/Validation/items-shop.json",
+      "passed": true,
+      "checkGroups": 11,
+      "utc": "2026-10-22T02:02:03.6998990Z",
+      "sha256": "c43bf848bb8accfb66f7225d2f79670851ea4317f50addfe5597577586256bec"
+    },
+    {
+      "path": "Reference/Validation/system-menu.json",
+      "passed": true,
+      "checkGroups": 25,
+      "utc": "2026-10-22T02:02:08.2391930Z",
+      "sha256": "68d5ec0dd7cc6840f2e4e506450d3a9a2e6589233df58e925681ab0c625e312e"
+    },
+    {
+      "path": "Reference/Validation/opcode-7c.json",
+      "passed": true,
+      "checkGroups": 6,
+      "utc": "2026-10-22T02:02:08.2425590Z",
+      "sha256": "2822866702dbe79ef689c7d16b3ce016cbc71ac0f460b0181829a67068264ddc"
+    },
+    {
+      "path": "Reference/Validation/equipment-module-integration.json",
+      "passed": true,
+      "checkGroups": 3,
+      "utc": "2026-10-22T02:02:08.3022100Z",
+      "sha256": "39c523bdc5bc0a645dc2c507f82312000d742eb92e37253ceef0eb37d3551929"
+    },
+    {
+      "path": "Reference/Validation/sword-break-live.json",
+      "passed": true,
+      "checkGroups": 3,
+      "utc": "2026-10-22T02:02:44.1404560Z",
+      "sha256": "5d984a4bdbe399eb8e8d100d2f6d1897957c3ff60275019497f2e953cd2cca76"
+    },
+    {
+      "path": "Reference/Validation/spirit-level.json",
+      "passed": true,
+      "checkGroups": 8,
+      "utc": "2026-10-22T02:03:27.6056390Z",
+      "sha256": "47530c6f81c28addc5fdf6baa26bce73fd1245670708baaaa1df201315de9b65"
+    },
+    {
+      "path": "Reference/Validation/spirit-menu.json",
+      "passed": true,
+      "checkGroups": 16,
+      "utc": "2026-10-22T02:04:09.3191410Z",
+      "sha256": "0e886b5eecb40f64a2eceb5e4ec04e7e5b7d51aaedfec54ee113e4be3271e5f1"
+    },
+    {
+      "path": "Reference/Validation/weapon-visibility.json",
+      "passed": true,
+      "checkGroups": 6,
+      "utc": "2026-10-22T02:04:09.4123390Z",
+      "sha256": "b63155ab43d3b32428ce750625d5f531461a13ed20a30861a18bad2a2d5bcaa4"
+    },
+    {
+      "path": "Reference/Validation/weapon-preview.json",
+      "passed": true,
+      "checkGroups": 6,
+      "utc": "2026-10-22T02:04:09.5985890Z",
+      "sha256": "fa2e88f620a22f887db12c034b72a0d9391bfc73c5430729430673715d686167"
+    },
+    {
+      "path": "Reference/Validation/role-skill-preview.json",
+      "passed": true,
+      "checkGroups": 7,
+      "utc": "2026-10-22T02:04:13.0890640Z",
+      "sha256": "a7fad928afde3a8c46a1371611e222c94286ff2c9c65a5106f8156862c6eca44"
+    }
+  ],
+  "totalCheckGroups": 165,
+  "backup": "Workbench/ArchitectureBackups/durability-20261022-095815",
+  "scope": [
+    "WeaponDurability owns spirit durability, integration mode and cached repair quote",
+    "Current durability directly maps the selected ordinary equipment instance or spirit; no active-value copy",
+    "Combat consumption, combo, item refill, break and original VM repair commands use the same state",
+    "Load restores equipment and integration mode before active durability to preserve ordinary wear"
+  ],
+  "architecture": {
+    "runtimeFiles": 58,
+    "partialGameFiles": 38,
+    "partialGameLines": 7172,
+    "ordinaryDurabilityOwner": "EquipmentInstance.durability",
+    "spiritAndIntegrationOwner": "WeaponDurability",
+    "hostResponsibilities": [
+      "attributes",
+      "money",
+      "skills",
+      "visuals and action timing",
+      "cross-system coordination"
+    ],
+    "remainingWritablePayload": true
+  },
+  "saveCompatibility": {
+    "version": 3,
+    "fields": [
+      "durability",
+      "spiritDurability",
+      "integrated",
+      "equipment",
+      "equippedIndex"
+    ],
+    "integratedRoundTrip": {
+      "ordinaryDurability": 37,
+      "spiritDurability": 211,
+      "releasedOrdinaryDurability": 37
+    }
+  },
+  "preservedRules": [
+    "Integration requires spirit durability strictly greater than maximum/10 and spends that amount once on entry",
+    "Infinite durability allows zero-durability integration without fee",
+    "Repair uses cached x89 quote at x87 confirmation, accepts exact balance and repairs ordinary weapons only",
+    "Initial zero-cost x87 without x89 remains compatible",
+    "Host retains original attribute refresh, break pause and presentation timing"
+  ],
+  "playerData": [
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-save.json",
+      "beforeSha256": "0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5",
+      "afterSha256": "0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-sms-global.json",
+      "beforeSha256": "a4bf0cc846b6fb6f345f373113aa344b688dd8f128c3587183ca8e098d4813da",
+      "afterSha256": "a4bf0cc846b6fb6f345f373113aa344b688dd8f128c3587183ca8e098d4813da",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-sms-global.json.bak",
+      "beforeSha256": "2901ee85c18af000c5bac49d5a98b86b250e114cbcaf11b2c6d6e3c41d3e140c",
+      "afterSha256": "2901ee85c18af000c5bac49d5a98b86b250e114cbcaf11b2c6d6e3c41d3e140c",
+      "unchanged": true
+    }
+  ],
+  "changedSources": [
+    "UnityProject/Assets/Scripts/GuJianGame.cs",
+    "UnityProject/Assets/Scripts/OriginalCombat.cs",
+    "UnityProject/Assets/Scripts/OriginalCombo.cs",
+    "UnityProject/Assets/Scripts/OriginalEquipment.cs",
+    "UnityProject/Assets/Scripts/OriginalGameMenus.cs",
+    "UnityProject/Assets/Scripts/OriginalItems.cs",
+    "UnityProject/Assets/Scripts/OriginalSpirit.cs",
+    "UnityProject/Assets/Scripts/OriginalSwordBreak.cs",
+    "UnityProject/Assets/Scripts/OriginalSystemMenus.cs",
+    "UnityProject/Assets/Scripts/WeaponDurability.cs",
+    "UnityProject/Assets/Editor/AttackSkillValidation.cs",
+    "UnityProject/Assets/Editor/ComboValidation.cs",
+    "UnityProject/Assets/Editor/DurabilityModuleValidation.cs",
+    "UnityProject/Assets/Editor/ItemShopValidation.cs",
+    "UnityProject/Assets/Editor/ReconstructionValidation.cs",
+    "UnityProject/Assets/Editor/RoleSkillPreviewValidation.cs",
+    "UnityProject/Assets/Editor/SpiritLevelValidation.cs",
+    "UnityProject/Assets/Editor/SpiritValidation.cs",
+    "UnityProject/Assets/Editor/SupportSkillValidation.cs",
+    "UnityProject/Assets/Editor/SwordBreakValidation.cs",
+    "UnityProject/Assets/Editor/WeaponPreviewValidation.cs",
+    "UnityProject/Assets/Editor/WeaponVisibilityValidation.cs"
+  ],
+  "sourceSha256": {
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "3205f0bc817ec7ff7eb3166da38b1579a79448be7cf0f6923cbf23e9407f7160",
+    "UnityProject/Assets/Scripts/OriginalCombat.cs": "1961184786eb9684e97bf8732a080374b8e9ee63a17eec311d5b86977d1d96e3",
+    "UnityProject/Assets/Scripts/OriginalCombo.cs": "96c2e8fe43aa15f84baa82572aace283d621af45ad708ecdad14892aa7f882f4",
+    "UnityProject/Assets/Scripts/OriginalEquipment.cs": "aa5d31d0c5e772813f743e79decc253f46a517500fa10ad855c7edb90479431c",
+    "UnityProject/Assets/Scripts/OriginalGameMenus.cs": "85580094bf7f6b9663fed423e0491e6c9c863d74f26c907edef915eb65a798f7",
+    "UnityProject/Assets/Scripts/OriginalItems.cs": "a83b99dc9e7a010eb984d4907c2228239cc51434363b7c52f931dff6a2fb2e0f",
+    "UnityProject/Assets/Scripts/OriginalSpirit.cs": "1439b28d95f04ea3da93b7d23e76d4df5dc1cb4c220d61943f260f5ac6f9f7d2",
+    "UnityProject/Assets/Scripts/OriginalSwordBreak.cs": "e9b4c50a66c09ff0330eacdab79e82b62c62d85cffb9232aa818a02c98b87345",
+    "UnityProject/Assets/Scripts/OriginalSystemMenus.cs": "f1f0cc6b4fb87422e7e5543b96d7d3947702d923e9f39a882d4492418a5e1cf2",
+    "UnityProject/Assets/Scripts/WeaponDurability.cs": "fa88fd9ff3eb14ea92f5693d98820ce7a9b0ef58f3ed9432602dc63e95132bcd",
+    "UnityProject/Assets/Editor/AttackSkillValidation.cs": "f0db1c09dde023ea7aa8e9c22bad580d98cbac50cd4d3539d391355e35f2604c",
+    "UnityProject/Assets/Editor/ComboValidation.cs": "bcc82bba2fc6292f0d69109d3d5b55eade0c191268e6f464382b4d22f83e5edf",
+    "UnityProject/Assets/Editor/DurabilityModuleValidation.cs": "f5e4faa4bcf42fb1ff422795c3d3aac2d710eabe79d063e7cb2be2b99060f090",
+    "UnityProject/Assets/Editor/ItemShopValidation.cs": "d947609befd3ab08a8ce9524f0dcd719b40b80256c9c10a4423d2ed94c061eca",
+    "UnityProject/Assets/Editor/ReconstructionValidation.cs": "f5401230cb1c19d71d125791020b16729ca975694b5ec0f82a4d819787dc8c2f",
+    "UnityProject/Assets/Editor/RoleSkillPreviewValidation.cs": "eaed25179de6c6051cfce410719b0c33c10f77ba7d221236fc87e206f062adaa",
+    "UnityProject/Assets/Editor/SpiritLevelValidation.cs": "a4cc0a921762dcdb8f10cbf613b8d77564df903c6a33c6d613556404774af1ed",
+    "UnityProject/Assets/Editor/SpiritValidation.cs": "0cb07e456fe8260903f30d496b6dce98a3d9e218484aacce080317560c25bb14",
+    "UnityProject/Assets/Editor/SupportSkillValidation.cs": "52c1a63304f9c651867b8415a82f5f156a807812008bc26147b61cf5e08bbf2d",
+    "UnityProject/Assets/Editor/SwordBreakValidation.cs": "1661702cf11ac0a5dd4018bf205fd8fbd341205edd0b3e72debf9bc0d44797ba",
+    "UnityProject/Assets/Editor/WeaponPreviewValidation.cs": "1afd72ebc5d46d2ffaa44a1431796d186981bd87ae214a64e69bb425fb3dad7d",
+    "UnityProject/Assets/Editor/WeaponVisibilityValidation.cs": "220efc1a33239f2997b19efed8b96b6e9ead109896dcf904d68a31520ebdd088"
+  },
+  "documentSha256": {
+    "README.md": "df42c6401d34bc52374b9943535a5263ff096a675d006d5165d0dc0d69cd2c6e",
+    "Reference/工程优化与架构评估.md": "abddaad1560cc2b477a5040e56a2717c2acb55f9c3bbe6db7742cad64c7e79fc",
+    "Reference/开发使用说明.md": "2c0e6d35f16f972bff86c3eb672d0c147197191755a824d893a5b6e17aa2123a",
+    "Reference/还原进度.md": "a7952b76cf39ae3116a7dfb5ebb23d28eaa7d064b6190ef37c7a6174516a2666"
+  },
+  "finalEditor": {
+    "project": "/Users/mac/Documents/ChatGPT/古剑/UnityProject",
+    "instance": "UnityProject@df84d794fc72e697",
+    "scene": "Assets/Scenes/GuJian.unity",
+    "playing": true,
+    "atTitle": true,
+    "timeScale": 1,
+    "compiling": false,
+    "sceneDirty": false,
+    "saveFileName": "gujian-save.json",
+    "lastError": null,
+    "vmError": null,
+    "consoleErrors": 0
+  },
+  "limits": [
+    "Controlled fixtures and production entry points; no full normal-difficulty replay in this batch",
+    "No new physical input, frame-by-frame visual parity or listening acceptance",
+    "Ordinary instance payload remains writable; attributes, skills, damage and money still need clearer boundaries",
+    "No build or external Player started; no runtime fixed visual resources or third-party dependencies added"
+  ],
+  "nextBatch": "Clarify attribute calculation ownership, then skill and damage rules",
+  "restorationPercentageChanged": false
+}

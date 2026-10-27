@@ -1,0 +1,18 @@
+{
+  "instructions": [
+    "x27(\"弟子\",\"在我这里可以查看武器图鉴和技能说明哦。\")",
+    "option[2]:",
+    "option[0]=\"武器图鉴\"",
+    "option[1]=\"技能说明\"",
+    "x2D(\"要查看武器还是技能？\",option,true)",
+    "if(x2E()=-1)",
+    "ret",
+    "endif",
+    "if(x2E()=0)",
+    "x20(\"weaponlist.s\")",
+    "endif",
+    "if(x2E()=1)",
+    "x20(\"skilllist.s\")",
+    "endif"
+  ]
+}

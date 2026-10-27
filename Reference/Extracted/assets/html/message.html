@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>好友消息_QQ游戏</title>
+<link rel="stylesheet" href="css/g.css" type="text/css">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="YES" />
+
+
+
+</head>
+<body>
+
+
+
+
+<script type="text/javascript" src='comm_js/util.js'></script>
+<script type="text/javascript" src='comm_js/game-util.js'></script>
+<script type="text/javascript">
+p_util.loginIfNotHasSid();
+</script>
+
+
+  <section>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+            <li><a href="messages-list.html" class="on">好友消息</a></li>
+          <li><a href="notice-friend.html">好友请求</a></li>
+        </ul>
+      </nav>
+      
+      <dl class="message">
+          <script type='text/tmpl' id='tmpl-notice-list'>
+              <a href="profile.html?sid=<#= sid #>&uin=<#= fromUin #>" class="icon-shine"><img src="<#= p_util.getAvatarUrl(fromAvtar)#>" alt="头像" width="44" height="44"></a>
+              <p class="uin"><a href="profile.html?sid=<#= sid #>&uin=<#= fromUin #>"><#=fromNickName#></a></p>
+              <p><#=content#></p>
+              <p class="time"><time><#=msgDate#></time></p>
+              <p class="message-from"><#=fromGame#></p>
+              <p id='del-msg'><a href="#">删除</a></p>
+		  </script>
+		  <dt>
+              <a href="#" class="icon-shine"><img src="img/tmp/head.jpg" alt="叉叉游戏" width="44" height="44"></a>
+              <p class="uin"><a href="#"></a></p>
+              <p>loading...</p>
+              <p class="time"><time>11-02-17 11：20</time></p>
+              <p class="message-from"></p>
+              <p><a href="#">删除</a></p>
+	        </dt>
+            <dd>
+            	<form name="dialog"  onsubmit="return false;">
+                	<textarea id='content'>在这里输入回复内容，字数在250个以内</textarea>
+                    <input type="button" id='send-msg' class="btn-getmore" value="回复">
+                </form>
+            </dd>
+        
+      </dl>
+      
+      </section>
+      
+      
+         
+  <!-- ^^^ 公用js -->
+  <script type="text/javascript" src='comm_js/jquery-1.5.1.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingCircular.js'></script>
+  <script type="text/javascript" src='comm_js/js-tmpl-min.js'></script>
+ <script type="text/javascript" src='comm_js/pkg.js'></script>
+  <script type="text/javascript" src='comm_js/update.js'></script>
+  
+  
+  <script type="text/javascript" src='js/message.js'></script>
+  
+  
+  
+  
+      
+</body>
+</html>

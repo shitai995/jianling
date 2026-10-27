@@ -1,0 +1,226 @@
+{
+  "passed": true,
+  "utc": "2026-10-20T01:46:45.491803+00:00",
+  "milestone": "95%工作量估算",
+  "estimate": {
+    "completed": 95,
+    "total": 100,
+    "meaning": "沿用原总权重的工作量粗估，不是画面相似度、正常难度通关率或自动测试覆盖率。",
+    "categories": [
+      {
+        "name": "资源与数据恢复",
+        "completed": 15,
+        "weight": 15
+      },
+      {
+        "name": "可编辑工程与固定资产",
+        "completed": 15,
+        "weight": 15
+      },
+      {
+        "name": "脚本、剧情和任务",
+        "completed": 24,
+        "weight": 25
+      },
+      {
+        "name": "战斗与AI",
+        "completed": 18,
+        "weight": 20
+      },
+      {
+        "name": "成长、装备、交易和存档",
+        "completed": 14,
+        "weight": 15
+      },
+      {
+        "name": "界面、操作与平台交付",
+        "completed": 9,
+        "weight": 10
+      }
+    ]
+  },
+  "report_count": 18,
+  "check_count": 181,
+  "reports": [
+    {
+      "path": "Reference/Validation/spirit.json",
+      "passed": true,
+      "utc": "2026-10-19T17:22:52.3996800Z",
+      "checks": 8,
+      "sha256": "9adc58511e16c96ade2aa037a9593d3699472abd5ddb26d14a9ceaf3350ed3b1"
+    },
+    {
+      "path": "Reference/Validation/items-shop.json",
+      "passed": true,
+      "utc": "2026-10-19T17:22:52.6492460Z",
+      "checks": 10,
+      "sha256": "1daaf06e3c12a64bbada0cc6ba3ce1d23294e380dfb8822c6f7fa6bc2607d189"
+    },
+    {
+      "path": "Reference/Validation/attack-skills.json",
+      "passed": true,
+      "utc": "2026-10-19T17:22:54.3107140Z",
+      "checks": 13,
+      "sha256": "86a87c000e37bafc9938f01d5ceae603443c4cb59c310f15f2bcdba18d5ad526"
+    },
+    {
+      "path": "Reference/Validation/support-skills.json",
+      "passed": true,
+      "utc": "2026-10-19T17:22:54.6183870Z",
+      "checks": 9,
+      "sha256": "abe9c0cf3184ac4e2869b0837c704ed4c06d7798cac32f65dcc95b64492654a2"
+    },
+    {
+      "path": "Reference/Validation/combo-break.json",
+      "passed": true,
+      "utc": "2026-10-19T17:22:55.1060620Z",
+      "checks": 11,
+      "sha256": "3f38917d9831e87b284054c80fe67bfadf0f8b6ce3ed8c44c2ad0ad0f5de3e29"
+    },
+    {
+      "path": "Reference/Validation/control-presentation.json",
+      "passed": true,
+      "utc": "2026-10-19T17:22:55.6864300Z",
+      "checks": 8,
+      "sha256": "16b9a1b0f9b81f401a0aee8ba8db0d0fd46ab65a7341ac1f870166b9449e4234"
+    },
+    {
+      "path": "Reference/Validation/weapon-preview.json",
+      "passed": true,
+      "utc": "2026-10-19T17:31:22.7631350Z",
+      "checks": 6,
+      "sha256": "bd1eaedcb6f61831ac6cfff42080f243c420a4866fbcf6481a0fb1ae44163dd9"
+    },
+    {
+      "path": "Reference/Validation/baked-assets.json",
+      "passed": true,
+      "utc": "2026-10-19T17:22:55.8844290Z",
+      "checks": 7,
+      "sha256": "47745986d875edecdfb895095895574a4ebf54c1c27546d06acdda4f752beda2"
+    },
+    {
+      "path": "Reference/Validation/progression.json",
+      "passed": true,
+      "utc": "2026-10-19T17:23:57.8074780Z",
+      "checks": 10,
+      "sha256": "912925cca0354e896ded369e49ad7846428598b8e8a47fee021ab17a750d73e7"
+    },
+    {
+      "path": "Reference/Validation/boss-families.json",
+      "passed": true,
+      "utc": "2026-10-19T17:25:04.1062600Z",
+      "checks": 25,
+      "sha256": "bd190a1ac9643cd1c9ca8931dd0fb262f5223b6754a528b92ed2876c66f23b37"
+    },
+    {
+      "path": "Reference/Validation/missions.json",
+      "passed": true,
+      "utc": "2026-10-19T17:25:05.9164770Z",
+      "checks": 21,
+      "sha256": "066fa39b987e12e743fa898c3f31692b5106ed5821effe5767463179ac90e915"
+    },
+    {
+      "path": "Reference/Validation/area-travel.json",
+      "passed": true,
+      "utc": "2026-10-19T17:25:06.1056870Z",
+      "checks": 5,
+      "sha256": "a83d74ffb7fe020801c8a5e123bf43ae5b15dd6f45f8d9e12ff45c385751973a"
+    },
+    {
+      "path": "Reference/Validation/weapon-visibility.json",
+      "passed": true,
+      "utc": "2026-10-19T17:25:06.2380900Z",
+      "checks": 6,
+      "sha256": "eb9f9de7d4cc1c7adcffe305d6113366f43e9f954e19b5e2d6fab33567d5db30"
+    },
+    {
+      "path": "Reference/Validation/editable-workflow.json",
+      "passed": true,
+      "utc": "2026-10-19T17:31:19.9097640Z",
+      "checks": 5,
+      "sha256": "0d16ef0df5b9465880b8c1be8e23f6f80dedda072405a9e0fc6d0c3bbc7c8c62"
+    },
+    {
+      "path": "Reference/Validation/live-combat.json",
+      "passed": true,
+      "utc": "2026-10-19T17:23:26.9739780Z",
+      "checks": 6,
+      "sha256": "6d6c1067aeb2e7d3b99c09379fa1e521148178cbc50091a3008b444f4140a696"
+    },
+    {
+      "path": "Reference/Validation/full-journey.json",
+      "passed": true,
+      "utc": "2026-10-19T17:28:02.3779980Z",
+      "checks": 11,
+      "sha256": "efa30b229557271ae64dc587b39c8941bb6832b172bec4f3bb4387c767531eac"
+    },
+    {
+      "path": "Reference/Validation/player-headless-smoke.json",
+      "passed": true,
+      "utc": "2026-10-19T17:30:56.1455900Z",
+      "checks": 10,
+      "sha256": "7f90a5a24c55cff4c3964281adc857d42a267c585fcca4f0b3385b191040dd90"
+    },
+    {
+      "path": "Reference/Validation/player-visible-smoke.json",
+      "passed": true,
+      "utc": "2026-10-20T01:44:49.5418000Z",
+      "checks": 10,
+      "sha256": "c40cc9c1f68b183e0f85df41c797db8e3d24bdc76703bbdbe91a0835ca2aa754"
+    }
+  ],
+  "source_manifest": "Reference/Validation/milestone-95-sources.json",
+  "source_aggregate_sha256": "c912e3a480978a6b4416ae54d0a8e5944ca82d127c4fd1bfd900df3dfd955605",
+  "player_assemblies": [
+    {
+      "path": "UnityProject/Builds/macOS/古剑魂梦.app/Contents/Resources/Data/Managed/Assembly-CSharp.dll",
+      "sha256": "63dbbdb1618d1b1f9454d7c92864da9afd468bade2dcdce93caa60cf3b9ec31e"
+    }
+  ],
+  "build": {
+    "result": "succeeded",
+    "unity": "2022.3.62f3",
+    "platform": "StandaloneOSX",
+    "development": true,
+    "output_path": "UnityProject/Builds/macOS/古剑魂梦.app",
+    "duration_seconds": 16.248419,
+    "total_size_mb": 452.39,
+    "errors": 0,
+    "warnings": 0,
+    "started_at": "2026-10-19T17:29:31.865412Z",
+    "completed_at": "2026-10-19T17:29:48.113831Z"
+  },
+  "headless_player_exit_code": 0,
+  "visual_checks": [
+    "实际查看商店、试穿、剑灵吸收状态及菜单总览截图；吸收截图为延长展示时长的视觉fixture",
+    "固定UI引用与35组原动作／8张图集、11个触屏区域已持久保存",
+    "解锁后通过CUA实际查看新版独立应用标题与剑冢入口游戏画面"
+  ],
+  "validation_scope": {
+    "full_journey": "同一次新游戏至原endding和标题，中途真实Save/Load；主线后续event未直接写入，后续剧情未直接入队。任务靶子锁AI且hp=1、Boss生产Damage/死亡/特血回调、主角护血、NPC/出口位置fixture。",
+    "live_combat": "Lv21雷切+9、Lv19敌人，20份恢复/修理药及11级剑灵预置；AI开启，不改战斗血量、不直接Damage、不护血。201/207/213/219击败，234/238限时交战而未击败。",
+    "source_timing": "完整主线和大部分专项在最终三个GUI小修前通过；小修仅为列表宽度、试穿左确定按钮和吸收表情动作28，之后重跑编辑/菜单资源与试穿专项，并在最终构建中通过独立Player10项。",
+    "visible_player": "解锁后新版OSXPlayer正常Metal窗口运行，Apple M4图形设备；52页对话、10项自动流程检查通过并正常退出。实际看到了标题、地图角色和HUD。自动检查调用生产接口，不是OS鼠标端到端测试；CUA标题点击未观察到推进，原因未定位，手动输入仍需单独复核。"
+  },
+  "remaining": [
+    "全部Boss正常难度击败及全程平衡、可选挑战/训练连续回归",
+    "原版逐帧视觉/音效/特效对照、剑灵分段经验与全部表情分支",
+    "Android Build Support缺失，尚无Android包与真机输入/字体/性能验收",
+    "正常窗口10项自动流程已通过；CUA标题点击未观察到推进，OS鼠标输入需单独复核"
+  ],
+  "final_editor_state": {
+    "playing": false,
+    "scene": "Assets/Scenes/GuJian.unity",
+    "scene_dirty": false,
+    "database_dirty": false,
+    "catalog_dirty": false,
+    "project_console_errors": 0
+  },
+  "artifacts": {
+    "project": "UnityProject",
+    "mac_app": "UnityProject/Builds/macOS/古剑魂梦.app",
+    "guide": "Reference/开发使用说明.md",
+    "progress": "Reference/还原进度.md",
+    "preview": "Reference/Validation/native-menus-overview.jpg"
+  }
+}

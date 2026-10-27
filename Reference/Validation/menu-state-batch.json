@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "utc": "2026-10-20T16:28:33.891393+00:00",
+  "scope": "菜单状态处理、无剑灵跳页、物品弹窗、交易上下数量循环与左右选择、切页首次绘制焦点与实际GameView滚动；既有道具/交易/存读档回归",
+  "reports": {
+    "menu-state.json": 14,
+    "items-shop.json": 11
+  },
+  "totalChecks": 25,
+  "inputEvidence": "原键码直接进入与键盘共用的生产HandleOriginalMenuKey；抽象PressControl显式映射back5到原10；非实体键鼠/触屏",
+  "originalRules": {
+    "itemPopup": "Left固定0、Right固定1；OK4/软9确认；软10取消",
+    "tradePopup": "Up减少、Down增加且首尾循环；Left/Right切换确认/取消；购买17/18、出售19/20",
+    "missingSpirit": "左右切页跳过原菜单index3，对应Unity page6"
+  },
+  "finalState": {
+    "play": true,
+    "title": true,
+    "scale": 1.0,
+    "scene": "Assets/Scenes/GuJian.unity",
+    "sceneDirty": false,
+    "save": "gujian-save.json",
+    "formalSaveSha256": "0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5",
+    "focused": false,
+    "compiling": false
+  },
+  "console": {
+    "errors": 0,
+    "existingMissingScriptWarnings": 8,
+    "existingMcpWarning": 1
+  },
+  "remaining": [
+    "当前Mac锁屏，未进行实体键鼠/触屏验收",
+    "剑灵页原二阶段候选列表与继承提示/软9保留、软10继承规则仍不同",
+    "系统页原6项菜单及独立设置/存档/帮助入口尚未完整还原，当前为8项简化菜单",
+    "角色页原技能预览键18尚待移植",
+    "交易出售按原独立99堆叠、按住上下连续调量、数量箭头/原金额图集及其他文字布局仍待恢复",
+    "其他脚本分支、Boss正常实战、正常难度全通、字体和音频继续开放"
+  ],
+  "sha256": {
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "59d53ee8db4263e1f1b0d32f8b21125064c27e7ebc1a3dad5ffe03d30e84a64f",
+    "UnityProject/Assets/Scripts/OriginalGameMenus.cs": "4356aba5ce4b1e1dcea6fe224c90712ef277011d657613f7e0f4388d95ab47c5",
+    "UnityProject/Assets/Scripts/OriginalTouchControls.cs": "291f6cca7e7bcc2c9b010ea1f04b36e5750a3096b9a5809d9c9acdeb9613be24",
+    "UnityProject/Assets/Scripts/OriginalShop.cs": "79ff697356d8d6849d932210bae8885b30461f772d361961d6c6575e7cd3e99d",
+    "UnityProject/Assets/Scripts/OriginalAtlasMenus.cs": "b47ca31c70dd90e51b550494feb0eb1f85d0dfa8868d337ebe2c27cfb9ed1be2",
+    "UnityProject/Assets/Editor/MenuStateValidation.cs": "49eab738f45eb279bfee200e916cd052cc6863be5bd725f1c03f3f6645218c4e",
+    "UnityProject/Assets/Editor/ItemShopValidation.cs": "98d962ac1fec4f8ebc81d05d6dd820a3e9dd3e1544a7c81f13bc428c6f6938d6",
+    "Reference/Decompiled/sources/com/dobetter/client/GameCanvas.java": "d2a3f5e8085b76f65b1fb41ede376965e5b5375408998c490fb846329bcfebf4",
+    "Reference/Validation/menu-state.json": "3e7f33c3fc4f3d08a01b5fcdcb879039d5b07fe6a1ce4e08f1bcfa5b6ac3b532",
+    "Reference/Validation/items-shop.json": "79d96d29d8176cb93b56a74f26ce255eab7770051aa1e72009fcd2a6f223d94d",
+    "Reference/Validation/menu-item-use.png": "ce03330f7b50b9fc8677ee3beb361cb5a6f91bd44d704f68b6412b78d3c9f60a",
+    "Reference/Validation/menu-item-discard.png": "0b8720480537037e5a1baa898f9b2e3dde208879c3cdd3f8e09dcf4032e38f4c",
+    "Reference/Validation/menu-equipment-last.png": "278c232a3fd98bf715e42962c2601574cc527ed21066e5d0ca702fe285cf33c1",
+    "Reference/Validation/menu-equipment-first.png": "9cfb4f390cd9b7c44ed8d7955dd8c7eae5bbdf455781fee1e8e7198b36e4b3c7",
+    "Reference/Validation/menu-trade-sell-confirm.png": "5b804acf0c7326fa1e72a3c92eae14bd90451e4330012e8f3e9ca6836d86037c",
+    "Reference/Validation/menu-trade-weapon-cancel.png": "9eced8201e9d1a6e779b09ef12611c51756a7c2149c4e1f34a7d4a00593402ae",
+    "Reference/Validation/menu-trade-buy-confirm.png": "68c9ca90a9307b491fbb5f2866c4b3e79d5a5bd4fd97ca71df746e5e290da5f4",
+    "Reference/Validation/menu-trade-weapon-confirm.png": "747c727b6f978e24f25556e040eb9ed399682d8b8a8739ae73e9b1d2aa4b632b",
+    "Reference/Validation/menu-trade-contact.png": "942ecc535c21f19e55efca3c335e29c92b43a540b415b1f3d23bf3cead0fdf88",
+    "Reference/Validation/menu-trade-buy-cancel.png": "df36f1f88df2a6364fe4cc4dad8a4408e7ef21a84532ce1df9c139a121fd87b2",
+    "Reference/Validation/menu-state-final-state.json": "5adcb17ab31b280f08b51f23ce7d5906766c07eceb01efaa509ac68a878b04c3"
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T06:56:46.7518260Z",
+    "checks": [
+        "Six original system entries wrap0/5 and render original actions5,8,9,10,11,12 with source atlas assets",
+        "Root Left/Right change tabs; volume and recovery only change in independent settings state",
+        "Independent settings toggles two rows, volume has five clamped0/25/50/75/100 levels, auto-recovery clamps10..90 in10-point steps",
+        "Settings ignores FIRE, blocks direct tab entry, and native soft9/10 or public Back5 return to original root selection",
+        "Help uses original instructions, independent native frame12,280px wrapping and147px viewport with80ms scroll; FIRE inert, both softkeys return",
+        "Portable shop opens original type0 double-price shop; Back returns to system item1, next Back closes and resets root",
+        "Existing base filename remains slot0; slot1 is separate; original x68 checkpoint saves active slot without modifying slot0",
+        "Two-slot selector and independent read/delete popup toggle with Up/Down; soft10 cancels popup before leaving records and preserves both hashes",
+        "Record soft9 reads selected slot1 and restores222 money; subsequent Save retains selected slot and leaves slot0 untouched",
+        "Deleting selected validation slot1 removes only that slot and leaves slot0 byte-for-byte unchanged",
+        "Confirming empty slot starts new game in selected slot1 with original start script queued",
+        "Version3 saves lacking new optional recordName remain visible and load with original money and slot0 identity",
+        "Begin clears subpage, read/delete popup, root focus and transient record selection; Load explicitly restores its selected record",
+        "16 experience/gift progression combinations render 3/4/5 catalogue rows, map multiplier and gift rows to the correct confirmation, and wrap focus within the visible list",
+        "Purchasing multiplier 4 removes its row and returns focus to row zero; claiming a gift advances the tier and adjusts focus to preserve the current item",
+        "Offline catalogue selections execute confirmation and grant the exact level-appropriate weapon or gold, advance spend/gold tiers, and preserve result/return states",
+        "Experience purchase increments the persistent multiplier up to its cap and records the original two-unit spend",
+        "Global marketplace flags, multiplier, gold tier, and accumulated spend survive a new save slot",
+        "Gift claim tiers round-trip independently in both save records",
+        "Cumulative-spend gift threshold awards the correct first-tier bundle once and blocks duplicate claiming",
+        "Version3 legacy SMS purchase fields migrate into global state while the slot gift tier remains in its own save record",
+        "Locked marketplace retains the original unavailable message; local purchase confirmation and back navigation remain usable",
+        "Original sixth system entry returns to title and clears game-menu state",
+        "Original mainUI17 frames, four sheets, settings arrow and catalogue images reference persistent imported assets",
+        "Both formal player slot hashes remain unchanged across isolated record, delete, load, checkpoint and restart tests"
+    ],
+    "error": ""
+}

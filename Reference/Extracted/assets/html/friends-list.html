@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>好友列表_QQ游戏</title>
+<link rel="stylesheet" href="css/g.css" type="text/css">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="YES" />
+
+
+
+
+
+</head>
+<body>
+
+	
+
+<script type="text/javascript" src='comm_js/util.js'></script>
+<script type="text/javascript" src='comm_js/game-util.js'></script>
+
+
+<script type="text/javascript">
+p_util.loginIfNotHasSid();
+</script>
+
+
+  <section>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+            <li id="friend"><a class="on">我的好友</a></li>
+          <li id="nearby"><a>附近玩家</a></li>
+            <li id="search"><a href="friends-search.html">搜索好友</a></li>
+        </ul>
+      </nav>
+      
+    <script type='text/tmpl' id='tmpl-player-list'>
+   	  <li onclick="window.location = 'profile.html?sid=<#= sid #>&uin=<#= uin #>'">
+       	  <figure>
+           	  <a class="icon-shine"><img src="<#= p_util.getAvatarUrl(avtarImage) #>" alt="<#= nickName #>" width="44" height="44"></a>
+              <figcaption>
+           	    <h1><a><#= nickName #></a></h1>
+                <p>
+				<# if(typeId != PLAYER_TYPE_ID_NEAR) {#>
+					<#if(gameName != ""){#>最近在玩 <span class="t-deepgray"><#= gameName #></span><#}#>
+				<#} else{ #>
+					距您<span class="t-deepgray"> <#= p_util.getDistance(myGpsX, myGpsY, gpsX, gpsY ) #></span>
+				<#}#></p>
+				
+				
+				<#if(typeId != PLAYER_TYPE_ID_NEAR){#>
+                	<p class="badge"><#= achScore #></p>
+				<#} else{#>
+					<p class="location"><#= location #></p>
+				<#}#>
+              </figcaption>
+        </figure>
+      </li>
+	</script>
+    <ul class="friends-list">
+    </ul>
+      
+    <script type='text/tmpl' id='tmpl-nodata'>
+	<# if(typeId == PLAYER_TYPE_ID_NEAR) {#>
+    	<p class="warn">你的附近暂无其他玩家</p>
+	<#} else{ #>
+		<p class="warn">暂无好友</p><br />
+		<p class="info">您可以通过QQ号码精确查找、添加好友；也可以通过查看游戏积分排行榜、游戏成就列表、玩过该游戏的玩家列表等快速查找到兴趣相投的好友。</p>
+	<#}#>
+	</script>
+    <section class="nodata-wrapper" style="display: none;">
+  	</section>
+  	
+    <div class="btn-wrapper clearfix" id="btn-all" style="display: none;">
+         <div class="btn-gray fl" id="btn-prev"><a href="#" onclick='javascript: return false;'>上一页</a></div>
+         <div class="btn-gray fl" id="btn-1st"><a href="#" onclick='javascript: return false;'>首页</a></div>
+         <div class="btn-gray fl" id="btn-next"><a href="#" onclick='javascript: return false;'>下一页</a></div>
+    </div>
+</section>
+
+  <!-- ^^^ 公用js -->
+  <script type="text/javascript" src='comm_js/simple.min.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingCircular.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingPageBtn.js'></script>
+  <script type="text/javascript" src='comm_js/js-tmpl-min.js'></script>
+  <script type="text/javascript" src='comm_js/pkg.js'></script>
+  <script type="text/javascript" src='comm_js/update.js'></script>
+  
+  
+  <script type="text/javascript" src='js/friends-list.js'></script>
+</body>
+</html>

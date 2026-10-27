@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>好友推荐的游戏_QQ游戏</title>
+<link rel="stylesheet" href="css/g.css" type="text/css">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="YES" />
+</head>
+<body>
+  <section>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+            <li><a href="profile-mygame.html">我玩过的游戏</a></li>
+          <li><a href="#" class="on">好友推荐的游戏</a></li>
+        </ul>
+      </nav>
+      
+    <script type='text/tmpl' id='tmpl-ach-list'>
+	<#if(fromGame != ''){#>
+   	  <li onclick="window.location = 'game-item.html?cpId=<#= fromCpId #>&gameId=<#= fromGameId #>'">
+       	  <figure>
+           	  <a class="icon-shine"><img src="<#= p_util.getAvatarUrl(fromAvtar)#>" alt="<#= fromAvtar #>" width="44" height="44"></a>
+              <figcaption>
+           	    <h1><a><#= fromNickName #></a>向您推荐 <a href="game-item.html?cpId=<#= fromCpId #>&gameId=<#= fromGameId #>"><#= fromGame #></a></h1>
+                <p><#= msgDate #></p>
+              </figcaption>
+        </figure>
+      </li>
+	<#}#>
+	</script>
+    <ul class="player-gamecommend-list">
+    </ul>
+    
+    <section class="nodata-wrapper" style="display: none;">
+    	<p class="warn">暂无好友的游戏推荐信息</p>
+  	</section>
+    
+    <div class="get-more">
+		<a class="btn-getmore"  onclick='javascript: return false;'>查看更多</a>
+	</div>
+</section>
+    <!-- ^^^ 公用js -->
+  <script type="text/javascript" src='comm_js/jquery-1.5.1.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingCircular.js'></script>
+  <script type="text/javascript" src='comm_js/js-tmpl-min.js'></script>
+  <script type="text/javascript" src='comm_js/util.js'></script>
+  <script type="text/javascript" src='comm_js/game-util.js'></script>
+ <script type="text/javascript" src='comm_js/pkg.js'></script>
+  
+  
+  <script type="text/javascript" src='js/profile-game-commend.js'></script>
+
+</body>
+</html>

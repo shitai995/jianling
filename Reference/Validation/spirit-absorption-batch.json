@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-20T03:52:44.946985+00:00",
+  "scope": "Unity Editor GameView spirit absorption visuals and related regression",
+  "passed": true,
+  "checks": 29,
+  "reports": [
+    {
+      "name": "spirit-absorption",
+      "passed": true,
+      "checks": 6,
+      "utc": "2026-10-20T03:49:48.4928060Z",
+      "sha256": "3205dd12edc41025d3cd43e5fa8b76dfdaccb0a19deb6f0927c1eb69d9bbe5d8"
+    },
+    {
+      "name": "spirit",
+      "passed": true,
+      "checks": 8,
+      "utc": "2026-10-20T03:49:49.1891440Z",
+      "sha256": "bfeb0364b2f5b58e00a5bb2f2d1e20bdfadd60e4e626211d732a23a983612255"
+    },
+    {
+      "name": "editable-workflow",
+      "passed": true,
+      "checks": 5,
+      "utc": "2026-10-20T03:49:49.1939080Z",
+      "sha256": "051a8347d9eccd628e6089c71407aae61facb16c0afc721e9dee695877dfcbfa"
+    },
+    {
+      "name": "items-shop",
+      "passed": true,
+      "checks": 10,
+      "utc": "2026-10-20T03:49:50.6559760Z",
+      "sha256": "96fcc0dbeb3ff6951c93c6114d806e7d03d3687701d97069b5de09f8f1de43be"
+    }
+  ],
+  "sources": {
+    "UnityProject/Assets/Scripts/OriginalSpirit.cs": "9d196416d744a30a910b10abc56ca8e43a35d74a837939c471c71468ec47f24f",
+    "UnityProject/Assets/Scripts/OriginalGui.cs": "21f89bb90b3d113c710cc18bdba09a4d2ec8a8ec6d30f15deb972577883ef1a3",
+    "UnityProject/Assets/Scripts/OriginalAtlasMenus.cs": "2aaf162fcf2e785ca7c4cac77ccea034bf5e1c71b6f20db87f7bfebc42691f07",
+    "UnityProject/Assets/Scripts/OriginalGameMenus.cs": "ecb77d74b2d35ed3bcead5d36f28f66cc7f06933db291453bf7288be220d42ea",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "d2ee69fbdb526bfe48e525adbdb2010b5c4413fc160266bfb0366fedc1dbfdcd",
+    "UnityProject/Assets/Scripts/OriginalUiLayout.cs": "eced2fb1ba3818c8cd0ae2b28187c2b2516e3ffa81630c6c9e8c0b5ded4295ed",
+    "UnityProject/Assets/Editor/SpiritAbsorptionValidation.cs": "e25b699ac073ee2bc558e8356081ada4563f12a677aeb5c33fe3a94a09e71a78",
+    "UnityProject/Assets/Editor/UiAssetSetup.cs": "bb394a34ce8de92d962dbe31b89121f77b92ba0eeb4e26962d8fb7086baa78e2",
+    "UnityProject/Assets/Resources/OriginalUiLayout.asset": "4bb1aedf99b59b72015494ab12c89e8c1bd0f506e2077aec4ced61969728329b"
+  },
+  "visuals": {
+    "spirit-absorption-game.png": "9e3f6a1acbfedb51a4a92377cbbc298ffefc14efdd5f7bc07be6758c413f64ac",
+    "spirit-absorption-result.png": "4687efc81977242972684f61820a12a0f592e6e05d61e7ee0e6d84c13b8436d9",
+    "spirit-absorption-flash.png": "57857b676d141c8ceb18ff6add3d3f7e45665dcb2b5d38daeca267c9c8f30578"
+  },
+  "visual_method": "Existing GameView Layout/Repaint, RenderView target readback; Metal texture orientation normalized. No standalone application.",
+  "limits": [
+    "Background pointer activation is unverified; injected events did not establish a successful click",
+    "Screenshots check restored controls and feedback against source coordinates; no original-device frame-by-frame reference comparison",
+    "Does not establish complete fidelity or normal difficulty completion"
+  ]
+}

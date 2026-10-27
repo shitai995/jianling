@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-20T04:12:44.014581+00:00",
+  "scope": "Unity Editor background enemy reward arithmetic and sequential training/combat/editor regression",
+  "passed": true,
+  "checks": 29,
+  "reports": [
+    {
+      "name": "rewards",
+      "passed": true,
+      "checks": 6,
+      "utc": "2026-10-20T04:11:25.5314190Z",
+      "sha256": "7852b5052f5332da05380788f8e126e630d23e1c794dbef21e89325f2564e36d"
+    },
+    {
+      "name": "training",
+      "passed": true,
+      "checks": 5,
+      "utc": "2026-10-20T04:11:35.1494680Z",
+      "sha256": "29f0fdd07e0f5ea33a9ffc9a578eddde85ed676cff7e351f4d69e2732a2057cb"
+    },
+    {
+      "name": "training-live",
+      "passed": true,
+      "checks": 4,
+      "utc": "2026-10-20T04:11:36.4178730Z",
+      "sha256": "9e46e8d701509db125ef00ea2e8df740436ce2b944ac65711175f901b924c7a4"
+    },
+    {
+      "name": "combat-behaviour",
+      "passed": true,
+      "checks": 9,
+      "utc": "2026-10-20T04:12:18.1796220Z",
+      "sha256": "366f8e76d2e9f7c680171580258d98cd510d784b71305413fabeb2fb414f0ac0"
+    },
+    {
+      "name": "editable-workflow",
+      "passed": true,
+      "checks": 5,
+      "utc": "2026-10-20T04:12:42.5053880Z",
+      "sha256": "090a0bcd0d233d22e8b2ac43487686982e45c5f6790f681843f01d7f493d4919"
+    }
+  ],
+  "sources": {
+    "UnityProject/Assets/Scripts/OriginalCombat.cs": "56dd14887f62eaed4bee30cf2fada86c03e896666bd20a8a9407cf1289464b80",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "f0ff2c07a7209a7c0d30ab41327dba828265d977d64181243218445ce0aec2d5",
+    "UnityProject/Assets/Editor/RewardValidation.cs": "d4055cea1ea25bfaa230ef67f80abbffff57cbdd130e5cc1a0c2958cc61e5933",
+    "UnityProject/Assets/Editor/TrainingValidation.cs": "d6ada6fc23ba2d461da148b0c3ff5300568a8f2a6ab33db9bed16989b1a4cc35",
+    "Reference/Decompiled/sources/com/dobetter/client/GameCanvas.java": "d2a3f5e8085b76f65b1fb41ede376965e5b5375408998c490fb846329bcfebf4",
+    "Reference/Decompiled/sources/com/dobetter/common/Tool.java": "83e655e3f52e29ba955dcdf68c969ac21677d943945111dd81df3d11f26930f7"
+  },
+  "consoleErrors": 0,
+  "limits": [
+    "Physical drops still enter inventory immediately; landing/scattering/pickup/expiry are not restored",
+    "Offline SMS experience coefficient uses default one; original network service not reconnected",
+    "Random interval semantics match Java source; Unity and Java PRNG sequences are not seed-identical",
+    "Fixtures and sampled ranges do not establish normal difficulty completion or frame-by-frame fidelity"
+  ]
+}

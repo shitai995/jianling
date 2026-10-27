@@ -1,0 +1,125 @@
+{
+  "success": true,
+  "message": "Code executed successfully.",
+  "data": {
+    "result": {
+      "passed": true,
+      "shots": [
+        {
+          "name": "message-hint-none",
+          "width": 1920,
+          "height": 1080,
+          "tick": 3230,
+          "duration": 160,
+          "fullScreen": false,
+          "origin": [
+            523,
+            157.259262
+          ],
+          "textHeight": 14.5185184,
+          "visibleHeight": 14.5185184
+        },
+        {
+          "name": "message-hint-0",
+          "width": 1920,
+          "height": 1080,
+          "tick": 0,
+          "duration": 0,
+          "fullScreen": false,
+          "origin": [
+            523,
+            157.259262
+          ],
+          "textHeight": 14.5185184,
+          "visibleHeight": 14.5185184
+        },
+        {
+          "name": "message-hint-1",
+          "width": 1920,
+          "height": 1080,
+          "tick": 1,
+          "duration": 0,
+          "fullScreen": false,
+          "origin": [
+            523,
+            157.259262
+          ],
+          "textHeight": 14.5185184,
+          "visibleHeight": 14.5185184
+        },
+        {
+          "name": "message-hint-2",
+          "width": 1920,
+          "height": 1080,
+          "tick": 2,
+          "duration": 0,
+          "fullScreen": false,
+          "origin": [
+            523,
+            157.259262
+          ],
+          "textHeight": 14.5185184,
+          "visibleHeight": 14.5185184
+        },
+        {
+          "name": "message-hint-3",
+          "width": 1920,
+          "height": 1080,
+          "tick": 3,
+          "duration": 0,
+          "fullScreen": false,
+          "origin": [
+            523,
+            157.259262
+          ],
+          "textHeight": 14.5185184,
+          "visibleHeight": 14.5185184
+        },
+        {
+          "name": "message-hint-return",
+          "width": 1920,
+          "height": 1080,
+          "tick": 0,
+          "duration": -1,
+          "fullScreen": false,
+          "origin": [
+            523,
+            157.259262
+          ],
+          "textHeight": 14.5185184,
+          "visibleHeight": 14.5185184
+        },
+        {
+          "name": "message-hint-fullscreen-0",
+          "width": 1920,
+          "height": 1080,
+          "tick": 0,
+          "duration": 0,
+          "fullScreen": true,
+          "origin": [
+            523,
+            64.51852
+          ],
+          "textHeight": 14.5185184,
+          "visibleHeight": 14.5185184
+        },
+        {
+          "name": "message-hint-fullscreen-2",
+          "width": 1920,
+          "height": 1080,
+          "tick": 2,
+          "duration": 0,
+          "fullScreen": true,
+          "origin": [
+            523,
+            64.51852
+          ],
+          "textHeight": 14.5185184,
+          "visibleHeight": 14.5185184
+        }
+      ]
+    },
+    "compiler": "codedom"
+  },
+  "execute_code": "var g=UnityEngine.Object.FindObjectOfType<GuJian.GuJianGame>();\nvar f=System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic;\nvar s=System.Reflection.BindingFlags.Static|System.Reflection.BindingFlags.NonPublic;\nSystem.Func<string,object> get=n=>g.GetType().GetField(n,f).GetValue(g);\nSystem.Action<string,object> set=(n,v)=>g.GetType().GetField(n,f).SetValue(g,v);\nvar shots=new System.Collections.Generic.List<object>();\nSystem.Action<string> save=name=>{\nvar image=(Texture2D)typeof(GuJian.Editor.HudFeedbackValidation).GetMethod(\"Render\",s).Invoke(null,null);\ntry{\nSystem.IO.File.WriteAllBytes(\"../Reference/Validation/\"+name+\".png\",image.EncodeToPNG());\nfloat height=(float)get(\"originalMessageHeight\");bool full=(bool)get(\"originalMessageFullScreen\");\nfloat visible=Mathf.Min(height,full?270:320f/3),y=full?50:(320-height)/2-10;\nshots.Add(new{name=name,width=image.width,height=image.height,tick=get(\"originalUiTicks\"),duration=get(\"originalMessageDuration\"),fullScreen=full,origin=new[]{523f,y+visible},textHeight=height,visibleHeight=visible});\n}finally{UnityEngine.Object.DestroyImmediate(image);}};\ntry{\ntypeof(GuJian.Editor.ComboValidation).GetMethod(\"Stage\",s).Invoke(null,new object[]{g,false});\nTime.timeScale=0;g.Machine.Clear();set(\"hideUi\",true);g.GetType().GetMethod(\"ResetStageInfo\",f).Invoke(g,null);\ng.Machine.Command(0x28,new object[]{\"原版继续提示\",160});save(\"message-hint-none\");\ng.GetType().GetMethod(\"TickOriginalMessage\",f).Invoke(g,new object[]{.16f});\ng.Machine.Command(0x28,new object[]{\"原版继续提示\",0});\nfor(int i=0;i<4;i++){set(\"originalUiTicks\",i);save(\"message-hint-\"+i);}\ng.PressControl(4);g.Machine.Command(0x28,new object[]{\"原版继续提示\",-1});set(\"originalUiTicks\",0);save(\"message-hint-return\");g.PressControl(5);\ng.Machine.Command(0x29,new object[]{\"全屏文本没有继续图案\"});set(\"originalUiTicks\",0);save(\"message-hint-fullscreen-0\");set(\"originalUiTicks\",2);save(\"message-hint-fullscreen-2\");\nreturn new{passed=true,shots=shots};\n}finally{g.Begin();g.Machine.Clear();typeof(GuJian.GuJianGame).GetProperty(\"AtTitle\").SetValue(g,true,null);Time.timeScale=1;}"
+}

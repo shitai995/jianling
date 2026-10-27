@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "utc": "2026-10-19T16:46:32.955012+00:00",
+  "milestone_estimate_percent": 80,
+  "reports": [
+    {
+      "file": "yuanbao-journey.json",
+      "utc": "2026-10-19T16:41:56.2486110Z",
+      "checks": 9,
+      "passed": true
+    },
+    {
+      "file": "area-travel.json",
+      "utc": "2026-10-19T16:44:15.5649600Z",
+      "checks": 5,
+      "passed": true
+    },
+    {
+      "file": "weapon-visibility.json",
+      "utc": "2026-10-19T16:44:15.6172730Z",
+      "checks": 6,
+      "passed": true
+    },
+    {
+      "file": "progression.json",
+      "utc": "2026-10-19T16:44:28.2363050Z",
+      "checks": 10,
+      "passed": true
+    },
+    {
+      "file": "player-smoke.json",
+      "utc": "2026-10-19T16:45:52.4466670Z",
+      "checks": 8,
+      "passed": true
+    }
+  ],
+  "check_count": 38,
+  "continuous_endpoint": {
+    "event": 601,
+    "stage": 600,
+    "name": "元宝湾入口"
+  },
+  "changes": [
+    "Script-owned menu permits VM progression while preserving normal and world-map menu waits; guide4 keyboard/tab/return operations update actual menu state.",
+    "Full recovery x88 and healing attribute refresh clear stale fighter death state; continuous production attacks work after the designed loss."
+  ],
+  "fixture_limits": [
+    "AI locked, target HP 1 and blood protection for combat-flow testing; scripted loss uses production Damage/death.",
+    "NPC/portal/attack positions are set by fixture; no full-route walking/collision or normal battle balancing acceptance.",
+    "Single Begin/start through Yuanbao event601; no direct later story-event writes or follow-up queues; not full-main-story completion."
+  ],
+  "player_modes": {
+    "headless": {
+      "report": "player-headless-smoke.json",
+      "exit_code": 0
+    },
+    "visible": {
+      "report": "player-visible-smoke.json",
+      "passed": true
+    }
+  },
+  "build": {
+    "result": "succeeded",
+    "unity": "2022.3.62f3",
+    "platform": "StandaloneOSX",
+    "development": true,
+    "output_path": "UnityProject/Builds/macOS/古剑魂梦.app",
+    "duration_seconds": 7.769568,
+    "total_size_mb": 452.27,
+    "errors": 0,
+    "warnings": 0,
+    "started_at": "2026-10-19T16:44:58.41674Z",
+    "completed_at": "2026-10-19T16:45:06.186308Z"
+  },
+  "sources_sha256": {
+    "Assets/Editor/OpeningJourneyValidation.cs": "fb605cd36b51098ec6336376dafae89dc2b587098ec7fd7c77f37e372fcfb475",
+    "Assets/Scripts/GuJianGame.cs": "bc58dd8752789d7fe7ec423bb22d52a71b801dc1b3337490ef870f2436139e72",
+    "Assets/Scripts/OriginalGameMenus.cs": "8e1255fa889ae7f58889d60dd2495444070b30da9d91b1766567ccf746f69cd0",
+    "Assets/Scripts/OriginalCombat.cs": "eaca4ce2d3ed9a90a603081d989c552f1cdc97934025f1fa2c77b01747cc7f73",
+    "Assets/Scripts/OriginalPlayerValidation.cs": "c81b8bf63de2d5ef99f919c51d3633765a2f8daab97fba1f93a693ffbfc00762"
+  }
+}

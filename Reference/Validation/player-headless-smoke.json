@@ -1,0 +1,20 @@
+{
+    "passed": true,
+    "utc": "2026-10-19T17:30:56.1455900Z",
+    "unity": "2022.3.62f3",
+    "platform": "OSXPlayer",
+    "error": "",
+    "dialoguePages": 52,
+    "checks": [
+        "Saved UI asset, all 35 native menu actions/eight sheets and original touch direction/texture references loaded in standalone player",
+        "Original start/opening scripts -> stage 200 under real player Update",
+        "200n0 -> original attack rectangles, enemy respawns and four-kill callback -> event 201 (fixture enemy HP 1)",
+        "Separate player save: money 12345, HP 1234, durability 17, three items and event 201 restored",
+        "Main/branch mission titles, three reward slots (including equipment ID 0) and two remaining kill objectives restore in standalone player; setting reward metadata grants nothing",
+        "Saved stow state restored; player attacks reject without energy/durability loss; drawing preserves current weapon and skill",
+        "Visited area remains open after save/load; closed area rejects; x48 sets world-map stageID 1 and UI travel returns to stage 200 under actual player Update",
+        "Original guide4 completes with menu open, keyboard/tab page changes, wrong tab and early close rejection, return and x67 open/close in standalone Update",
+        "Original guide3 shop opens without blocking the VM, eight actual medicine selections 23 to16, return and sub1 completion under standalone Update",
+        "Real standalone Save/Load preserves paused fractional script timer and sword-spirit recovery cadence"
+    ]
+}

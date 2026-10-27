@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>好友请求_QQ游戏</title>
+<link rel="stylesheet" href="css/g.css" type="text/css">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="YES" />
+<meta name="format-detection" content="telephone=no">
+
+
+
+</head>
+<body>
+
+
+
+<script type="text/javascript" src='comm_js/util.js'></script>
+<script type="text/javascript" src='comm_js/game-util.js'></script>
+<script type="text/javascript">
+p_util.loginIfNotHasSid();
+</script>
+
+
+  <section>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+            <li><a href="messages-list.html">好友消息</a></li>
+          <li><a href="#" class="on">好友请求</a></li>
+        </ul>
+      </nav>
+
+     <script type='text/tmpl' id='tmpl-notice-list'>
+   	  <li onclick="window.location = 'profile.html?act=add&sign=<#= extra.sign #>&dateTime=<#= dateTime #>&sid=<#= sid #>&uin=<#= fromUin #>'">
+       	<figure>
+           	  <a class="icon-shine"><img src="<#= p_util.getAvatarUrl(fromAvtar) #>" alt="<#= fromUin #>头像" width="44" height="44"></a>
+              <figcaption>
+           	    <h1><a><#= fromNickName #></a>请求加你为好友<span><# if(fromAge > 0)  print(fromAge + '岁'); #> <#= fromGender #></span></h1>
+                <p class=""><time><#= msgDate #></time></p>
+                <p><a class="btn-getmore w-allow">同意</a> <a class="btn-getmore w-refuse">拒绝</a></p>
+              </figcaption>
+        </figure>
+		<form onsubmit="return false;">
+			<input type='hidden' id='form-sign' name='sign' value='<#= extra.sign #>'/>
+			<input type='hidden' id='form-uin' name='uin' value='<#= fromUin #>'/>
+			<input type='hidden' id='form-dateTime' name='dateTime' value='<#= dateTime #>'/>
+		</form>
+      </li>
+	</script>
+    <ul class="notice-list">
+    </ul>
+    <section class="nodata-wrapper" style="display: none;">
+    	<p class="warn">暂无玩家发送的好友添加请求。</p>
+  	</section>	  
+   	  <div class="get-more"><a class="btn-getmore">查看更多</a></div>
+      
+</section>
+
+
+   
+  <!-- ^^^ 公用js -->
+  <script type="text/javascript" src='comm_js/jquery-1.5.1.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingCircular.js'></script>
+  <script type="text/javascript" src='comm_js/js-tmpl-min.js'></script>
+  <script type="text/javascript" src='comm_js/pkg.js'></script>
+  <script type="text/javascript" src='comm_js/update.js'></script>
+  
+  <script type="text/javascript" src='js/notice-friend.js'></script>
+  
+  
+  
+  
+
+
+</body>
+</html>

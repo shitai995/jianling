@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb3ab722a2214741835d675e99bc225, type: 3}
+  m_Name: guide1
+  m_EditorClassIdentifier: 
+  scriptId: guide1
+  displayName: guide1
+  notes: 
+  instructions:
+  - 'option[3]:'
+  - "option[0]=\"\u4E70\u5356\u6B66\u5668\""
+  - "option[1]=\"\u4FEE\u7406\u6B66\u5668\""
+  - "option[2]=\"\u5F3A\u5316\u6B66\u5668\""
+  - "x2D(\"\u6309\u65B9\u5411\u952E\u2018<c=ffff00,000000,1>\u4E0B</c>\u2019\u9009\u62E9\u2018<c=ffff00,000000,1>\u5F3A\u5316\u6B66\u5668</c>\u2019\uFF0C\u6309\u2018<c=ffff00,000000,1>\u5251\u578B\u6309\u94AE</c>\u2019\u540E\u8FDB\u5165\u5F3A\u5316\u754C\u9762\",option)"
+  - while(x2E()<>2)
+  - x20("guide1.s")
+  - ret
+  - loop
+  - x57()
+  - "x49(\"\u6309\u2018<c=ffff00,000000,1>\u5251\u578B\u6309\u94AE</c>\u2019\u5F3A\u5316\")"
+  - x6A(4)
+  - while(x6B())
+  - "x49(\"\u6309\u2018<c=ffff00,000000,1>\u5251\u578B\u6309\u94AE</c>\u2019\u5F3A\u5316\")"
+  - x6A(4)
+  - loop
+  - "x49(\"\u518D\u6309\u2018<c=ffff00,000000,1>\u5251\u578B\u6309\u94AE</c>\u2019\u786E\u8BA4\u5F3A\u5316\")"
+  - x6A(4)
+  - while(x6B())
+  - "x49(\"\u518D\u6309\u2018<c=ffff00,000000,1>\u5251\u578B\u6309\u94AE</c>\u2019\u786E\u8BA4\u5F3A\u5316\")"
+  - x6A(4)
+  - loop
+  - "x49(\"\u6309\u53F3\u4E0A\u89D2\u2018<c=ffff00,000000,1>\u8FD4\u56DE\u6309\u94AE</c>\u2019\u9000\u51FA\u5F3A\u5316\u754C\u9762\u5427\uFF01\")"
+  - x6A(6)
+  - while(x6B())
+  - "x49(\"\u6309\u53F3\u4E0A\u89D2\u2018<c=ffff00,000000,1>\u8FD4\u56DE\u6309\u94AE</c>\u2019\u9000\u51FA\u5F3A\u5316\u754C\u9762\u5427\uFF01\")"
+  - x6A(6)
+  - loop
+  - x09("taskID",914)
+  - x20("334n0.s")

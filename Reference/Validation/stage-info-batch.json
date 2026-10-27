@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "utc": "2026-10-20T05:08:53.068201+00:00",
+  "checks": 28,
+  "reports": [
+    {
+      "name": "stage-info",
+      "passed": true,
+      "checks": 5,
+      "utc": "2026-10-20T05:08:18.8902190Z",
+      "sha256": "6a741e54793eeee0160b9462415a2d39792c54aff1ba4243b7980238fd2caa74"
+    },
+    {
+      "name": "stage-info-live",
+      "passed": true,
+      "checks": 4,
+      "utc": "2026-10-20T05:07:06.3710700Z",
+      "sha256": "b64bde815dc286323b209218f4a6c0bd11a7114fe7769e9a227208819ca40cb8"
+    },
+    {
+      "name": "stage-info-rendered",
+      "passed": true,
+      "checks": 1,
+      "utc": "2026-10-20T05:07:30.0559650Z",
+      "sha256": "7186d52d482f8408da73938a4fdad751dc2ba58d99aa122342cba4c7eb088a59"
+    },
+    {
+      "name": "stage-info-pixels",
+      "passed": true,
+      "checks": 3,
+      "utc": "2026-10-20T05:08:05.955180+00:00",
+      "sha256": "d4a5d8ccbb6a2dc7a061d302a54079a1ba201bb210e014b393527f970f1419db"
+    },
+    {
+      "name": "hud-feedback",
+      "passed": true,
+      "checks": 6,
+      "utc": "2026-10-20T05:07:39.9018980Z",
+      "sha256": "b540b4551e05ea3b398817e126c3eede0d7f0046ffcd97c8c086d8efe1b5e43c"
+    },
+    {
+      "name": "baked-assets",
+      "passed": true,
+      "checks": 7,
+      "utc": "2026-10-20T05:07:39.9060310Z",
+      "sha256": "c014cc16be3ab1a51c4e3bcf43a5b4f01288f9a427d3461f5bbb682df8468fe3"
+    },
+    {
+      "name": "editor-reload",
+      "passed": true,
+      "checks": 2,
+      "utc": "2026-10-20T05:08:10.8169380Z",
+      "sha256": "cbf8ea7af58e065c776f7690fe2fb50e7cc5313df859bf3450ac46142a1c1c03"
+    }
+  ],
+  "source_sha256": {
+    "UnityProject/Assets/Scripts/OriginalStageInfo.cs": "0903c82d398d51104e9730f8c3cadab2803b9f1a5f3a96019d5484e69450067a",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "5a9b79ad23cf67a6ac34039cdfe750297279ae44b2e0c1ab2128a865d8b0751f",
+    "UnityProject/Assets/Scripts/OriginalUiLayout.cs": "537a692922cfe4f3de31d8cc155662bfa03869c4c48f28b07ebf9c1fd24ffb76",
+    "UnityProject/Assets/Editor/StageInfoValidation.cs": "dd167281a5931a5e4a99f6c1d4f9b0faccb083862e14884fa2f5cd09857a6464",
+    "UnityProject/Assets/Resources/OriginalUiLayout.asset": "3d720f22c4d9b2234e523669ca6ca7bda1b5ea94f369c7cea00a44d0ddfadbd9",
+    "UnityProject/Assets/Prefabs/GuJianGame.prefab": "890d485d98d6d3662731cf86f57a6959729f4f8e0f51b85dbae474acc5d460fc",
+    "UnityProject/Assets/Scenes/GuJian.unity": "f718f22afa70bb23626f2ba1e5cf60657a68529a0f92ec80e4448fc90770b6ee"
+  },
+  "gameview_review": {
+    "stage-info-entry.png": "ba9f2e07af5233239fef21b08dc6ca4aa6f20b90a5108a11ea2f1d49c2af9eae",
+    "stage-info-slide.png": "7a897b9400885c8c0b8f3193f44272eef23ef88cb76cf187b8c83368660a2d92",
+    "stage-info-hold.png": "a0e32f060ca31f40157227a0238f786140303a13e441e2d90d1a1a503a3ab3a5",
+    "stage-info-expired.png": "cdbd70d23b315594bfe730c1bcfa960d0b8acdbde74f2542e15622c40b6d6c9f",
+    "stage-info-contact.png": "8a877f9d7b908f3d28c83f39f793252cfc684cbdee2a4b0c11c77f10651c3263"
+  },
+  "conditions": [
+    "Only existing Unity GameView used; no window focus, resize, standalone build or launch requested",
+    "Screenshots freeze stage200 and manually advance the presentation ticks; live report separately covers real background Update",
+    "Source cycleStageInfo runs during menu/dialogue too; Time.timeScale=0 freezes it",
+    "Original Android Paint size18 is recovered; font metrics depend on the original device. The editable rise height24 and host Chinese font remain subject to original-device comparison",
+    "Pixel checks cover this 1920x1080 GameView only",
+    "No original-device frame-by-frame comparison, normal-difficulty completion or full-journey rerun in this UI batch"
+  ],
+  "editor_final": {
+    "playing": true,
+    "at_title": true,
+    "run_in_background": true,
+    "time_scale": 1,
+    "scene_dirty": false,
+    "console_errors": 0
+  }
+}

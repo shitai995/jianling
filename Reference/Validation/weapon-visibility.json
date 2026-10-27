@@ -1,0 +1,13 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T02:04:09.4123390Z",
+    "checks": [
+        "x56 disables only role sheet 4 renderers; body sprites and baked node count are unchanged; equipped texture, skill and equipment instance remain intact",
+        "Stowed weapon rejects player normal attacks, break, skill and critical without energy/durability loss; script-forced skill remains available for choreography",
+        "Changing equipment while stowed keeps it hidden; x55(-1) draws the current weapon and restores player attacks",
+        "Integrated stow/draw retains the active spirit weapon texture and action bank 27",
+        "Save/Load retains integrated stow state; older v3 saves without weaponStowed default to drawn weapon",
+        "Map initialization and a new game restore visible/attackable state, matching GameCanvas.initMapElement"
+    ],
+    "error": ""
+}

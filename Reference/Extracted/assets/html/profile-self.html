@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>我的信息_QQ游戏</title>
+<link rel="stylesheet" href="css/g.css" type="text/css">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="YES" />
+
+
+</head>
+<body>
+
+
+
+<script type="text/javascript" src='comm_js/util.js'></script>
+<script type="text/javascript" src='comm_js/game-util.js'></script>
+<script type="text/javascript">
+p_util.loginIfNotHasSid();
+</script>
+
+
+  <section class="profile-wrapper">
+  	<section class="profile">
+   		<script type='text/tmpl' id='tmpl-profile'>
+    	<figure>
+            	<a href="#" class="icon-shine"><img src="<#= p_util.getAvatarUrl(userProfile.avtarImage) #>" alt="<#= userProfile.avtarImage #>头像" width="62" height="62"></a>
+                <figcaption>
+                	<h1><#= userProfile.nickName #><span class="t-gray">(<#= userProfile.uin #>)</span></h1>
+                    <!--未体验过游戏-->
+                    <p><#= userProfile.location #> <# if(relaType != 'self'){#> <#= userProfile.age #>岁  <#= userProfile.gender #> <# } else {#><a href="help.html?sid=<#= sid #>" class="icon-help">帮助</a><a href="profile-location.html?sid=<#= sid #>" class="icon-setting">设置</a> <#}#><br>
+                    <#if(userProfile.gameName != ""){#>	<a href="game-item.html?sid=<#= sid #>&cpId=<#= userProfile.cpId #>&gameId=<#= userProfile.gameId #>">最近在玩“<#= userProfile.gameName #>”</a><#}#>	</p>
+                </figcaption>
+         </figure>
+		</script>
+    	<figure>
+            	<a href="#" class="icon-shine"><img src="" alt="头像" width="62" height="62"></a>
+                <figcaption>
+                	<h1>用户名(loading...)</h1>
+                    <!--未体验过游戏-->
+                    <p><a href="help.html" class="icon-help">帮助</a><a href="profile-location.html" class="icon-setting">设置</a><br>
+                    <a href="#"></a></p>
+                </figcaption>
+         </figure>
+    </section>
+    
+  	<section class="profile-sign">
+  		<script type='text/tmpl' id='tmpl-profile-sign'>
+        <form id="sign-form" onsubmit="return false;">
+			<# if(relaType == 'self'){#>
+			<textarea name="content" id='content'><#= userProfile.signatrue #></textarea>
+			<input type="button" value="更新" id="update-sign" class="btn-getmore">
+			<# } else {#>
+			<textarea name="content" id='content' disabled="disabled"><#= userProfile.signatrue #></textarea>			
+			<# }#>
+        </form>
+		</script>
+    </section>
+    
+
+	
+	<!-- 好友消息 -->
+    <script type='text/tmpl' id='tmpl-profile-message'>
+    <# if(relaType == 'friend'){#>
+	<section class="profile-send-message">
+        <form onsubmit="return false;">
+            <input type="text" id="msg-content" name="sign" value=""><input type="button" id='send-msg' value="发送信息" class="btn-getmore">
+        </form>
+	</section>
+    <# }#>
+	</script>
+    
+    <!-- 好友请求处理 -->
+	<section id='profile-add-request' style="display:none;">
+	<ul class="request-operation">
+        	<li><a href="#" class="btn-getmore" id='profile-accept-friend'>接受添加请求</a></li>
+        	<li><a href="#" class="btn-getmore" id='profile-refuse-friend'>拒绝添加请求</a></li>    
+	  </ul>
+    </section>
+   
+    <script type='text/tmpl' id='tmpl-friend-request'>  
+	 <form onsubmit="return false;" id='friend-request-form'>
+			<input type='hidden' name='sign' value='<#= sign #>'/>
+			<input type='hidden' name='uin' value='<#= uin #>'/>
+			<input type='hidden' name='dateTime' value='<#= dateTime #>'/>
+	</form> 
+	</script>	
+	
+	<section class="AC" id='profile-add-friend' style="display:none;"><a href="#" class="btn-getmore">添加为好友</a></section>
+	
+  	<section id='profile-my-info'>
+  		<script type='text/tmpl' id='tmpl-profile-my-info'>
+		<ul class="profile-game-info">
+        	<li onclick='p_util.liClick(this);'><a class="btn-friends" href="friends-list.html?sid=<#= sid #>&cpId=-1&gameId=-1&typeId=1">好友<br><span><#= friendsNum #>位</span></a></li>
+        	<li onclick='p_util.liClick(this);'><a class="btn-badge" href="profile-mygame.html?sid=<#= sid #>">成就<br><span><#= userProfile.achScore #>分</span></a></li>
+        	<li onclick='p_util.liClick(this);'><a class="btn-games" href="profile-mygame.html?sid=<#= sid #>" class="badge-info">游戏<br><span><#= userProfile.gameNum #>款</span></a></li>
+		</ul>
+		</script>
+		<ul class="profile-game-info">
+        	<li><a class="btn-friends" href="#">好友<br><span></span></a></li>
+        	<li><a class="btn-badge" href="#">成就<br><span></span></a></li>
+        	<li><a class="btn-games" href="#" class="badge-info">游戏<br><span></span></a></li>
+		</ul>
+    </section>
+    
+  	<section class="game-operation">
+  		<script type='text/tmpl' id='tmpl-profile-game-info'>
+		<# if(relaType == 'self'){#>
+		<ul class="getmore-list">
+        	<li class="mail" onclick="window.location = 'messages-list.html?sid=<#= sid #>'">
+                <h1><a>我的信箱(<#= mailUnRead #>条未读)</a></h1>
+              <p>查看好友发送的信息和请求。</p>
+            </li>
+       	</ul>
+       	<# }else{#>
+       	<ul class="getmore-list">
+        	<li class="game" onclick="window.location = 'profile-game.html?sid=<#= sid #>&uin=<#= userProfile.uin #>'">
+                <h1><a><#= userProfile.nickName #>的游戏</a></h1>
+              <p>共玩过<#= userProfile.gameNum #>款游戏</p>
+            </li>
+            <li class="achievement" onclick="window.location = 'profile-achievement.html?sid=<#= sid #>&uin=<#= userProfile.uin #>'">
+            	<h1><a><#= userProfile.nickName #>的成就</a></h1>
+            	<p>成就分值<#= userProfile.achScore #></p>
+			</li>
+       	</ul>
+		<# }#>
+		</script>
+    </section> 
+    
+    <section class="feed-list">
+	<h1>动态信息</h1>
+	  <ul>
+		<script type='text/tmpl' id='tmpl-feed'>
+		<li onclick="window.location = 'profile.html?sid=<#= sid #>&uin=<#= uin #>'">
+		  <figure>
+			<a class="icon-shine"><img src="<#= p_util.getAvatarUrl(avatar) #>"  alt="<#= avatar #>" width="44" height="44"></a>
+				<figcaption>
+		<# if(type == ACTION_ID_GAIN_ACHIVEMENT){ #>
+           	    <h1>恭喜<a><#= nickName #></a>在<a href="game-item.html?cpId=<#= content.cpId #>&gameId=<#= content.gameId #>&sid=<#= sid #>"><#= gameName #></a>游戏中达成"<#= content.achName #>"成就。</h1>
+                <p><a href="<#if(gameName != '') {#>game-item.html?cpId=<#= content.cpId #>&gameId=<#= content.gameId #>&sid=<#= sid #><#} else {#>javascript:return false;<#}#>">
+				<img src="<#if(gameLogo!='') {#><#= p_util.getLogoUrl(gameLogo) #><#} else {#><#=  p_util.getAchLogoUrl(resId, content.achId)  #><#}#>" alt="<#= gameName #>" width="40" height="40"></a>
+				</p>
+
+		<#} else if(type == ACTION_ID_BECOME_FRIEND){ #>
+           	    <h1><a><#= nickName #></a>已和玩家<a href="profile.html?sid=<#= sid #>&uin=<#= content.uin #>"><#= content.nickName #></a>成为朋友。 </h1>
+                <p><a href="profile.html?sid=<#= sid #>&uin=<#= content.uin #>"><img src="<#= p_util.getAvatarUrl(content.avatar) #>"  alt="<#= content.nickName #>" width="44" height="44"></a>
+				</p>
+
+		<#} else if(type == ACTION_ID_COMMENT_GAME ){ #>
+           	    <h1><a><#= nickName #></a>对<a href="game-item.html?cpId=<#= content.cpId #>&gameId=<#= content.gameId #>&sid=<#= sid #>"><#= gameName #></a>游戏发表的评论是：“<#= content.comment #>”。     </h1>
+
+		<#} else if(type == ACTION_ID_GAIN_HIGH_SORT ){ #>
+           	    <h1>恭喜<a><#= nickName #></a>在<a href="game-item.html?cpId=<#= content.cpId #>&gameId=<#= content.gameId #>&sid=<#= sid #>"><#= gameName #></a>游戏中进入"<#= content.tagName #>"<#= extInfo #>前200位，现在排在第<#= content.userScoreList[0].rank #>位。</h1>
+				<p><a href="<#if(gameName != '') {#>game-item.html?cpId=<#= content.cpId #>&gameId=<#= content.gameId #>&sid=<#= sid #><#} else {#>javascript:return false;<#}#>"><img src="<#if(gameLogo!='') {#><#= p_util.getLogoUrl(gameLogo) #><#} else {#>img/tmp/icon-ranking.jpg<#}#>" alt="<#= gameName #>" width="40" height="40"></a>
+				</p>
+		<#} else if(type == ACTION_ID_SIGNATURE ){ #>
+				<h1><a><#= nickName #></a>更新了签名：“<#= content.sign #>”。     </h1>
+		<#}#>
+                <p class=""><time><#= addTime #></time></p>
+			</figcaption>
+          </figure>
+		</li>
+    	</script>
+      </ul>
+      <div class="btn-wrapper clearfix" id="btn-all" style="display: none;">
+         <div class="btn-gray fl" id="btn-prev"><a href="#" onclick='javascript: return false;'>上一页</a></div>
+         <div class="btn-gray fl" id="btn-1st"><a href="#" onclick='javascript: return false;'>首页</a></div>
+         <div class="btn-gray fl" id="btn-next"><a href="#" onclick='javascript: return false;'>下一页</a></div>
+      </div>
+    </section>
+    
+    <section class="nodata-wrapper" style="display: none;">
+		<p class="warn">暂无动态</p>
+	</section>
+	
+    <!-- 好友 -->
+    <section class="AC" id='profile-del-friend' style="display:none;"><a href="#" class="btn-getmore" id="btn-profile-del-friend">删除该好友</a></section>     
+  </section>
+  
+    <!-- ^^^ 公用js -->
+  <script type="text/javascript" src='comm_js/simple.min.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingCircular.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingPageBtn.js'></script>
+  <script type="text/javascript" src='comm_js/js-tmpl-min.js'></script>
+  <script type="text/javascript" src='comm_js/pkg.js'></script>
+  <script type="text/javascript" src='comm_js/update.js'></script>
+
+  <script type="text/javascript" src='js/profile.js'></script>
+</body>
+</html>

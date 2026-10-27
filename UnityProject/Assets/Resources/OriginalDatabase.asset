@@ -1,0 +1,4572 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e253da78ef3b472fb758c15108aee24, type: 3}
+  m_Name: OriginalDatabase
+  m_EditorClassIdentifier: 
+  sprites:
+  - id: 0
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u51A2-\u524D\u666F\u77F31"
+    animation: m_04
+    imageList: m_04
+    images:
+    - action/m_04
+  - id: 1
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u51A2-\u524D\u666F\u77F32"
+    animation: m_07
+    imageList: m_07
+    images:
+    - action/m_07
+  - id: 2
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u51A2-\u524D\u666F\u52511"
+    animation: m_05
+    imageList: m_05
+    images:
+    - action/m_05
+  - id: 3
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u51A2-\u524D\u666F\u52512"
+    animation: m_15
+    imageList: m_15
+    images:
+    - action/m_15
+  - id: 4
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u51A2-\u4E2D\u666F\u77F31"
+    animation: m_06
+    imageList: m_06
+    images:
+    - action/m_06
+  - id: 5
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u51A2-\u4E2D\u666F\u77F32"
+    animation: m_08
+    imageList: m_08
+    images:
+    - action/m_08
+  - id: 6
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u51A2-\u4E2D\u666F\u52511"
+    animation: m_09
+    imageList: m_09
+    images:
+    - action/m_09
+  - id: 7
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u51A2-\u4E2D\u666F\u52512"
+    animation: m_12
+    imageList: m_12
+    images:
+    - action/m_12
+  - id: 8
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u51A2-\u4E2D\u666F\u52513"
+    animation: m_13
+    imageList: m_13
+    images:
+    - action/m_13
+  - id: 9
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u51A2-\u4E2D\u666F\u52514"
+    animation: m_14
+    imageList: m_14
+    images:
+    - action/m_14
+  - id: 10
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u51A2-\u80CC\u666F\u94FE1"
+    animation: m_10
+    imageList: m_10
+    images:
+    - action/m_10
+  - id: 11
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u51A2-\u80CC\u666F\u94FE2"
+    animation: m_11
+    imageList: m_11
+    images:
+    - action/m_11
+  - id: 12
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u51A2-\u9B3C\u706B"
+    animation: m_16
+    imageList: m_16
+    images:
+    - action/m_16
+  - id: 13
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u51A2-\u4E0A\u65B9\u51FA\u53E3"
+    animation: m_17
+    imageList: m_17
+    images:
+    - action/m_17
+  - id: 14
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5C71\u5E84-\u80CC\u666F1"
+    animation: m_50
+    imageList: m_50
+    images:
+    - action/m_50
+  - id: 15
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5C71\u5E84-\u80CC\u666F2"
+    animation: m_47
+    imageList: m_47
+    images:
+    - action/m_47
+  - id: 16
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5C71\u5E84-\u80CC\u666F3"
+    animation: m_48
+    imageList: m_48
+    images:
+    - action/m_48
+  - id: 17
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5C71\u5E84-\u80CC\u666F4"
+    animation: m_51
+    imageList: m_51
+    images:
+    - action/m_51
+  - id: 18
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5C71\u5E84-\u80CC\u666F5"
+    animation: m_52
+    imageList: m_52
+    images:
+    - action/m_52
+  - id: 19
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5C71\u5E84-\u80CC\u666F6"
+    animation: m_55
+    imageList: m_55
+    images:
+    - action/m_55
+  - id: 20
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u64C2\u53F0-\u7EC4\u4EF61"
+    animation: m_49
+    imageList: m_49;m_66
+    images:
+    - action/m_49
+    - action/m_66
+  - id: 21
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u64C2\u53F0-\u7EC4\u4EF62"
+    animation: m_53
+    imageList: m_53;m_54;m_49;m_66
+    images:
+    - action/m_53
+    - action/m_54
+    - action/m_49
+    - action/m_66
+  - id: 23
+    type: 5
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u64C2\u53F0-\u53F3\u8FB9\u7F182"
+    animation: m_63
+    imageList: m_63
+    images:
+    - action/m_63
+  - id: 24
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u64C2\u53F0-\u4E0B\u8FB9\u7F181"
+    animation: m_62
+    imageList: m_62
+    images:
+    - action/m_62
+  - id: 25
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u64C2\u53F0-\u4E0B\u8FB9\u7F182"
+    animation: m_61
+    imageList: m_61
+    images:
+    - action/m_61
+  - id: 26
+    type: 5
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u64C2\u53F0-\u5730\u6BEF"
+    animation: m_64
+    imageList: m_64;m_65
+    images:
+    - action/m_64
+    - action/m_65
+  - id: 27
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u57CE\u9547-\u8FDC\u666F\u623F"
+    animation: m_40
+    imageList: i_00
+    images:
+    - action/i_00
+  - id: 28
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u57CE\u9547-\u4E0A\u65B9\u51FA\u53E3"
+    animation: m_20
+    imageList: m_20
+    images:
+    - action/m_20
+  - id: 29
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u57CE\u9547-\u623F\u5B501\u697C"
+    animation: m_21
+    imageList: m_21;m_36;m_38;m_39;m_27
+    images:
+    - action/m_21
+    - action/m_36
+    - action/m_38
+    - action/m_39
+    - action/m_27
+  - id: 30
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u57CE\u9547-\u623F\u5B502\u697C"
+    animation: m_21_2
+    imageList: m_21;m_27;m_36;m_39
+    images:
+    - action/m_21
+    - action/m_27
+    - action/m_36
+    - action/m_39
+  - id: 31
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u57CE\u9547-\u4E2D\u666F\u6811"
+    animation: m_22
+    imageList: m_22
+    images:
+    - action/m_22
+  - id: 32
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u57CE\u9547-\u644A\u4F4D1/2"
+    animation: m_23
+    imageList: m_23;m_26;m_28;m_33
+    images:
+    - action/m_23
+    - action/m_26
+    - action/m_28
+    - action/m_33
+  - id: 33
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u57CE\u9547-\u644A\u4F4D3/4"
+    animation: m_24
+    imageList: m_24;m_25
+    images:
+    - action/m_24
+    - action/m_25
+  - id: 34
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u57CE\u9547-\u5546\u94FA\u6807"
+    animation: m_30
+    imageList: m_29;m_30;m_31
+    images:
+    - action/m_29
+    - action/m_30
+    - action/m_31
+  - id: 35
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u57CE\u9547-\u77F3\u72EE\u5B50"
+    animation: m_32
+    imageList: m_32
+    images:
+    - action/m_32
+  - id: 36
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u57CE\u9547-\u7B50/\u753B\u7BD3"
+    animation: m_33
+    imageList: m_33;m_34
+    images:
+    - action/m_33
+    - action/m_34
+  - id: 37
+    type: 5
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u57CE\u9547-\u6728\u7BB1"
+    animation: m_34
+    imageList: m_35
+    images:
+    - action/m_35
+  - id: 38
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u57CE\u9547-\u706F\u7B3C"
+    animation: m_37
+    imageList: m_37;m_29
+    images:
+    - action/m_37
+    - action/m_29
+  - id: 39
+    type: 5
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u57CE\u9547-\u5899"
+    animation: m_45
+    imageList: m_45;m_46
+    images:
+    - action/m_45
+    - action/m_46
+  - id: 40
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u7801\u5934-\u8FDC\u666F\u82391"
+    animation: m_77
+    imageList: m_77
+    images:
+    - action/m_77
+  - id: 41
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u7801\u5934-\u8FDC\u666F\u82392"
+    animation: m_78
+    imageList: i_00
+    images:
+    - action/i_00
+  - id: 42
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u7801\u5934-\u7EF3\u7D22"
+    animation: m_68
+    imageList: m_68
+    images:
+    - action/m_68
+  - id: 43
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u7801\u5934-\u6728\u6869"
+    animation: m_69
+    imageList: m_69
+    images:
+    - action/m_69
+  - id: 44
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u7801\u5934-\u6E14\u7F51"
+    animation: m_70
+    imageList: m_70;m_80
+    images:
+    - action/m_70
+    - action/m_80
+  - id: 45
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u7801\u5934-\u9C7C"
+    animation: m_71
+    imageList: m_71
+    images:
+    - action/m_71
+  - id: 46
+    type: 5
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u7801\u5934-\u7BB1/\u6876"
+    animation: m_72
+    imageList: m_72;m_73
+    images:
+    - action/m_72
+    - action/m_73
+  - id: 47
+    type: 5
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u7801\u5934-\u6C99\u888B"
+    animation: m_74
+    imageList: m_74;m_75
+    images:
+    - action/m_74
+    - action/m_75
+  - id: 48
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u7801\u5934-\u951A"
+    animation: m_76
+    imageList: m_76
+    images:
+    - action/m_76
+  - id: 49
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u7801\u5934-\u4E0A\u65B9\u51FA\u53E3"
+    animation: m_87
+    imageList: m_87;m_88;m_89
+    images:
+    - action/m_87
+    - action/m_88
+    - action/m_89
+  - id: 50
+    type: 3
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5C71\u5E84-\u4E0A\u65B9\u51FA\u53E31"
+    animation: m_90
+    imageList: m_90;m_92;m_93;m_95;m_96
+    images:
+    - action/m_90
+    - action/m_92
+    - action/m_93
+    - action/m_95
+    - action/m_96
+  - id: 51
+    type: 3
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5C71\u5E84-\u4E0A\u65B9\u51FA\u53E32"
+    animation: m_91
+    imageList: m_90;m_91;m_92;m_93;m_94;m_96
+    images:
+    - action/m_90
+    - action/m_91
+    - action/m_92
+    - action/m_93
+    - action/m_94
+    - action/m_96
+  - id: 52
+    type: 3
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5C71\u5E84-\u4E0A\u65B9\u51FA\u53E33"
+    animation: m_92
+    imageList: m_90;m_91;m_92;m_93;m_94;m_96
+    images:
+    - action/m_90
+    - action/m_91
+    - action/m_92
+    - action/m_93
+    - action/m_94
+    - action/m_96
+  - id: 53
+    type: 18
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u8BB0\u5F55\u70B9"
+    animation: s_37
+    imageList: s_38;s_39
+    images:
+    - action/s_38
+    - action/s_39
+  - id: 54
+    type: 5
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5730\u56FE\u5207\u6362\u70B9"
+    animation: s_43
+    imageList: s_43
+    images:
+    - action/s_43
+  - id: 70
+    type: 8
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u9053\u5177\u5546\u4EBA"
+    animation: n_00
+    imageList: n_00
+    images:
+    - action/n_00
+  - id: 71
+    type: 8
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u6B66\u5668\u5546\u4EBA"
+    animation: n_02
+    imageList: n_02;n_99
+    images:
+    - action/n_02
+    - action/n_99
+  - id: 72
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u53E4\u957F\u8001"
+    animation: n_01
+    imageList: n_01;n_99
+    images:
+    - action/n_01
+    - action/n_99
+  - id: 73
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5C55\u4E91\u98DE"
+    animation: n_03
+    imageList: n_03;n_99
+    images:
+    - action/n_03
+    - action/n_99
+  - id: 74
+    type: 7
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u795E\u79D8\u4EBA"
+    animation: z_amakusa
+    imageList: b_31;n_99;n_04
+    images:
+    - action/b_31
+    - action/n_99
+    - action/n_04
+  - id: 75
+    type: 7
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u592A\u963F\u5251"
+    animation: n_05
+    imageList: b_01;n_05
+    images:
+    - action/b_01
+    - action/n_05
+  - id: 76
+    type: 7
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u83AB\u90AA\u5251"
+    animation: n_06
+    imageList: n_06;n_99
+    images:
+    - action/n_06
+    - action/n_99
+  - id: 77
+    type: 7
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5E72\u5C06\u5251"
+    animation: n_07
+    imageList: n_07;n_99
+    images:
+    - action/n_07
+    - action/n_99
+  - id: 78
+    type: 7
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5929\u8349"
+    animation: n_09
+    imageList: n_09;n_99
+    images:
+    - action/n_09
+    - action/n_99
+  - id: 79
+    type: 7
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u6D3E\u5F1F\u5B50"
+    animation: e_01
+    imageList: e_01;s_01
+    images:
+    - action/e_01
+    - action/s_01
+  - id: 80
+    type: 7
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u502D\u5BC7"
+    animation: e_02
+    imageList: e_02;s_02
+    images:
+    - action/e_02
+    - action/s_02
+  - id: 81
+    type: 7
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5973\u5FCD\u8005"
+    animation: e_03
+    imageList: e_03;s_03
+    images:
+    - action/e_03
+    - action/s_03
+  - id: 82
+    type: 7
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u62A4\u5251\u94DC\u4EBA"
+    animation: e_00
+    imageList: e_00;s_00
+    images:
+    - action/e_00
+    - action/s_00
+  - id: 83
+    type: 7
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5D14\u5351"
+    animation: e_06
+    imageList: e_06;s_01
+    images:
+    - action/e_06
+    - action/s_01
+  - id: 84
+    type: 18
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u9F99\u6CC9"
+    animation: z_w1longquan
+    imageList: w_56;i_00;jiantou
+    images:
+    - action/w_56
+    - action/i_00
+    - action/jiantou
+  - id: 85
+    type: 18
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u9ED1\u94A2"
+    animation: z_w2heigang
+    imageList: w_57;i_00;jiantou
+    images:
+    - action/w_57
+    - action/i_00
+    - action/jiantou
+  - id: 86
+    type: 18
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5343\u9E1F"
+    animation: z_w3qianniao
+    imageList: w_14;i_00;jiantou
+    images:
+    - action/w_14
+    - action/i_00
+    - action/jiantou
+  - id: 87
+    type: 18
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u4E03\u661F"
+    animation: z_w4qixing
+    imageList: w_03;i_00;jiantou
+    images:
+    - action/w_03
+    - action/i_00
+    - action/jiantou
+  - id: 88
+    type: 18
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u91D1\u626B\u628A"
+    animation: z_w5jinsaoba
+    imageList: w_65;i_00;jiantou
+    images:
+    - action/w_65
+    - action/i_00
+    - action/jiantou
+  - id: 89
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u70751\u9636"
+    animation: z_egowakeup1
+    imageList: h_04;i_00;w_97;s_34
+    images:
+    - action/h_04
+    - action/i_00
+    - action/w_97
+    - action/s_34
+  - id: 90
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u70752\u9636"
+    animation: z_egowakeup2
+    imageList: h_04;i_00;w_98;s_34
+    images:
+    - action/h_04
+    - action/i_00
+    - action/w_98
+    - action/s_34
+  - id: 91
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u70753\u9636"
+    animation: z_egowakeup3
+    imageList: h_04;i_00;w_99;s_34
+    images:
+    - action/h_04
+    - action/i_00
+    - action/w_99
+    - action/s_34
+  - id: 92
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u70754\u9636"
+    animation: z_egowakeup4
+    imageList: h_04;i_00;w_00;s_34
+    images:
+    - action/h_04
+    - action/i_00
+    - action/w_00
+    - action/s_34
+  - id: 93
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u9F99\u6CC9\u88AB\u5403"
+    animation: z_weaponeaten1
+    imageList: w_56;i_00;h_04
+    images:
+    - action/w_56
+    - action/i_00
+    - action/h_04
+  - id: 94
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u9ED1\u94A2\u88AB\u5403"
+    animation: z_weaponeaten2
+    imageList: w_57;i_00;h_04
+    images:
+    - action/w_57
+    - action/i_00
+    - action/h_04
+  - id: 95
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5343\u9E1F\u88AB\u5403"
+    animation: z_weaponeaten3
+    imageList: w_14;i_00;h_04
+    images:
+    - action/w_14
+    - action/i_00
+    - action/h_04
+  - id: 96
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u91D1\u626B\u628A\u88AB\u5403"
+    animation: z_weaponeaten4
+    imageList: w_65;i_00;h_04
+    images:
+    - action/w_65
+    - action/i_00
+    - action/h_04
+  - id: 97
+    type: 18
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u96F7\u5207"
+    animation: z_w6leiqie
+    imageList: w_12;i_00;jiantou
+    images:
+    - action/w_12
+    - action/i_00
+    - action/jiantou
+  - id: 98
+    type: 18
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u4E5D\u66DC"
+    animation: z_w7jiuyao
+    imageList: w_53;i_00;jiantou
+    images:
+    - action/w_53
+    - action/i_00
+    - action/jiantou
+  - id: 99
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u674E\u9752\u9CDE"
+    animation: n_33
+    imageList: n_33;n_99
+    images:
+    - action/n_33
+    - action/n_99
+  - id: 100
+    type: 18
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5DE8\u9619"
+    animation: z_w8juque
+    imageList: w_02;i_00;jiantou
+    images:
+    - action/w_02
+    - action/i_00
+    - action/jiantou
+  - id: 101
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u8BB0\u5F55\u70B9\u4E0B"
+    animation: s_38
+    imageList: s_37;s_40
+    images:
+    - action/s_37
+    - action/s_40
+  - id: 102
+    type: 18
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u8F69\u8F95"
+    animation: z_w9xuanyuan
+    imageList: w_60;i_00;jiantou
+    images:
+    - action/w_60
+    - action/i_00
+    - action/jiantou
+  - id: 103
+    type: 1
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u7BAD\u5934"
+    animation: z_arrow
+    imageList: s_35
+    images:
+    - action/s_35
+  - id: 104
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5237\u602A\u7279\u6548"
+    animation: skill_14
+    imageList: s_24
+    images:
+    - action/s_24
+  - id: 191
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u6328\u6253\u7279\u6548"
+    animation: z_hit
+    imageList: s_26
+    images:
+    - action/s_26
+  - id: 192
+    type: 2
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u9ED1\u5F71"
+    animation: z_bs
+    imageList: i_00
+    images:
+    - action/i_00
+  - id: 193
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u8868\u60C5\u6C14\u6CE1"
+    animation: e_99
+    imageList: s_99
+    images:
+    - action/s_99
+  - id: 194
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u6218\u6597\u5F00\u59CB"
+    animation: z_battlestart
+    imageList: s_33
+    images:
+    - action/s_33
+  - id: 195
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "CG2-\u5951\u7EA6"
+    animation: z_cg2
+    imageList: cg_02;s_34;o_00;a_19
+    images:
+    - action/cg_02
+    - action/s_34
+    - action/o_00
+    - action/a_19
+  - id: 196
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "CG1-\u5251\u7075\u51FA\u573A"
+    animation: z_cg1
+    imageList: cg_00;o_00;s_34;a_19
+    images:
+    - action/cg_00
+    - action/o_00
+    - action/s_34
+    - action/a_19
+  - id: 197
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u9ED1\u5C4F\u51FA\u573A"
+    animation: z_passage
+    imageList: o_00
+    images:
+    - action/o_00
+  - id: 198
+    type: 6
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5F00\u573A\u52A8\u753B"
+    animation: z_opening
+    imageList: o_00;o_01;o_02;o_03;o_04;o_05;o_10
+    images:
+    - action/o_00
+    - action/o_01
+    - action/o_02
+    - action/o_03
+    - action/o_04
+    - action/o_05
+    - action/o_10
+  - id: 199
+    type: 14
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u7075"
+    animation: h_03
+    imageList: h_03;h_04;i_00
+    images:
+    - action/h_03
+    - action/h_04
+    - action/i_00
+  - id: 200
+    type: 0
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u53E4\u5C0F\u5929"
+    animation: h_00
+    imageList: h_00;w_97;h_01;h_02;w_02;s_10;s_11;s_12;s_13;s_14;s_15;s_16;s_08
+    images:
+    - action/h_00
+    - action/w_97
+    - action/h_01
+    - action/h_02
+    - action/w_02
+    - action/s_10
+    - action/s_11
+    - action/s_12
+    - action/s_13
+    - action/s_14
+    - action/s_15
+    - action/s_16
+    - action/s_08
+  - id: 201
+    type: 9
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u62A4\u5251\u94DC\u4EBA(\u5F31)"
+    animation: e_00
+    imageList: e_00;s_00
+    images:
+    - action/e_00
+    - action/s_00
+  - id: 202
+    type: 9
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u62A4\u5251\u94DC\u4EBA(\u5F3A)"
+    animation: e_05
+    imageList: e_05;s_00
+    images:
+    - action/e_05
+    - action/s_00
+  - id: 203
+    type: 11
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u62A4\u5251\u94DC\u4EBA(\u7CBE)"
+    animation: e_00
+    imageList: e_00;s_00
+    images:
+    - action/e_00
+    - action/s_00
+  - id: 204
+    type: 9
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u6D3E\u5F1F\u5B50(\u5F31)"
+    animation: e_01
+    imageList: e_01;s_01
+    images:
+    - action/e_01
+    - action/s_01
+  - id: 205
+    type: 9
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u6D3E\u5F1F\u5B50(\u5F3A)"
+    animation: e_06
+    imageList: e_06;s_01
+    images:
+    - action/e_06
+    - action/s_01
+  - id: 206
+    type: 11
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u6D3E\u5F1F\u5B50(\u7CBE)"
+    animation: e_01
+    imageList: e_01;s_01
+    images:
+    - action/e_01
+    - action/s_01
+  - id: 207
+    type: 9
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u502D\u5BC7\u6D6A\u4EBA(\u5F31)"
+    animation: e_02
+    imageList: e_02;s_02
+    images:
+    - action/e_02
+    - action/s_02
+  - id: 208
+    type: 9
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u502D\u5BC7\u6D6A\u4EBA(\u5F3A)"
+    animation: e_07
+    imageList: e_07;s_02
+    images:
+    - action/e_07
+    - action/s_02
+  - id: 209
+    type: 11
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u502D\u5BC7\u6D6A\u4EBA(\u7CBE)"
+    animation: e_02
+    imageList: e_02;s_02
+    images:
+    - action/e_02
+    - action/s_02
+  - id: 210
+    type: 9
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5973\u5FCD\u8005(\u5F31)"
+    animation: e_03
+    imageList: e_03;s_03
+    images:
+    - action/e_03
+    - action/s_03
+  - id: 211
+    type: 9
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5973\u5FCD\u8005(\u5F3A)"
+    animation: e_08
+    imageList: e_08;s_03
+    images:
+    - action/e_08
+    - action/s_03
+  - id: 212
+    type: 11
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5973\u5FCD\u8005(\u7CBE)"
+    animation: e_03
+    imageList: e_03;s_03
+    images:
+    - action/e_03
+    - action/s_03
+  - id: 213
+    type: 9
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u65E5\u672C\u5251\u5BA2(\u5F31)"
+    animation: e_04
+    imageList: e_04;s_04
+    images:
+    - action/e_04
+    - action/s_04
+  - id: 214
+    type: 9
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u65E5\u672C\u5251\u5BA2(\u5F3A)"
+    animation: e_09
+    imageList: e_09;s_04
+    images:
+    - action/e_09
+    - action/s_04
+  - id: 215
+    type: 11
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u65E5\u672C\u5251\u5BA2(\u7CBE)"
+    animation: e_04
+    imageList: e_04;s_04
+    images:
+    - action/e_04
+    - action/s_04
+  - id: 216
+    type: 11
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u62A4\u5251\u94DC\u4EBA(\u9B3C)"
+    animation: e_05
+    imageList: e_05;s_00
+    images:
+    - action/e_05
+    - action/s_00
+  - id: 217
+    type: 11
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5251\u6D3E\u5F1F\u5B50(\u9B3C)"
+    animation: e_06
+    imageList: e_06;s_01
+    images:
+    - action/e_06
+    - action/s_01
+  - id: 218
+    type: 11
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u502D\u5BC7\u6D6A\u4EBA(\u9B3C)"
+    animation: e_07
+    imageList: e_07;s_02
+    images:
+    - action/e_07
+    - action/s_02
+  - id: 219
+    type: 11
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5973\u5FCD\u8005(\u9B3C)"
+    animation: e_08
+    imageList: e_08;s_03
+    images:
+    - action/e_08
+    - action/s_03
+  - id: 220
+    type: 11
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u65E5\u672C\u5251\u5BA2(\u9B3C)"
+    animation: e_09
+    imageList: e_09;s_04
+    images:
+    - action/e_09
+    - action/s_04
+  - id: 221
+    type: 9
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5973\u5FCD\u8005\u5F31\u7206\u4E86"
+    animation: e_03
+    imageList: e_03;s_03
+    images:
+    - action/e_03
+    - action/s_03
+  - id: 222
+    type: 9
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u65E5\u672C\u5251\u5BA2\u5F31\u7206\u4E86"
+    animation: e_04
+    imageList: e_04;s_04
+    images:
+    - action/e_04
+    - action/s_04
+  - id: 223
+    type: 9
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u502D\u5BC7\u6D6A\u4EBA\u5F31\u7206\u4E86"
+    animation: e_02
+    imageList: e_02;s_02
+    images:
+    - action/e_02
+    - action/s_02
+  - id: 231
+    type: 10
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u592A\u963F\u5251(\u5F31)"
+    animation: b_00
+    imageList: b_00;b_01;n_05;b_02;b_03;s_29;s_30;s_31
+    images:
+    - action/b_00
+    - action/b_01
+    - action/n_05
+    - action/b_02
+    - action/b_03
+    - action/s_29
+    - action/s_30
+    - action/s_31
+  - id: 232
+    type: 10
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u592A\u963F\u5251(\u5F3A)"
+    animation: b_00
+    imageList: b_00;b_01;n_05;b_02;b_03;s_29;s_30;s_31
+    images:
+    - action/b_00
+    - action/b_01
+    - action/n_05
+    - action/b_02
+    - action/b_03
+    - action/s_29
+    - action/s_30
+    - action/s_31
+  - id: 233
+    type: 10
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u592A\u963F\u5251(\u9B3C)"
+    animation: b_00
+    imageList: b_00;b_01;n_05;b_02;b_03;s_29;s_30;s_31
+    images:
+    - action/b_00
+    - action/b_01
+    - action/n_05
+    - action/b_02
+    - action/b_03
+    - action/s_29
+    - action/s_30
+    - action/s_31
+  - id: 234
+    type: 10
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u83AB\u90AA\u5251(\u5F31)"
+    animation: b_10
+    imageList: n_06;n_99;b_10;b_11;b_12;b_13;s_30;s_42
+    images:
+    - action/n_06
+    - action/n_99
+    - action/b_10
+    - action/b_11
+    - action/b_12
+    - action/b_13
+    - action/s_30
+    - action/s_42
+  - id: 235
+    type: 10
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u83AB\u90AA\u5251(\u5F3A)"
+    animation: b_10
+    imageList: n_06;n_99;b_10;b_11;b_12;b_13;s_30;s_42
+    images:
+    - action/n_06
+    - action/n_99
+    - action/b_10
+    - action/b_11
+    - action/b_12
+    - action/b_13
+    - action/s_30
+    - action/s_42
+  - id: 236
+    type: 10
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u83AB\u90AA\u5251(\u9B3C)"
+    animation: b_10
+    imageList: n_06;n_99;b_10;b_11;b_12;b_13;s_30;s_42
+    images:
+    - action/n_06
+    - action/n_99
+    - action/b_10
+    - action/b_11
+    - action/b_12
+    - action/b_13
+    - action/s_30
+    - action/s_42
+  - id: 237
+    type: 10
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5E72\u5C06\u5251(\u5F31)"
+    animation: b_20
+    imageList: n_07;n_99;b_20;b_21;s_30;s_29;h_02;s_64
+    images:
+    - action/n_07
+    - action/n_99
+    - action/b_20
+    - action/b_21
+    - action/s_30
+    - action/s_29
+    - action/h_02
+    - action/s_64
+  - id: 238
+    type: 10
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5E72\u5C06\u5251(\u5F3A)"
+    animation: b_20
+    imageList: n_07;n_99;b_20;b_21;s_30;s_29;h_02;s_64
+    images:
+    - action/n_07
+    - action/n_99
+    - action/b_20
+    - action/b_21
+    - action/s_30
+    - action/s_29
+    - action/h_02
+    - action/s_64
+  - id: 239
+    type: 10
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5E72\u5C06\u5251(\u9B3C)"
+    animation: b_20
+    imageList: n_07;n_99;b_20;b_21;s_30;s_29;h_02;s_64
+    images:
+    - action/n_07
+    - action/n_99
+    - action/b_20
+    - action/b_21
+    - action/s_30
+    - action/s_29
+    - action/h_02
+    - action/s_64
+  - id: 240
+    type: 10
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5929\u8349(\u5F31)"
+    animation: b_30
+    imageList: b_30;b_32;b_33;s_44;s_45;s_46;s_47;s_48;n_99;s_30;s_58;s_59;s_51;s_49;s_62;s_63;n_09
+    images:
+    - action/b_30
+    - action/b_32
+    - action/b_33
+    - action/s_44
+    - action/s_45
+    - action/s_46
+    - action/s_47
+    - action/s_48
+    - action/n_99
+    - action/s_30
+    - action/s_58
+    - action/s_59
+    - action/s_51
+    - action/s_49
+    - action/s_62
+    - action/s_63
+    - action/n_09
+  - id: 241
+    type: 10
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5929\u8349(\u5F3A)"
+    animation: b_30
+    imageList: b_30;b_32;b_33;s_44;s_45;s_46;s_47;s_48;n_99;s_30;s_58;s_59;s_51;s_49;s_62;s_63;n_09
+    images:
+    - action/b_30
+    - action/b_32
+    - action/b_33
+    - action/s_44
+    - action/s_45
+    - action/s_46
+    - action/s_47
+    - action/s_48
+    - action/n_99
+    - action/s_30
+    - action/s_58
+    - action/s_59
+    - action/s_51
+    - action/s_49
+    - action/s_62
+    - action/s_63
+    - action/n_09
+  - id: 242
+    type: 10
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5929\u8349(\u9B3C)"
+    animation: b_30
+    imageList: b_30;b_32;b_33;s_44;s_45;s_46;s_47;s_48;n_99;s_30;s_58;s_59;s_51;s_49;s_62;s_63;n_09
+    images:
+    - action/b_30
+    - action/b_32
+    - action/b_33
+    - action/s_44
+    - action/s_45
+    - action/s_46
+    - action/s_47
+    - action/s_48
+    - action/n_99
+    - action/s_30
+    - action/s_58
+    - action/s_59
+    - action/s_51
+    - action/s_49
+    - action/s_62
+    - action/s_63
+    - action/n_09
+  - id: 243
+    type: 10
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u91CC\u4E3B\u89D2(\u5F31)"
+    animation: b_40
+    imageList: h_00;w_00;s_57;h_02;s_50;s_51;s_52;s_53;s_54;s_55;s_56;s_49;s_30;s_61
+    images:
+    - action/h_00
+    - action/w_00
+    - action/s_57
+    - action/h_02
+    - action/s_50
+    - action/s_51
+    - action/s_52
+    - action/s_53
+    - action/s_54
+    - action/s_55
+    - action/s_56
+    - action/s_49
+    - action/s_30
+    - action/s_61
+  - id: 244
+    type: 10
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u91CC\u4E3B\u89D2(\u5F3A)"
+    animation: b_40
+    imageList: h_00;w_00;s_57;h_02;s_50;s_51;s_52;s_53;s_54;s_55;s_56;s_49;s_30;s_61
+    images:
+    - action/h_00
+    - action/w_00
+    - action/s_57
+    - action/h_02
+    - action/s_50
+    - action/s_51
+    - action/s_52
+    - action/s_53
+    - action/s_54
+    - action/s_55
+    - action/s_56
+    - action/s_49
+    - action/s_30
+    - action/s_61
+  - id: 245
+    type: 10
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u91CC\u4E3B\u89D2(\u9B3C)"
+    animation: b_40
+    imageList: h_00;w_00;s_57;h_02;s_50;s_51;s_52;s_53;s_54;s_55;s_56;s_49;s_30;s_61
+    images:
+    - action/h_00
+    - action/w_00
+    - action/s_57
+    - action/h_02
+    - action/s_50
+    - action/s_51
+    - action/s_52
+    - action/s_53
+    - action/s_54
+    - action/s_55
+    - action/s_56
+    - action/s_49
+    - action/s_30
+    - action/s_61
+  stages:
+  - script: 100
+    name: "\u85CF\u5251\u5C71\u5E84-\u64C2\u53F0"
+    map: map100
+  - script: 1000
+    name: "\u987A\u98CE\u7801\u5934-\u5165\u53E3"
+    map: map492
+  - script: 1001
+    name: "\u987A\u98CE\u7801\u5934-1"
+    map: map497
+  - script: 1002
+    name: "\u987A\u98CE\u7801\u5934-2"
+    map: map495
+  - script: 1003
+    name: "\u987A\u98CE\u7801\u5934-3"
+    map: map496
+  - script: 1004
+    name: "\u987A\u98CE\u7801\u5934-4"
+    map: map494
+  - script: 1005
+    name: "\u987A\u98CE\u7801\u5934-5"
+    map: map488
+  - script: 1006
+    name: "\u987A\u98CE\u7801\u5934-6"
+    map: map498
+  - script: 1007
+    name: "\u987A\u98CE\u7801\u5934\u5B58\u6863\u70B9-1"
+    map: map494
+  - script: 1008
+    name: "\u987A\u98CE\u7801\u5934-7"
+    map: map497
+  - script: 1009
+    name: "\u987A\u98CE\u7801\u5934-8"
+    map: map488
+  - script: 101
+    name: "\u85CF\u5251\u5C71\u5E84"
+    map: map101
+  - script: 1010
+    name: "\u987A\u98CE\u7801\u5934-9"
+    map: map487
+  - script: 1011
+    name: "\u987A\u98CE\u7801\u5934-10"
+    map: map488
+  - script: 1012
+    name: "\u987A\u98CE\u7801\u5934-11"
+    map: map494
+  - script: 1013
+    name: "\u987A\u98CE\u7801\u5934-12"
+    map: map496
+  - script: 1014
+    name: "\u987A\u98CE\u7801\u5934\u5B58\u6863\u70B9-2"
+    map: map498
+  - script: 1015
+    name: "\u987A\u98CE\u7801\u5934-\u51FA\u53E3"
+    map: map497
+  - script: 1100
+    name: "\u623E\u5251\u5883-\u5165\u53E3"
+    map: map201
+  - script: 1101
+    name: "\u623E\u5251\u5883-1"
+    map: map290
+  - script: 1102
+    name: "\u623E\u5251\u5883-2"
+    map: map297
+  - script: 1103
+    name: "\u623E\u5251\u5883-3"
+    map: map298
+  - script: 1104
+    name: "\u623E\u5251\u5883-4"
+    map: map299
+  - script: 1105
+    name: "\u623E\u5251\u5883-5"
+    map: map298
+  - script: 1106
+    name: "\u623E\u5251\u5883-6"
+    map: map298
+  - script: 1107
+    name: "\u623E\u5251\u5883-7"
+    map: map291
+  - script: 1108
+    name: "\u623E\u5251\u5883-8"
+    map: map298
+  - script: 1109
+    name: "\u623E\u5251\u5883-9"
+    map: map290
+  - script: 1110
+    name: "\u623E\u5251\u5883-10"
+    map: map296
+  - script: 1111
+    name: "\u623E\u5251\u5883\u5B58\u6863\u70B9-1"
+    map: map290
+  - script: 1112
+    name: "\u623E\u5251\u5883-11"
+    map: map295
+  - script: 1113
+    name: "\u623E\u5251\u5883-12"
+    map: map295
+  - script: 1114
+    name: "\u623E\u5251\u5883-13"
+    map: map290
+  - script: 1115
+    name: "\u623E\u5251\u5883-14"
+    map: map298
+  - script: 1116
+    name: "\u623E\u5251\u5883-15"
+    map: map298
+  - script: 1117
+    name: "\u623E\u5251\u5883-16"
+    map: map295
+  - script: 1118
+    name: "\u623E\u5251\u5883-17"
+    map: map298
+  - script: 1119
+    name: "\u623E\u5251\u5883-18"
+    map: map298
+  - script: 1120
+    name: "\u623E\u5251\u5883-19"
+    map: map298
+  - script: 1121
+    name: "\u623E\u5251\u5883-20"
+    map: map299
+  - script: 1122
+    name: "\u623E\u5251\u5883-21"
+    map: map296
+  - script: 1123
+    name: "\u623E\u5251\u5883\u5B58\u6863\u70B9-2"
+    map: map295
+  - script: 1124
+    name: "\u623E\u5251\u5883-\u51FA\u53E3"
+    map: map298
+  - script: 1125
+    name: "\u623E\u5251\u5883-\u51FA\u53E3"
+    map: map298
+  - script: 1400
+    name: "\u4E09\u5C42-\u5165\u53E3"
+    map: map290
+  - script: 1401
+    name: "\u4E09\u5C42-1"
+    map: map298
+  - script: 1402
+    name: "\u4E09\u5C42-2"
+    map: map290
+  - script: 1403
+    name: "\u4E09\u5C42-3"
+    map: map297
+  - script: 1404
+    name: "\u4E09\u5C42-4"
+    map: map299
+  - script: 1405
+    name: "\u4E09\u5C42-5"
+    map: map298
+  - script: 1406
+    name: "\u4E09\u5C42-6"
+    map: map295
+  - script: 1407
+    name: "\u4E09\u5C42-7"
+    map: map299
+  - script: 1408
+    name: "\u4E09\u5C42-8"
+    map: map299
+  - script: 1409
+    name: "\u5B58\u6863\u70B9-1"
+    map: map292
+  - script: 1410
+    name: "\u4E09\u5C42-9"
+    map: map298
+  - script: 1411
+    name: "\u4E09\u5C42-10"
+    map: map296
+  - script: 1412
+    name: "\u4E09\u5C42-11"
+    map: map297
+  - script: 1413
+    name: "\u4E09\u5C42-12"
+    map: map298
+  - script: 1414
+    name: "\u4E09\u5C42-13"
+    map: map298
+  - script: 1415
+    name: "\u4E09\u5C42-14"
+    map: map298
+  - script: 1416
+    name: "\u4E09\u5C42-15"
+    map: map296
+  - script: 1417
+    name: "\u4E09\u5C42-16"
+    map: map298
+  - script: 1418
+    name: "\u4E09\u5C42-17"
+    map: map299
+  - script: 1419
+    name: "\u4E09\u5C42-18"
+    map: map290
+  - script: 1420
+    name: "\u5B58\u6863\u70B9-2"
+    map: map297
+  - script: 1421
+    name: "\u4E09\u5C42-19"
+    map: map295
+  - script: 1422
+    name: "\u4E09\u5C42-20"
+    map: map298
+  - script: 1423
+    name: "\u4E09\u5C42-21"
+    map: map291
+  - script: 1424
+    name: "\u4E09\u5C42-22"
+    map: map290
+  - script: 1425
+    name: "\u4E09\u5C42-23"
+    map: map299
+  - script: 1426
+    name: "\u4E09\u5C42-24"
+    map: map295
+  - script: 1427
+    name: "\u4E09\u5C42-25"
+    map: map299
+  - script: 1428
+    name: "\u4E09\u5C42-26"
+    map: map298
+  - script: 1429
+    name: "\u4E09\u5C42-27"
+    map: map296
+  - script: 1430
+    name: "\u4E09\u5C42-28"
+    map: map290
+  - script: 1431
+    name: "\u4E09\u5C42-29"
+    map: map292
+  - script: 1432
+    name: "\u4E09\u5C42-30"
+    map: map296
+  - script: 1433
+    name: "\u4E09\u5C42-31"
+    map: map298
+  - script: 1434
+    name: "\u4E09\u5C42-32"
+    map: map291
+  - script: 1435
+    name: "\u5B58\u6863\u70B9-3"
+    map: map296
+  - script: 1436
+    name: "\u4E09\u5C42-\u51FA\u53E3"
+    map: map291
+  - script: 200
+    name: "\u5251\u51A2\u5165\u53E3"
+    map: map200
+  - script: 201
+    name: "\u5251\u51A2-1"
+    map: map201
+  - script: 202
+    name: "\u5251\u51A2-2"
+    map: map202
+  - script: 203
+    name: "\u5251\u51A2-3"
+    map: map203
+  - script: 204
+    name: "\u5251\u51A2\u6DF1\u5904"
+    map: map204
+  - script: 300
+    name: "\u65E0\u53CC\u57CE-\u5165\u53E3"
+    map: map392
+  - script: 301
+    name: "\u65E0\u53CC\u57CE-1"
+    map: map392
+  - script: 302
+    name: "\u65E0\u53CC\u57CE-2"
+    map: map392
+  - script: 303
+    name: "\u65E0\u53CC\u57CE-3"
+    map: map393
+  - script: 304
+    name: "\u65E0\u53CC\u57CE-4"
+    map: map397
+  - script: 305
+    name: "\u65E0\u53CC\u57CE-5"
+    map: map392
+  - script: 306
+    name: "\u65E0\u53CC\u57CE-6"
+    map: map395
+  - script: 307
+    name: "\u65E0\u53CC\u57CE-7"
+    map: map391
+  - script: 308
+    name: "\u65E0\u53CC\u57CE-8"
+    map: map397
+  - script: 309
+    name: "\u65E0\u53CC\u57CE\u5B58\u6863\u70B9-1"
+    map: map392
+  - script: 310
+    name: "\u65E0\u53CC\u57CE-9"
+    map: map390
+  - script: 311
+    name: "\u65E0\u53CC\u57CE-10"
+    map: map395
+  - script: 312
+    name: "\u65E0\u53CC\u57CE-11"
+    map: map393
+  - script: 313
+    name: "\u65E0\u53CC\u57CE-12"
+    map: map390
+  - script: 314
+    name: "\u65E0\u53CC\u57CE-13"
+    map: map394
+  - script: 315
+    name: "\u65E0\u53CC\u57CE-14"
+    map: map391
+  - script: 316
+    name: "\u65E0\u53CC\u57CE-15"
+    map: map397
+  - script: 317
+    name: "\u65E0\u53CC\u57CE-16"
+    map: map397
+  - script: 318
+    name: "\u65E0\u53CC\u57CE-17"
+    map: map394
+  - script: 319
+    name: "\u65E0\u53CC\u57CE-18"
+    map: map396
+  - script: 320
+    name: "\u65E0\u53CC\u57CE-19"
+    map: map391
+  - script: 321
+    name: "\u65E0\u53CC\u57CE\u5B58\u6863\u70B9-2"
+    map: map395
+  - script: 322
+    name: "\u65E0\u53CC\u57CE-20"
+    map: map391
+  - script: 323
+    name: "\u65E0\u53CC\u57CE-21"
+    map: map392
+  - script: 324
+    name: "\u65E0\u53CC\u57CE-22"
+    map: map393
+  - script: 325
+    name: "\u65E0\u53CC\u57CE-23"
+    map: map390
+  - script: 326
+    name: "\u65E0\u53CC\u57CE-24"
+    map: map394
+  - script: 327
+    name: "\u65E0\u53CC\u57CE-25"
+    map: map398
+  - script: 328
+    name: "\u65E0\u53CC\u57CE-26"
+    map: map397
+  - script: 329
+    name: "\u65E0\u53CC\u57CE-27"
+    map: map393
+  - script: 330
+    name: "\u65E0\u53CC\u57CE-28"
+    map: map395
+  - script: 331
+    name: "\u65E0\u53CC\u57CE-29"
+    map: map391
+  - script: 332
+    name: "\u65E0\u53CC\u57CE-30"
+    map: map392
+  - script: 333
+    name: "\u65E0\u53CC\u57CE\u5B58\u6863\u70B9-3"
+    map: map391
+  - script: 334
+    name: "\u65E0\u53CC\u57CE-\u5546\u4E1A\u8857"
+    map: map388
+  - script: 335
+    name: "\u65E0\u53CC\u57CE-\u57CE\u4E3B\u5E9C"
+    map: map388
+  - script: 400
+    name: "\u7D2B\u8349\u575E-\u5165\u53E3"
+    map: map196
+  - script: 401
+    name: "\u7D2B\u8349\u575E-1"
+    map: map197
+  - script: 402
+    name: "\u7D2B\u8349\u575E\u5B58\u6863\u70B9-1"
+    map: map197
+  - script: 403
+    name: "\u7D2B\u8349\u575E-2"
+    map: map194
+  - script: 404
+    name: "\u7D2B\u8349\u575E-3"
+    map: map197
+  - script: 405
+    name: "\u7D2B\u8349\u575E-4"
+    map: map193
+  - script: 406
+    name: "\u7D2B\u8349\u575E-5"
+    map: map196
+  - script: 407
+    name: "\u7D2B\u8349\u575E\u5B58\u6863\u70B9-2"
+    map: map194
+  - script: 408
+    name: "\u7D2B\u8349\u575E-6"
+    map: map197
+  - script: 500
+    name: "\u6E05\u6EAA\u6751-\u5165\u53E3"
+    map: map393
+  - script: 501
+    name: "\u6E05\u6EAA\u6751-1"
+    map: map395
+  - script: 502
+    name: "\u6E05\u6EAA\u6751-2"
+    map: map391
+  - script: 503
+    name: "\u6E05\u6EAA\u6751\u5B58\u6863\u70B9-1"
+    map: map392
+  - script: 504
+    name: "\u6E05\u6EAA\u6751-4"
+    map: map391
+  - script: 505
+    name: "\u6E05\u6EAA\u6751-3"
+    map: map391
+  - script: 506
+    name: "\u6E05\u6EAA\u6751-5"
+    map: map392
+  - script: 507
+    name: "\u6E05\u6EAA\u6751-6"
+    map: map397
+  - script: 508
+    name: "\u6E05\u6EAA\u6751-7"
+    map: map397
+  - script: 509
+    name: "\u6E05\u6EAA\u6751-8"
+    map: map390
+  - script: 510
+    name: "\u6E05\u6EAA\u6751-9"
+    map: map395
+  - script: 511
+    name: "\u6E05\u6EAA\u6751\u5B58\u6863\u70B9-2"
+    map: map392
+  - script: 512
+    name: "\u6E05\u6EAA\u6751-10"
+    map: map391
+  - script: 600
+    name: "\u5143\u5B9D\u6E7E-\u5165\u53E3"
+    map: map495
+  - script: 601
+    name: "\u5143\u5B9D\u6E7E-1"
+    map: map498
+  - script: 602
+    name: "\u5143\u5B9D\u6E7E-2"
+    map: map496
+  - script: 603
+    name: "\u5143\u5B9D\u6E7E-3"
+    map: map495
+  - script: 604
+    name: "\u5143\u5B9D\u6E7E-4"
+    map: map491
+  - script: 605
+    name: "\u5143\u5B9D\u6E7E-5"
+    map: map498
+  - script: 606
+    name: "\u5143\u5B9D\u6E7E-6"
+    map: map497
+  - script: 607
+    name: "\u5143\u5B9D\u6E7E-7"
+    map: map488
+  - script: 608
+    name: "\u5143\u5B9D\u6E7E-8"
+    map: map493
+  - script: 609
+    name: "\u5143\u5B9D\u6E7E-9"
+    map: map496
+  - script: 610
+    name: "\u5143\u5B9D\u6E7E-10"
+    map: map494
+  - script: 611
+    name: "\u5143\u5B9D\u6E7E-\u51FA\u53E3"
+    map: map497
+  - script: 612
+    name: "\u5143\u5B9D\u6E7E\u8BB0\u5F55\u70B9-1"
+    map: map487
+  - script: 700
+    name: "\u6F6E\u97F3\u6D1E-\u5165\u53E3"
+    map: map293
+  - script: 701
+    name: "\u6F6E\u97F3\u6D1E-1"
+    map: map293
+  - script: 702
+    name: "\u6F6E\u97F3\u6D1E-2"
+    map: map293
+  - script: 703
+    name: "\u6F6E\u97F3\u6D1E-3"
+    map: map293
+  - script: 704
+    name: "\u6F6E\u97F3\u6D1E-4"
+    map: map291
+  - script: 705
+    name: "\u6F6E\u97F3\u6D1E\u5B58\u6863\u70B9-1"
+    map: map294
+  - script: 706
+    name: "\u6F6E\u97F3\u6D1E-5"
+    map: map296
+  - script: 707
+    name: "\u6F6E\u97F3\u6D1E-6"
+    map: map298
+  - script: 708
+    name: "\u6F6E\u97F3\u6D1E-7"
+    map: map297
+  - script: 709
+    name: "\u6F6E\u97F3\u6D1E-8"
+    map: map299
+  - script: 710
+    name: "\u6F6E\u97F3\u6D1E-9"
+    map: map290
+  - script: 711
+    name: "\u6F6E\u97F3\u6D1E-10"
+    map: map299
+  - script: 712
+    name: "\u6F6E\u97F3\u6D1E\u5B58\u6863\u70B9-2"
+    map: map293
+  - script: 713
+    name: "\u6F6E\u97F3\u6D1E-11"
+    map: map295
+  - script: 800
+    name: "\u6816\u971E\u9547-\u5165\u53E3"
+    map: map391
+  - script: 801
+    name: "\u6816\u971E\u9547-1"
+    map: map393
+  - script: 802
+    name: "\u6816\u971E\u9547-2"
+    map: map397
+  - script: 803
+    name: "\u6816\u971E\u9547-3"
+    map: map392
+  - script: 804
+    name: "\u6816\u971E\u9547-4"
+    map: map390
+  - script: 805
+    name: "\u6816\u971E\u9547-5"
+    map: map394
+  - script: 806
+    name: "\u6816\u971E\u9547-6"
+    map: map394
+  - script: 807
+    name: "\u6816\u971E\u9547-7"
+    map: map398
+  - script: 808
+    name: "\u6816\u971E\u9547\u5B58\u6863\u70B91"
+    map: map396
+  - script: 809
+    name: "\u6816\u971E\u9547-8"
+    map: map392
+  - script: 810
+    name: "\u6816\u971E\u9547-9"
+    map: map397
+  - script: 811
+    name: "\u6816\u971E\u9547-10"
+    map: map393
+  - script: 812
+    name: "\u6816\u971E\u9547-11"
+    map: map391
+  - script: 813
+    name: "\u6816\u971E\u9547-12"
+    map: map394
+  - script: 814
+    name: "\u6816\u971E\u9547-13"
+    map: map397
+  - script: 815
+    name: "\u6816\u971E\u9547-14"
+    map: map391
+  - script: 816
+    name: "\u6816\u971E\u9547\u5B58\u6863\u70B9-2"
+    map: map397
+  - script: 817
+    name: "\u6816\u971E\u9547-\u51FA\u53E3"
+    map: map390
+  - script: 900
+    name: "\u5DE8\u9CB8\u5E2E-\u5165\u53E3"
+    map: map197
+  - script: 901
+    name: "\u5DE8\u9CB8\u5E2E-1"
+    map: map192
+  - script: 902
+    name: "\u5DE8\u9CB8\u5E2E-2"
+    map: map193
+  - script: 903
+    name: "\u5DE8\u9CB8\u5E2E-3"
+    map: map197
+  - script: 904
+    name: "\u5DE8\u9CB8\u5E2E-4"
+    map: map194
+  - script: 905
+    name: "\u5DE8\u9CB8\u5E2E-5"
+    map: map192
+  - script: 906
+    name: "\u5DE8\u9CB8\u5E2E-6"
+    map: map193
+  - script: 907
+    name: "\u5DE8\u9CB8\u5E2E-7"
+    map: map197
+  - script: 908
+    name: "\u5DE8\u9CB8\u5E2E-8"
+    map: map194
+  - script: 909
+    name: "\u5DE8\u9CB8\u5E2E\u5B58\u6863\u70B9-1"
+    map: map194
+  - script: 910
+    name: "\u5DE8\u9CB8\u5E2E-9"
+    map: map193
+  - script: 911
+    name: "\u5DE8\u9CB8\u5E2E-10"
+    map: map197
+  - script: 912
+    name: "\u5DE8\u9CB8\u5E2E-11"
+    map: map197
+  - script: 913
+    name: "\u5DE8\u9CB8\u5E2E-12"
+    map: map197
+  - script: 914
+    name: "\u5DE8\u9CB8\u5E2E-13"
+    map: map193
+  - script: 915
+    name: "\u5DE8\u9CB8\u5E2E-14"
+    map: map194
+  - script: 916
+    name: "\u5DE8\u9CB8\u5E2E-15"
+    map: map197
+  - script: 917
+    name: "\u5DE8\u9CB8\u5E2E-16"
+    map: map197
+  - script: 918
+    name: "\u5DE8\u9CB8\u5E2E\u5B58\u6863\u70B9-2"
+    map: map196
+  - script: 919
+    name: "\u5DE8\u9CB8\u5E2E-\u51FA\u53E3"
+    map: map197
+  equipment:
+  - id: 0
+    grade: 0
+    level: 1
+    skill: -2
+    durability: 50
+    hp: 50
+    attack: 30
+    defense: 15
+    hit: 7
+    dodge: 2
+    critical: 5
+    buy: 500
+    sell: 10
+    name: "\u94C1\u5251"
+    description: "\u6700\u666E\u901A\u7684\u6B66\u5668\uFF0C\u65E0\u9644\u52A0\u6280\u80FD"
+    image: w_01
+    effects: 0,5
+    icon: 0,0
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 1
+    grade: 0
+    level: 7
+    skill: -2
+    durability: 60
+    hp: 60
+    attack: 50
+    defense: 20
+    hit: 8
+    dodge: 4
+    critical: 10
+    buy: 2000
+    sell: 20
+    name: "\u94A2\u5251"
+    description: "\u6BD4\u94C1\u5251\u597D\u4E00\u70B9\uFF0C\u65E0\u9644\u52A0\u6280\u80FD"
+    image: w_51
+    effects: 1,2
+    icon: 1,0
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 2
+    grade: 2
+    level: 11
+    skill: 15
+    durability: 100
+    hp: 150
+    attack: 100
+    defense: 40
+    hit: 9
+    dodge: 3
+    critical: 15
+    buy: 7500
+    sell: 75
+    name: "\u9F99\u6E0A"
+    description: "\u6B27\u51B6\u5B50\u5236\u4F5C\uFF0C\u54C1\u8D28\u4FDD\u8BC1\uFF0C\u9644\u52A0\u6280\u80FD<c=ffff00,000000,1>\u56DE\u8840</c>"
+    image: w_06
+    effects: 4,1;5,1
+    icon: 0,5
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 3
+    grade: 1
+    level: 15
+    skill: 5
+    durability: 90
+    hp: 160
+    attack: 90
+    defense: 50
+    hit: 10
+    dodge: 4
+    critical: 12
+    buy: 9000
+    sell: 90
+    name: "\u7CBE\u91D1"
+    description: "\u7CBE\u94A2\u94F8\u9020\u7684\u5B9D\u5251\uFF0C\u9644\u52A0\u6280\u80FD<c=ffff00,000000,1>\u788E\u5CA9</c>"
+    image: w_09
+    effects: 3,1
+    icon: 0,8
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 4
+    grade: 1
+    level: 17
+    skill: 8
+    durability: 70
+    hp: 100
+    attack: 150
+    defense: 20
+    hit: 11
+    dodge: 5
+    critical: 20
+    buy: 10000
+    sell: 100
+    name: "\u78A7\u6C34"
+    description: "\u542B\u6709\u6C34\u4E4B\u7075\u6C14\u7684\u5B9D\u5251\uFF0C\u9644\u52A0\u6280\u80FD<c=ffff00,000000,1>\u5BD2\u51B0</c>"
+    image: w_11
+    effects: 2,5
+    icon: 0,10
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 5
+    grade: 3
+    level: 21
+    skill: 10
+    durability: 150
+    hp: 300
+    attack: 200
+    defense: 100
+    hit: 18
+    dodge: 5
+    critical: 25
+    buy: 10000
+    sell: 100
+    name: "\u96F7\u5207"
+    description: "\u4F20\u8BF4\u4E2D\u80FD\u628A\u96F7\u7535\u65A9\u65AD\u7684\u795E\u5175\uFF0C\u9644\u52A0\u6280\u80FD<c=ffff00,000000,1>\u98CE\u5F71</c>"
+    image: w_12
+    effects: 2,20;6,2
+    icon: 0,11
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 6
+    grade: 1
+    level: 25
+    skill: 7
+    durability: 130
+    hp: 350
+    attack: 180
+    defense: 90
+    hit: 12
+    dodge: 5
+    critical: 18
+    buy: 20000
+    sell: 200
+    name: "\u8D64\u708E"
+    description: "\u542B\u6709\u706B\u4E4B\u7075\u6C14\u7684\u5B9D\u5251\uFF0C\u9644\u52A0\u6280\u80FD<c=ffff00,000000,1>\u706B\u7130</c>"
+    image: w_08
+    effects: 0,15
+    icon: 0,7
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 7
+    grade: 1
+    level: 27
+    skill: 6
+    durability: 100
+    hp: 150
+    attack: 300
+    defense: 50
+    hit: 15
+    dodge: 7
+    critical: 30
+    buy: 23000
+    sell: 230
+    name: "\u8FC5\u96F7"
+    description: "\u542B\u6709\u98CE\u4E4B\u7075\u6C14\u7684\u5B9D\u5251\uFF0C\u9644\u52A0\u6280\u80FD<c=ffff00,000000,1>\u9010\u98CE</c>"
+    image: w_04
+    effects: 1,10
+    icon: 0,3
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 8
+    grade: 3
+    level: 31
+    skill: 12
+    durability: 200
+    hp: 550
+    attack: 680
+    defense: 275
+    hit: 23
+    dodge: 8
+    critical: 40
+    buy: 25000
+    sell: 250
+    name: "\u4E5D\u66DC"
+    description: "\u4EE5\u4E5D\u66DC\u661F\u547D\u540D\u7684\u5B9D\u5251\uFF0C\u9644\u52A0\u6280\u80FD<c=ffff00,000000,1>\u7384\u51B0</c>"
+    image: w_53
+    effects: 2,50;4,5;6,5
+    icon: 1,2
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 9
+    grade: 2
+    level: 35
+    skill: -1
+    durability: 180
+    hp: 600
+    attack: 500
+    defense: 225
+    hit: 18
+    dodge: 7
+    critical: 25
+    buy: 30000
+    sell: 300
+    name: "\u9F99\u6CC9"
+    description: "\u6279\u91CF\u751F\u4EA7\u7684\u4F18\u8D28\u5B9D\u5251\uFF0C\u9644\u52A0\u968F\u673A\u6280\u80FD"
+    image: w_56
+    effects: 3,5
+    icon: 1,5
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 10
+    grade: 2
+    level: 37
+    skill: -1
+    durability: 140
+    hp: 250
+    attack: 800
+    defense: 100
+    hit: 21
+    dodge: 11
+    critical: 45
+    buy: 35000
+    sell: 350
+    name: "\u65A9\u94C1"
+    description: "\u636E\u8BF4\u80FD\u65A9\u65AD\u94C1\u7684\u5B9D\u5251\uFF0C\u9644\u52A0\u968F\u673A\u6280\u80FD"
+    image: w_13
+    effects: 2,20
+    icon: 0,12
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 11
+    grade: 3
+    level: 41
+    skill: 13
+    durability: 300
+    hp: 800
+    attack: 1120
+    defense: 510
+    hit: 29
+    dodge: 12
+    critical: 60
+    buy: 50000
+    sell: 500
+    name: "\u9ED1\u94A2"
+    description: "\u7528\u9ED1\u8272\u795E\u79D8\u9668\u94C1\u52A0\u5DE5\u800C\u6210\u7684\u9B54\u5251\uFF0C\u9644\u52A0\u6280\u80FD<c=ffff00,000000,1>\u9B3C\u821E</c>"
+    image: w_57
+    effects: 4,5;5,5;6,5
+    icon: 1,6
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 12
+    grade: 2
+    level: 45
+    skill: -1
+    durability: 250
+    hp: 900
+    attack: 800
+    defense: 450
+    hit: 24
+    dodge: 11
+    critical: 30
+    buy: 45000
+    sell: 450
+    name: "\u9752\u8679"
+    description: "\u66F9\u64CD\u7231\u5251\u7684\u7FFB\u5236\u7248\uFF0C\u9644\u52A0\u968F\u673A\u6280\u80FD"
+    image: w_52
+    effects: 0,50;4,1
+    icon: 1,1
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 13
+    grade: 2
+    level: 47
+    skill: -1
+    durability: 200
+    hp: 400
+    attack: 1250
+    defense: 250
+    hit: 27
+    dodge: 14
+    critical: 70
+    buy: 50000
+    sell: 500
+    name: "\u8475\u6C34"
+    description: "\u9634\u5BD2\u4E4B\u6C14\u5341\u5206\u91CD\u7684\u5B9D\u5251\uFF0C\u9644\u52A0\u968F\u673A\u6280\u80FD"
+    image: w_54
+    effects: 1,30;5,1
+    icon: 1,3
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 14
+    grade: 3
+    level: 51
+    skill: 16
+    durability: 420
+    hp: 1250
+    attack: 1650
+    defense: 825
+    hit: 37
+    dodge: 17
+    critical: 80
+    buy: 75000
+    sell: 750
+    name: "\u5DE8\u9619"
+    description: "\u6218\u56FD\u540D\u5251\uFF0C\u9644\u52A0\u6280\u80FD<c=ffff00,000000,1>\u56DE\u5929</c>"
+    image: w_02
+    effects: 0,50;1,30;2,100;3,9
+    icon: 0,1
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 15
+    grade: 3
+    level: 55
+    skill: -1
+    durability: 250
+    hp: 600
+    attack: 1800
+    defense: 400
+    hit: 40
+    dodge: 20
+    critical: 90
+    buy: 70000
+    sell: 700
+    name: "\u5343\u9E1F"
+    description: "\u5251\u950B\u8F7B\u7075\uFF0C\u9002\u5408\u5973\u5B50\u4F7F\u7528\uFF0C\u9644\u52A0\u968F\u673A\u6280\u80FD"
+    image: w_14
+    effects: 2,80;6,5
+    icon: 0,13
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 16
+    grade: 3
+    level: 57
+    skill: -1
+    durability: 450
+    hp: 1300
+    attack: 1700
+    defense: 900
+    hit: 43
+    dodge: 21
+    critical: 90
+    buy: 90000
+    sell: 900
+    name: "\u592A\u963F"
+    description: "\u81F3\u521A\u81F3\u9633\u4E4B\u5251\uFF0C\u592A\u963F\u6BBF\u7684\u9547\u6D3E\u4E4B\u5B9D\uFF0C\u9644\u52A0\u968F\u673A\u6280\u80FD"
+    image: w_10
+    effects: 2,100;3,15;4,3
+    icon: 0,9
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 17
+    grade: 3
+    level: 61
+    skill: 19
+    durability: 550
+    hp: 1750
+    attack: 2270
+    defense: 1160
+    hit: 49
+    dodge: 22
+    critical: 110
+    buy: 110000
+    sell: 1100
+    name: "\u4E03\u661F"
+    description: "\u4E03\u661F\u5317\u6597\u4E4B\u5251\uFF0C\u9644\u52A0\u6280\u80FD<c=ffff00,000000,1>\u660E\u5251</c>"
+    image: w_03
+    effects: 2,150;4,8;5,8
+    icon: 0,2
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 18
+    grade: 3
+    level: 65
+    skill: -1
+    durability: 400
+    hp: 1000
+    attack: 2700
+    defense: 600
+    hit: 57
+    dodge: 26
+    critical: 150
+    buy: 135000
+    sell: 1350
+    name: "\u83AB\u90AA"
+    description: "\u4E0E\u5E72\u5C06\u4E92\u4E3A\u96CC\u96C4\u7684\u4E00\u5BF9\u5B9D\u5251\uFF0C\u83AB\u90AA\u8C37\u7684\u9547\u6D3E\u4E4B\u5B9D\uFF0C\u9644\u52A0\u968F\u673A\u6280\u80FD"
+    image: w_58
+    effects: 4,10;5,10;6,10
+    icon: 1,7
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 19
+    grade: 3
+    level: 67
+    skill: -1
+    durability: 650
+    hp: 2000
+    attack: 2400
+    defense: 1200
+    hit: 53
+    dodge: 24
+    critical: 120
+    buy: 150000
+    sell: 1500
+    name: "\u5E72\u5C06"
+    description: "\u4E0E\u83AB\u90AA\u4E92\u4E3A\u96CC\u96C4\u7684\u4E00\u5BF9\u5B9D\u5251\uFF0C\u5E72\u5C06\u5821\u7684\u9547\u6D3E\u4E4B\u5B9D\uFF0C\u9644\u52A0\u968F\u673A\u6280\u80FD"
+    image: w_05
+    effects: 0,200;2,200;3,20
+    icon: 0,4
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 20
+    grade: 4
+    level: 71
+    skill: 21
+    durability: 700
+    hp: 2500
+    attack: 2900
+    defense: 1550
+    hit: 59
+    dodge: 27
+    critical: 140
+    buy: 180000
+    sell: 1500
+    name: "\u8F69\u8F95"
+    description: "\u4E0A\u53E4\u795E\u5175\uFF0C\u76F8\u4F20\u8F69\u8F95\u9EC4\u5E1D\u66FE\u7528\u5176\u6253\u8D25\u9B54\u795E\u86A9\u5C24\uFF0C\u9644\u52A0\u6280\u80FD<c=ffff00,000000,1>\u91D1\u521A</c>"
+    image: w_60
+    effects: 0,200;2,200;3,20;6,10
+    icon: 1,9
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 21
+    grade: 4
+    level: 75
+    skill: -1
+    durability: 750
+    hp: 3200
+    attack: 2700
+    defense: 2000
+    hit: 63
+    dodge: 29
+    critical: 110
+    buy: 600000
+    sell: 6000
+    name: "\u771F\u592A\u963F"
+    description: "\u592A\u963F\u5251\u7684\u771F\u6B63\u59FF\u6001\uFF0C\u9644\u52A0\u968F\u673A\u6280\u80FD"
+    image: w_10
+    effects: 0,500;4,20
+    icon: 0,9
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 22
+    grade: 4
+    level: 81
+    skill: -1
+    durability: 850
+    hp: 2800
+    attack: 3100
+    defense: 1750
+    hit: 67
+    dodge: 31
+    critical: 190
+    buy: 700000
+    sell: 7000
+    name: "\u771F\u83AB\u90AA"
+    description: "\u83AB\u90AA\u5251\u7684\u771F\u6B63\u59FF\u6001\uFF0C\u9644\u52A0\u968F\u673A\u6280\u80FD"
+    image: w_58
+    effects: 1,300;5,10
+    icon: 1,7
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 23
+    grade: 4
+    level: 85
+    skill: -1
+    durability: 950
+    hp: 3250
+    attack: 3300
+    defense: 1900
+    hit: 77
+    dodge: 35
+    critical: 260
+    buy: 800000
+    sell: 8000
+    name: "\u771F\u5E72\u5C06"
+    description: "\u5E72\u5C06\u5251\u7684\u771F\u6B63\u59FF\u6001\uFF0C\u9644\u52A0\u968F\u673A\u6280\u80FD"
+    image: w_55
+    effects: 2,500;3,20
+    icon: 0,4
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 24
+    grade: 4
+    level: 91
+    skill: -1
+    durability: 660
+    hp: 2000
+    attack: 4500
+    defense: 1000
+    hit: 95
+    dodge: 45
+    critical: 350
+    buy: 900000
+    sell: 9000
+    name: "\u6B63\u5B97"
+    description: "\u88AB\u79F0\u4E3A\u5996\u5200\u7684\u6B66\u5668\uFF0C\u9644\u52A0\u968F\u673A\u6280\u80FD"
+    image: w_64
+    effects: 2,500;6,15
+    icon: 0,13
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 25
+    grade: 4
+    level: 100
+    skill: -1
+    durability: 1200
+    hp: 4000
+    attack: 4000
+    defense: 2250
+    hit: 85
+    dodge: 40
+    critical: 300
+    buy: 900000
+    sell: 9000
+    name: "\u771F\u8F69\u8F95"
+    description: "\u8F69\u8F95\u5251\u7684\u9690\u85CF\u59FF\u6001\uFF0C\u9644\u52A0\u968F\u673A\u6280\u80FD"
+    image: w_60
+    effects: 0,1000;2,1000,4,50
+    icon: 1,9
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 26
+    grade: 3
+    level: 60
+    skill: -2
+    durability: 3000
+    hp: 100
+    attack: 100
+    defense: 100
+    hit: 500
+    dodge: 200
+    critical: 500
+    buy: 900000
+    sell: 10
+    name: "\u795E\u5947\u5B9D\u8D1D"
+    description: "\u4E0D\u53EF\u5F3A\u5316\uFF0C\u5929\u5A31\u65E0\u7EBF\u51FA\u54C1\u53EF\u7231\u7CFB\u5BA0\u7269\u5BF9\u6218\u6E38\u620F\uFF0C\u4E0D\u8981\u9519\u8FC7\u54E6\uFF01"
+    image: w_62
+    effects: 4,50
+    icon: 1,11
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 27
+    grade: 3
+    level: 80
+    skill: -2
+    durability: 5000
+    hp: 200
+    attack: 200
+    defense: 200
+    hit: 999
+    dodge: 400
+    critical: 999
+    buy: 900000
+    sell: 10
+    name: "\u795E\u5947\u5B9D\u8D1D2"
+    description: "\u4E0D\u53EF\u5F3A\u5316\uFF0C\u795E\u5947\u5B9D\u8D1D2\u5373\u5C06\u4E0A\u5E02\uFF0C\u656C\u8BF7\u671F\u5F85"
+    image: w_63
+    effects: 4,50;5,50;6,50
+    icon: 1,12
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 28
+    grade: 3
+    level: 60
+    skill: -2
+    durability: 1
+    hp: 0
+    attack: 5000
+    defense: 0
+    hit: 0
+    dodge: 0
+    critical: 0
+    buy: 900000
+    sell: 10
+    name: "\u626B\u628A"
+    description: "\u4E0D\u53EF\u5F3A\u5316\uFF0C\u626B\u5730\u7528\u7684\u626B\u628A\uFF0C\u4F46\u7528\u8FD9\u4E2A\u6253\u4EBA\u4E5F\u8BB8\u4F1A\u9020\u6210\u610F\u5916\u9AD8\u7684\u4F24\u5BB3\uFF08\u5FC3\u7406\u4E0A\u7684\uFF09"
+    image: w_15
+    effects: 2,1000
+    icon: 0,14
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  - id: 29
+    grade: 4
+    level: 80
+    skill: -2
+    durability: 1
+    hp: 0
+    attack: 9999
+    defense: 0
+    hit: 0
+    dodge: 0
+    critical: 0
+    buy: 900000
+    sell: 10
+    name: "\u91D1\u626B\u628A"
+    description: "\u4E0D\u53EF\u5F3A\u5316\uFF0C\u7EAF\u91D1\u7684\u626B\u628A\uFF0C\u80FD\u62E5\u6709\u5B83\u7684\u53EA\u6709\u771F\u6B63\u7684\u6709\u94B1\u4EBA\uFF01"
+    image: w_65
+    effects: 2,2000
+    icon: 1,14
+    canReinforce: 1
+    customRules: 0
+    maxReinforcement: 9
+    randomSkillIds: 
+    iconSprite: {fileID: 0}
+  items:
+  - id: 0
+    buy: 50
+    sell: 10
+    hp: 500
+    durability: 0
+    type: 0
+    name: "\u5C0F\u6C14\u8840\u836F"
+    description: "\u6062\u590D500\u6C14\u8840"
+    effect: -1
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 1
+    buy: 200
+    sell: 20
+    hp: 1000
+    durability: 0
+    type: 0
+    name: "\u4E2D\u6C14\u8840\u836F"
+    description: "\u6062\u590D1000\u6C14\u8840"
+    effect: -1
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 2
+    buy: 1000
+    sell: 100
+    hp: 2000
+    durability: 0
+    type: 0
+    name: "\u5927\u6C14\u8840\u836F"
+    description: "\u6062\u590D2000\u6C14\u8840"
+    effect: -1
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 3
+    buy: 3000
+    sell: 300
+    hp: 5000
+    durability: 0
+    type: 1
+    name: "\u795E\u6C14\u8840\u836F"
+    description: "\u6062\u590D5000\u6C14\u8840"
+    effect: -1
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 4
+    buy: 50
+    sell: 10
+    hp: 0
+    durability: 50
+    type: 0
+    name: "\u5C0F\u78E8\u5200\u77F3"
+    description: "\u6062\u590D50\u8010\u4E45"
+    effect: -1
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 5
+    buy: 200
+    sell: 20
+    hp: 0
+    durability: 100
+    type: 0
+    name: "\u4E2D\u78E8\u5200\u77F3"
+    description: "\u6062\u590D100\u8010\u4E45"
+    effect: -1
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 6
+    buy: 1000
+    sell: 100
+    hp: 0
+    durability: 300
+    type: 0
+    name: "\u5927\u78E8\u5200\u77F3"
+    description: "\u6062\u590D300\u8010\u4E45"
+    effect: -1
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 7
+    buy: 3000
+    sell: 300
+    hp: 0
+    durability: 500
+    type: 1
+    name: "\u795E\u78E8\u5200\u77F3"
+    description: "\u6062\u590D500\u8010\u4E45"
+    effect: -1
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 8
+    buy: 100000
+    sell: 10
+    hp: 0
+    durability: 0
+    type: 4
+    name: "\u83CA\u82B1\u5B9D\u5178"
+    description: "\u4F7F\u7528\u540E\u63D0\u9AD8\u5F53\u524D\u88C5\u5907\u6B66\u5668\u7684\u6280\u80FD1\u7EA7\uFF0C\u6700\u9AD8+9"
+    effect: 11,1
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 9
+    buy: 30000
+    sell: 3000
+    hp: 0
+    durability: 0
+    type: 4
+    name: "\u590D\u6D3B\u795E\u836F"
+    description: "\u6B7B\u4EA1\u540E\u81EA\u52A8\u4F7F\u7528\uFF0C\u6C14\u8840\u5168\u6EE1"
+    effect: 6
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 10
+    buy: 9800
+    sell: 980
+    hp: 0
+    durability: 0
+    type: 2
+    name: "\u9EC4\u91D1\u9524\u5B50"
+    description: "\u6B66\u5668\u635F\u574F\u540E\u81EA\u52A8\u4F7F\u7528\uFF0C\u8010\u4E45\u5168\u6EE1"
+    effect: 7
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 11
+    buy: 2000
+    sell: 10
+    hp: 0
+    durability: 0
+    type: 0
+    name: "\u7ECF\u9A8C\u94DC\u4E39"
+    description: "\u5251\u7075\u83B7\u5F971000\u70B9\u7ECF\u9A8C\uFF0C\u591A\u500D\u7ECF\u9A8C\u6709\u6548"
+    effect: 8,1000
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 12
+    buy: 10000
+    sell: 10
+    hp: 0
+    durability: 0
+    type: 1
+    name: "\u7ECF\u9A8C\u94F6\u4E39"
+    description: "\u5251\u7075\u83B7\u5F975000\u70B9\u7ECF\u9A8C\uFF0C\u591A\u500D\u7ECF\u9A8C\u6709\u6548"
+    effect: 8,5000
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 13
+    buy: 20000
+    sell: 10
+    hp: 0
+    durability: 0
+    type: 2
+    name: "\u7ECF\u9A8C\u91D1\u4E39"
+    description: "\u5251\u7075\u83B7\u5F9710000\u70B9\u7ECF\u9A8C\uFF0C\u591A\u500D\u7ECF\u9A8C\u6709\u6548"
+    effect: 8,10000
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 14
+    buy: 1000
+    sell: 10
+    hp: 0
+    durability: 0
+    type: 1
+    name: "\u5C0F\u91D1\u7816"
+    description: "\u4F7F\u7528\u540E\u83B7\u5F971000\u94F6\u4E24"
+    effect: 9,1000
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 15
+    buy: 5000
+    sell: 10
+    hp: 0
+    durability: 0
+    type: 2
+    name: "\u5927\u91D1\u7816"
+    description: "\u4F7F\u7528\u540E\u83B7\u5F975000\u94F6\u4E24"
+    effect: 9,5000
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 16
+    buy: 1000
+    sell: 10
+    hp: 0
+    durability: 0
+    type: 3
+    name: "\u7B49\u7EA7\u795E\u836F"
+    description: "\u4F7F\u7528\u540E\u7B49\u7EA7\u76F4\u63A5\u63D0\u9AD81\u7EA7"
+    effect: 10,1
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 17
+    buy: 1000
+    sell: 10
+    hp: 0
+    durability: 0
+    type: 3
+    name: "\u6C14\u8840\u795E\u836F"
+    description: "\u4F7F\u7528\u540E\u6C14\u8840\u4E0A\u9650\u63D0\u9AD8100"
+    effect: 0,100
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 18
+    buy: 1000
+    sell: 10
+    hp: 0
+    durability: 0
+    type: 3
+    name: "\u653B\u51FB\u795E\u836F"
+    description: "\u4F7F\u7528\u540E\u653B\u51FB\u63D0\u9AD840"
+    effect: 1,40
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 19
+    buy: 1000
+    sell: 10
+    hp: 0
+    durability: 0
+    type: 3
+    name: "\u9632\u5FA1\u795E\u836F"
+    description: "\u4F7F\u7528\u540E\u9632\u5FA1\u63D0\u9AD820"
+    effect: 2,20
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 20
+    buy: 1000
+    sell: 10
+    hp: 0
+    durability: 0
+    type: 3
+    name: "\u547D\u4E2D\u795E\u836F"
+    description: "\u4F7F\u7528\u540E\u547D\u4E2D\u63D0\u9AD83"
+    effect: 3,3
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 21
+    buy: 1000
+    sell: 10
+    hp: 0
+    durability: 0
+    type: 3
+    name: "\u56DE\u907F\u795E\u836F"
+    description: "\u4F7F\u7528\u540E\u56DE\u907F\u63D0\u9AD82"
+    effect: 4,2
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 22
+    buy: 1000
+    sell: 10
+    hp: 0
+    durability: 0
+    type: 3
+    name: "\u66B4\u51FB\u795E\u836F"
+    description: "\u4F7F\u7528\u540E\u66B4\u51FB\u63D0\u9AD85"
+    effect: 5,5
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  - id: 23
+    buy: 100000
+    sell: 10
+    hp: 0
+    durability: 0
+    type: 4
+    name: "\u76AE\u978B\u5251\u8C31"
+    description: "\u4F7F\u7528\u540E\u968F\u673A\u8D4B\u4E88\u5F53\u524D\u88C5\u5907\u6B66\u5668\u4E00\u4E2A\u65B0\u76841\u7EA7\u6280\u80FD"
+    effect: -1
+    iconSprite: {fileID: 0}
+    effectKind: 0
+    effectValue: 0
+    attributeIndex: 0
+    randomSkillIds: 
+    customRules: 0
+    consumeWholeStack: 0
+    immediateUseInShop: 0
+    shopMask: 0
+    specialPurchaseGroup: -1
+    priceIncreaseStep: 1000
+    priceCap: 20000
+    maxPurchaseQuantity: 99
+  skills:
+  - id: 0
+    rank: 0
+    cooldown: 0
+    holdDamage: 10
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u666E\u653B1"
+    description: 0
+    damage: 70
+    amend: 0
+    cost: 0
+  - id: 1
+    rank: 0
+    cooldown: 0
+    holdDamage: 20
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u666E\u901A2"
+    description: 0
+    damage: 80
+    amend: 0
+    cost: 0
+  - id: 2
+    rank: 0
+    cooldown: 0
+    holdDamage: 30
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u666E\u653B3"
+    description: 0
+    damage: 90
+    amend: 0
+    cost: 0
+  - id: 3
+    rank: 0
+    cooldown: 0
+    holdDamage: 40
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u666E\u901A4"
+    description: 0
+    damage: 100
+    amend: 0
+    cost: 0
+  - id: 4
+    rank: 0
+    cooldown: 0
+    holdDamage: 100
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5D29\u51FB"
+    description: 0
+    damage: 200
+    amend: 0
+    cost: -1
+  - id: 5
+    rank: 10
+    cooldown: 48
+    holdDamage: 50
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u788E\u5CA9"
+    description: "\u62CD\u51FB\u5730\u9762\uFF0C\u6D6E\u7A7A\u654C\u4EBA\u5E76\u9020\u6210\u4F24\u5BB3"
+    damage: 50,5,9,5
+    amend: 500
+    cost: 5,5
+  - id: 6
+    rank: 10
+    cooldown: 48
+    holdDamage: 50
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u9010\u98CE"
+    description: "\u62D4\u5200\u51B2\u65A9\uFF0C\u5439\u98DE\u654C\u4EBA\u5E76\u9020\u6210\u4F24\u5BB3"
+    damage: 10
+    amend: 0,500,9,500
+    cost: 5,5
+  - id: 7
+    rank: 10
+    cooldown: 48
+    holdDamage: 50
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u706B\u7130"
+    description: "\u65A9\u51FA\u706B\u7130\uFF0C\u5411\u524D\u98DE\u884C\u5E76\u9020\u6210\u4F24\u5BB3"
+    damage: 10
+    amend: 0,500,9,500
+    cost: 10,5
+  - id: 8
+    rank: 10
+    cooldown: 48
+    holdDamage: 50
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5BD2\u51B0"
+    description: "\u65A9\u51FA\u51B0\u67F1\uFF0C\u5411\u524D\u51B2\u51FB\u6D6E\u7A7A\u654C\u4EBA\u5E76\u9020\u6210\u4F24\u5BB3"
+    damage: 50,5,9,5
+    amend: 500
+    cost: 10,5
+  - id: 9
+    rank: 30
+    cooldown: 72
+    holdDamage: 50
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5CA9\u72F1"
+    description: "\u8FDE\u7EED\u62CD\u51FB\u5730\u9762\uFF0C\u8303\u56F4\u66F4\u5927"
+    damage: 20
+    amend: 1000,500,3,500
+    cost: 40,10
+  - id: 10
+    rank: 30
+    cooldown: 72
+    holdDamage: 50
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u98CE\u5F71"
+    description: "\u62D4\u5200\u51B2\u65A9\uFF0C\u5BF9\u654C\u4EBA\u9020\u6210\u8FDE\u7EED\u4F24\u5BB3\u6700\u540E\u5439\u98DE\u654C\u4EBA"
+    damage: 50,10,9,10
+    amend: 1000
+    cost: 40,10
+  - id: 11
+    rank: 30
+    cooldown: 72
+    holdDamage: 50
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u7099\u708E"
+    description: "\u65A9\u51FA\u706B\u7130\u4E24\u6B21"
+    damage: 20
+    amend: 1000,500,3,500
+    cost: 40,10
+  - id: 12
+    rank: 30
+    cooldown: 72
+    holdDamage: 50
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u7384\u51B0"
+    description: "\u65A9\u51FA\u6247\u5F62\u51B0\u67F1"
+    damage: 50,10,9,20
+    amend: 2000
+    cost: 40,10
+  - id: 13
+    rank: 60
+    cooldown: 120
+    holdDamage: 50
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u9B3C\u821E"
+    description: "\u5BF9\u654C\u4EBA\u8FDE\u7EED\u653B\u51FB\u7684\u6280\u80FD"
+    damage: 40
+    amend: 1000,500,3,500
+    cost: 50,20
+  - id: 14
+    rank: 20
+    cooldown: 240
+    holdDamage: 0
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u56DE\u8840"
+    description: "\u6062\u590D=\u6280\u80FD\u52A0\u6210*\u6C14\u8840\u4E0A\u9650+\u6280\u80FD\u8865\u6B63\u6570\u989D\u7684\u6C14\u8840"
+    damage: 5
+    amend: 500,100,9,600
+    cost: 0
+  - id: 15
+    rank: 40
+    cooldown: 240
+    holdDamage: 0
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u56DE\u547D"
+    description: "\u6062\u590D=\u6280\u80FD\u52A0\u6210*\u6C14\u8840\u4E0A\u9650+\u6280\u80FD\u8865\u6B63\u6570\u989D\u7684\u6C14\u8840"
+    damage: 10,1
+    amend: 300,200,9,200
+    cost: 0
+  - id: 16
+    rank: 60
+    cooldown: 240
+    holdDamage: 0
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u56DE\u5929"
+    description: "\u6062\u590D=\u6280\u80FD\u52A0\u6210*\u6C14\u8840\u4E0A\u9650+\u6280\u80FD\u8865\u6B63\u6570\u989D\u7684\u6C14\u8840"
+    damage: 20,2
+    amend: 600,400,9,400
+    cost: 0
+  - id: 17
+    rank: 20
+    cooldown: 240
+    holdDamage: 0
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u7814\u5251"
+    description: "\u6062\u590D=\u6280\u80FD\u8865\u6B63\u6570\u989D\u7684\u6B66\u5668\u8010\u4E45"
+    damage: 0
+    amend: 150,20
+    cost: 0
+  - id: 18
+    rank: 40
+    cooldown: 240
+    holdDamage: 0
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u517B\u5251"
+    description: "\u6062\u590D=\u6280\u80FD\u8865\u6B63\u6570\u989D\u7684\u6B66\u5668\u8010\u4E45"
+    damage: 0
+    amend: 300,40
+    cost: 0
+  - id: 19
+    rank: 60
+    cooldown: 240
+    holdDamage: 0
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u660E\u5251"
+    description: "\u6062\u590D=\u6280\u80FD\u8865\u6B63\u6570\u989D\u7684\u6B66\u5668\u8010\u4E45"
+    damage: 0
+    amend: 500,150
+    cost: 0
+  - id: 20
+    rank: 40
+    cooldown: 240
+    holdDamage: 0
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u9738\u4F53"
+    description: "\u6301\u7EED\u65F6\u95F4=\u6280\u80FD\u8865\u6B63\u6570\u989D\u7684\u5E27\u6570\u5185\uFF0C\u53D7\u521B\u65E0\u786C\u76F4"
+    damage: 0
+    amend: 360,36
+    cost: 0
+  - id: 21
+    rank: 60
+    cooldown: 240
+    holdDamage: 0
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u91D1\u521A"
+    description: "\u6301\u7EED\u65F6\u95F4=\u6280\u80FD\u8865\u6B63\u6570\u989D\u7684\u5E27\u6570\u5185\uFF0C\u53D7\u521B\u65E0\u786C\u76F4"
+    damage: 0
+    amend: 720,72
+    cost: 0
+  - id: 22
+    rank: 127
+    cooldown: 0
+    holdDamage: 9999
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u846C\u5251"
+    description: 0
+    damage: 30
+    amend: 1000
+    cost: 9999
+  - id: 23
+    rank: 127
+    cooldown: 0
+    holdDamage: 9999
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u5F52\u9798"
+    description: 0
+    damage: 60
+    amend: 2000
+    cost: 9999
+  - id: 24
+    rank: 127
+    cooldown: 0
+    holdDamage: 100
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u7075\u5251\u53D8\u8EAB"
+    description: 0
+    damage: 100
+    amend: 0
+    cost: -2
+  - id: 25
+    rank: 127
+    cooldown: 0
+    holdDamage: 9999
+    customBehavior: 0
+    behaviorId: 0
+    name: "\u8D85\u6740\u51FB\u4E2D"
+    description: 0
+    damage: 100
+    amend: 0
+    cost: 0
+  enemies:
+  - id: 201
+    hold: 1
+    hpCoefficient: 300
+    attackCoefficient: 150
+    hit: -60
+    dodge: -60
+    vision: 960
+    experience: 100
+    money: 100
+    attackRanges: 60,10,10,0,0;80,10,10,100,0
+    damageCoefficients: 60,100
+    holdDamage: 25,20
+    attackIntervals: 40,30
+    equipmentDrops: 0
+    itemDrops: 0
+  - id: 202
+    hold: 29
+    hpCoefficient: 110
+    attackCoefficient: 100
+    hit: 0
+    dodge: -10
+    vision: 960
+    experience: 120
+    money: 100
+    attackRanges: 60,10,10,80,0;80,10,10,100,0
+    damageCoefficients: 60,100
+    holdDamage: 25,20
+    attackIntervals: 40,30
+    equipmentDrops: 3,3;3,4;3,6;3,7
+    itemDrops: 15,1;15,5
+  - id: 203
+    hold: 49
+    hpCoefficient: 110
+    attackCoefficient: 100
+    hit: 0
+    dodge: -10
+    vision: 960
+    experience: 500
+    money: 100
+    attackRanges: 60,10,10,80,0;80,10,10,40,0;120,10,10,100,0
+    damageCoefficients: 60,100,90
+    holdDamage: 50,50,100
+    attackIntervals: 40,30,200
+    equipmentDrops: 1,2;1,9;1,10;1,12;1,13
+    itemDrops: 10,2;10,6;5,11;5,14
+  - id: 204
+    hold: 1
+    hpCoefficient: 90
+    attackCoefficient: 100
+    hit: -10
+    dodge: -10
+    vision: 960
+    experience: 100
+    money: 100
+    attackRanges: 60,8,18,0,0;80,8,18,100,0
+    damageCoefficients: 60,100
+    holdDamage: 25,20
+    attackIntervals: 40,30
+    equipmentDrops: 5,0;5,1
+    itemDrops: 20,0;20,4
+  - id: 205
+    hold: 29
+    hpCoefficient: 100
+    attackCoefficient: 110
+    hit: 5
+    dodge: 0
+    vision: 960
+    experience: 120
+    money: 100
+    attackRanges: 60,8,18,80,0;80,8,18,100,0
+    damageCoefficients: 60,100
+    holdDamage: 25,20
+    attackIntervals: 40,30
+    equipmentDrops: 3,3;3,4;3,6;3,7
+    itemDrops: 15,1;15,5
+  - id: 206
+    hold: 49
+    hpCoefficient: 95
+    attackCoefficient: 105
+    hit: 5
+    dodge: 0
+    vision: 960
+    experience: 500
+    money: 100
+    attackRanges: 60,8,18,80,0;80,8,18,100,0;140,8,18,100,0
+    damageCoefficients: 60,100,90
+    holdDamage: 50,50,100
+    attackIntervals: 40,30,200
+    equipmentDrops: 1,2;1,9;1,10;1,12;1,13
+    itemDrops: 10,2;10,6;5,11;5,14
+  - id: 207
+    hold: 1
+    hpCoefficient: 95
+    attackCoefficient: 105
+    hit: -20
+    dodge: -10
+    vision: 960
+    experience: 100
+    money: 100
+    attackRanges: 40,8,8,0,0;60,8,8,100,0
+    damageCoefficients: 60,100
+    holdDamage: 25,20
+    attackIntervals: 40,30
+    equipmentDrops: 0
+    itemDrops: 20,0;20,4
+  - id: 208
+    hold: 29
+    hpCoefficient: 105
+    attackCoefficient: 115
+    hit: -5
+    dodge: 5
+    vision: 960
+    experience: 130
+    money: 100
+    attackRanges: 40,8,8,80,0;60,8,8,100,0
+    damageCoefficients: 60,100
+    holdDamage: 50,25
+    attackIntervals: 40,30
+    equipmentDrops: 3,3;3,4;3,6;3,7
+    itemDrops: 15,1;15,5
+  - id: 209
+    hold: 49
+    hpCoefficient: 110
+    attackCoefficient: 110
+    hit: -5
+    dodge: 5
+    vision: 960
+    experience: 550
+    money: 100
+    attackRanges: 40,8,8,80,0;60,8,8,100,0;100,8,8,100,0
+    damageCoefficients: 60,100,90
+    holdDamage: 50,50,100
+    attackIntervals: 40,30,200
+    equipmentDrops: 1,2;1,9;1,10;1,12;1,13
+    itemDrops: 10,2;10,6;5,11;5,14
+  - id: 210
+    hold: 1
+    hpCoefficient: 70
+    attackCoefficient: 100
+    hit: 0
+    dodge: 5
+    vision: 960
+    experience: 110
+    money: 100
+    attackRanges: 60,8,8,100,0;80,8,8,0,0;180,8,8,20,0
+    damageCoefficients: 100,60,50
+    holdDamage: 20,25,25
+    attackIntervals: 40,30,120
+    equipmentDrops: 5,0;5,1
+    itemDrops: 20,0;20,4
+  - id: 211
+    hold: 29
+    hpCoefficient: 80
+    attackCoefficient: 110
+    hit: 0
+    dodge: 10
+    vision: 960
+    experience: 130
+    money: 100
+    attackRanges: 60,8,8,80,0;80,8,8,100,0;180,8,8,60,0
+    damageCoefficients: 100,60,50
+    holdDamage: 20,25,25
+    attackIntervals: 40,30,100
+    equipmentDrops: 3,3;3,4;3,6;3,7
+    itemDrops: 15,1;15,5
+  - id: 212
+    hold: 49
+    hpCoefficient: 80
+    attackCoefficient: 110
+    hit: 0
+    dodge: 10
+    vision: 960
+    experience: 500
+    money: 100
+    attackRanges: 60,8,8,80,0;80,8,8,100,0;180,8,8,100,0
+    damageCoefficients: 100,60,50
+    holdDamage: 50,50,50
+    attackIntervals: 40,30,80
+    equipmentDrops: 1,2;1,9;1,10;1,12;1,13
+    itemDrops: 10,2;10,6;5,11;5,14
+  - id: 213
+    hold: 1
+    hpCoefficient: 80
+    attackCoefficient: 105
+    hit: -20
+    dodge: -10
+    vision: 960
+    experience: 110
+    money: 100
+    attackRanges: 40,8,8,100,0;70,8,8,0,0;90,8,8,20,0
+    damageCoefficients: 80,90,40
+    holdDamage: 20,25,25
+    attackIntervals: 40,30,200
+    equipmentDrops: 5,0;5,1
+    itemDrops: 15,0;15,4
+  - id: 214
+    hold: 29
+    hpCoefficient: 90
+    attackCoefficient: 120
+    hit: -10
+    dodge: -5
+    vision: 960
+    experience: 130
+    money: 100
+    attackRanges: 40,8,8,80,0;70,8,8,100,0;90,8,8,60,0
+    damageCoefficients: 80,90,40
+    holdDamage: 20,25,25
+    attackIntervals: 40,30,200
+    equipmentDrops: 3,3;3,4;3,6;3,7
+    itemDrops: 15,1;15,5
+  - id: 215
+    hold: 49
+    hpCoefficient: 90
+    attackCoefficient: 110
+    hit: 10
+    dodge: -5
+    vision: 960
+    experience: 500
+    money: 100
+    attackRanges: 40,8,8,80,0;70,8,8,100,0;90,8,8,100,0
+    damageCoefficients: 80,90,40
+    holdDamage: 50,50,50
+    attackIntervals: 40,30,200
+    equipmentDrops: 1,2;1,9;1,10;1,12;1,13
+    itemDrops: 10,2;10,6;5,11;5,14
+  - id: 216
+    hold: 99
+    hpCoefficient: 220
+    attackCoefficient: 120
+    hit: 0
+    dodge: 0
+    vision: 960
+    experience: 1000
+    money: 100
+    attackRanges: 60,10,10,80,0;80,10,10,40,0;120,10,10,100,0
+    damageCoefficients: 60,100,90
+    holdDamage: 50,50,100
+    attackIntervals: 40,30,200
+    equipmentDrops: 2,2;2,9;2,10;2,12;2,13
+    itemDrops: 5,3;5,7;5,12;10,14
+  - id: 217
+    hold: 99
+    hpCoefficient: 190
+    attackCoefficient: 125
+    hit: 0
+    dodge: 0
+    vision: 960
+    experience: 1000
+    money: 100
+    attackRanges: 60,8,18,80,0;80,8,18,100,0;140,8,18,100,0
+    damageCoefficients: 60,100,90
+    holdDamage: 50,50,100
+    attackIntervals: 40,30,200
+    equipmentDrops: 2,2;2,9;2,10;2,12;2,13
+    itemDrops: 5,3;5,7;5,12;10,14
+  - id: 218
+    hold: 99
+    hpCoefficient: 200
+    attackCoefficient: 130
+    hit: 0
+    dodge: 0
+    vision: 960
+    experience: 1000
+    money: 100
+    attackRanges: 40,8,8,80,0;60,8,8,100,0;100,8,8,100,0
+    damageCoefficients: 60,100,90
+    holdDamage: 50,50,100
+    attackIntervals: 40,30,200
+    equipmentDrops: 2,2;2,9;2,10;2,12;2,13
+    itemDrops: 5,3;5,7;5,12;10,14
+  - id: 219
+    hold: 99
+    hpCoefficient: 160
+    attackCoefficient: 130
+    hit: 0
+    dodge: 0
+    vision: 960
+    experience: 1000
+    money: 100
+    attackRanges: 40,8,8,80,0;70,8,8,100,0;180,8,8,100,0
+    damageCoefficients: 100,60,50
+    holdDamage: 50,50,50
+    attackIntervals: 40,30,60
+    equipmentDrops: 2,2;2,9;2,10;2,12;2,13
+    itemDrops: 5,3;5,7;5,12;10,14
+  - id: 220
+    hold: 99
+    hpCoefficient: 200
+    attackCoefficient: 130
+    hit: 0
+    dodge: 0
+    vision: 960
+    experience: 1000
+    money: 100
+    attackRanges: 40,8,8,80,0;70,8,8,100,0;90,8,8,100,0
+    damageCoefficients: 80,90,40
+    holdDamage: 50,50,50
+    attackIntervals: 40,30,200
+    equipmentDrops: 2,2;2,9;2,10;2,12;2,13
+    itemDrops: 5,3;5,7;5,12;10,14
+  - id: 221
+    hold: 1
+    hpCoefficient: 210
+    attackCoefficient: 200
+    hit: -60
+    dodge: -60
+    vision: 960
+    experience: 100
+    money: 100
+    attackRanges: 40,8,8,80,0;70,8,8,100,0;180,8,8,100,0
+    damageCoefficients: 100,60,50
+    holdDamage: 50,50,50
+    attackIntervals: 40,30,60
+    equipmentDrops: 0
+    itemDrops: 0
+  - id: 222
+    hold: 1
+    hpCoefficient: 240
+    attackCoefficient: 200
+    hit: -60
+    dodge: -60
+    vision: 960
+    experience: 100
+    money: 100
+    attackRanges: 40,8,8,80,0;70,8,8,100,0;90,8,8,100,0
+    damageCoefficients: 80,90,40
+    holdDamage: 50,50,50
+    attackIntervals: 40,30,200
+    equipmentDrops: 0
+    itemDrops: 0
+  - id: 223
+    hold: 1
+    hpCoefficient: 285
+    attackCoefficient: 200
+    hit: -60
+    dodge: -60
+    vision: 960
+    experience: 100
+    money: 100
+    attackRanges: 40,8,8,80,0;60,8,8,100,0;100,8,8,100,0
+    damageCoefficients: 60,100,90
+    holdDamage: 50,50,100
+    attackIntervals: 40,30,200
+    equipmentDrops: 0
+    itemDrops: 0
+  - id: 231
+    hold: 99
+    hpCoefficient: 100
+    attackCoefficient: 100
+    hit: 0
+    dodge: 0
+    vision: 960
+    experience: 2000
+    money: 500
+    attackRanges: 80,16,12,100,0;120,16,16,0,0;160,16,16,80,0
+    damageCoefficients: 50,30,120
+    holdDamage: 50,100,100
+    attackIntervals: 30,40,50
+    equipmentDrops: 10,9;10,10;10,12;10,13
+    itemDrops: 100,3;100,7;50,10;50,13;50,15
+  - id: 232
+    hold: 199
+    hpCoefficient: 110
+    attackCoefficient: 105
+    hit: 0
+    dodge: 0
+    vision: 960
+    experience: 2000
+    money: 500
+    attackRanges: 80,16,12,60,0;120,16,16,80,0;160,16,16,100,0
+    damageCoefficients: 50,30,120
+    holdDamage: 50,100,100
+    attackIntervals: 30,40,50
+    equipmentDrops: 10,16
+    itemDrops: 100,3;100,7;50,10;50,13;50,15;5,9;2,17;2,18;2,19;2,20;2,21;2,22
+  - id: 233
+    hold: 299
+    hpCoefficient: 260
+    attackCoefficient: 110
+    hit: 10
+    dodge: 10
+    vision: 960
+    experience: 2000
+    money: 500
+    attackRanges: 80,16,12,40,0;120,16,16,100,0;160,16,16,100,0
+    damageCoefficients: 50,30,120
+    holdDamage: 50,100,100
+    attackIntervals: 30,40,50
+    equipmentDrops: 5,21
+    itemDrops: 100,3;100,7;50,10;50,13;50,15;2,8;2,23;10,9;5,17;5,18;5,19;5,20;5,21;5,22
+  - id: 234
+    hold: 99
+    hpCoefficient: 90
+    attackCoefficient: 100
+    hit: 0
+    dodge: 0
+    vision: 960
+    experience: 2000
+    money: 500
+    attackRanges: 64,16,10,70,0;100,10,12,0,0;120,10,12,100,0
+    damageCoefficients: 50,20,120
+    holdDamage: 50,100,100
+    attackIntervals: 30,40,40
+    equipmentDrops: 10,9;10,10;10,12;10,13
+    itemDrops: 100,3;100,7;50,10;50,13;50,15
+  - id: 235
+    hold: 199
+    hpCoefficient: 100
+    attackCoefficient: 100
+    hit: 10
+    dodge: 10
+    vision: 960
+    experience: 2000
+    money: 500
+    attackRanges: 64,16,10,70,0;100,10,12,70,0;120,10,12,100,0
+    damageCoefficients: 50,20,120
+    holdDamage: 50,100,100
+    attackIntervals: 30,40,40
+    equipmentDrops: 10,18
+    itemDrops: 100,3;100,7;50,10;50,13;50,15;5,9;2,17;2,18;2,19;2,20;2,21;2,22
+  - id: 236
+    hold: 299
+    hpCoefficient: 220
+    attackCoefficient: 105
+    hit: 20
+    dodge: 20
+    vision: 960
+    experience: 2000
+    money: 500
+    attackRanges: 64,16,10,100,0;100,10,12,100,0;120,10,12,50,0
+    damageCoefficients: 50,20,120
+    holdDamage: 50,100,100
+    attackIntervals: 30,40,40
+    equipmentDrops: 5,22
+    itemDrops: 100,3;100,7;50,10;50,13;50,15;2,8;2,23;10,9;5,17;5,18;5,19;5,20;5,21;5,22
+  - id: 237
+    hold: 99
+    hpCoefficient: 200
+    attackCoefficient: 160
+    hit: 0
+    dodge: -50
+    vision: 960
+    experience: 2000
+    money: 500
+    attackRanges: 96,16,8,100,0;128,16,8,50,0;240,60,60,0,0
+    damageCoefficients: 80,60,120
+    holdDamage: 100,100,100
+    attackIntervals: 30,40,50
+    equipmentDrops: 10,9;10,10;10,12;10,13
+    itemDrops: 100,3;100,7;50,10;50,13;50,15
+  - id: 238
+    hold: 199
+    hpCoefficient: 110
+    attackCoefficient: 105
+    hit: 5
+    dodge: 5
+    vision: 960
+    experience: 2000
+    money: 500
+    attackRanges: 96,16,8,100,0;128,16,8,70,0;240,60,60,50,0
+    damageCoefficients: 80,60,120
+    holdDamage: 100,100,100
+    attackIntervals: 30,40,50
+    equipmentDrops: 10,19
+    itemDrops: 100,3;100,7;50,10;50,13;50,15;5,9;2,17;2,18;2,19;2,20;2,21;2,22
+  - id: 239
+    hold: 299
+    hpCoefficient: 240
+    attackCoefficient: 110
+    hit: 10
+    dodge: 10
+    vision: 960
+    experience: 2000
+    money: 500
+    attackRanges: 96,16,8,80,0;128,16,8,100,0;240,60,60,80,0
+    damageCoefficients: 80,60,120
+    holdDamage: 100,100,100
+    attackIntervals: 30,40,50
+    equipmentDrops: 5,23
+    itemDrops: 100,3;100,7;50,10;50,13;50,15;2,8;2,23;10,9;5,17;5,18;5,19;5,20;5,21;5,22
+  - id: 240
+    hold: 99
+    hpCoefficient: 100
+    attackCoefficient: 200
+    hit: 0
+    dodge: -127
+    vision: 960
+    experience: 2000
+    money: 500
+    attackRanges: 128,8,8,80,0;240,60,60,30,0;240,60,60,30,1
+    damageCoefficients: 50,30,70
+    holdDamage: 100,100,100
+    attackIntervals: 30,80,80
+    equipmentDrops: 10,9;10,10;10,12;10,13
+    itemDrops: 100,3;100,7;50,10;50,13;50,15
+  - id: 241
+    hold: 199
+    hpCoefficient: 150
+    attackCoefficient: 100
+    hit: 5
+    dodge: 5
+    vision: 960
+    experience: 2000
+    money: 500
+    attackRanges: 128,8,8,80,0;240,60,60,60,0;240,60,60,60,1
+    damageCoefficients: 50,30,70
+    holdDamage: 100,100,100
+    attackIntervals: 30,60,60
+    equipmentDrops: 10,26
+    itemDrops: 100,3;100,7;50,10;50,13;50,15;5,9;2,17;2,18;2,19;2,20;2,21;2,22
+  - id: 242
+    hold: 299
+    hpCoefficient: 300
+    attackCoefficient: 105
+    hit: 10
+    dodge: 10
+    vision: 960
+    experience: 2000
+    money: 500
+    attackRanges: 128,8,8,80,0;240,60,60,100,0;240,60,60,100,1
+    damageCoefficients: 50,30,70
+    holdDamage: 100,100,100
+    attackIntervals: 30,30,30
+    equipmentDrops: 5,24
+    itemDrops: 100,3;100,7;50,10;50,13;50,15;2,8;2,23;10,9;5,17;5,18;5,19;5,20;5,21;5,22
+  - id: 243
+    hold: 99
+    hpCoefficient: 100
+    attackCoefficient: 100
+    hit: 0
+    dodge: 0
+    vision: 960
+    experience: 2000
+    money: 500
+    attackRanges: 52,4,4,50,1;80,8,8,100,0;144,8,8,80,0
+    damageCoefficients: 40,30,40
+    holdDamage: 100,100,100
+    attackIntervals: 80,30,50
+    equipmentDrops: 10,9;10,10;10,12;10,13
+    itemDrops: 100,3;100,7;50,10;50,13;50,15
+  - id: 244
+    hold: 199
+    hpCoefficient: 120
+    attackCoefficient: 100
+    hit: 5
+    dodge: 5
+    vision: 960
+    experience: 2000
+    money: 500
+    attackRanges: 52,4,4,70,1;80,8,8,100,0;144,8,8,80,0
+    damageCoefficients: 40,30,40
+    holdDamage: 100,100,100
+    attackIntervals: 50,30,50
+    equipmentDrops: 10,28
+    itemDrops: 100,3;100,7;50,10;50,13;50,15;5,9;2,17;2,18;2,19;2,20;2,21;2,22
+  - id: 245
+    hold: 299
+    hpCoefficient: 240
+    attackCoefficient: 100
+    hit: 10
+    dodge: 10
+    vision: 960
+    experience: 2000
+    money: 500
+    attackRanges: 52,4,4,100,1;80,8,8,100,0;144,8,8,80,0
+    damageCoefficients: 40,30,40
+    holdDamage: 100,100,100
+    attackIntervals: 30,30,50
+    equipmentDrops: 5,25
+    itemDrops: 100,3;100,7;50,10;50,13;50,15;2,8;2,23;10,9;5,17;5,18;5,19;5,20;5,21;5,22
+  roleAttributes:
+  - hp: 2000,50
+    attack: 200,20
+    defense: 100,10
+    hit: 100,2
+    dodge: 50,1
+    critical: 20,1
+    levels: 
+    durability: 
+    injuryCoefficient: 0
+  swordSpiritAttributes:
+  - hp: 2500,200
+    attack: 300,40
+    defense: 120,23
+    hit: 11,1
+    dodge: 5,0
+    critical: 30,2
+    levels: 1,9
+    durability: 500,20
+    injuryCoefficient: 0
+  - hp: 4500,550
+    attack: 700,120
+    defense: 350,55
+    hit: 20,1
+    dodge: 8,0
+    critical: 50,3
+    levels: 10,17
+    durability: 700,35
+    injuryCoefficient: 0
+  - hp: 9000,750
+    attack: 1700,135
+    defense: 800,75
+    hit: 28,1
+    dodge: 12,0
+    critical: 82,4
+    levels: 18,25
+    durability: 1000,60
+    injuryCoefficient: 0
+  - hp: 12000,1250
+    attack: 2800,250
+    defense: 1400,140
+    hit: 36,2
+    dodge: 17,1
+    critical: 120,8
+    levels: 26,30
+    durability: 1500,120
+    injuryCoefficient: 0
+  - hp: 21500,1200
+    attack: 4100,260
+    defense: 2100,160
+    hit: 48,2
+    dodge: 23,1
+    critical: 160,12
+    levels: 31,35
+    durability: 2100,140
+    injuryCoefficient: 0
+  - hp: 27500,2000
+    attack: 5400,350
+    defense: 2900,180
+    hit: 62,4
+    dodge: 31,2
+    critical: 220,20
+    levels: 36,39
+    durability: 2800,200
+    injuryCoefficient: 0
+  - hp: 37500
+    attack: 7000
+    defense: 3900
+    hit: 80
+    dodge: 40
+    critical: 300
+    levels: 40,40
+    durability: 3800
+    injuryCoefficient: 0
+  enemyAttributes:
+  - hp: 1600,340
+    attack: 200,60
+    defense: 100,10
+    hit: 145,3
+    dodge: 30,4
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 120
+  - hp: 5000,1000
+    attack: 900,60
+    defense: 200,10
+    hit: 175,5
+    dodge: 75,4
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 100
+  - hp: 15000,1900
+    attack: 1500,70
+    defense: 300,10
+    hit: 227,4
+    dodge: 120,6
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 100
+  - hp: 34000,1300
+    attack: 2200,100
+    defense: 400,10
+    hit: 273,3
+    dodge: 188,5
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 100
+  - hp: 47000,1400
+    attack: 3200,90
+    defense: 500,10
+    hit: 312,3
+    dodge: 242,4
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 100
+  - hp: 61000,1600
+    attack: 4100,120
+    defense: 600,10
+    hit: 343,4
+    dodge: 288,7
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 100
+  - hp: 77000,1700
+    attack: 5300,140
+    defense: 700,10
+    hit: 392,7
+    dodge: 359,11
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 100
+  - hp: 94000,800
+    attack: 6700,60
+    defense: 800,10
+    hit: 465,7
+    dodge: 470,11
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 100
+  - hp: 102000,1200
+    attack: 7300,100
+    defense: 900,10
+    hit: 535,15
+    dodge: 580,19
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 100
+  - hp: 8000,1200
+    attack: 330,63
+    defense: 120,12
+    hit: 155,3
+    dodge: 40,4
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 110
+  - hp: 20000,3400
+    attack: 1080,72
+    defense: 240,12
+    hit: 185,5
+    dodge: 85,4
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 100
+  - hp: 54000,3000
+    attack: 1800,70
+    defense: 360,12
+    hit: 237,4
+    dodge: 130,6
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 95
+  - hp: 84000,2600
+    attack: 2500,100
+    defense: 480,12
+    hit: 283,3
+    dodge: 198,5
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 95
+  - hp: 110000,3400
+    attack: 3500,100
+    defense: 600,12
+    hit: 322,3
+    dodge: 252,4
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 90
+  - hp: 144000,3800
+    attack: 4500,130
+    defense: 720,12
+    hit: 353,4
+    dodge: 298,7
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 90
+  - hp: 182000,4000
+    attack: 5800,160
+    defense: 840,12
+    hit: 402,7
+    dodge: 369,11
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 90
+  - hp: 222000,1800
+    attack: 7400,70
+    defense: 960,12
+    hit: 475,7
+    dodge: 480,11
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 90
+  - hp: 240000,2900
+    attack: 8100,100
+    defense: 1080,12
+    hit: 545,15
+    dodge: 590,19
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 90
+  - hp: 120000,5000
+    attack: 600,78
+    defense: 240,24
+    hit: 160,5
+    dodge: 40,6
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 90
+  - hp: 200000,10000
+    attack: 1380,112
+    defense: 480,24
+    hit: 210,5
+    dodge: 105,4
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 90
+  - hp: 300000,15000
+    attack: 2500,40
+    defense: 720,24
+    hit: 262,4
+    dodge: 150,6
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 80
+  - hp: 500000,20000
+    attack: 2900,120
+    defense: 960,24
+    hit: 308,3
+    dodge: 218,5
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 80
+  - hp: 700000,20000
+    attack: 4100,110
+    defense: 1200,24
+    hit: 347,3
+    dodge: 272,4
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 70
+  - hp: 900000,20000
+    attack: 5200,150
+    defense: 1440,24
+    hit: 378,4
+    dodge: 318,7
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 70
+  - hp: 1100000,30000
+    attack: 6700,190
+    defense: 1680,24
+    hit: 427,7
+    dodge: 389,11
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 60
+  - hp: 1400000,20000
+    attack: 8600,90
+    defense: 1920,24
+    hit: 500,9
+    dodge: 500,13
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 60
+  - hp: 1600000,90000
+    attack: 9500,230
+    defense: 2160,24
+    hit: 590,13
+    dodge: 630,19
+    critical: 
+    levels: 
+    durability: 
+    injuryCoefficient: 50
+  addedEquipment: []
+  addedItems: []
+  addedSkills: []
+  addedEnemies: []
+  addedSprites: []
+  addedStages: []

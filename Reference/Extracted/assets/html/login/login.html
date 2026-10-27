@@ -1,0 +1,61 @@
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="Copyright (c) 1998-2010 Tencent." /> 
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/>
+<link rel="stylesheet" href="bid_2.css">
+<script>
+  
+</script>
+
+<script type="text/javascript" src="../comm_js/jquery-1.5.1.js"></script>
+
+<script type="text/javascript" src="../comm_js/util.js"></script>
+<script type="text/javascript" src="w-login.js"></script>
+
+
+<script type="text/javascript" src="md5.min.js"></script>
+
+<script type="text/javascript" src="login.js"></script>
+</head>
+<body class="unilogin">
+    <div id="ptlogin-container">
+	    <h1 id="title">手机腾讯网-登录</h1>
+	     <form onsubmit="return false;">
+	        <fieldset class="loginfiled">
+	            <p><label>QQ号码</label><input type="number" id="ptlogin-name" onclick='scrollTo(0,50);'><a href="#" class="empty">清除</a></p>
+
+	            <p><label>QQ密码</label><input type="password" id="ptlogin-password" onclick='scrollTo(0,100);'><a href="#" class="empty">清除</a></p>
+	        </fieldset>
+	        <div class="varify-wrapper" style="display:none">
+            <div class="img-varify">
+                <div><img width="110" height="38"></div>
+                <input id="ptlogin-imgVerify" type="text" onclick='scrollTo(0,250);'>
+            </div>
+            </div>
+
+	        <p><input id="ptlogin-submit" class="btn-login" type="submit" value="登   录"></p>
+	        <p style="text-align:right; display: none;"><label><a href="../center.html">返回QQ游戏首页</a></label></p>
+	    </form>
+    </div>
+    <div class="common-box box-sm" id="ptlogin-prompt" style="display:none">
+        <h2>无法登录</h2>
+        <h3 class="bd-bm-bk" id="login-errmsg"></h3>
+        <div class="btn-md bd-tp-be"><input id="ptlogin-relog" class="btn-login" type="button" value="重   试"></div>
+    </div>
+
+    <div class="load-box" style="display:none;">
+        正在登录. . .
+    </div>
+    <div class="bg-shadow" id="ptlogin-lock" style="display:none;position:absolute"></div>
+    
+    
+    
+    
+</body>
+</html>

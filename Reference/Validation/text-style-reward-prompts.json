@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "message": "Code executed successfully.",
+  "data": {
+    "result": {
+      "passed": true,
+      "checks": [
+        "Money gains, losses, insufficient balance and zero amount use exact source messages; failed debit keeps balance; silent operations show nothing",
+        "Item reward updates quantity once, shows source quantity/name markup and pauses; silent item addition stays silent",
+        "Equipment reward keeps independent reinforcement/durability data, source grade/name markup and confirmation wait; silent grant stays silent",
+        "XP grant uses green source markup and does not pause VM; silent XP still grants exactly once",
+        "Production IsWaiting permits XP→money in one VM tick, then preserves FIFO confirmations for money/item/equipment and final continuation with no duplicate reward",
+        "Unmodified original taskover task901 executes under production VM wait:20000XP/400silver once, task cleanup and script save complete; confirmations=4",
+        "Four actual GameView reward captures use original message skin and source foreground colors"
+      ],
+      "shots": [
+        {
+          "name": "reward-message-money",
+          "text": "获得  250银两",
+          "richText": "获得  <color=#FF00FF>250银两</color>",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "name": "reward-message-item",
+          "text": "得到 5个 小气血药!",
+          "richText": "得到 <color=#FF00FF>5</color>个 <color=#FFFFFF>小气血药</color>!",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "name": "reward-message-equipment",
+          "text": "得到 碧水",
+          "richText": "得到 <color=#00FF00>碧水</color>",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "name": "reward-message-xp",
+          "text": "得到 10点经验!",
+          "richText": "得到 <color=#00FF00>10</color>点经验!",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    "compiler": "codedom"
+  },
+  "execute_code": "var g=UnityEngine.Object.FindObjectOfType<GuJian.GuJianGame>();\nvar f=System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic;var s=System.Reflection.BindingFlags.Static|System.Reflection.BindingFlags.NonPublic;\nSystem.Func<string,object> get=n=>g.GetType().GetField(n,f).GetValue(g);\nSystem.Action<string,object> set=(n,v)=>g.GetType().GetField(n,f).SetValue(g,v);\nSystem.Action<bool,string> req=(v,n)=>{if(!v)throw new System.Exception(n);};\nSystem.Action reset=()=>{g.Begin();g.Machine.Clear();};\nSystem.Func<long> xp=()=>{long v=g.experience;for(int i=1;i<g.level;i++)v+=(long)i*i*i*25;return v;};\nvar checks=new System.Collections.Generic.List<string>();var shots=new System.Collections.Generic.List<object>();\nSystem.Action<string> capture=name=>{var im=(Texture2D)typeof(GuJian.Editor.HudFeedbackValidation).GetMethod(\"Render\",s).Invoke(null,null);try{System.IO.File.WriteAllBytes(\"../Reference/Validation/\"+name+\".png\",im.EncodeToPNG());shots.Add(new{name=name,text=get(\"dialogue\"),richText=get(\"originalMessageRichText\"),width=im.width,height=im.height});}finally{UnityEngine.Object.DestroyImmediate(im);}};\nvar loader=g.Machine.LoadScript;var command=g.Machine.Command;string save=g.saveFileName;var random=UnityEngine.Random.state;\ntry{\nTime.timeScale=0;reset();\ncommand(0x50,new object[]{125,true});req(g.money==125&&g.DialogueVisible&&(string)get(\"dialogue\")==\"获得  125银两\"&&(string)get(\"originalMessageRichText\")==\"获得  <color=#FF00FF>125银两</color>\"&&g.Machine.IsWaiting(),\"gain\");\ng.PressControl(4);command(0x50,new object[]{-25,true});req(g.money==100&&(string)get(\"dialogue\")==\"失去  25银两\",\"spend\");\ng.PressControl(4);command(0x50,new object[]{-101,true});req(g.money==100&&(string)get(\"dialogue\")==\"你没有足够的银两！\",\"insufficient\");\ng.PressControl(4);command(0x50,new object[]{0,true});req(g.money==100&&(string)get(\"dialogue\")==\"失去  0银两\",\"zero\");g.PressControl(4);\ncommand(0x50,new object[]{-101,false});req(g.money==100&&!g.DialogueVisible,\"silent failure\");\ncommand(0x50,new object[]{50,false});req(g.money==150&&!g.DialogueVisible,\"silent gain\");\nchecks.Add(\"Money gains, losses, insufficient balance and zero amount use exact source messages; failed debit keeps balance; silent operations show nothing\");\ncommand(0x51,new object[]{0,5,true});var item=GuJian.OriginalAssets.Table<GuJian.ItemDefinition>(\"item\")[0];\nreq(g.ItemCount(0)==5&&(string)get(\"dialogue\")==\"得到 5个 \"+item.name+\"!\"&&g.Machine.IsWaiting(),\"item reward\");\nreq(((string)get(\"originalMessageRichText\")).Contains(\"<color=#FF00FF>5</color>\"),\"quantity color\");g.PressControl(4);\ncommand(0x51,new object[]{0,2,false});req(g.ItemCount(0)==7&&!g.DialogueVisible,\"silent item\");checks.Add(\"Item reward updates quantity once, shows source quantity/name markup and pauses; silent item addition stays silent\");\nint count=g.Equipment.Count;command(0x53,new object[]{4,5,true});var e=g.Equipment[g.Equipment.Count-1];\nreq(g.Equipment.Count==count+1&&e.id==4&&e.reinforcement==5&&g.Machine.IsWaiting()&&(string)get(\"dialogue\")==\"得到 \"+e.Data.name,\"equip reward\");g.PressControl(4);\ncommand(0x53,new object[]{5,0,false});req(g.Equipment.Count==count+2&&!g.DialogueVisible,\"silent equipment\");checks.Add(\"Equipment reward keeps independent reinforcement/durability data, source grade/name markup and confirmation wait; silent grant stays silent\");\nlong prior=xp();command(0x92,new object[]{10,true});req(xp()==prior+10&&g.DialogueVisible&&!g.Machine.IsWaiting()&&(string)get(\"originalMessageRichText\")==\"得到 <color=#00FF00>10</color>点经验!\",\"XP nonpause\");\ng.PressControl(4);prior=xp();command(0x92,new object[]{3,false});req(xp()==prior+3&&!g.DialogueVisible,\"silent XP\");checks.Add(\"XP grant uses green source markup and does not pause VM; silent XP still grants exactly once\");\nreset();g.Machine.LoadScript=n=>new[]{\"x92(10,true)\",\"x50(20,true)\",\"x51(0,2,true)\",\"x53(4,0,true)\",\"x09(\\\"rewardDone\\\",1)\",\"end\"};\ng.Machine.Enqueue(\"reward-sequence\");g.Machine.Tick();\nreq(xp()==10&&g.money==20&&g.ItemCount(0)==0&&(string)get(\"dialogue\")==\"得到 10点经验!\"&&g.Machine.Get(\"rewardDone\")==0,\"XP continued to money\");\ng.PressControl(4);g.Machine.Tick();req((string)get(\"dialogue\")==\"获得  20银两\"&&g.ItemCount(0)==0,\"money pending\");\ng.PressControl(4);g.Machine.Tick();req(g.ItemCount(0)==2&&g.Equipment.Count==1,\"item pause\");\ng.PressControl(4);g.Machine.Tick();req(g.Equipment.Count==2&&g.Machine.Get(\"rewardDone\")==0,\"equipment pause\");\ng.PressControl(4);g.Machine.Tick();req(!g.Machine.Running&&g.Machine.Get(\"rewardDone\")==1&&g.money==20&&xp()==10&&g.ItemCount(0)==2&&g.Equipment.Count==2,\"final sequence\");\nchecks.Add(\"Production IsWaiting permits XP→money in one VM tick, then preserves FIFO confirmations for money/item/equipment and final continuation with no duplicate reward\");\ng.Machine.LoadScript=loader;reset();g.saveFileName=\"validation-reward-prompts.json\";g.Machine.Values[\"taskID\"]=901;g.Machine.Values[\"lucky\"]=1;g.Machine.Values[\"event\"]=999;g.Machine.Enqueue(\"taskover\");int pages=0;\nfor(int i=0;i<500;i++){if(g.DialogueVisible){g.PressControl(4);pages++;}else if(!g.Machine.Running)break;g.Machine.Tick();}\nreq(!g.Machine.Running&&g.Machine.Error==null&&xp()==20000&&g.money==400&&g.Machine.Get(\"taskID\")==-1,\"taskover production\");\nchecks.Add(\"Unmodified original taskover task901 executes under production VM wait:20000XP/400silver once, task cleanup and script save complete; confirmations=\"+pages);\ntypeof(GuJian.Editor.ComboValidation).GetMethod(\"Stage\",s).Invoke(null,new object[]{g,false});g.Machine.Clear();set(\"hideUi\",true);g.GetType().GetMethod(\"ResetStageInfo\",f).Invoke(g,null);set(\"toastUntil\",0f);\ncommand(0x50,new object[]{250,true});capture(\"reward-message-money\");g.PressControl(4);\ncommand(0x51,new object[]{0,5,true});capture(\"reward-message-item\");g.PressControl(4);\ncommand(0x53,new object[]{4,5,true});capture(\"reward-message-equipment\");g.PressControl(4);\ncommand(0x92,new object[]{10,true});capture(\"reward-message-xp\");g.PressControl(4);\nchecks.Add(\"Four actual GameView reward captures use original message skin and source foreground colors\");\nreturn new{passed=true,checks=checks,shots=shots};\n}finally{g.Machine.LoadScript=loader;g.Machine.Command=command;g.saveFileName=save;UnityEngine.Random.state=random;g.Begin();g.Machine.Clear();typeof(GuJian.GuJianGame).GetProperty(\"AtTitle\").SetValue(g,true,null);Time.timeScale=1;}"
+}

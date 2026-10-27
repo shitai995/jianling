@@ -1,0 +1,14 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T09:35:46.4849470Z",
+    "checks": [
+        "Wallet preserves exact-balance deductions, rejects negative mutations, keeps its balance on overflow, and serializes snapshots",
+        "Skill resource, cooldown, armor, recovery, and pending support state survive JsonUtility round-trip",
+        "Inventory item confirmation owns selection and commit state; discard affects only the selected stack, use delegates to gameplay rules, and stale/rejected actions preserve inventory",
+        "CombatHealth distinguishes one-shot threshold, alive, death, repeated damage, state-only revive and full respawn; respawn preserves the consumed special callback",
+        "Optional save snapshots recognize only top-level object values; absent/null, nested names and escaped string content cannot shadow legacy fields",
+        "Combined currency/item awards commit together; an invalid later item or balance overflow leaves every reward unchanged",
+        "Weapon transactions recheck and consume quotes once; purchase charges exact catalog price, while the selected sword cannot be sold"
+    ],
+    "error": ""
+}

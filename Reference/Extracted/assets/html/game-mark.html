@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>游戏评分_QQ游戏</title>
+<link rel="stylesheet" href="css/g.css" type="text/css">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="YES" />
+
+
+</head>
+<body>
+
+
+
+
+<script type="text/javascript" src='comm_js/util.js'></script>
+<script type="text/javascript" src='comm_js/game-util.js'></script>
+<script type="text/javascript">
+p_util.loginIfNotHasSid();
+</script>
+
+
+
+  <section class="game-mark">
+  	<section class="game-title">
+  	<script type='text/tmpl' id='tmpl-game-title'>
+    	<figure>
+            	<a href="#" class="icon-shine"><img src="<#= p_util.getLogoUrl(gameInfo.logo) #>" alt="<#= gameInfo.name #>" width="62" height="62"></a>
+                <figcaption>
+                	<h1><a href="game-item.html?cpId=<#= gameInfo.cpId #>&gameId=<#= gameInfo.gameId #>&sid=<#= sid #>"><#= gameInfo.name #></a></h1>
+                    <p><span class="grade"><span class="grade-4" style="width: <#= gameInfo.score #>0%;"><#= gameInfo.score #>分</span></span><br>
+                  <span class="t-gray s-12">(<#= gameInfo.scoreUserCount #>人评分)</span>
+
+				<#if( p_pkg.checkApk(gameInfo.pkgName) ){#>
+				  <a href='#' onClick="p_pkg.startGame(<#= gameInfo.cpId #>, <#= gameInfo.gameId #>, '<#= gameInfo.pkgName #>'); return false;" class="btn-getmore" style="float: right; margin: -35px 16px 0 0;"><# if(p_pkg.isCurGame(gameInfo.cpId, gameInfo.gameId, gameInfo.pkgName)) { #>返回游戏<# }else{ #>开始游戏<# } #></a>
+				<#}else{#>
+				  <a href="javascript:void(0);" onClick="p_util.reportAndDownload('<#= gameInfo.downUrl#>', '<#= gameInfo.name#>', '<#= gameInfo.pkgName#>', '<#= gameInfo.logo#>');return false;" class="btn-green">
+					<#= gameInfo.enterGameStr #></a>
+				<#}#>
+				  </p>
+                </figcaption>
+         </figure>
+	</script>
+	    <figure>
+            	<a href="#" class="icon-shine"><img src="" alt="loading..." width="62" height="62"></a>
+                <figcaption>
+                	<h1><a href="#">loading...</a></h1>
+                    <p><span class="grade"><span class="grade-0"></span></span><br>
+                  <span class="t-gray s-12">(评分)</span></p>
+                  <p><a class="btn-green">免费下载</a></p>
+                </figcaption>
+         </figure>
+    </section>
+    
+
+  	
+  	<form class="mark">
+    	<h1>按星星来评分：</h1>
+    	<script type='text/tmpl' id='tmpl-mark'>
+		<# if(userScore>0){ #>
+		我的评分：<span class="t-blue"></span>
+		<# }else{ #>
+    	我要评分：<span class="t-blue" id="scoreInfo"></span>
+		<# } #>
+		</script>
+		<div class="star"><div style="width: 0%;">打分</div></div>
+        <div class="remark-input"><textarea name="remark" id="comment">点击进入评分、评论。</textarea></div></div>
+        <div id="makesure" class="AC"><a class="btn-getmore">发表评分或评论</a></div>
+    </form>
+    
+    <section class="nodata-wrapper" style="display: none;">
+		<p class="warn">暂无评论</p>
+	</section>
+    
+   	<ul class="friends-list" id='comment-list'>
+   	<script type='text/tmpl' id='tmpl-comment-list'>
+   	  <li onclick="window.location = 'profile.html?sid=<#= sid #>&uin=<#= uin #>'">
+       	<figure>
+           	  <a class="icon-shine"><img src="<#= p_util.getAvatarUrl(avatar) #>"  alt="<#= avatar #>" width="44" height="44"></a>
+              <figcaption>
+           	    <h1><a><#= nickName #></a></h1>
+                <p><#= content #></p>
+                <p><time><#= addTime #></time></p>
+              </figcaption>
+        </figure>
+      </li>
+	</script>
+    </ul>
+    <div class="get-more" id="get-more"><a class="btn-getmore">查看更多</a></div>
+    
+  </section>
+      
+  <!-- ^^^ 公用js -->
+  <script type="text/javascript" src='comm_js/jquery-1.5.1.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingCircular.js'></script>
+  <script type="text/javascript" src='comm_js/js-tmpl-min.js'></script>
+  <script type="text/javascript" src='comm_js/util.js'></script>
+  <script type="text/javascript" src='comm_js/game-util.js'></script>
+ <script type="text/javascript" src='comm_js/pkg.js'></script>
+  <script type="text/javascript" src='comm_js/update.js'></script>
+  
+  
+  <script type="text/javascript" src='js/game-mark.js'></script>
+</body>
+</html>

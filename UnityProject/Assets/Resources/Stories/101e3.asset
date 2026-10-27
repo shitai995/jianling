@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb3ab722a2214741835d675e99bc225, type: 3}
+  m_Name: 101e3
+  m_EditorClassIdentifier: 
+  scriptId: 101e3
+  displayName: 101e3
+  notes: 
+  instructions:
+  - x88()
+  - x38(-1,2)
+  - x3F(-1,true)
+  - if(x0A("event")=207)
+  - x3A(197,1,9,true,true)
+  - x5E(15)
+  - x43(337,160)
+  - x61(true)
+  - x31(68)
+  - x30(69,237,"l",363,248,2)
+  - x3E(237,15)
+  - x3F(69,true)
+  - x26(271,245,"r")
+  - x3A(197,2,9,true,true)
+  - x5E(9)
+  - x3D(-1,1,1)
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u59D3\u695A\u7684\uFF01\u4E8F\u4F60\u8FD8\u662F\u4E00\u6D3E\u4E4B\u4E3B\uFF01\u8BF4\u597D\u5207\u78CB\uFF0C\u4F60\u600E\u4E48\u62DB\u62DB\u4E0B\u6B7B\u624B\uFF1F\")"
+  - x3D(69,0,1)
+  - "x27(\"\u695A\u5C71\u5357\",\"\u4F60\u7684\u5634\u6BD4\u5251\u6CD5\u5389\u5BB3\u591A\u4E86\uFF0C\u6280\u4E0D\u5982\u4EBA\u5C31\u522B\u627E\u501F\u53E3\uFF01\",\"\",true)"
+  - x3D(-1,13,1)
+  - x5E(14)
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u597D\uFF01\u65E2\u7136\u5982\u6B64\uFF0C\u90A3\u4F60\u4E5F\u5403\u6211\u4E00\u62DB\uFF0C<c=ffff00,000000,1>\u846C\u5251\uFF01</c>\")"
+  - x3F(-1,true)
+  - x3D(69,2,1)
+  - "x27(\"\u695A\u5C71\u5357\",\"\u846C\u5251\uFF1F\uFF01\u4E0D\u597D\uFF01\uFF01\",\"\",true)"
+  - x3A(69,14,1,true)
+  - x80()
+  - x5E(31)
+  - "x27(\"\u53E4\u957F\u8001\",\"\u4F4F\u624B\uFF01\u534A\u76CF\u8336\u65F6\u95F4\u5DF2\u5230\uFF0C\u53CC\u65B9\u4E0D\u5206\u80DC\u8D1F\uFF0C\u5E73\u5C40\uFF01\")"
+  - x3D(-1,3,1)
+  - x3D(69,2,1)
+  - x5E(14)
+  - x3B(-1)
+  - x3B(69)
+  - x3F(-1,false)
+  - x3A(197,1,9,true,true)
+  - x5E(9)
+  - x09("event",208)
+  - x20("101.s",true)
+  - else
+  - x20("101.s",true)
+  - endif

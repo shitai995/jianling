@@ -1,0 +1,13 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T09:15:38.8663280Z",
+    "checks": [
+        "Current durability reads/writes the selected instance directly; same-ID swords and selection changes retain independent wear",
+        "Integration requires strictly more than 10%, charges once, isolates spirit wear and releases to the currently selected ordinary instance",
+        "Infinite mode permits zero-durability integration; refill, clamping and consumption affect only the active durability source",
+        "Ordinary destruction preserves integrated spirit; replacing equipment from a save immediately changes the active source without stale references",
+        "Repair totals missing durability across all ordinary swords, rejects insufficient money atomically, accepts exact balance and charges the stored quote even after wear changes; spirit stays unchanged",
+        "Reset clears mode, spirit and quote; original x87 without x89 still repairs at the initial zero quote, and full swords quote zero"
+    ],
+    "error": ""
+}

@@ -1,0 +1,16 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T09:15:32.1967780Z",
+    "checks": [
+        "Same-ID swords remain independent; invalid slots and duplicate/null objects cannot change membership or selection; bag exposes no writable list",
+        "Durability, refill and skill mutations accept only owned equipment; single and full refills target the intended instances",
+        "Sales/feed removal rejects the equipped object; removing earlier slots preserves selected identity; stale/repeated removals cannot consume a replacement",
+        "Script removal reuses the original first ID-0 fallback; missing IDs do nothing; removing the active starter creates exactly one replacement",
+        "First-ID removal retains original duplicate-starter fallback semantics; removing an earlier unequipped starter never creates or selects a replacement",
+        "Capture/Restore detach mutable reinforcement, durability and skill fields; null/empty/partial snapshots are rejected before live state changes",
+        "Restore clamps legacy selected indices without rerolling random skills or advancing Unity random state",
+        "Reinforcement accepts exact balance, uses selected live durability ratio, charges once and upgrades skill at +5; insufficient money changes neither instance nor balance",
+        "Unequipped reinforcement preserves its own durability ratio; +9 doubles base stats, grants original skill step, and cap/restricted/foreign instances never charge"
+    ],
+    "error": ""
+}

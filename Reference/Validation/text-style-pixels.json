@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-20T11:23:55.860672+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "outline",
+      "passed": true,
+      "compared_pixels": 2073600,
+      "nonblack_pixels": 8214,
+      "differing_pixels": 0,
+      "max_rgb_difference": 0
+    },
+    {
+      "name": "shadow",
+      "passed": true,
+      "compared_pixels": 2073600,
+      "nonblack_pixels": 6396,
+      "differing_pixels": 0,
+      "max_rgb_difference": 0
+    }
+  ],
+  "scope": "Actual message rendering versus an editor-only reference using literal Tool.drawString offsets, without the production markup parser or StyledLabel. Same Unity font, layout and rasterizer; original-device font equivalence and multiline span overlap order remain unverified.",
+  "sha256": {
+    "Reference/Validation/text-style-outline.png": "b4b768e3ff00868e3975433ae2de9f610f38a2bc7217e0afc58fc309d6024720",
+    "Reference/Validation/text-style-reference-outline.png": "b4b768e3ff00868e3975433ae2de9f610f38a2bc7217e0afc58fc309d6024720",
+    "Reference/Validation/text-style-shadow.png": "4d5a90b6fa650cda0a9a88dfbe854deaf8546d22bcd0ca4d9d50773700b5dfdb",
+    "Reference/Validation/text-style-reference-shadow.png": "4d5a90b6fa650cda0a9a88dfbe854deaf8546d22bcd0ca4d9d50773700b5dfdb"
+  }
+}

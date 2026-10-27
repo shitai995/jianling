@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "utc": "2026-10-21T01:44:44.060176+00:00",
+  "checks": [
+    "Seven actual GameView captures follow original blank/flash/blank/flash/blank/blank/closed phases exactly",
+    "4486 independent scene/HUD samples match original RGBA(255,255,255,77) alpha blending; maximum RGB difference 0",
+    "Critical overlay visibly changes the scene and HUD in actual GameView",
+    "All seven GameView captures retain black letterbox bars"
+  ],
+  "metrics": {
+    "samples": 4486,
+    "maxRgbDifference": 0.0,
+    "changedPixels": 1926117
+  },
+  "error": ""
+}

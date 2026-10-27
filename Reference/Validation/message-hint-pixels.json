@@ -1,0 +1,85 @@
+{
+  "utc": "2026-10-20T10:52:45.164813+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "message-hint-0",
+      "passed": true,
+      "source_frame": 12,
+      "samples": 462,
+      "maximum_difference": 0,
+      "change_bounds": [
+        1789,
+        494,
+        1859,
+        568
+      ]
+    },
+    {
+      "name": "message-hint-1",
+      "passed": true,
+      "source_frame": 12,
+      "samples": 462,
+      "maximum_difference": 0,
+      "change_bounds": [
+        1789,
+        494,
+        1859,
+        568
+      ]
+    },
+    {
+      "name": "message-hint-2",
+      "passed": true,
+      "source_frame": 13,
+      "samples": 462,
+      "maximum_difference": 0,
+      "change_bounds": [
+        1789,
+        497,
+        1859,
+        571
+      ]
+    },
+    {
+      "name": "message-hint-3",
+      "passed": true,
+      "source_frame": 13,
+      "samples": 462,
+      "maximum_difference": 0,
+      "change_bounds": [
+        1789,
+        497,
+        1859,
+        571
+      ]
+    },
+    {
+      "name": "source_two_frames_held_two_cycles_each",
+      "passed": true
+    },
+    {
+      "name": "return_message_has_no_hint",
+      "passed": true
+    },
+    {
+      "name": "fullscreen_text_has_no_hint",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "Original jiantou action4 atlas pixels, four80ms phases, source-relative location under current Unity font metrics, no hint for timed/return/fullscreen text; original-device font and frame recording remain pending.",
+  "inputs_sha256": {
+    "Reference/Validation/message-queue-capture.json": "cc9f4abc178db904b9e60722cdf08dd0b48d5b61c01634c0cfa5ab93d100b54d",
+    "UnityProject/Assets/Resources/Original/Animations/action/jiantou.json": "47448f5767b3b809e04dd6372caf14614a8d67997155a72667f9e5c41fd9aac6",
+    "UnityProject/Assets/Resources/Original/action/jiantou.png": "f25028c944c3262e1afb0bd3a4136618f98ae3462a0064b8279512ff9d1c5612",
+    "Reference/Validation/message-hint-none.png": "204ca01061f70d0793f56366fe99e553d2b24d9dbbd306bfb1cdae7a7efacb98",
+    "Reference/Validation/message-hint-0.png": "cb7f906f343b811edf2d616a55d60252a3a17305b9b7ce1ee6299c668e1ec457",
+    "Reference/Validation/message-hint-1.png": "cb7f906f343b811edf2d616a55d60252a3a17305b9b7ce1ee6299c668e1ec457",
+    "Reference/Validation/message-hint-2.png": "d04903cf35515d5cd16cb31e77b88b31cb72f9f317e57591dfb00215af36dff6",
+    "Reference/Validation/message-hint-3.png": "d04903cf35515d5cd16cb31e77b88b31cb72f9f317e57591dfb00215af36dff6",
+    "Reference/Validation/message-hint-return.png": "204ca01061f70d0793f56366fe99e553d2b24d9dbbd306bfb1cdae7a7efacb98",
+    "Reference/Validation/message-hint-fullscreen-0.png": "44a087a2934645f0ac0b54549ef5532d9a68e16a2cfae0ec6d86526a11ee0dd0",
+    "Reference/Validation/message-hint-fullscreen-2.png": "44a087a2934645f0ac0b54549ef5532d9a68e16a2cfae0ec6d86526a11ee0dd0"
+  }
+}

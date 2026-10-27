@@ -1,0 +1,14 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T02:21:37.4054170Z",
+    "checks": [
+        "Production ordinary role matches fixed golden values; non-heal preserves rounded HP ratio and hold, heal fills HP/reset death and sets hold49",
+        "Production zero-durability ordinary sword removes gated equipment attributes but retains AP",
+        "Production spirit seven-field snapshot/integration matches golden values; refresh AP2316 and combo-event AP2250 preserve distinct original bonus rules",
+        "Production growth table edits apply immediately without cached formulas; in-memory fixture restores the original row",
+        "Production enemy 201 golden HP/AP/DP/hit/dodge/hold/injury at levels19/20/99/100/150; refresh heals/resets death",
+        "Production enemy 203 golden HP/AP/DP/hit/dodge/hold/injury at levels19/20/99/100/150; refresh heals/resets death",
+        "Production enemy 231 golden HP/AP/DP/hit/dodge/hold/injury at levels19/20/99/100/150; refresh heals/resets death"
+    ],
+    "error": ""
+}

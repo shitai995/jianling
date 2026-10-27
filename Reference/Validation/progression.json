@@ -1,0 +1,17 @@
+{
+    "passed": true,
+    "utc": "2026-10-21T05:11:52.5536630Z",
+    "checks": [
+        "Equipped/duplicate instances, live durability ratio, exact fee, +5/+9 skill upgrades, doubled +9 stats, cap and insufficient money passed",
+        "Reinforced equipment instances, selected index, money, skill level and durability survive real Save/Load",
+        "Unmodified 334n0 -> guide1 -> 334n0 scripts: choose reinforce, confirm twice, close, taskID 914, completed tutorial dialogue",
+        "Unmodified 203 + 203e1: actual hit check -> actions 24/25 -> durability zero -> VM resumes -> event 204",
+        "Unmodified 101/101e3/101e4: x80() holds action 24 frame 33, elder interrupts, x3B resets, event 208 then event 300 through original follow-up",
+        "Boss 232 x7E: original actions 22 -> 24, guaranteed half-max-HP hit, finish and role unlock",
+        "Boss 242 x7E: intro, action 24 projectile at target, original attack frames hit, projectile cleanup and unlock",
+        "No-target action 23 releases a waiting VM; subsequent instruction executes only after sequence ends",
+        "Integrated critical uses actions 49/51/52 and the original spirit-specific finalslash layers",
+        "Unmodified 408/408e0/408e1/335/335n0 scripts: Boss 233 critical story -> event 805 -> City Lord follow-up -> event 825, input unlocked"
+    ],
+    "error": ""
+}

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb3ab722a2214741835d675e99bc225, type: 3}
+  m_Name: 204n1
+  m_EditorClassIdentifier: 
+  scriptId: 204n1
+  displayName: 204n1
+  notes: 
+  instructions:
+  - "x28(\"\u53E4\u5C0F\u5929\u62D4\u8D77\u5251\")"
+  - x31(98)
+  - x94(17,0,true)
+  - "x28(\"\u83B7\u5F97<c=ff00ff,000000,1>\u4E03\u661F</c>\")"
+  - x53(17)
+  - "x28(\"\u81EA\u52A8\u88C5\u5907<c=ff00ff,000000,1>\u4E03\u661F</c>\")"
+  - x55(17)
+  - x5E(5)
+  - x3D(-1,1,1)
+  - x5E(15)
+  - x3D(-1,1,1)
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u8FD9\u628A\u5251\u2026\u2026\u7B97\u662F\u6311\u5230\u73B0\u5728\u6700\u597D\u7684\u4E00\u628A\u4E86\u3002\")"
+  - x3D(-1,1,1)
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u5509\uFF0C\u5982\u679C\u6CA1\u6709\u66F4\u597D\u7684\u6B66\u5668\uFF0C\u90A3\u5C31\u9009\u5B83\u5427\u3002\")"
+  - x09("sub2",1)
+  - if(x0A("sub1")=1)
+  - if(x0A("sub2")=1)
+  - if(x0A("sub3")=1)
+  - x20("204e1.s")
+  - else
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u7B97\u4E86\uFF0C\u8FD8\u662F\u5148\u770B\u770B\u5176\u4ED6\u6B66\u5668\u5427\u3002\")"
+  - endif
+  - else
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u7B97\u4E86\uFF0C\u8FD8\u662F\u5148\u770B\u770B\u5176\u4ED6\u6B66\u5668\u5427\u3002\")"
+  - endif
+  - else
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u7B97\u4E86\uFF0C\u8FD8\u662F\u5148\u770B\u770B\u5176\u4ED6\u6B66\u5668\u5427\u3002\")"
+  - endif

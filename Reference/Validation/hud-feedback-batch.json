@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "utc": "2026-10-20T05:03:35.856524+00:00",
+  "checks": 67,
+  "reports": [
+    {
+      "name": "hud-feedback",
+      "passed": true,
+      "checks": 6,
+      "utc": "2026-10-20T05:00:53.2172170Z",
+      "sha256": "cde72345b1ea637d2b3ce2afd8dc861b0cb8b76f6b3da9d97f9c3c36998b6839"
+    },
+    {
+      "name": "hud-feedback-rendered",
+      "passed": true,
+      "checks": 4,
+      "utc": "2026-10-20T04:59:04.6889580Z",
+      "sha256": "c4133cefd30c6fb9c3416655e5d3bbfd2df24cba1b0d55c18334da0cb805f0b8"
+    },
+    {
+      "name": "combo-break",
+      "passed": true,
+      "checks": 11,
+      "utc": "2026-10-20T04:55:09.1930550Z",
+      "sha256": "62cdb9f350db0d5cb42e06e0348de8acd7e4f3f7578145572a6ae9ab27e26b94"
+    },
+    {
+      "name": "attack-skills",
+      "passed": true,
+      "checks": 13,
+      "utc": "2026-10-20T04:55:10.9101940Z",
+      "sha256": "0faa49532d0f1e9ad0d0cda120cb8ce35afd819611eadd67eb4936abc09dfe36"
+    },
+    {
+      "name": "support-skills",
+      "passed": true,
+      "checks": 9,
+      "utc": "2026-10-20T04:55:11.2719490Z",
+      "sha256": "a83c6b5433646b35e082217b49a750a0d5b83ef5aa921f5fff776eb7635d9c6d"
+    },
+    {
+      "name": "control-presentation",
+      "passed": true,
+      "checks": 8,
+      "utc": "2026-10-20T04:59:29.2827510Z",
+      "sha256": "6bc6e71bcca8cb295ccec15c7e4c53ef8da3e38a7111c3769d4e21598bd0df10"
+    },
+    {
+      "name": "touch-map",
+      "passed": true,
+      "checks": 7,
+      "utc": "2026-10-20T04:59:29.4047970Z",
+      "sha256": "b61d1d7e8d228f83dcb88fde757b34bb3da260a0693fda66ae21e6b90c213c3a"
+    },
+    {
+      "name": "baked-assets",
+      "passed": true,
+      "checks": 7,
+      "utc": "2026-10-20T04:59:29.4079580Z",
+      "sha256": "5fd0bd15d4cd28811d75ca6c773684b90098b18f7e2c3c142c1655738e6b7791"
+    },
+    {
+      "name": "editor-reload",
+      "passed": true,
+      "checks": 2,
+      "utc": "2026-10-20T05:00:19.2240000Z",
+      "sha256": "a4af7988b37401b97109e2617d53048adcb2615b0751a98fa7035ce5517243b2"
+    }
+  ],
+  "source_sha256": {
+    "UnityProject/Assets/Scripts/OriginalHudFeedback.cs": "87d88f878b0abbf955cf82a04171ca07b74adf5e007c627d817a519fbf021275",
+    "UnityProject/Assets/Scripts/OriginalUiLayout.cs": "8c3e707b0c4c9d33a1aa14e703a444bae383f098280e705d04b9f8b7c56907e7",
+    "UnityProject/Assets/Scripts/OriginalUiPresentation.cs": "395600680247fa4cff104586e89be7b91a239e9d6eb73474cf9cfe01643d3a51",
+    "UnityProject/Assets/Scripts/OriginalCombat.cs": "56211349dba517014075266a7fdf4b787d594ba70733fa38159781211b43e501",
+    "UnityProject/Assets/Scripts/OriginalCombo.cs": "11fc0610cf97cbbbaac3e66f4876b75fe5055b8b0cbffe6c85180d1ee613d52e",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "c1f6d650ad1912ad0426097bf40b403264becc2593a0c87bea9ff357523ce49f",
+    "UnityProject/Assets/Scripts/OriginalTouchControls.cs": "5ef7aaa3f00a05c821a5cf91d224e765cf244502cfb0bdbcaaa6e387e41f8e90",
+    "UnityProject/Assets/Editor/UiAssetSetup.cs": "db70de8128a4008bb043807c8500de55d04fd2d18659415bcba2d20fe3fa8d5e",
+    "UnityProject/Assets/Editor/HudFeedbackValidation.cs": "a0be3f4dffefd12bef16e00a59e544c90f739a0ea3d4a6a826df6504829ab356",
+    "UnityProject/Assets/Resources/OriginalUiLayout.asset": "14423c6899bd054e5680ba042c6d9ffddfe3f278505f4d3b7bafac6cb81674ee",
+    "UnityProject/Assets/Prefabs/GuJianGame.prefab": "890d485d98d6d3662731cf86f57a6959729f4f8e0f51b85dbae474acc5d460fc",
+    "UnityProject/Assets/Scenes/GuJian.unity": "f718f22afa70bb23626f2ba1e5cf60657a68529a0f92ec80e4448fc90770b6ee"
+  },
+  "gameview_review": [
+    "hud-feedback-contact.png",
+    "hud-ep-fill-contact.png",
+    "mini-map-controls.png"
+  ],
+  "conditions": [
+    "Unity GameView only; no window activation, resizing, standalone build or launch",
+    "Rendered screenshots use frozen stage200 with a ten-hit combo fixture and sampled cooldown / EP states",
+    "GameView letterbox pixels verified at 1920x1080; other aspect ratios were not measured",
+    "Production hits and real actor Update ticks are checked independently in hud-feedback.json",
+    "No original-device frame-by-frame comparison or normal-difficulty full completion claimed"
+  ],
+  "editor_final": {
+    "playing": true,
+    "at_title": true,
+    "run_in_background": true,
+    "scene_dirty": false,
+    "console_errors": 0
+  }
+}

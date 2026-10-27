@@ -1,0 +1,23 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T02:04:09.3191410Z",
+    "checks": [
+        "No spare weapon retains status page, original angry face and original text; consumes nothing",
+        "First OK opens candidates only; second OK directly feeds skillless weapon and preserves existing skill",
+        "Different skill opens original inheritance tip; FIRE is inert, soft9 retains skill and consumes candidate once",
+        "Soft10 inherits selected skill and feeds; absorption ignores FIRE/soft9/directions, soft10 fast-forwards while preserving menu",
+        "Empty spirit skill auto-inherits without asking, including both steps via soft9",
+        "Same-skill lower level feeds immediately without downgrade or inheritance prompt",
+        "Same-skill higher level asks first and upgrades only after soft10",
+        "Candidate list excludes equipped weapon, wraps over seven entries, draws five-row viewport; soft10 returns to status without consumption",
+        "Original tip permits Up/Down while retaining question text; soft10 uses current candidate, including its absent skill",
+        "Left/Right can leave inheritance state; returning to spirit resets candidates and prompt without consuming equipment",
+        "Status soft10 starts original farewell and blocks input; twenty decrement cycles retain menu, next 80ms cycle closes",
+        "Public control4 and Back5 use production two-stage inheritance and fast-forward rules with explicit native soft10 mapping",
+        "New game clears candidate, prompt, animation, farewell timer and text",
+        "Original StyledText long description: measured fixed140px wrapping, initial font-height offset, integer font-height/10 movement every80ms, loop to38px after full exit",
+        "Actual GameView captures preserve native five-row candidate focus and clip long description to141x39 including original one-pixel margin",
+        "Candidate scroll marker references saved original u_27 texture; UI renders original action6 and saved message-panel asset"
+    ],
+    "error": ""
+}

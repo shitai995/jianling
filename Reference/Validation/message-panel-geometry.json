@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-20 09:37:40 UTC",
+  "success": true,
+  "message": "Code executed successfully.",
+  "data": {
+    "result": {
+      "passed": true,
+      "shots": [
+        {
+          "name": "message-panel-base",
+          "width": 1920,
+          "height": 1080,
+          "panel": null,
+          "text": null,
+          "scroll": false
+        },
+        {
+          "name": "message-panel-short",
+          "width": 1920,
+          "height": 1080,
+          "panel": [
+            0,
+            132,
+            533,
+            34
+          ],
+          "text": [
+            10,
+            142.740738,
+            513,
+            14.5185184
+          ],
+          "scroll": false
+        },
+        {
+          "name": "message-panel-tall",
+          "width": 1920,
+          "height": 1080,
+          "panel": [
+            0,
+            80,
+            533,
+            126
+          ],
+          "text": [
+            10,
+            90.8888855,
+            513,
+            106.666664
+          ],
+          "scroll": true
+        }
+      ]
+    },
+    "compiler": "codedom"
+  },
+  "execute_code": "var g=UnityEngine.Object.FindObjectOfType<GuJian.GuJianGame>();\nvar s=System.Reflection.BindingFlags.Static|System.Reflection.BindingFlags.NonPublic;\nvar f=System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic;\nvar shots=new System.Collections.Generic.List<object>();\nSystem.Action<string> save=name=>{\nvar image=(Texture2D)typeof(GuJian.Editor.HudFeedbackValidation).GetMethod(\"Render\",s).Invoke(null,null);\ntry{\nSystem.IO.File.WriteAllBytes(\"../Reference/Validation/\"+name+\".png\",image.EncodeToPNG());\nfloat h=(float)g.GetType().GetField(\"originalMessageHeight\",f).GetValue(g),off=(float)g.GetType().GetField(\"originalMessageOffset\",f).GetValue(g);\nbool active=(bool)g.GetType().GetField(\"originalMessage\",f).GetValue(g);\nshots.Add(new{name=name,width=image.width,height=image.height,panel=active?new[]{0,(int)((320-h)/2-20),533,(int)(Mathf.Min(h,320f/3)+20)}:null,text=active?new[]{10f,(320-h)/2-10,513f,Mathf.Min(320f/3,off+h)}:null,scroll=(bool)g.GetType().GetField(\"originalMessageScroll\",f).GetValue(g)});\n}finally{UnityEngine.Object.DestroyImmediate(image);}};\ntry{\ntypeof(GuJian.Editor.ComboValidation).GetMethod(\"Stage\",s).Invoke(null,new object[]{g,false});\nTime.timeScale=0;g.Machine.Clear();g.GetType().GetField(\"hideUi\",f).SetValue(g,true);g.GetType().GetMethod(\"ResetStageInfo\",f).Invoke(g,null);\nsave(\"message-panel-base\");\ng.Machine.Command(0x28,new object[]{\"白色 <c=ffff00,000000,1>黄色</c> <c=00ff00>绿色</c> <c=ff00ff>紫色</c>\",0});save(\"message-panel-short\");\ng.Machine.Command(0x28,new object[]{\"第一行\\n第二行\\n第三行\\n第四行\\n第五行\\n第六行\\n第七行\\n第八行\",0});save(\"message-panel-tall\");\nreturn new{passed=true,shots=shots};\n}finally{g.Begin();g.Machine.Clear();typeof(GuJian.GuJianGame).GetProperty(\"AtTitle\").SetValue(g,true,null);Time.timeScale=1;}"
+}

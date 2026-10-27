@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-20 09:20:18 UTC",
+  "scope": "Live Unity Editor production commands and deterministic80ms ticks; 3 GameView captures inspected; physical keyboard, original-device font/pixel matching and message queues remain pending",
+  "success": true,
+  "message": "Code executed successfully.",
+  "data": {
+    "result": {
+      "passed": true,
+      "checks": [
+        "Duration0 accepts confirmation only, blocks map/cancel and preserves lastChoice",
+        "Duration-1 accepts return only and preserves the previous menu state",
+        "Timed81ms rejects manual close and expires at the second80ms cycle",
+        "Original2400ms messages remain through29 cycles and close on cycle30",
+        "Zero delta freezes time; replacing a message resets fractional elapsed time",
+        "x29 uses full-screen text without ordinary dialogue pagination and confirms closed",
+        "A character dialogue clears the previous message timing/mode",
+        "The real VM waits for a timed message then resumes with lastChoice intact",
+        "Closing a message consumes same-frame menu and attack controls"
+      ]
+    },
+    "compiler": "codedom"
+  },
+  "execute_code": "var g=UnityEngine.Object.FindObjectOfType<GuJian.GuJianGame>();\nvar f=System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic;\nvar checks=new System.Collections.Generic.List<string>();\nvar loader=g.Machine.LoadScript;var command=g.Machine.Command;\nSystem.Action<float> tick=d=>g.GetType().GetMethod(\"TickOriginalMessage\",f).Invoke(g,new object[]{d});\nSystem.Action<string,int> open=(s,d)=>command(0x28,new object[]{s,d});\nSystem.Action<bool,string> require=(v,s)=>{if(!v)throw new System.Exception(s);};\ntry{\nTime.timeScale=0;g.Begin();g.Machine.Clear();\ncommand(0x2D,new object[]{\"选择\",new object[]{\"甲\",\"乙\"},false});g.PressControl(1);g.PressControl(4);\nopen(\"确认消息\",0);g.PressControl(5);g.PressControl(12);require(g.DialogueVisible&&!(bool)g.GetType().GetField(\"miniMapOpen\",f).GetValue(g),\"zero duration input\");g.ContinueDialogue();require(!g.DialogueVisible&&g.LastChoice==1,\"confirmation/choice preservation\");checks.Add(\"Duration0 accepts confirmation only, blocks map/cancel and preserves lastChoice\");\nopen(\"返回消息\",-1);g.GetType().GetField(\"menu\",f).SetValue(g,true);g.PressControl(4);require(g.DialogueVisible,\"cancel-only accepted primary\");g.PressControl(5);require(!g.DialogueVisible&&(bool)g.GetType().GetField(\"menu\",f).GetValue(g),\"menu restoration\");g.GetType().GetField(\"menu\",f).SetValue(g,false);checks.Add(\"Duration-1 accepts return only and preserves the previous menu state\");\nopen(\"81毫秒\",81);g.PressControl(4);g.PressControl(5);require(g.DialogueVisible,\"timed manual close\");tick(.079f);require(g.DialogueVisible,\"early close79\");tick(.001f);require(g.DialogueVisible,\"early close80\");tick(.079f);require(g.DialogueVisible,\"early close159\");tick(.001f);require(!g.DialogueVisible,\"160 boundary\");checks.Add(\"Timed81ms rejects manual close and expires at the second80ms cycle\");\nopen(\"2400毫秒\",2400);tick(2.32f);require(g.DialogueVisible,\"29-cycle boundary\");tick(.08f);require(!g.DialogueVisible,\"30-cycle boundary\");checks.Add(\"Original2400ms messages remain through29 cycles and close on cycle30\");\nopen(\"暂停\",80);tick(0);require(g.DialogueVisible,\"zero delta\");tick(.04f);open(\"替换\",80);tick(.04f);require(g.DialogueVisible,\"stale elapsed\");tick(.04f);require(!g.DialogueVisible,\"fresh clock\");checks.Add(\"Zero delta freezes time; replacing a message resets fractional elapsed time\");\ncommand(0x29,new object[]{new string('文',400)});require((bool)g.GetType().GetField(\"originalMessageFullScreen\",f).GetValue(g)&&((string)g.GetType().GetField(\"dialogue\",f).GetValue(g)).Length==400,\"full text\");g.PressControl(4);require(!g.DialogueVisible,\"full text close\");checks.Add(\"x29 uses full-screen text without ordinary dialogue pagination and confirms closed\");\nopen(\"覆盖\",80);command(0x27,new object[]{\"人物\",\"普通对话\",\"\",false});require(!(bool)g.GetType().GetField(\"originalMessage\",f).GetValue(g),\"stale mode\");g.ContinueDialogue();require(!g.DialogueVisible,\"normal dialogue\");checks.Add(\"A character dialogue clears the previous message timing/mode\");\nint result=-99;g.Machine.LoadScript=n=>new[]{\"x28()\",\"x2E()\",\"end\"};g.Machine.Command=(id,a)=>{if(id==0x28)return command(id,new object[]{\"等待\",80});var v=command(id,a);if(id==0x2E)result=System.Convert.ToInt32(v);return v;};\ng.Machine.Enqueue(\"validation-message\");g.Machine.Tick();require(g.DialogueVisible&&result==-99,\"VM wait\");tick(.08f);g.Machine.Tick();require(!g.Machine.Running&&result==1,\"VM resume\");checks.Add(\"The real VM waits for a timed message then resumes with lastChoice intact\");\nint action=g.Actors[-1].actionIndex;g.PressControl(5);g.PressControl(4);require(!(bool)g.GetType().GetField(\"menu\",f).GetValue(g)&&g.Actors[-1].actionIndex==action,\"same frame leak\");checks.Add(\"Closing a message consumes same-frame menu and attack controls\");\nreturn new{passed=true,checks=checks};\n}finally{g.Machine.LoadScript=loader;g.Machine.Command=command;g.Begin();g.Machine.Clear();typeof(GuJian.GuJianGame).GetProperty(\"AtTitle\").SetValue(g,true,null);Time.timeScale=1;}",
+  "source_sha256": {
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "65767563764c40a9e9ec4bd645ce40694af1fc656250845c332add6c4a5f66c4",
+    "UnityProject/Assets/Scripts/OriginalMessages.cs": "a3db5342d24663ff5597ef3d5e49a0fc919e3fd60726f4ddf0e598308356f00d",
+    "UnityProject/Assets/Scripts/OriginalChoices.cs": "8499b628733324be07ebbc7d4e476e0fec0abaf41c936989b4e98245878f7dd9",
+    "UnityProject/Assets/Scripts/OriginalTouchControls.cs": "223943a4a69edeb958a56fd25b585c9f37db652c2b5a669dd3ae92b1b85c29ee",
+    "UnityProject/Assets/Scripts/OriginalAtlasMenus.cs": "20b7e6c6683e006199e9ecfb40129804771add3243c7fe9489d445b8d9db2bc9",
+    "Reference/Decompiled/sources/com/dobetter/client/GameCanvas.java": "d2a3f5e8085b76f65b1fb41ede376965e5b5375408998c490fb846329bcfebf4",
+    "Reference/Decompiled/sources/com/dobetter/common/StyledText.java": "8cdfa64ea496f9f3fa0ffdd5d88d77710919ceb864c2ab79d51a0a7c75a565d2",
+    "Reference/Decompiled/sources/com/dobetter/common/Style.java": "db95493f554714ed60044353994551a18e2375a9cedbd82462ad9ad79212b819"
+  },
+  "screenshots": {
+    "message-confirm.png": "dae7a0875976b52df330dc4def82c3f35acee7af14117d43bf18a6a4091044df",
+    "message-over-menu.png": "1269162fc080ad925d2e4ab1898cc42508e4275b9c39818b3a4a7a43e85cbeae",
+    "message-fullscreen.png": "8525f4f9f9bb2d83f1c72817a04e86205a3ba800544ae78a1f060abd304603e2"
+  }
+}

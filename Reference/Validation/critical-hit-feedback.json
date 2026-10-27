@@ -1,0 +1,20 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T02:30:25.4280360Z",
+    "checks": [
+        "Saved s_32 action uses original 0/1/0/1/1 sequence, 15 tiles, empty alternate frame and persistent s_34 texture; no runtime asset construction",
+        "Real original-frame noncritical hit starts hit audio without starting critical overlay/audio",
+        "Real original-frame guaranteed critical starts five-cycle overlay, original four-cycle shake and critical audio, with normal hit audio absent",
+        "80 ms accumulated timing, global progress under menu, retrigger preserving current counter, fifth-cycle retention and sixth-cycle cleanup match GameCanvas.cycle",
+        "Actual lethal hits on type10 Boss skip ordinary hit audio after the original early return; lethal critical still starts critical audio/effect",
+        "Actual lethal non-Boss hit retains normal audio; Boss suppression does not affect ordinary enemies",
+        "Actual dodged attack and enemy-damage path do not trigger player hit or critical feedback",
+        "Boss232/233 actual intro22→24 starts critical effect/audio before damage; subsequent original half-max-HP hit does not retrigger either",
+        "Boss235/236 intro stays silent; original action24 frame26 valid hit starts critical effect/audio",
+        "Boss244 guaranteed random critical retains damage without player critical effect/audio; Enemy.processAttack only triggers effects at its authored family call sites",
+        "Original mute gate silences critical audio while preserving visual overlay and shake",
+        "Seven unfocused GameView captures verify blank/flash/blank/flash/blank/blank/closed, identical repeated phases and 1923696 changed pixels; node count unchanged",
+        "New game clears duration, phase and fractional accumulator"
+    ],
+    "error": ""
+}

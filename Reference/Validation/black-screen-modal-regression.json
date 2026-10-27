@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-20T15:58:36.976Z",
+  "scope": "Shared modal regression after x5D integration; production VM, FIFO messages, character pagination, choice preservation and same-frame input interception. Programmatic controls; physical keyboard/touch remains pending.",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"success\":true,\"message\":\"Code executed successfully.\",\"data\":{\"result\":{\"passed\":true,\"checks\":[\"Production VM still waits for x28 timed message and resumes after80ms\",\"FIFO confirmation messages advance then close normally\",\"Character dialogue retains multi-page confirmation after shared modal reset\",\"Choice confirms index1 and subsequent message preserves it\",\"Modal close consumes same-frame attack and menu controls\"]},\"compiler\":\"codedom\"}}"
+    }
+  ],
+  "structuredContent": {
+    "success": true,
+    "message": "Code executed successfully.",
+    "data": {
+      "result": {
+        "passed": true,
+        "checks": [
+          "Production VM still waits for x28 timed message and resumes after80ms",
+          "FIFO confirmation messages advance then close normally",
+          "Character dialogue retains multi-page confirmation after shared modal reset",
+          "Choice confirms index1 and subsequent message preserves it",
+          "Modal close consumes same-frame attack and menu controls"
+        ]
+      },
+      "compiler": "codedom"
+    }
+  },
+  "isError": false,
+  "execute_code": "var g=UnityEngine.Object.FindObjectOfType<GuJian.GuJianGame>();\nvar f=System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic;\nvar loader=g.Machine.LoadScript; var scale=Time.timeScale; var checks=new System.Collections.Generic.List<string>();\nSystem.Action<bool,string> require=(v,s)=>{if(!v)throw new System.Exception(s);};\nSystem.Action<int,object[]> command=(id,args)=>{g.Machine.Command(id,args);};\ntry {\n Time.timeScale=0;g.Begin();g.Machine.Clear();\n g.Machine.LoadScript=n=>new[]{\"x28(\\\"定时消息\\\",80)\",\"x09(\\\"modalDone\\\",1)\"};\n g.Machine.Enqueue(\"modal-probe\");g.Machine.Tick();\n require(g.DialogueVisible&&g.Machine.IsWaiting()&&g.Machine.Get(\"modalDone\")==0,\"timed VM wait\");\n typeof(GuJian.GuJianGame).GetMethod(\"TickOriginalMessage\",f).Invoke(g,new object[]{.08f});g.Machine.Tick();\n require(!g.DialogueVisible&&!g.Machine.Running&&g.Machine.Get(\"modalDone\")==1,\"timed VM resume\");\n checks.Add(\"Production VM still waits for x28 timed message and resumes after80ms\");\n command(0x28,new object[]{\"甲\",0});command(0x28,new object[]{\"乙\",0});\n g.ContinueDialogue();require(g.DialogueVisible&&(string)g.GetType().GetField(\"dialogue\",f).GetValue(g)==\"乙\",\"FIFO advance\");\n g.ContinueDialogue();require(!g.DialogueVisible,\"FIFO final close\");\n checks.Add(\"FIFO confirmation messages advance then close normally\");\n command(0x27,new object[]{\"古小天\",new string('文',70),\"\",false});\n int pages=0;while(g.DialogueVisible&&pages<20){g.ContinueDialogue();pages++;}\n require(pages>1&&!g.DialogueVisible,\"character pagination\");\n checks.Add(\"Character dialogue retains multi-page confirmation after shared modal reset\");\n command(0x2D,new object[]{\"选择\",new object[]{\"甲\",\"乙\"},false});g.PressControl(1);g.PressControl(4);\n require(!g.DialogueVisible&&g.LastChoice==1,\"choice navigation\");\n command(0x28,new object[]{\"奖励\",0});g.ContinueDialogue();require(g.LastChoice==1,\"choice retained across message\");\n checks.Add(\"Choice confirms index1 and subsequent message preserves it\");\n int action=g.Actors[-1].actionIndex;g.PressControl(5);g.PressControl(4);\n require(!(bool)g.GetType().GetField(\"menu\",f).GetValue(g)&&g.Actors[-1].actionIndex==action,\"modal same-frame input leaked\");\n checks.Add(\"Modal close consumes same-frame attack and menu controls\");\n return new{passed=true,checks=checks};\n} finally {g.Machine.LoadScript=loader;g.Begin();g.Machine.Clear();g.GetType().GetProperty(\"AtTitle\").SetValue(g,true,null);Time.timeScale=scale;}\n"
+}

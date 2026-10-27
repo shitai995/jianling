@@ -1,0 +1,59 @@
+{
+  "passed": false,
+  "status": "partial",
+  "utc": "2026-10-20T15:05:00Z",
+  "scope": "菜单输入实现、未开放地图提示与编译专项；不宣称 GameView 实体输入已通过",
+  "checks": [
+    {
+      "name": "menu-script-validation",
+      "passed": true,
+      "details": "OriginalGameMenus.cs 标准校验 0 errors / 0 warnings"
+    },
+    {
+      "name": "atlas-menu-script-validation",
+      "passed": true,
+      "details": "OriginalAtlasMenus.cs 标准校验 0 errors / 0 warnings"
+    },
+    {
+      "name": "menu-navigation-entry",
+      "passed": true,
+      "details": "TickOriginalMenuInput 接入左右切页、上下列表、确认、Escape 返回；复用既有 SelectEquipment、UseItemStack、SelectSpiritFood、SelectItemTrade、SelectWeaponTrade"
+    },
+    {
+      "name": "world-map-neighbor-table",
+      "passed": true,
+      "details": "MoveWorldMapSelection 按原 GameCanvas.handleKey_map 的上下左右邻接关系实现，保留 event>=1050 与 event>1071 分支；移动不自动解锁地区"
+    },
+    {
+      "name": "world-map-neighbor-runtime-probe",
+      "passed": true,
+      "details": "Unity execute_code 反射调用验证：0 上=9、8 左=7、2 上(event1050)=11、8 左(event1072)=12"
+    },
+    {
+      "name": "world-map-locked-area-message",
+      "passed": true,
+      "details": "Unity 运行时探针调用 TravelToArea(9) 返回 false，DialogueVisible=true，LastError 为空；未开放区域显示原文案“该区域尚未开放!”"
+    },
+    {
+      "name": "menu-focus-and-keypad-enter",
+      "passed": true,
+      "details": "菜单切页时重置 atlasSelection；交易确认、剑灵吞噬确认和普通菜单确认接受 KeyCode.KeypadEnter；固定资源仍由编辑期资产提供"
+    },
+    {
+      "name": "compile-and-editor-state",
+      "passed": true,
+      "details": "Unity 2022.3.62f3 刷新完成，is_compiling=false，ready_for_tools=true；编辑器未聚焦且处于 Play 状态"
+    },
+    {
+      "name": "gameview-input",
+      "passed": false,
+      "status": "not_run_in_this_batch",
+      "details": "本批未执行 GameView 实体键盘／触屏输入；当前窗口保持后台运行，后续只需执行菜单状态矩阵，不需要重跑主线"
+    }
+  ],
+  "source_sha256": {
+    "UnityProject/Assets/Scripts/OriginalGameMenus.cs": "4e512d4677db3d3a355044196ace496f33f35cd0dd51ad029e9544966c7bacc6",
+    "UnityProject/Assets/Scripts/OriginalAtlasMenus.cs": "28c7f2eab333d55115b2ed2f75f65f5ba9286c65e34b743a353e39f5deb8612d",
+    "Reference/Decompiled/sources/com/dobetter/client/GameCanvas.java": "d2a3f5e8085b76f65b1fb41ede376965e5b5375408998c490fb846329bcfebf4"
+  }
+}

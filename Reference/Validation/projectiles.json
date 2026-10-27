@@ -1,0 +1,17 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T04:34:39.1348010Z",
+    "checks": [
+        "All five ranged enemy definitions emit original action 21 at frames 4 and 10 in both directions, speed 30, unmirrored saved Prefab instances",
+        "Enemies 240/241/242 emit stationary original actions 27/28 at the role position on frame 9 of actions 18/19",
+        "Enemies 238/239 action 19 frame 9 aligns their foot rectangles with the role without emitting a projectile",
+        "Actual original hitboxes: 120-pixel travel hits a target between non-overlapping endpoints; one-shot is consumed and does not inherit owner 100% critical",
+        "Dodged one-shot disappears without HP loss; an undodgeable projectile forces the original role hurt action through armor",
+        "Action 27 applies exactly four equal hits on attack frames 6/9/12/15 with refreshed target hurt windows, then disappears on frame 18",
+        "Action 28 applies seven hits on consecutive attack frames 6 through 12 as target hurt windows advance, then disappears on frame 13",
+        "Hidden role receives no hits; looping bullets have no artificial TTL; menu, reinforcement, dialogue and role critical freeze movement/animation; screen and map boundaries recycle bullets",
+        "Explicit owner removal, stage replacement and a new game clear live projectile records and instances",
+        "Real Unity Update plays enemy action 19, emits both original bullets, moves them into actual role hurtboxes, applies damage and removes both"
+    ],
+    "error": ""
+}

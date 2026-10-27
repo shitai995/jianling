@@ -1,0 +1,13 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T02:21:59.7411420Z",
+    "checks": [
+        "Shop-only eligibility, trade-modal exclusion, 80-ms idle preview, random skill label, unchanged actual equipment/HP/durability/money/appearance and random stream, return to shop, and no new Sprite or Transform",
+        "All 30 weapon definitions at +0 and +9 display exact seven equipment attributes and fixed/random/absent skill types; script previews close back to the original world state",
+        "Actual x94(id, reinforcement, true) pauses the script VM until close, then executes the next instruction; viewing alone grants no weapon",
+        "Integrated preview preserves spirit sword appearance, integration flag, hidden companion, live durability, HP and active skill",
+        "Saving during a shop preview stores the actual weapon and durability; Load and Begin clear transient preview state without leaking the tried-on weapon",
+        "Returning from preview permits a normal confirmed purchase, creates a separate inventory instance, deducts the original price and keeps the current weapon equipped"
+    ],
+    "error": ""
+}

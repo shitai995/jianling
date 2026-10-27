@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb3ab722a2214741835d675e99bc225, type: 3}
+  m_Name: skilllist
+  m_EditorClassIdentifier: 
+  scriptId: skilllist
+  displayName: skilllist
+  notes: 
+  instructions:
+  - 'option[17]:'
+  - "option[0]=\"\u788E\u5CA9\""
+  - "option[1]=\"\u9010\u98CE\""
+  - "option[2]=\"\u706B\u7130\""
+  - "option[3]=\"\u5BD2\u51B0\""
+  - "option[4]=\"\u5CA9\u72F1\""
+  - "option[5]=\"\u98CE\u5F71\""
+  - "option[6]=\"\u7099\u708E\""
+  - "option[7]=\"\u7384\u51B0\""
+  - "option[8]=\"\u9B3C\u821E\""
+  - "option[9]=\"\u56DE\u8840\""
+  - "option[10]=\"\u56DE\u547D\""
+  - "option[11]=\"\u56DE\u5929\""
+  - "option[12]=\"\u7814\u5251\""
+  - "option[13]=\"\u517B\u5251\""
+  - "option[14]=\"\u660E\u5251\""
+  - "option[15]=\"\u9738\u4F53\""
+  - "option[16]=\"\u91D1\u521A\""
+  - "x2D(\"\u8981\u67E5\u770B\u54EA\u4E00\u79CD\u6280\u80FD\uFF1F\",option,true)"
+  - if(x2E()=-1)
+  - ret
+  - endif
+  - if(x2E()=0)
+  - "x27(\"\u5F1F\u5B50\",\"\u788E\u5CA9\uFF0C\u62CD\u51FB\u5730\u9762\uFF0C\u6D6E\u7A7A\u654C\u4EBA\u5E76\u9020\u6210\u4F24\u5BB3\u3002\")"
+  - x20("skilllist.s")
+  - endif
+  - if(x2E()=1)
+  - "x27(\"\u5F1F\u5B50\",\"\u9010\u98CE\uFF0C\u62D4\u5200\u51B2\u65A9\uFF0C\u5439\u98DE\u654C\u4EBA\u5E76\u9020\u6210\u4F24\u5BB3\u3002\")"
+  - x20("skilllist.s")
+  - endif
+  - if(x2E()=2)
+  - "x27(\"\u5F1F\u5B50\",\"\u706B\u7130\uFF0C\u65A9\u51FA\u706B\u7130\uFF0C\u5BF9\u654C\u4EBA\u9020\u6210\u8FDE\u7EED\u9AD8\u4F24\u5BB3\u3002\")"
+  - x20("skilllist.s")
+  - endif
+  - if(x2E()=3)
+  - "x27(\"\u5F1F\u5B50\",\"\u5BD2\u51B0\uFF0C\u65A9\u51FA\u51B0\u67F1\uFF0C\u5411\u524D\u51B2\u51FB\u6D6E\u7A7A\u654C\u4EBA\u5E76\u9020\u6210\u4F24\u5BB3\u3002\")"
+  - x20("skilllist.s")
+  - endif
+  - if(x2E()=4)
+  - "x27(\"\u5F1F\u5B50\",\"\u5CA9\u72F1\uFF0C\u8FDE\u7EED\u62CD\u51FB\u5730\u9762\uFF0C\u6D6E\u7A7A\u654C\u4EBA\u5E76\u9020\u6210\u9AD8\u4F24\u5BB3\u3002\")"
+  - x20("skilllist.s")
+  - endif
+  - if(x2E()=5)
+  - "x27(\"\u5F1F\u5B50\",\"\u98CE\u5F71\uFF0C\u62D4\u5200\u51B2\u65A9\uFF0C\u5BF9\u654C\u4EBA\u9020\u6210\u8FDE\u7EED\u4F24\u5BB3\u6700\u540E\u5439\u98DE\u654C\u4EBA\u3002\")"
+  - x20("skilllist.s")
+  - endif
+  - if(x2E()=6)
+  - "x27(\"\u5F1F\u5B50\",\"\u7099\u708E\uFF0C\u8FDE\u7EED\u65A9\u51FA\u706B\u7130\uFF0C\u5BF9\u654C\u4EBA\u9020\u6210\u9AD8\u989D\u4F24\u5BB3\u3002\")"
+  - x20("skilllist.s")
+  - endif
+  - if(x2E()=7)
+  - "x27(\"\u5F1F\u5B50\",\"\u7384\u51B0\uFF0C\u65A9\u51FA\u6247\u5F62\u51B0\u67F1\uFF0C\u6D6E\u7A7A\u654C\u4EBA\u3002\")"
+  - x20("skilllist.s")
+  - endif
+  - if(x2E()=8)
+  - "x27(\"\u5F1F\u5B50\",\"\u9B3C\u821E\uFF0C\u5BF9\u654C\u4EBA\u8FDE\u7EED\u653B\u51FB\uFF0C\u9020\u6210\u7EDD\u5927\u4F24\u5BB3\u3002\")"
+  - x20("skilllist.s")
+  - endif
+  - if(x2E()=9)
+  - "x27(\"\u5F1F\u5B50\",\"\u56DE\u8840\uFF0C\u6062\u590D\u5C11\u91CF\u6C14\u8840\u3002\")"
+  - x20("skilllist.s")
+  - endif
+  - if(x2E()=10)
+  - "x27(\"\u5F1F\u5B50\",\"\u56DE\u547D\uFF0C\u6062\u590D\u4E2D\u91CF\u6C14\u8840\u3002\")"
+  - x20("skilllist.s")
+  - endif
+  - if(x2E()=11)
+  - "x27(\"\u5F1F\u5B50\",\"\u56DE\u5929\uFF0C\u6062\u590D\u5927\u91CF\u6C14\u8840\u3002\")"
+  - x20("skilllist.s")
+  - endif
+  - if(x2E()=12)
+  - "x27(\"\u5F1F\u5B50\",\"\u7814\u5251\uFF0C\u6062\u590D\u6B66\u5668\u5C11\u91CF\u8010\u4E45\u3002\")"
+  - x20("skilllist.s")
+  - endif
+  - if(x2E()=13)
+  - "x27(\"\u5F1F\u5B50\",\"\u517B\u5251\uFF0C\u6062\u590D\u6B66\u5668\u4E2D\u91CF\u8010\u4E45\u3002\")"
+  - x20("skilllist.s")
+  - endif
+  - if(x2E()=14)
+  - "x27(\"\u5F1F\u5B50\",\"\u660E\u5251\uFF0C\u6062\u590D\u6B66\u5668\u5927\u91CF\u8010\u4E45\u3002\")"
+  - x20("skilllist.s")
+  - endif
+  - if(x2E()=15)
+  - "x27(\"\u5F1F\u5B50\",\"\u9738\u4F53\uFF0C\u4E00\u6BB5\u65F6\u95F4\u5185\u53D7\u5230\u653B\u51FB\u4E0D\u4F1A\u4E2D\u65AD\u52A8\u4F5C\u3002\")"
+  - x20("skilllist.s")
+  - endif
+  - if(x2E()=16)
+  - "x27(\"\u5F1F\u5B50\",\"\u91D1\u521A\uFF0C\u4E00\u6BB5\u65F6\u95F4\u5185\u53D7\u5230\u653B\u51FB\u4E0D\u4F1A\u4E2D\u65AD\u52A8\u4F5C\uFF0C\u6548\u679C\u65F6\u95F4\u6BD4\u9738\u4F53\u66F4\u957F\u3002\")"
+  - x20("skilllist.s")
+  - endif

@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "message": "Code executed successfully.",
+  "data": {
+    "result": {
+      "passed": true,
+      "checks": [
+        "Four-way outline reference captured using independent literal GUI.Label offsets",
+        "Diagonal shadow reference captured using independent literal GUI.Label offsets"
+      ],
+      "referenceUsesProductionParser": false,
+      "referenceUsesProductionRenderer": false
+    },
+    "compiler": "codedom"
+  },
+  "execute_code": "var g=UnityEngine.Object.FindObjectOfType<GuJian.GuJianGame>();\nvar f=System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic;var s=System.Reflection.BindingFlags.Static|System.Reflection.BindingFlags.NonPublic;\nSystem.Func<string,object> get=n=>g.GetType().GetField(n,f).GetValue(g);\nSystem.Action<string,object> set=(n,v)=>g.GetType().GetField(n,f).SetValue(g,v);\nSystem.Action<string> capture=name=>{var im=(Texture2D)typeof(GuJian.Editor.HudFeedbackValidation).GetMethod(\"Render\",s).Invoke(null,null);try{System.IO.File.WriteAllBytes(\"../Reference/Validation/\"+name+\".png\",im.EncodeToPNG());}finally{UnityEngine.Object.DestroyImmediate(im);}};\nGameObject probeObject=null;\ntry{\nTime.timeScale=0;g.Begin();g.Machine.Clear();\ntypeof(GuJian.Editor.ComboValidation).GetMethod(\"Stage\",s).Invoke(null,new object[]{g,false});g.Machine.Clear();set(\"hideUi\",true);g.GetType().GetMethod(\"ResetStageInfo\",f).Invoke(g,null);\nforeach(int type in new int[]{1,2}){\nstring name=type==1?\"outline\":\"shadow\";string edge=type==1?\"ff00ff\":\"00ccff\";\ng.Machine.Command(0x29,new object[]{\"<c=ffffff,\"+edge+\",\"+type+\">描边样例AB</c>\"});capture(\"text-style-\"+name);\nprobeObject=new GameObject(\"Temporary Text Style Reference\");\nprobeObject.hideFlags=HideFlags.HideAndDontSave;\nvar probe=probeObject.AddComponent<GuJian.Editor.TextStyleReferenceProbe>();\nprobe.style=new GUIStyle((GUIStyle)get(\"originalMessageStyle\"));probe.fontType=type;probe.textHeight=(float)get(\"originalMessageHeight\");\ng.enabled=false;capture(\"text-style-reference-\"+name);g.enabled=true;\nUnityEngine.Object.DestroyImmediate(probeObject);probeObject=null;g.PressControl(4);\n}\nreturn new{passed=true,checks=new[]{\"Four-way outline reference captured using independent literal GUI.Label offsets\",\"Diagonal shadow reference captured using independent literal GUI.Label offsets\"},referenceUsesProductionParser=false,referenceUsesProductionRenderer=false};\n}finally{g.enabled=true;if(probeObject)UnityEngine.Object.DestroyImmediate(probeObject);g.Begin();g.Machine.Clear();typeof(GuJian.GuJianGame).GetProperty(\"AtTitle\").SetValue(g,true,null);Time.timeScale=1;}"
+}

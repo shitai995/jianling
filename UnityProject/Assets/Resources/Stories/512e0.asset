@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb3ab722a2214741835d675e99bc225, type: 3}
+  m_Name: 512e0
+  m_EditorClassIdentifier: 
+  scriptId: 512e0
+  displayName: 512e0
+  notes: 
+  instructions:
+  - x3A(197,0,2,true,true)
+  - x22()
+  - x4C()
+  - x3A(197,2,9,true,true)
+  - x33("u",6,30,true)
+  - x44(true)
+  - x42(640,160,32,true)
+  - x5E(10)
+  - x41(32)
+  - x44()
+  - "x28(\"\u6D88\u706D\u6240\u6709\u654C\u4EBA\")"
+  - stageID[1]
+  - stageID[0]=512
+  - 'enemyTypes[2]:'
+  - enemyTypes[0]=212
+  - enemyTypes[1]=214
+  - 'enemyNums[2]:'
+  - enemyNums[0]=4
+  - enemyNums[1]=16
+  - x59(stageID,enemyTypes,enemyNums,"512e1.s")

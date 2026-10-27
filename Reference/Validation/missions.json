@@ -1,0 +1,28 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T07:36:38.8480930Z",
+    "checks": [
+        "Reward arrays normalize to three slots, retain equipment ID 0, keep main/branch independent and grant nothing; Save/Load preserves metadata; existing v3 saves without reward fields restore -1 in all slots",
+        "Task 1: accept -> production kill-counter fixture; 19 remaining kills -> completed/unpaid -> NPC claim 20000 XP / 400 silver / weapon -1; repeat interaction and Save/Load retain exactly one reward",
+        "Task 2: accept -> original merchant interaction at 407 -> completed/unpaid -> NPC claim 10000 XP / 1000 silver / weapon -1; repeat interaction and Save/Load retain exactly one reward",
+        "Task 3: accept -> production kill-counter fixture; 29 remaining kills -> completed/unpaid -> NPC claim 35000 XP / 700 silver / weapon -1; repeat interaction and Save/Load retain exactly one reward",
+        "Task 4: accept -> production kill-counter fixture; 59 remaining kills -> completed/unpaid -> NPC claim 50000 XP / 900 silver / weapon -1; repeat interaction and Save/Load retain exactly one reward",
+        "Task 5: accept -> original merchant interaction at 705 -> completed/unpaid -> NPC claim 20000 XP / 2000 silver / weapon -1; repeat interaction and Save/Load retain exactly one reward",
+        "Task 6: accept -> production kill-counter fixture; 59 remaining kills -> completed/unpaid -> NPC claim 100000 XP / 1800 silver / weapon 4; repeat interaction and Save/Load retain exactly one reward",
+        "Task 7: accept -> production kill-counter fixture; 99 remaining kills -> completed/unpaid -> NPC claim 150000 XP / 2400 silver / weapon 6; repeat interaction and Save/Load retain exactly one reward",
+        "Task 8: accept -> original merchant interaction at 612 -> completed/unpaid -> NPC claim 30000 XP / 3000 silver / weapon -1; repeat interaction and Save/Load retain exactly one reward",
+        "Task 9: accept -> production kill-counter fixture; 149 remaining kills -> completed/unpaid -> NPC claim 200000 XP / 3000 silver / weapon 9; repeat interaction and Save/Load retain exactly one reward",
+        "Task 10: accept -> original merchant interaction at 816 -> completed/unpaid -> NPC claim 50000 XP / 5000 silver / weapon -1; repeat interaction and Save/Load retain exactly one reward",
+        "Task 11: accept -> production kill-counter fixture; 39 remaining kills -> completed/unpaid -> NPC claim 300000 XP / 3800 silver / weapon -1; repeat interaction and Save/Load retain exactly one reward",
+        "Task 12: accept -> production kill-counter fixture; 59 remaining kills -> completed/unpaid -> NPC claim 400000 XP / 4500 silver / weapon -1; repeat interaction and Save/Load retain exactly one reward",
+        "Task 13: accept -> production kill-counter fixture; 3 remaining kills -> completed/unpaid -> NPC claim 800000 XP / 9000 silver / weapon -1; repeat interaction and Save/Load retain exactly one reward",
+        "Task 101: accept -> production kill-counter fixture; 3 remaining kills -> completed/unpaid -> NPC claim 50000 XP / 2000 silver / weapon -1; repeat interaction and Save/Load retain exactly one reward",
+        "Task 102: accept -> production kill-counter fixture; 5 remaining kills -> completed/unpaid -> NPC claim 80000 XP / 3000 silver / weapon -1; repeat interaction and Save/Load retain exactly one reward",
+        "Task 103: accept -> production kill-counter fixture; 1 remaining kills -> completed/unpaid -> NPC claim 500000 XP / 6000 silver / weapon 7; repeat interaction and Save/Load retain exactly one reward",
+        "Task 104: accept -> production kill-counter fixture; 7 remaining kills -> completed/unpaid -> NPC claim 250000 XP / 5000 silver / weapon 10; repeat interaction and Save/Load retain exactly one reward",
+        "Task 105: accept -> production kill-counter fixture; 1 remaining kills -> completed/unpaid -> NPC claim 500000 XP / 6000 silver / weapon 12; repeat interaction and Save/Load retain exactly one reward",
+        "Task 106: accept -> production kill-counter fixture; 1 remaining kills -> completed/unpaid -> NPC claim 500000 XP / 6000 silver / weapon 13; repeat interaction and Save/Load retain exactly one reward",
+        "Original NPC cancel choice: No retains the task; Yes clears branch metadata and all kill objectives without rewards"
+    ],
+    "error": ""
+}

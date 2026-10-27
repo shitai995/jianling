@@ -1,0 +1,103 @@
+{
+  "utc": "2026-10-20T09:56:56.598106+00:00",
+  "passed": true,
+  "scope": "Original message panel geometry and foreground colors; current-source message mechanism regression in background Unity GameView. No build.",
+  "checks": {
+    "logic_asset": 6,
+    "message_regression": 9,
+    "pixels": 3,
+    "total": 18
+  },
+  "logic_asset": {
+    "success": true,
+    "message": "Code executed successfully.",
+    "data": {
+      "result": {
+        "passed": true,
+        "checks": [
+          "Original three-field styles preserve foreground RGB",
+          "Nested colors restore their parent and default",
+          "Empty foreground uses the original default white",
+          "Redundant closing tags and open-ended styles keep source stack behavior",
+          "All 806 color tags across the recovered script corpus convert successfully",
+          "Saved160x20 u40 reference is persistent and repeated preparation is byte-stable"
+        ],
+        "panel": "Assets/Resources/Original/pic/u_40.png"
+      },
+      "compiler": "codedom"
+    }
+  },
+  "message_regression": {
+    "success": true,
+    "message": "Code executed successfully.",
+    "data": {
+      "result": {
+        "passed": true,
+        "checks": [
+          "Duration0 accepts confirmation only, blocks map/cancel and preserves lastChoice",
+          "Duration-1 accepts return only and preserves the previous menu state",
+          "Timed81ms rejects manual close and expires at the second80ms cycle",
+          "Original2400ms messages remain through29 cycles and close on cycle30",
+          "Zero delta freezes time; replacing a message resets fractional elapsed time",
+          "x29 uses full-screen text without ordinary dialogue pagination and confirms closed",
+          "A character dialogue clears the previous message timing/mode",
+          "The real VM waits for a timed message then resumes with lastChoice intact",
+          "Closing a message consumes same-frame menu and attack controls"
+        ]
+      },
+      "compiler": "codedom"
+    }
+  },
+  "pixel_report": "Reference/Validation/message-panel-pixels.json",
+  "capture_metadata": "Reference/Validation/message-panel-geometry.json",
+  "replay": "Message regression execute_code saved in message-panel-current-checks.json; pixel replay: Tools/validation/check_message_panel.py",
+  "final_state": [
+    {
+      "success": true,
+      "message": "Retrieved 0 log entries.",
+      "data": []
+    },
+    {
+      "success": true,
+      "message": "Code executed successfully.",
+      "data": {
+        "result": {
+          "title": true,
+          "timeScale": 1,
+          "playing": true,
+          "sceneDirty": false,
+          "focused": false,
+          "background": true
+        },
+        "compiler": "codedom"
+      }
+    }
+  ],
+  "remaining": [
+    "Text background and fontType outlines",
+    "Original-device font metrics and rasterization",
+    "Original continue hint animation",
+    "Physical keyboard/mouse and touch scrolling",
+    "Frame-aligned scrolling and black-screen typewriter timing",
+    "Message queue and reward prompts"
+  ],
+  "sha256": {
+    "UnityProject/Assets/Scripts/OriginalUiLayout.cs": "ca9b8e498358d27f311e74c12b191c42556367465781939267d79b5e67da630f",
+    "UnityProject/Assets/Editor/UiAssetSetup.cs": "008a1d607e3fdd7cde1308d82d506bce9cadebe14a044ad3937bb3bdc134f406",
+    "UnityProject/Assets/Scripts/OriginalGui.cs": "0242c161641cc9cd83a843ccbc6e9fdd450fd63cbae1f76e899fea0f41ab365a",
+    "UnityProject/Assets/Scripts/OriginalTextMarkup.cs": "7f7a2034768ff4ece206baffc60de545e1a3ae075599ec347b045aa1f2b7d54b",
+    "UnityProject/Assets/Scripts/OriginalMessages.cs": "901c3cf5b55886d1a54b9757e6ee003a256ee4dbab75753e67d4f01353a986b3",
+    "UnityProject/Assets/Resources/OriginalUiLayout.asset": "263d9a5825f924fb6121704707290b28e028c8a5340c636a03b934ea60cef087",
+    "UnityProject/Assets/Resources/Original/pic/u_40.png": "16319d57776d0bb22b5e14ac15d6e95c1d636c06e759800fe192c2fc0ab97252",
+    "Tools/validation/check_message_panel.py": "4531e5195bf27476c0c932b12963b596371c486feb3d45e67b3f3f4a045fd238",
+    "Reference/Decompiled/sources/com/dobetter/client/GameCanvas.java": "d2a3f5e8085b76f65b1fb41ede376965e5b5375408998c490fb846329bcfebf4",
+    "Reference/Decompiled/sources/com/dobetter/common/StyledText.java": "8cdfa64ea496f9f3fa0ffdd5d88d77710919ceb864c2ab79d51a0a7c75a565d2",
+    "Reference/Decompiled/sources/com/dobetter/common/Style.java": "db95493f554714ed60044353994551a18e2375a9cedbd82462ad9ad79212b819",
+    "Reference/Validation/message-panel-current-checks.json": "ca74f7c5202db0de17290c1390beeca3f6759337471ac6ad158325ed6cd79cce",
+    "Reference/Validation/message-panel-pixels.json": "0b9d41b0edaff0693aa5bad1fe25661dabdda31a3c8d671e0ae2cd1e082e2097",
+    "Reference/Validation/message-panel-geometry.json": "df62489d06e847b6550140428b1622499e00c80e0d31c61851fc85ccfea33d5f",
+    "Reference/Validation/message-panel-base.png": "b83412e8927d553fbb05cf251af6e2151f72cf7c9ecb44399a94984e842ac3a0",
+    "Reference/Validation/message-panel-short.png": "7e8d67710f26caa666d158a07743accd552b1eb05c19bb9907d945c37af4c846",
+    "Reference/Validation/message-panel-tall.png": "1af2b9157d9a2483886e8aff9101c7af6ffb6078558ab2dff749579ad2ca4ec0"
+  }
+}

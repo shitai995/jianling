@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb3ab722a2214741835d675e99bc225, type: 3}
+  m_Name: 403e3
+  m_EditorClassIdentifier: 
+  scriptId: 403e3
+  displayName: 403e3
+  notes: 
+  instructions:
+  - if(x0A("sub1")=1)
+  - x3D(53,0,1)
+  - "x27(\"\u795E\u79D8\u7537\u5B50\",\"\u5475\u5475\uFF0C\u770B\u6765\u4F60\u4EEC\u5DF2\u7ECF\u6CA1\u4EC0\u4E48\u65B0\u62DB\u5F0F\u4E86\uFF0C\u90A3\u5C31\u2026\u2026\u6B7B\u5427\uFF01\",\"f_05\",true)"
+  - x3D(-1,3,1)
+  - x3D(-2,3,1)
+  - x5E(14)
+  - x61(true)
+  - x09("sub1",0)
+  - x3F(-1,true)
+  - x3F(-2,true)
+  - x3B(-1)
+  - x7E(53)
+  - ret
+  - endif
+  - if(x0A("sub1")=0)
+  - x09("sub1",1)
+  - endif
+  - x3D(-1,1,1)
+  - x5E(14)
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u4E0D\u884C\uFF01\u5C31\u7B97\u662F\u7075\u5251\uFF0C\u7528\u4E86\u846C\u5251\u4F30\u8BA1\u4E5F\u4F1A\u788E\u7684\uFF01\")"
+  - x3D(-2,13,1)
+  - x5E(14)
+  - "x27(\"\u7075\u513F\",\"\u54CE\u5440\u3002\u6B7B\u5230\u4E34\u5934\u54EA\u6765\u8FD9\u4E48\u591A\u5E9F\u8BDD\uFF01\u518D\u8BF4\u7075\u5251\u624D\u4E0D\u4F1A\u90A3\u4E48\u5BB9\u6613\u5C31\u574F\u6389\u5566\uFF01\u5FEB\u70B9\uFF01\")"
+  - 'option[2]:'
+  - "option[0]=\"\u4F7F\u7528\u7075\u5251\""
+  - "option[1]=\"\u4E0D\u7528\u7075\u5251\""
+  - "x2D(\"\u4E0D\u7528\u7075\u5251\u6015\u662F\u6491\u4E0D\u8FC7\u8FD9\u4E00\u5173\u4E86\uFF0C\u600E\u4E48\u529E\uFF1F\",option)"
+  - if(x2E()=0)
+  - x20("403e4.s")
+  - endif
+  - if(x2E()=1)
+  - x20("403e3.s")
+  - endif

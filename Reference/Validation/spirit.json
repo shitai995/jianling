@@ -1,0 +1,15 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T02:21:55.8766020Z",
+    "checks": [
+        "Missing spirit, invalid indices and equipped weapon are rejected; selecting and canceling confirmation changes no equipment, experience or attributes",
+        "Level-15 +9 精金 with 77 durability: exactly 13500 XP -> level 7 / 2475 XP; HP 3706, durability 621, attack 543, defense 259; current durability 304 preserves each integer growth ratio; skill retained",
+        "At level 40 weapons still add permanent stats without XP; +8 adds no +9 effect and zero durability adds none; original 真轩辕 effect entry retains the source reader's first-pair interpretation",
+        "A feed across level 39 -> 40 caps level at 40 and fills XP to the original 1600000 threshold; further feeding leaves XP unchanged",
+        "Confirmation can retain or replace a skill; same skill upgrades only, lower skill cannot downgrade, and an empty spirit skill inherits automatically",
+        "Feeding before the equipped slot preserves equipped instance identity; a stale confirmation cannot consume a replacement at the same bag index",
+        "Natural recovery and integrated drain use exact 11-tick / 1% cadence; UI and critical pause, recovery clamps, entry costs 10%, infinite durability prevents drain, and exhaustion splits and restores the ordinary weapon",
+        "Actual integrated Save/Load restores level, XP, all seven attributes, live durability, inherited skill/level, hidden spirit, active skill selection and spirit weapon appearance"
+    ],
+    "error": ""
+}

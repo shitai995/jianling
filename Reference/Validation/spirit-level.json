@@ -1,0 +1,15 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T02:22:18.6212380Z",
+    "checks": [
+        "x64 replaces an existing level-12 spirit after seeding XP1234567, seven bonuses, skill5/7 and durability600; new level31 spirit resets XP/bonuses/skill/durability and uses saved w_00 sheet1 while ordinary weapon sheet4 stays independent; actual renderers checked",
+        "x93 level12->1 separate: 807->537 maximum, 600->399 current; XP1234567, seven bonuses, skill5/7 and ordinary equipment retained; owner attributes not recomputed",
+        "x93 level12->1 integrated: 807->537 maximum, 600->399 current; XP1234567, seven bonuses, skill5/7 and ordinary equipment retained; owner attributes not recomputed",
+        "Upgrade/downgrade targets10/11/20/21/30/31/40/1 preserve full/empty durability and select all four original spirit swords; total actual saved renderer pieces checked: 39688",
+        "Production AddSpiritExperience crosses10->11 and real Save/Load restores w_98 on sheet1; actual saved renderer pieces checked: 7216",
+        "Unmodified334->334e1 runs through real Unity Update with production waits and confirmation; event404->405, one x93, split, 七星 removal/铁剑 equip, XP/bonuses/skill retained; 109 callbacks, 23 confirmations",
+        "Original x68 checkpoint loads back into334 at event405 without replaying404 reset; level1, XP, seven bonuses, skill and sheet1 sprite restored",
+        "Formal player save SHA256 unchanged (0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5); only independent validation save used"
+    ],
+    "error": ""
+}

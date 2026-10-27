@@ -1,0 +1,13 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T02:29:37.9170390Z",
+    "checks": [
+        "Fixed role base values cover integer order, 50/150 level limits, long intermediates and skill level1/9 expressions",
+        "Role hits request variance before critical, retain exclusive upper bounds, strict critical threshold and ignore ordinary durability for non-break skills",
+        "Small base skips variance but still draws critical; negative base draws absolute variance; minimum10 precedes doubling",
+        "Break adds ordinary maximum durability times3, skips variance entirely and still rolls/doubles critical",
+        "Enemy damage retains level-then-mode rounding, no-mode lookup skip, negative floor1, exclusive variance and existing int intermediate semantics",
+        "Dodge retains role10..90 versus enemy upper-only90 and three points per level"
+    ],
+    "error": ""
+}

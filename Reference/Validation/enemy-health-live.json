@@ -1,0 +1,11 @@
+{
+    "passed": true,
+    "utc": "2026-10-20T07:11:23.3745010Z",
+    "checks": [
+        "A production attack deals real damage, enters hurt action2 and reveals the saved health Renderer before real background frames begin",
+        "Actual background Update preserves the hurt frame and visible health bar while the menu pauses actor animation",
+        "Actual background frames retain the health bar and hurt pose while the enemy is frozen",
+        "After unfreezing, actual background player frames complete the hurt action, return to idle and hide the health bar; editor callbacks=283"
+    ],
+    "error": ""
+}

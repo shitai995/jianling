@@ -1,0 +1,44 @@
+{
+  "status": "partial",
+  "utc": "2026-10-20T16:05:00Z",
+  "scope": "原版音效调用点、资源映射、Unity 已保存 AudioSource 和原版五档音量门控的定向核验；未作实体听音或操作输入验收",
+  "checks": [
+    {
+      "name": "original-resource-map",
+      "passed": true,
+      "details": "JL01Activity.EffectSound 按索引加载 miss.wav、critical.mp3、hit.mp3；Unity 项目保留相同三个音频文件"
+    },
+    {
+      "name": "original-trigger-sites",
+      "passed": true,
+      "details": "GameCanvas.playSound() 在主角动作7-10首帧调用音效0；Role.processAttack 对非暴击成功命中调用音效2，暴击调用 setCriticalEffect(5) 播放音效1；GameCanvas.playSound 同时受 isOpenSound 与 optionData>0 限制"
+    },
+    {
+      "name": "unity-source-binding",
+      "passed": true,
+      "details": "Unity 后台 Play 定向探针：swingAudio=miss，hitAudio=hit，criticalAudio=critical，music=two。前三者非循环且空闲；music 循环播放。无需运行时生成资源或节点"
+    },
+    {
+      "name": "unity-trigger-implementation",
+      "passed": true,
+      "details": "玩家普通命中触发 hit，真实暴击触发 critical；普通敌方命中、Boss 固定半血攻击与拘束连续伤害不误触普通 hit；普通攻击音在现有 AudioSource 上播放"
+    },
+    {
+      "name": "settings-and-audible-replay",
+      "passed": true,
+      "details": "Unity系统菜单已接入原版五档0/25/50/75/100音量，PlayerPrefs持久化；后台运行时探针通过中档0.5、静音0、满档1，静音门控阻止挥剑音，恢复后现有AudioSource可重播。实体听音、暂停恢复和实体输入仍待验收"
+    }
+  ],
+  "editor": {
+    "unity": "2022.3.62f3",
+    "activeScene": "Assets/Scenes/GuJian.unity",
+    "isPlaying": true,
+    "isFocused": false,
+    "compiling": false,
+    "console": "0 errors; 8 existing missing-script warnings and 1 MCP WebSocket warning"
+  },
+  "limitations": [
+    "AudioSource 绑定与逻辑探针不证明声学波形、响度或延迟与 Android 原机一致",
+    "背景 MIDI 使用离线 General MIDI 渲染，系统 GM 音色可能与原机不同"
+  ]
+}

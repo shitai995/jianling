@@ -1,0 +1,12 @@
+{
+    "passed": true,
+    "utc": "2026-10-20T06:10:41.4303470Z",
+    "checks": [
+        "Original stage200 script triggers x4C with the saved 18px font / editable 24px rise metric and centered measured title",
+        "Both source lines enter by 30px per 80ms tick; overshoot is clamped on the next tick before the first 1px text rise",
+        "Title rises exactly 24 single-pixel ticks, holds all 24 ticks then disappears, without creating HUD GameObjects",
+        "Fractional elapsed time accumulates to 80ms, delayed frames catch up, and repeated x4C restarts all phases",
+        "Begin clears transient presentation; x21 changes the stage name without implicitly requesting an overlay"
+    ],
+    "error": ""
+}

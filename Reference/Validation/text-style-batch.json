@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-20T11:43:52.056260+00:00",
+  "passed": true,
+  "scope": "消息和选择说明文字描边、阴影及相关定向回归；后台 Unity GameView",
+  "checks": {
+    "text-style.json": 4,
+    "text-style-reference.json": 2,
+    "text-style-pixels.json": 2,
+    "text-style-message-queue-queue.json": 9,
+    "text-style-message-queue-regression.json": 9,
+    "text-style-choice-render.json": 5,
+    "text-style-reward-prompts.json": 7,
+    "total": 38
+  },
+  "limits": [
+    "像素参考使用同一 Unity 字体和栅格，不证明原 Android 设备字形一致",
+    "消息多行片段覆盖次序、普通人物对话与其他菜单样式另行验收",
+    "未打包，未重跑完整主线"
+  ],
+  "sha256": {
+    "UnityProject/Assets/Scripts/OriginalTextMarkup.cs": "0574490d681f6b6a8707bef9c0a3d1015c42f4feb771968fe9da1ef04e993e2b",
+    "UnityProject/Assets/Scripts/OriginalGui.cs": "e899831c1ea398add23db0f80c7dd6044394bc0b2e99b7e4e587a46c06302c6b",
+    "UnityProject/Assets/Scripts/OriginalMessages.cs": "209700d92b893744248483d565a70168e6dd48a507fb9e7892c4aa4378c4888d",
+    "UnityProject/Assets/Scripts/OriginalChoices.cs": "933d46fa06cf99b6bede38d6883047e941c7fec323b56c4abbc08845cb53b1a5",
+    "UnityProject/Assets/Scripts/Validation/TextStyleReferenceProbe.cs": "9fac59c5ac1d84ef2bfebd6ead52777e490a4f5f3a014f4dedeb4e4fae74f9de",
+    "Tools/validation/check_text_style.py": "21c61d365632f53853469b13837fda23367f3e8609163914b395020484480833",
+    "Reference/Decompiled/sources/com/dobetter/common/Style.java": "db95493f554714ed60044353994551a18e2375a9cedbd82462ad9ad79212b819",
+    "Reference/Decompiled/sources/com/dobetter/common/Tool.java": "83e655e3f52e29ba955dcdf68c969ac21677d943945111dd81df3d11f26930f7",
+    "Reference/Validation/text-style.json": "4d68d5d6d5c2299ffeb97513dbe3a789022cae0b58eb45d407f579cac93b814c",
+    "Reference/Validation/text-style-reference.json": "9626c5a8a4d903d836e7d23f1921d1c2815c427eb823ca4d4bdb7588ab814d38",
+    "Reference/Validation/text-style-pixels.json": "8002168b3321a57fc47037257cdb6c0adba6633ae8b636f11234f63c923918d9",
+    "Reference/Validation/text-style-message-queue-queue.json": "03f315e630bb490a52d3d3e914ed921365a17d0b8ecfa14da286b42a9447b563",
+    "Reference/Validation/text-style-message-queue-regression.json": "e85a7bc6a2ceb49bc2718f421fab151f149b1db67b22e7b3330685a269011db1",
+    "Reference/Validation/text-style-choice-render.json": "e98c69797c5b8a05174fcf47b342ff19f950ff652861238e01729ea203668519",
+    "Reference/Validation/text-style-reward-prompts.json": "bf9ccea82a5008ae4346e7c07b0ae2b23da4dc80116f8ef3001e09076546b302",
+    "Reference/Validation/text-style-outline.png": "b4b768e3ff00868e3975433ae2de9f610f38a2bc7217e0afc58fc309d6024720",
+    "Reference/Validation/text-style-shadow.png": "4d5a90b6fa650cda0a9a88dfbe854deaf8546d22bcd0ca4d9d50773700b5dfdb",
+    "Reference/Validation/text-style-reference-outline.png": "b4b768e3ff00868e3975433ae2de9f610f38a2bc7217e0afc58fc309d6024720",
+    "Reference/Validation/text-style-reference-shadow.png": "4d5a90b6fa650cda0a9a88dfbe854deaf8546d22bcd0ca4d9d50773700b5dfdb",
+    "Reference/Validation/text-style-message.png": "d2e85a735bd300165629aee0e1ac0fca753f2484e932329f89e9248d7853cb98",
+    "Reference/Validation/text-style-choice.png": "afb8ed08556b14d604c47346e7abe4ce53cefd3a7c97eedb54547a668e30303c"
+  }
+}

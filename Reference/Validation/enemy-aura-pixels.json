@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "utc": "2026-10-20T08:10:10.611669+00:00",
+  "checks": [
+    "The saved source aura produces visible pixels in actual GameView",
+    "A source layer1 golem physically obscures part of the layer2 elite aura; its remaining visible pixels are a subset of the unoccluded aura",
+    "Player critical24 removes the aura while the body and background within the complete aura bounds match the aura-free baseline",
+    "Hide-UI preserves every aura pixel and all captures retain the logical viewport black side bars"
+  ],
+  "metrics": {
+    "visiblePixels": 35463,
+    "coveredPixels": 22905
+  },
+  "error": ""
+}

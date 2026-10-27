@@ -1,0 +1,18 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T07:36:11.6785620Z",
+    "checks": [
+        "Full HP/durability rejects without consumption; HP/stone recovery clamps; broken ordinary weapon accepts a stone, zero-durability integrated spirit needs a hammer and stays synchronized",
+        "Skill books reject absent/max-level skills, target the active weapon or spirit, and random manuals yield only IDs 5..21 at level 1 with active skill synchronized",
+        "XP pills require a spirit below level 40 and consume one batch of up to 99; exact 2000 XP yields level 4 / 1100 remainder; both gold sizes convert whole batches with leftovers retained",
+        "Level medicine heals and preserves XP, refuses level 999 without consuming; six permanent medicines add exact source bonuses and retain HP ratio",
+        "Living characters cannot consume revival; actual fatal Damage waits for the death animation, then auto-consumes one medicine and restores full HP, idle action and live combat flag; manual revival also restores state",
+        "Sword spirit selects automatic medicines below the configured threshold, prioritizes HP, repairs ordinary breakage with a hammer, applies only at action 3 completion, pauses with UI/locks/integration, and cancels safely when equipment changes",
+        "Purchase/sale confirmation and cancellation, quantities 1..99, exact deductions, selected-stack sale limits and deductions, fixed sale prices, shop0 double purchase prices, unavailable gold and original strict-greater balance boundary",
+        "Item confirmation cancel preserves inventory; use consumes the original 99-item batch; discard removes the selected remainder stack",
+        "Shop XP immediately trains spirit without inventory residue; invalid spirit purchases do not charge; stat medicines immediately apply one unit and rise by 1000 to a capped coefficient of 19 / price 20000",
+        "Weapon purchase creates independent instances; sales reject equipped weapons, canceled/stale confirmations cannot consume replacements, source sale price ignores reinforcement/durability, and removing an earlier slot preserves equipped identity",
+        "Actual Save/Load round-trips price coefficients, auto-recovery setting, permanent stats, inventory and money; version-3 saves without the optional fields retain compatibility with zero price coefficients and default 70% automatic recovery"
+    ],
+    "error": ""
+}

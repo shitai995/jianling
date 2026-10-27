@@ -1,0 +1,19 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T04:38:55.2230610Z",
+    "checks": [
+        "All 210 stage sources indexed: 1685 exits, 425 entries, 51 interactions, 23 deaths, 3 special callbacks",
+        "Repeated generation is byte-identical and serialized index has a valid dedicated ScriptableObject type",
+        "53 map prefabs retain saved legacy/Tilemap layers and complete collision grids",
+        "210 saved stage layouts and at least 13-area / 174-room minimap remain referenced",
+        "Separate actor callbacks retain instance, definition, creation/source lines and mode; else branches are distinguished",
+        "Exit edit persists through production script lookup, preserving whitespace, all other lines and story metadata",
+        "Stale source selections, invalid facing and missing targets cannot overwrite the source",
+        "Entry position/facing and callback target persist while preserving the explicit death mode",
+        "Production VM reads the saved edits and dispatches updated exit, entry and death callback arguments under the original condition",
+        "Unity Undo restores all fixture edits to their original commands",
+        "200 / 334 / 1401 / 1436 indexed; eight unresolved original exits to two absent scripts are explicitly reported",
+        "All production story files remain byte-identical after the isolated authoring test; temporary fixture removed"
+    ],
+    "error": ""
+}

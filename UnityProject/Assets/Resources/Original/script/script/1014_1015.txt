@@ -1,0 +1,14 @@
+if(x0A("event")=1062)
+x28("下一场景将出现强力敌人，推荐主角达到<c=ffff00>53级</c>",2400)
+x28("装备<c=ff00ff>巨阙+9</c>，命中<c=ffff00>372</c>",2400)
+x28("推荐剑灵达到<c=ffff00>30级</c>",2400)
+option[2]:
+option[0]="是"
+option[1]="否"
+x2D("确认要进入下一场景吗？",option,true)
+if(x2E()=0)
+else
+ret
+endif
+endif
+x20("1015.s",true)

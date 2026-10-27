@@ -1,0 +1,16 @@
+{
+    "passed": true,
+    "utc": "2026-10-20T08:10:12.5927490Z",
+    "checks": [
+        "137 actor/119 effect/52 drop prefabs have saved SortingGroups; 39 fighters contain 50 digits plus miss, using forty persistent original crops and persistent miss sprite",
+        "Actual actor groups cross using mapY+footHeight, with the source +6 only for the player on layer2; body pieces preserve frame order inside an atomic group",
+        "All four source actor layers remain between the correct saved map layers even at mapY10000; large coordinates cannot overflow the signed sorting range or leak across map layers",
+        "Six real feedback insertions retain five slots/50 digits plus miss; all digits sort after miss, and no GameObject/component/Sprite is generated at runtime",
+        "Feedback follows the actual actor transform including burial -112px and screen-centered actions; frozen actors still render their held feedback without advancing its lifetime",
+        "Hide-UI retains world numbers; invisible actors, minimap, world map and black-screen text suppress them and restore them when the scene becomes visible",
+        "Actual skill/face visuals remain nested with their owner, with back effect before body and front effects before raising digits",
+        "Actual critical24/25 visual paths place role, intermediary effect, targets and final effect in source order; global cinematic groups escape nested owner sorting",
+        "New game instantiates the saved presentation components and clears old visible feedback"
+    ],
+    "error": ""
+}

@@ -1,0 +1,207 @@
+{
+  "name": "属性计算架构优化",
+  "utc": "2026-10-22T02:24:33.716560+00:00",
+  "passed": true,
+  "reportCount": 15,
+  "totalCheckGroups": 113,
+  "reports": [
+    {
+      "path": "Reference/Validation/attribute-modules.json",
+      "passed": true,
+      "checkGroups": 4,
+      "utc": "2026-10-22T02:21:23.9457850Z",
+      "sha256": "afedfd4d8919b0648ac7c8afb760aabeb395bfb466658eb2428e75769fd843a6"
+    },
+    {
+      "path": "Reference/Validation/attribute-module-integration.json",
+      "passed": true,
+      "checkGroups": 7,
+      "utc": "2026-10-22T02:21:37.4054170Z",
+      "sha256": "e4d66fbd2edc1ebad2fa100c5cddc945347255183c2e61a6f81de3950fb57850"
+    },
+    {
+      "path": "Reference/Validation/combo-break.json",
+      "passed": true,
+      "checkGroups": 11,
+      "utc": "2026-10-22T02:21:51.7213060Z",
+      "sha256": "32431c8cfe3c34bb84e39e007dc8ad4cfa06e51329c9801d071661f6c8a4621a"
+    },
+    {
+      "path": "Reference/Validation/attack-skills.json",
+      "passed": true,
+      "checkGroups": 13,
+      "utc": "2026-10-22T02:21:53.8094390Z",
+      "sha256": "746b1b49fdf9488f84cf72f49093f018efffe6cc439bd700699e2e999bcbec1e"
+    },
+    {
+      "path": "Reference/Validation/support-skills.json",
+      "passed": true,
+      "checkGroups": 9,
+      "utc": "2026-10-22T02:21:54.2168200Z",
+      "sha256": "ee5137dd756f74ce74054c044668fe775d2d394010450237dde2bc824d15b663"
+    },
+    {
+      "path": "Reference/Validation/spirit.json",
+      "passed": true,
+      "checkGroups": 8,
+      "utc": "2026-10-22T02:21:55.8766020Z",
+      "sha256": "8283f31c2d88168e98a4164cfee6ffb0a327d038373877e46c2228636d6f0af6"
+    },
+    {
+      "path": "Reference/Validation/spirit-absorption.json",
+      "passed": true,
+      "checkGroups": 6,
+      "utc": "2026-10-22T02:21:55.8804590Z",
+      "sha256": "acd775b5032cc3fd3c502782b1ffa25f881d2a16d20c6c1af859615ce9e305d5"
+    },
+    {
+      "path": "Reference/Validation/equipment-module-integration.json",
+      "passed": true,
+      "checkGroups": 3,
+      "utc": "2026-10-22T02:21:56.1371300Z",
+      "sha256": "1bf16e2df542747da62cd2ae7745aaf9f876ca3f44b169d7a74efb7c250406cc"
+    },
+    {
+      "path": "Reference/Validation/durability-module-integration.json",
+      "passed": true,
+      "checkGroups": 3,
+      "utc": "2026-10-22T02:21:56.2472610Z",
+      "sha256": "160b0ddcb41a83382692c0636654c5e6de873db7fc2d1ca708a487b0482c8074"
+    },
+    {
+      "path": "Reference/Validation/sword-break.json",
+      "passed": true,
+      "checkGroups": 10,
+      "utc": "2026-10-22T02:21:58.9237840Z",
+      "sha256": "a878c8bc1174e9010d4bb62ee392bde9792cae3f4477a60cfa914cf4cae339e1"
+    },
+    {
+      "path": "Reference/Validation/hud-feedback.json",
+      "passed": true,
+      "checkGroups": 6,
+      "utc": "2026-10-22T02:21:59.0708690Z",
+      "sha256": "3e0b6959f2820f90b55efecb057a296292e7a8b67be790c807f21d24ff0f5f74"
+    },
+    {
+      "path": "Reference/Validation/enemy-health.json",
+      "passed": true,
+      "checkGroups": 8,
+      "utc": "2026-10-22T02:21:59.2118660Z",
+      "sha256": "17dc01228d010e5470b3559de72178bbb6b46b8f9472b2d3c47b24f638ccbcd7"
+    },
+    {
+      "path": "Reference/Validation/items-shop.json",
+      "passed": true,
+      "checkGroups": 11,
+      "utc": "2026-10-22T02:21:59.5422720Z",
+      "sha256": "cac9f649781c3ab1588196583be213848c8f18fc726a5fa8a6ab77d97373122a"
+    },
+    {
+      "path": "Reference/Validation/weapon-preview.json",
+      "passed": true,
+      "checkGroups": 6,
+      "utc": "2026-10-22T02:21:59.7411420Z",
+      "sha256": "b1471d5306be6e5473f689a091a9ee423c3cdd88586f3a0ef513ec7aa93c08b0"
+    },
+    {
+      "path": "Reference/Validation/spirit-level.json",
+      "passed": true,
+      "checkGroups": 8,
+      "utc": "2026-10-22T02:22:18.6212380Z",
+      "sha256": "98787e9cd6f42da3a79e127110732c62d41d3148ee708d13364bcfdc8904595b"
+    }
+  ],
+  "backup": "Workbench/ArchitectureBackups/attributes-20261022-101233",
+  "scope": [
+    "Pure role, sword-spirit, enemy growth and combo AP calculations return value snapshots",
+    "RefreshAttributes, SpiritAttribute, UpdateComboAttack and HUD base share calculation entry points",
+    "Live database rows supplied at each call; no cached growth values or new state owner"
+  ],
+  "architecture": {
+    "runtimeFiles": 59,
+    "partialGameFiles": 38,
+    "partialGameLines": 7152,
+    "calculator": "CombatAttributeCalculator",
+    "snapshot": "CombatAttributes",
+    "hostResponsibilities": [
+      "bonus and combo state",
+      "refresh timing and HP ratio/heal/death application",
+      "skills and damage",
+      "money",
+      "visuals and cross-system coordination"
+    ]
+  },
+  "preservedRules": [
+    "Refresh AP includes permanent role AP in its multiplier; combo-event AP omits role prop AP and excludes spirit prop AP from the multiplier only",
+    "Minimum +1 combo bonus starts at ten hits",
+    "Broken ordinary weapon retains AP while other equipment contributions are gated",
+    "Critical capped at 1000 only; existing integrated zero-durability gate unchanged",
+    "Spirit clamp1..40, enemy clamp10..150, family groups0/9/18, 99/100 growth split",
+    "Host retains float HP ratio and Mathf.RoundToInt, heal and death/action semantics"
+  ],
+  "playerData": [
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-save.json",
+      "beforeSha256": "0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5",
+      "afterSha256": "0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-sms-global.json",
+      "beforeSha256": "a4bf0cc846b6fb6f345f373113aa344b688dd8f128c3587183ca8e098d4813da",
+      "afterSha256": "a4bf0cc846b6fb6f345f373113aa344b688dd8f128c3587183ca8e098d4813da",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-sms-global.json.bak",
+      "beforeSha256": "2901ee85c18af000c5bac49d5a98b86b250e114cbcaf11b2c6d6e3c41d3e140c",
+      "afterSha256": "2901ee85c18af000c5bac49d5a98b86b250e114cbcaf11b2c6d6e3c41d3e140c",
+      "unchanged": true
+    }
+  ],
+  "changedSources": [
+    "UnityProject/Assets/Scripts/OriginalCombat.cs",
+    "UnityProject/Assets/Scripts/OriginalHudFeedback.cs",
+    "UnityProject/Assets/Scripts/OriginalCombo.cs",
+    "UnityProject/Assets/Scripts/OriginalEquipment.cs",
+    "UnityProject/Assets/Scripts/CombatAttributeCalculator.cs",
+    "UnityProject/Assets/Editor/AttributeModuleValidation.cs"
+  ],
+  "sourceSha256": {
+    "UnityProject/Assets/Scripts/OriginalCombat.cs": "ea547c46f34ad61bf9e18828f1d7a1d5d545a2d631fe12a4f1218dafd2886a3e",
+    "UnityProject/Assets/Scripts/OriginalHudFeedback.cs": "6914a2d3fdee5f2c41f78f4dc2142f8212b7bedb72ce389d0cdc7989d3c81f80",
+    "UnityProject/Assets/Scripts/OriginalCombo.cs": "185621d629836c2643040b067d8072d0e1c5bba56e46b97e3fd994204efe0194",
+    "UnityProject/Assets/Scripts/OriginalEquipment.cs": "5429b487e060b76a6e757677b4677572797c11f2773bda024fd7921cab68f755",
+    "UnityProject/Assets/Scripts/CombatAttributeCalculator.cs": "8abaa32f0de0a9f748a9248b3438c81d90d9c94d7d60861a36c29fb55aad4cb8",
+    "UnityProject/Assets/Editor/AttributeModuleValidation.cs": "6f201a012110780c1e05f9cf16803c3e9f9a7765156455a2b95752ef12bfef66"
+  },
+  "documentSha256": {
+    "README.md": "09f36ee0977b6c9eebf50808153130f66b29449500a1b9c202f0dd9233f65ae0",
+    "Reference/工程优化与架构评估.md": "803266cbf00b772e151ef78b7309165f002c2d3b733323bc41713f924f7e9ccc",
+    "Reference/开发使用说明.md": "28603882973086b70931f61fc2e5b240f031597dd6acf6cb6d9179d4eb753606",
+    "Reference/还原进度.md": "db5a704f89dfc03909f57f79a477f54420a08a2e77f167c22c95b59c95edce79"
+  },
+  "finalEditor": {
+    "project": "/Users/mac/Documents/ChatGPT/古剑/UnityProject",
+    "instance": "UnityProject@df84d794fc72e697",
+    "scene": "Assets/Scenes/GuJian.unity",
+    "playing": true,
+    "atTitle": true,
+    "timeScale": 1,
+    "compiling": false,
+    "sceneDirty": false,
+    "saveFileName": "gujian-save.json",
+    "lastError": null,
+    "vmError": null,
+    "consoleErrors": 0,
+    "restoredLiveEgoRowHp": "4500,550"
+  },
+  "limits": [
+    "Controlled fixtures and affected regression checks; no full normal-difficulty replay",
+    "No new physical-input, visual parity or listening acceptance",
+    "Ordinary payload remains writable; skills, damage, money, save and UI coordination still coupled",
+    "No build, external Player, window activation/resizing, new runtime fixed resources or dependency"
+  ],
+  "nextBatch": "Clarify skill and damage rules and their state/application boundaries",
+  "restorationPercentageChanged": false
+}

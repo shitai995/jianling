@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb3ab722a2214741835d675e99bc225, type: 3}
+  m_Name: 201e1
+  m_EditorClassIdentifier: 
+  scriptId: 201e1
+  displayName: 201e1
+  notes: 
+  instructions:
+  - if(x0A("taskID")=0)
+  - x3A(197,1,9,true,true)
+  - x5E(8)
+  - x26(492,263,"r")
+  - x43(558,140)
+  - x3A(197,2,9,true,true)
+  - x5E(8)
+  - x3D(-1,3,1)
+  - x5E(13)
+  - x39(116)
+  - x39(117)
+  - x5E(14)
+  - x39(120)
+  - x39(121)
+  - x39(122)
+  - x39(123)
+  - x39(125)
+  - x5E(10)
+  - x32(-1,"l")
+  - x39(126)
+  - x39(127)
+  - x5E(14)
+  - x39(128)
+  - x39(129)
+  - x39(130)
+  - x39(131)
+  - x39(132)
+  - x5E(10)
+  - x32(-1,"r")
+  - x41(32)
+  - x39(116,true)
+  - x39(117,true)
+  - x39(126,true)
+  - x39(127,true)
+  - x5E(8)
+  - stageID[1]
+  - stageID[0]=201
+  - 'enemyTypes[1]:'
+  - enemyTypes[0]=222
+  - 'enemyNums[1]:'
+  - enemyNums[0]=20
+  - x59(stageID,enemyTypes,enemyNums,"201e1.s")
+  - x09("taskID",-1)
+  - ret
+  - endif
+  - x7C()
+  - if(x82())
+  - else
+  - x7B()
+  - x5E(12)
+  - endif
+  - "x28(\"<c=00ccff,000000,1>\u9F99\u6CC9</c>\u5251\u4F7F\u7528\u8FC7\u5EA6\uFF0C\u5DF2\u7ECF\u635F\u574F\")"
+  - x3D(-1,3,1)
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u624D\u7528\u4E86\u51E0\u4E2A\u6280\u80FD\u5C31\u574F\u4E86\uFF1F\uFF01\u8FD9\u4EC0\u4E48\u7834\u5251\uFF01\")"
+  - x3A(197,1,9,true,true)
+  - x5E(9)
+  - x26(600,251,"r")
+  - x3A(197,2,9,true,true)
+  - x5E(9)
+  - "x28(\"\u6CE8\u610F\uFF0C\u6B66\u5668\u8010\u4E45\u5EA6\u51CF\u5C11\u52300\u65F6\u4F1A<c=ffff00,000000,1>\u635F\u574F</c>\",2400)"
+  - "x28(\"\u635F\u574F\u540E\u7684\u6B66\u5668\u5C06<c=ffff00,000000,1>\u6682\u65F6\u65E0\u6CD5\u4F7F\u7528\u6280\u80FD\u548C\u5D29\u51FB</c>\",2400)"
+  - x3D(-1,1,1)
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u770B\u6765\u8FD9\u5251\u627F\u53D7\u4E0D\u4F4F\u6211\u7684\u5251\u62DB\uFF0C\u53EA\u80FD\u7EE7\u7EED\u5F80\u91CC\u8D70\u4E86\u3002\")"
+  - "x28(\"\u524D\u5F80\u5251\u51A2\u6DF1\u5904\u5BFB\u627E\u66F4\u597D\u7684\u5B9D\u5251\u5427\")"
+  - x09("taskID",-1)
+  - x09("event",202)
+  - x24(58,15,"201_202.s")
+  - x24(59,15,"201_202.s")
+  - x24(58,16,"201_202.s")
+  - x24(59,16,"201_202.s")
+  - x6E(100)

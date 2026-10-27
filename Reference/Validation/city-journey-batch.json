@@ -1,0 +1,130 @@
+{
+  "passed": true,
+  "utc": "2026-10-19T15:41:58.827639+00:00",
+  "scope": "新档连续到清溪村event501、紫草坞必败与两次葬剑、强制强化支线、区域开放和地图往返；整体仍约80%工作量估算",
+  "checks": 55,
+  "reports": [
+    {
+      "file": "city-journey.json",
+      "passed": true,
+      "utc": "2026-10-19T15:33:27.7539330Z",
+      "checks": 6
+    },
+    {
+      "file": "area-travel.json",
+      "passed": true,
+      "utc": "2026-10-19T15:36:06.5527690Z",
+      "checks": 5
+    },
+    {
+      "file": "missions.json",
+      "passed": true,
+      "utc": "2026-10-19T15:34:26.2060340Z",
+      "checks": 21
+    },
+    {
+      "file": "weapon-visibility.json",
+      "passed": true,
+      "utc": "2026-10-19T15:34:26.2982990Z",
+      "checks": 6
+    },
+    {
+      "file": "progression.json",
+      "passed": true,
+      "utc": "2026-10-19T15:34:39.1335840Z",
+      "checks": 10
+    },
+    {
+      "file": "player-smoke.json",
+      "passed": true,
+      "utc": "2026-10-19T15:40:28.1738720Z",
+      "checks": 7
+    }
+  ],
+  "player_modes": [
+    {
+      "mode": "headless",
+      "file": "player-headless-smoke.json",
+      "passed": true,
+      "utc": "2026-10-19T15:39:27.9514710Z",
+      "checks": 7
+    },
+    {
+      "mode": "visible Metal application",
+      "file": "player-visible-smoke.json",
+      "passed": true,
+      "utc": "2026-10-19T15:40:28.1738720Z",
+      "checks": 7
+    }
+  ],
+  "build": {
+    "result": "succeeded",
+    "unity": "2022.3.62f3",
+    "platform": "StandaloneOSX",
+    "development": true,
+    "output_path": "UnityProject/Builds/macOS/古剑魂梦.app",
+    "duration_seconds": 4.868528,
+    "total_size_mb": 452.27,
+    "errors": 0,
+    "warnings": 0,
+    "started_at": "2026-10-19T15:37:48.06875Z",
+    "completed_at": "2026-10-19T15:37:52.937278Z"
+  },
+  "sources": [
+    {
+      "file": "UnityProject/Assets/Scripts/GuJianGame.cs",
+      "sha256": "584c3c9981ff587711260d47ad14868e8af4b740fd026ab36c5536345f15f186"
+    },
+    {
+      "file": "UnityProject/Assets/Scripts/OriginalGameMenus.cs",
+      "sha256": "392ea3382e9d9bd81f9f14f3216c190db11d97d4b2e350fdfb019f45c999e88a"
+    },
+    {
+      "file": "UnityProject/Assets/Scripts/OriginalPlayerValidation.cs",
+      "sha256": "8e1c98338cfbe357f667e71bb5ca702de7aa859a0ddb99bf4fed9d346b2ff5c9"
+    },
+    {
+      "file": "UnityProject/Assets/Scripts/OriginalActor.cs",
+      "sha256": "cd5590938b647f539e3caf17cf0271dfe8a9d3a0766da7df3c52069159920749"
+    },
+    {
+      "file": "UnityProject/Assets/Scripts/OriginalCombat.cs",
+      "sha256": "f29fc863bcbf478371382ae43736fb6525b560d2e20ac7fc6285110618ed8caf"
+    },
+    {
+      "file": "UnityProject/Assets/Scripts/OriginalCritical.cs",
+      "sha256": "01e60729545157d76e03b65a245601f7f730e3020138d4a9b2132b48d4920953"
+    },
+    {
+      "file": "UnityProject/Assets/Editor/OpeningJourneyValidation.cs",
+      "sha256": "48e55aefdec7581c304f0930daaae77a716baac3cf9f61a13b678e4e64090fdd"
+    },
+    {
+      "file": "UnityProject/Assets/Editor/AreaTravelValidation.cs",
+      "sha256": "072e5521a789c45795e19fcb250182952e090cc3871ce52f4136d91ce5270d22"
+    }
+  ],
+  "editor": {
+    "playing": false,
+    "compiling": false,
+    "scene": "Assets/Scenes/GuJian.unity",
+    "dirty": false,
+    "console_errors": 0
+  },
+  "limitations": [
+    "连续新档仅到清溪村入场event501；开场锁定AI、靶子气血1并护血，紫草坞通过生产Damage/死亡处理触发设计中的必败回调，不构成正常难度或全主线通关证明。",
+    "测试将角色移到NPC、出口及攻击位置，使用实际交互和注册出口，不验证全地图逐格步行碰撞。",
+    "区域地图仍为IMGUI，完整原版世界地图图集与所有菜单尚未移植；Android真机与完整实战平衡仍待验收。",
+    "旧档仅能补全当前区域标记，无法重建未曾保存的历史访问记录。"
+  ],
+  "launch_validation": {
+    "direct_batchmode_metal": "Stopped during Metal device initialization before game smoke started; test process terminated.",
+    "headless": "Passed seven checks; process exit code 0.",
+    "normal_app_launch": "open -g -n app --args --gujian-smoke ...; Metal initialized, seven checks passed, application quit."
+  },
+  "artifacts": [
+    "UnityProject/Builds/macOS/古剑魂梦.app",
+    "Reference/Validation/city-journey-qingxi.png",
+    "Reference/Validation/area-travel-menu.png"
+  ]
+}

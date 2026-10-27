@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb3ab722a2214741835d675e99bc225, type: 3}
+  m_Name: 608_609
+  m_EditorClassIdentifier: 
+  scriptId: 608_609
+  displayName: 608_609
+  notes: 
+  instructions:
+  - if(x0A("event")<825)
+  - "x28(\"\u6682\u65F6\u4E0D\u53EF\u7EE7\u7EED\u524D\u8FDB\")"
+  - ret
+  - endif
+  - x20("609.s",true)

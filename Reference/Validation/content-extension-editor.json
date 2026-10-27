@@ -1,0 +1,13 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T04:40:57.6657840Z",
+    "checks": [
+        "Independent IDs 9001-9004 created through production authoring; item icon/drop, weapon, skill behavior and enemy actor prefab saved",
+        "Cross-table validator accepts valid extensions and rejects missing weapon skill and enemy drop references",
+        "New item IDs honor explicit shop masks and ordinary quantity/pricing without ID-range restrictions",
+        "Configured purchase cap clamps and wraps; merged extension tables reuse references and invalidate explicitly",
+        "Saved four-layer Tilemap prefab retains painted tile; editor-baked collision maps (1,-2) to original (1,1) grid coordinates",
+        "Missing-only original import preserves all edited baseline/extension fields; shared lookup discovers custom stage and new IDs"
+    ],
+    "error": ""
+}

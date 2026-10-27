@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "utc": "2026-10-20T17:03:01.402385+00:00",
+  "scope": "剑灵菜单原两阶段候选／技能继承软键／返回快进／告别21周期／对白滚动裁切及相关回归",
+  "reports": {
+    "spirit-menu.json": 16,
+    "menu-state.json": 14,
+    "spirit.json": 8,
+    "spirit-absorption.json": 6,
+    "spirit-menu-pixels.json": 3
+  },
+  "totalChecks": 47,
+  "inputEvidence": "键盘共用生产原键码与公开PressControl入口；后台Unity GameView取帧；未执行实体键鼠或触屏",
+  "finalState": {
+    "play": true,
+    "title": true,
+    "scale": 1,
+    "scene": "Assets/Scenes/GuJian.unity",
+    "sceneDirty": false,
+    "compiling": false,
+    "save": "gujian-save.json",
+    "formalSaveSha256": "0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5",
+    "gameFocused": true,
+    "editorFocused": false
+  },
+  "console": {
+    "errors": 0,
+    "existingMissingScriptWarnings": 8,
+    "existingMcpWarning": 1
+  },
+  "remaining": [
+    "系统页原六项及独立设置／存档／帮助子状态",
+    "角色页技能预览",
+    "交易独立堆叠出售／持续调量／金额数量绘制",
+    "剑灵候选品级色与图标背景、原设备字体及菜单演出逐帧仍需审计",
+    "其他脚本状态分支、正常难度全通、全部Boss正常实战、音频与实体输入验收"
+  ],
+  "sha256": {
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "a2d71076ac86d9dc09aef8bf1e371da1de3b22d3d350eeafe8b2b2a3681e8ef1",
+    "UnityProject/Assets/Scripts/OriginalGameMenus.cs": "67a8cb48fa2d42ce0955a6580da62d664c79a7aacc45949239ca6f80d9532159",
+    "UnityProject/Assets/Scripts/OriginalSpirit.cs": "1cb2e72170cf09e4c6ccb922a491a03f5ecf5c54649665823fa538c97f372aae",
+    "UnityProject/Assets/Scripts/OriginalAtlasMenus.cs": "7ca7c5ecb321839d285ebf0ddac319b2001ecbc772c8e603755c083ecf708189",
+    "UnityProject/Assets/Scripts/OriginalUiLayout.cs": "a6b0da80de0f781af2ec940d668cc22631bde4a9812f4677c859944184c0cf99",
+    "UnityProject/Assets/Editor/SpiritMenuValidation.cs": "0b92e28323426a3307113746b17cdffd90a1d0e65416e794b9038d3fc46a72c1",
+    "UnityProject/Assets/Editor/UiAssetSetup.cs": "e8d5ebd8f11d4397da4fb734ca8f5ed6424a0ca288aa53bcc58fd8c11f073f92",
+    "UnityProject/Assets/Editor/SpiritValidation.cs": "e1a74464715501f55b5388d1808f166efc97acebea21442719cb33e3399c0207",
+    "UnityProject/Assets/Editor/SpiritAbsorptionValidation.cs": "e25b699ac073ee2bc558e8356081ada4563f12a677aeb5c33fe3a94a09e71a78",
+    "UnityProject/Assets/Editor/MenuStateValidation.cs": "49eab738f45eb279bfee200e916cd052cc6863be5bd725f1c03f3f6645218c4e",
+    "UnityProject/Assets/Resources/OriginalUiLayout.asset": "47a29ccfd14711fa8f18b6a6598dfa86a942f8407f07a4517dafec876668e0bd",
+    "Tools/validation/check_spirit_menu.py": "cf2d059a5861f5c69603559829d49b1f403f511f4723b234831c4d347781f5e3",
+    "Reference/Decompiled/sources/com/dobetter/client/GameCanvas.java": "d2a3f5e8085b76f65b1fb41ede376965e5b5375408998c490fb846329bcfebf4",
+    "Reference/Decompiled/sources/com/dobetter/common/StyledText.java": "8cdfa64ea496f9f3fa0ffdd5d88d77710919ceb864c2ab79d51a0a7c75a565d2",
+    "Reference/Validation/spirit-menu.json": "8ccb0640e612f3cd397b92f0178dc2e32ef02c23e5011b38c1673e05263f29df",
+    "Reference/Validation/menu-state.json": "9fb0dd68ee424e7518e38a72fe659c7f1b2476b2ea43b5223f6e167de302435a",
+    "Reference/Validation/spirit.json": "eed80820c551ab0b9f5ac134a6a70625cbe88e7ad5d8c55247fb5f5a8ae32ad4",
+    "Reference/Validation/spirit-absorption.json": "5e3a49481657f04e299b13387658dc645ee91588ae270d696061565cf49006b9",
+    "Reference/Validation/spirit-menu-pixels.json": "a0d4c14e5b4562865e6636d6ebe40fce523eb1bfe007a33ca3cfb85d7cb773e1",
+    "Reference/Validation/spirit-menu-scroll-start.png": "599c7b7529c24dde3a5c11250c9acc290771f2b3ac9baaefbcc6448fa4aa175b",
+    "Reference/Validation/spirit-menu-status.png": "f8ce729cd10be61d3cf390f8dbe04d2b98ba75df11246404888b096b2a7d18e1",
+    "Reference/Validation/spirit-menu-scroll-visible.png": "a332ac64a402208eaaa4cd61b34a51e148bb84b5dce15d8844545e68003bde0b",
+    "Reference/Validation/spirit-menu-candidates.png": "abf4e2f210f4f5676fe01be07c9d624708f4ea3929b3581d132319cf24ee07ea",
+    "Reference/Validation/spirit-menu-contact.png": "b98318ca2bcba4fd714de8f690f0995b719a5c66a784478603a9a9a94c0d793a",
+    "Reference/Validation/spirit-menu-single-highlight.png": "4df5b08a81a74e7917c9f44c9b4b65c75acadf4ddfed9f4d9f021a33aa7b5f72",
+    "Reference/Validation/spirit-menu-candidates-last.png": "ef8c4085f387dc227cc1427acf62c9bb0b25317e79104fc5403fa6f3bc9ccfbb",
+    "Reference/Validation/spirit-menu-result.png": "ebb0ad9ceb612e5946c508c3157a052556e0b8595cfb9d9552be2c8312bef61b",
+    "Reference/Validation/spirit-menu-empty.png": "ddaaed6bc3a2c466143a62e7a972db859637361898e5f9f899c5d11a2fa5e084",
+    "Reference/Validation/spirit-menu-tip.png": "bd27e2d2f3fb3389372c056cfa04200a471082ca1276a8a7d5553c742ae91d0a",
+    "Reference/Validation/spirit-menu-farewell.png": "3369ce6a8565af1bfb83bd4be045478d160bca13a3364859a48fb651c9e7e5b0",
+    "Reference/Validation/spirit-menu-final-state.json": "e2fe7768d429dcd76809ccb1b0040e746ea94dc6d5111463a2fa5169129a12f9"
+  }
+}

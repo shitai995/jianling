@@ -1,0 +1,16 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T08:47:15.3402420Z",
+    "checks": [
+        "Skills 14/15/16 consume no durability, begin 240-tick cooldown and heal only after action 21 ends; the recovered level-1 calculator yields 1100/1600/3200 at 10000 max HP even when equipped skill level is 9; healing clamps",
+        "Skills 17/18/19 repair 170/340/650 at cast completion, can repair zero durability when ready, clamp to the maximum and synchronize ordinary instances; integration repairs spirit only and preserves ordinary weapon durability",
+        "Actual forced hit reaction interrupts action 21 without healing or refunding cooldown; changing stage cancels pending support effects",
+        "Cooldown uses exact 80-ms ticks, stops for menu/reinforcement/dialogue/frozen actors and ordinary zero durability, advances during integration, and unlocks precisely at the final tick",
+        "Skills 20/21 activate after casting for original 397/793 cycle boundaries; armor prevents ordinary stagger while HP damage still applies, guaranteed attacks bypass it, expiry restores reactions and menus pause duration",
+        "Recasting armor retains the source's accumulated duration counter instead of silently refreshing it to a full duration",
+        "Selecting a skill initializes its original cooldown; the offline cooldown option uses one tick; attack skills retain low-durability casting and the common timer",
+        "Real Save/Load preserves remaining cooldown, armor duration and visual counter; existing version-3 saves missing new timer fields still load with zero transient timers",
+        "Recovery/armor use original s_41 actions from a saved prefab with sufficient pieces, recovery ends after 11 ticks, and repeated sampling creates neither Sprite nor frame-piece nodes"
+    ],
+    "error": ""
+}

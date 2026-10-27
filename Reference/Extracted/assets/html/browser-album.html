@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>QQ游戏</title>
+<link rel="stylesheet" href="css/g.css" type="text/css">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="YES" />
+</head>
+<body>
+  <nav class="main-nav">
+  	<ul>
+    	<li><a href="browser.html">新品</a></li>
+    	<li><a href="browser-hot.html">热门</a></li>
+   	    <li><a class="on" href="browser-album.html">专辑</a></li>
+        <li><a href="browser-game-category.html">分类</a></li>
+        <li><a href="browser-game-search.html?num=10">搜索</a></li>
+    </ul>
+  </nav>
+  <section>
+  <section class="game-category" id='w-new-game-category'>
+    <ul>
+      <script type='text/tmpl' id='tmpl-new-game'>
+         <li>
+			<a href="<#if(true){#>browser-game-item.html?cpId=<#= cpId #>&gameId=<#= gameId #>&sid=<#= sid #><#}else{#><#= pageUrl #>&sid=<#= sid #><#}#>" class="pic-show">
+				<img src="<#= picUrl #>" alt="" width="136" height="84">
+			</a>
+		 </li>
+      </script>
+    </ul>
+  </section> 
+  <section class="game-category" id='category-list'>
+      <script type='text/tmpl' id='tmpl-category-list'>
+      	<li onclick="window.location = 'browser-adgames-list.html?pageId=<#= pageId #>&sid=<#= sid #>'">
+        	<figure>
+            	<a class="pic-show"><img src="<#= picUrl #>" alt="<#= title #>" width="41" height="41"></a>
+                <figcaption>
+                	<h1><a><#= title #></a></h1>
+                    <p class="game-name"><#= desc #></p>
+                </figcaption>
+            </figure>
+        </li>
+      </script>
+      <ul class="game-list">
+      </ul>
+  </section>
+  </section>
+  
+    <!-- ^^^ 公用js -->
+  <script type="text/javascript" src='comm_js/simple.min.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingCircular.js'></script>
+  <script type="text/javascript" src='comm_js/pkg.js'></script>
+  <script type="text/javascript" src='comm_js/util.js'></script>
+  <script type="text/javascript" src='comm_js/game-util.js'></script>
+  <script type="text/javascript" src='comm_js/update.js'></script>
+  
+  <script type="text/javascript" src='js/album.js'></script>
+</body>
+</html>

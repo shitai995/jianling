@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>QQ游戏</title>
+<link rel="stylesheet" href="css/g.css" type="text/css">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="YES" />
+</head>
+<body>
+
+  <nav class="main-nav">
+  	<ul>
+    	<li><a href="center.html">新品</a></li>
+    	<li><a href="hot.html">热门</a></li>
+   	    <li><a href="album.html">专辑</a></li>
+        <li><a href="game-category.html">分类</a></li>
+        <li><a class="on" href="game-search.html?num=10">搜索</a></li>
+    </ul>
+  </nav>
+  <section>
+  <section class="search-bar result">
+      <form class="search" onSubmit="javascript:return false;">
+         <input name="keyword" id="keyword" type="text" value="请输入游戏名称"><input type="submit" name="submit" value="">
+      </form>
+  </section>
+  
+  <script type='text/tmpl' id='tmpl-hotwords-list'>
+	<li class="<#= keywordCls#>">
+	<a href="#" class="keyword" onclick='javascript: keywordClick(this); return false;'><#=keyword#></a>
+	</li>
+  </script>
+  <ul class="keywords clearfix" id='hotwords'>
+  </ul>
+  <menu id='search-title' style="display: none;">
+      <h2>搜索结果</h2>
+  </menu>
+  <section class="game-category" id='w-hot-game-category'>
+      <ul class="game-list">
+      </ul>
+      <script type='text/tmpl' id='tmpl-hot-game'>
+        <li onclick="window.location = 'game-item.html?cpId=<#= cpId #>&gameId=<#= gameId #>&sid=<#= sid #>'">
+        	<figure>
+            	<a class="pic-show"><img src="<#= p_util.getLogoUrl(logo) #>" alt="<#= name #>" width="41" height="41"></a>
+                <figcaption>
+                	<h1><a><#= name #></a></h1>
+					<p class="price"><#= fee #></p>
+					<p class="online"><#if(downCount>0) {#><#= p_util.getDownCount(downCount) #>人<#} else {#>新上线游戏<#}#></p>
+					<p class="time">上线: <#= pubTime #></p>
+                </figcaption>
+            </figure>
+        </li>
+      </script>
+  </section>
+  </section>
+  
+  <div class="btn-wrapper clearfix" id="btn-all" style="display: none;">
+     <div class="btn-gray fl" id="btn-prev"><a href="#" onclick='javascript: return false;'>上一页</a></div>
+     <div class="btn-gray fl" id="btn-1st"><a href="#" onclick='javascript: return false;'>首页</a></div>
+     <div class="btn-gray fl" id="btn-next"><a href="#" onclick='javascript: return false;'>下一页</a></div>
+  </div>
+  
+  <!-- ^^^ 公用js -->
+  <script type="text/javascript" src='comm_js/simple.min.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingCircular.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingPageBtn.js'></script>
+  <script type="text/javascript" src='comm_js/pkg.js'></script>
+  <script type="text/javascript" src='comm_js/util.js'></script>
+  <script type="text/javascript" src='comm_js/game-util.js'></script>
+  <script type="text/javascript" src='comm_js/update.js'></script>
+  <script type="text/javascript" src='js/search.js'></script>
+</body>
+</html>

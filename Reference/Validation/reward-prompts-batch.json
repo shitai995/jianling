@@ -1,0 +1,63 @@
+{
+  "utc": "2026-10-20T11:13:49.049949+00:00",
+  "passed": true,
+  "scope": "Four source script reward messages, production VM wait sequence and original task901; related fixture-based mission/save checks and message regressions in background Unity GameView.",
+  "checks": {
+    "reward": 7,
+    "missions": 21,
+    "queue": 9,
+    "message": 9,
+    "pixels": 4,
+    "total": 50
+  },
+  "limits": [
+    "Normal XP coefficient1; original paid multiplier/platform features remain for audit",
+    "MissionValidation uses production task counters plus dialogue-only waiting override; production IsWaiting checked separately by task901 and mixed reward sequence",
+    "Foreground pixels prove displayed colors; original-device font/outline/frame alignment not verified",
+    "Other menu/item feedback call sites remain for audit"
+  ],
+  "final_state": [
+    {
+      "success": true,
+      "message": "Retrieved 0 log entries.",
+      "data": []
+    },
+    {
+      "success": true,
+      "message": "Code executed successfully.",
+      "data": {
+        "result": {
+          "title": true,
+          "timeScale": 1,
+          "playing": true,
+          "sceneDirty": false,
+          "focused": false,
+          "background": true
+        },
+        "compiler": "codedom"
+      }
+    }
+  ],
+  "sha256": {
+    "UnityProject/Assets/Scripts/OriginalRewardMessages.cs": "a08cba5a6c98a70c49d6321e5109b16df2a24a3ddafefed409fcda0964beb80d",
+    "UnityProject/Assets/Scripts/OriginalRewardMessages.cs.meta": "ed9eb17971fbfc3b36b3c24b935c5f98ec0f05511e30618117cff83c7deeefb6",
+    "UnityProject/Assets/Scripts/OriginalMessages.cs": "7be5efca4bc3a86788f162e3915e3770dff408e18bdd2e285b9b1134aff18338",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "ab9b455bf54c1b17ab3b02308c5504167f731ff91f3eadd0a834b4beb29ad5c9",
+    "UnityProject/Assets/Editor/MissionValidation.cs": "a7c1a74a949e21b4ed36c3cabd61de3d964458101fc52a675188be3439197506",
+    "Reference/Decompiled/sources/com/dobetter/client/GameCanvas.java": "d2a3f5e8085b76f65b1fb41ede376965e5b5375408998c490fb846329bcfebf4",
+    "Reference/Decompiled/sources/com/dobetter/client/Equip.java": "20f29bece2d3ef9ae5e77b14cb4b15ca83e96b413eddfec0ab1cdff88626da89",
+    "Reference/Decompiled/sources/com/dobetter/client/Prop.java": "60046f4e4dc03876dc3fedde4a41ffea685c0d09a4d692388ab04ea41af67810",
+    "UnityProject/Assets/Resources/Original/Scripts/taskover.json": "6ec44be109906f00086e3849c9a07c02565bab2c606e0dbba93573c9aa0d00ad",
+    "Tools/validation/check_reward_prompts.py": "23a86421c204a8709f4a818cc97beb8fbb19954268a524555fcd7d06498b5aa9",
+    "Reference/Validation/reward-prompts.json": "bf9ccea82a5008ae4346e7c07b0ae2b23da4dc80116f8ef3001e09076546b302",
+    "Reference/Validation/reward-prompts-regression.json": "ee1ee12eb0cd1fc93e8b8d595d6192764edfcb3df7bf4c22f0c99d848e949c23",
+    "Reference/Validation/reward-missions.json": "0d5646fb3136625a77effd7100f42fa311df2667a12bdb83cc00afa607073ee6",
+    "Reference/Validation/reward-message-pixels.json": "8c6fb2c6a923f607cf1991bc429bc7e8eeba0b3fca282d50ae1a04675e18d9c0",
+    "Reference/Validation/reward-prompts-final-state.json": "ec054c5de74e2e5059675172c4403a7cf9af6e5df899ef8f1751d85c6d99d414",
+    "Reference/Validation/reward-messages-contact.png": "effa77118d0812fb5c566778156faa68887f7d2aa60727721771f52547db72a8",
+    "Reference/Validation/reward-message-money.png": "73e9636bc99442ffc26a17714bef66ec8ba7e4cebef8e5902b53a1ff6e1147a9",
+    "Reference/Validation/reward-message-item.png": "8be6e62fcd19f152da20c0c4c1723ef8288ab210a4a6cfd065055bbf38753515",
+    "Reference/Validation/reward-message-equipment.png": "8eb9c8e2f45d2d69bbb3dbb1f00d008f1e9073b7f53f9d4f3d83b7576ffda96f",
+    "Reference/Validation/reward-message-xp.png": "4a2d352c80abe94c5ed2d76294039d910ef74124cbd17187d3a69ea9e0a6d88d"
+  }
+}

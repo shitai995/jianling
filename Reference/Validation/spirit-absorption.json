@@ -1,0 +1,13 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T02:21:55.8804590Z",
+    "checks": [
+        "Real confirmation consumes weapon once; 80ms boundary, 25 one-XP steps, original threshold equality delay, level-two 13-XP step and source flash action verified",
+        "Natural completion of 13500 XP reaches level 7 / 2475 XP, original face 5 and level-up text; completion cannot award twice",
+        "Real Save/Load preserves consumed weapon, pending experience, pre-feed state and .037-second accumulator, reopens spirit menu; fast completion yields the same final values once",
+        "Original below-5%, below-10%, below-20%, at-least-20% satisfaction faces/text plus max-level response verified against source cases",
+        "Source exact-threshold natural completion remains level 1 / 25 XP while fast completion reaches level 2 / 0; natural level-40 overflow is discarded on the next cycle and reports only accepted XP",
+        "Saved native number/gain/arrow/skill textures and original 82x11 experience strip verified"
+    ],
+    "error": ""
+}

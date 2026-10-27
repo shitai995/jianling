@@ -1,0 +1,63 @@
+{
+  "utc": "2026-10-20T11:12:42.267047+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "money",
+      "passed": true,
+      "expected": [
+        "magenta"
+      ],
+      "pixels": {
+        "magenta": 1513,
+        "green": 0,
+        "white": 908
+      }
+    },
+    {
+      "name": "item",
+      "passed": true,
+      "expected": [
+        "magenta",
+        "white"
+      ],
+      "pixels": {
+        "magenta": 207,
+        "green": 0,
+        "white": 2462
+      }
+    },
+    {
+      "name": "equipment",
+      "passed": true,
+      "expected": [
+        "green"
+      ],
+      "pixels": {
+        "magenta": 0,
+        "green": 817,
+        "white": 869
+      }
+    },
+    {
+      "name": "xp",
+      "passed": true,
+      "expected": [
+        "green"
+      ],
+      "pixels": {
+        "magenta": 0,
+        "green": 317,
+        "white": 2156
+      }
+    }
+  ],
+  "errors": [],
+  "scope": "Actual GameView foreground-color pixels in four script reward messages; source text and VM behavior checked separately. Font outlines and original-device glyph matching remain pending.",
+  "sha256": {
+    "Reference/Validation/reward-message-money.png": "73e9636bc99442ffc26a17714bef66ec8ba7e4cebef8e5902b53a1ff6e1147a9",
+    "Reference/Validation/reward-message-item.png": "8be6e62fcd19f152da20c0c4c1723ef8288ab210a4a6cfd065055bbf38753515",
+    "Reference/Validation/reward-message-equipment.png": "8eb9c8e2f45d2d69bbb3dbb1f00d008f1e9073b7f53f9d4f3d83b7576ffda96f",
+    "Reference/Validation/reward-message-xp.png": "4a2d352c80abe94c5ed2d76294039d910ef74124cbd17187d3a69ea9e0a6d88d"
+  }
+}

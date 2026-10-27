@@ -1,0 +1,17 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T02:30:28.4552890Z",
+    "checks": [
+        "Saved source scene action2 contains frames3/4/5/6 and all referenced sheets are persistent assets",
+        "Actual break state advances four 80ms frames, pauses the fifth clearing cycle, accumulates fractional frames and filters 400ms from a long frame before resuming",
+        "Menu/message/choice/black-screen/camera-wait/scripted-movement/time-wait/minimap/reinforcement advance the break effect without scene12 suspension; character dialogue retains it",
+        "Real skills accept exact and insufficient positive MP, distinguish ordinary/spirit break effects, retain source attribute-refresh asymmetry and respect infinite consumption",
+        "Real original attack-frame break hits and burial step98 exhaust the correct MP bank; spirit depletion has no ordinary effect and infinite burial preserves MP",
+        "Script x7B synchronizes both MP banks, avoids restarting an already-broken ordinary sword and cancels the spirit medicine action without consuming its queued item",
+        "30 real Amakusa243/244/245 original-frame cases cover both directions/MP banks/high and low MP/dodge: base spirit MP excludes +1000 reinforcement; forced loss bypasses player infinite-consumption option",
+        "Production Boss238/239 critical attacks trigger ordinary destruction or separate an exhausted spirit while preserving the ordinary sword",
+        "Original x89 repair quote is ordinary missing MP/10 plus 500 per damaged sword; x87 checks money, repairs the whole bag and preserves spirit MP with either active bank",
+        "Production save/load preserves broken durability but resets transient break animation"
+    ],
+    "error": ""
+}

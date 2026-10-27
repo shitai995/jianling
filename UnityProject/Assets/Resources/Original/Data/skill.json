@@ -1,0 +1,290 @@
+{
+  "rows": [
+    {
+      "id": 0,
+      "name": "普攻1",
+      "description": "0",
+      "rank": 0,
+      "damage": "70",
+      "amend": "0",
+      "cost": "0",
+      "cooldown": 0,
+      "holdDamage": 10
+    },
+    {
+      "id": 1,
+      "name": "普通2",
+      "description": "0",
+      "rank": 0,
+      "damage": "80",
+      "amend": "0",
+      "cost": "0",
+      "cooldown": 0,
+      "holdDamage": 20
+    },
+    {
+      "id": 2,
+      "name": "普攻3",
+      "description": "0",
+      "rank": 0,
+      "damage": "90",
+      "amend": "0",
+      "cost": "0",
+      "cooldown": 0,
+      "holdDamage": 30
+    },
+    {
+      "id": 3,
+      "name": "普通4",
+      "description": "0",
+      "rank": 0,
+      "damage": "100",
+      "amend": "0",
+      "cost": "0",
+      "cooldown": 0,
+      "holdDamage": 40
+    },
+    {
+      "id": 4,
+      "name": "崩击",
+      "description": "0",
+      "rank": 0,
+      "damage": "200",
+      "amend": "0",
+      "cost": "-1",
+      "cooldown": 0,
+      "holdDamage": 100
+    },
+    {
+      "id": 5,
+      "name": "碎岩",
+      "description": "拍击地面，浮空敌人并造成伤害",
+      "rank": 10,
+      "damage": "50,5,9,5",
+      "amend": "500",
+      "cost": "5,5",
+      "cooldown": 48,
+      "holdDamage": 50
+    },
+    {
+      "id": 6,
+      "name": "逐风",
+      "description": "拔刀冲斩，吹飞敌人并造成伤害",
+      "rank": 10,
+      "damage": "10",
+      "amend": "0,500,9,500",
+      "cost": "5,5",
+      "cooldown": 48,
+      "holdDamage": 50
+    },
+    {
+      "id": 7,
+      "name": "火焰",
+      "description": "斩出火焰，向前飞行并造成伤害",
+      "rank": 10,
+      "damage": "10",
+      "amend": "0,500,9,500",
+      "cost": "10,5",
+      "cooldown": 48,
+      "holdDamage": 50
+    },
+    {
+      "id": 8,
+      "name": "寒冰",
+      "description": "斩出冰柱，向前冲击浮空敌人并造成伤害",
+      "rank": 10,
+      "damage": "50,5,9,5",
+      "amend": "500",
+      "cost": "10,5",
+      "cooldown": 48,
+      "holdDamage": 50
+    },
+    {
+      "id": 9,
+      "name": "岩狱",
+      "description": "连续拍击地面，范围更大",
+      "rank": 30,
+      "damage": "20",
+      "amend": "1000,500,3,500",
+      "cost": "40,10",
+      "cooldown": 72,
+      "holdDamage": 50
+    },
+    {
+      "id": 10,
+      "name": "风影",
+      "description": "拔刀冲斩，对敌人造成连续伤害最后吹飞敌人",
+      "rank": 30,
+      "damage": "50,10,9,10",
+      "amend": "1000",
+      "cost": "40,10",
+      "cooldown": 72,
+      "holdDamage": 50
+    },
+    {
+      "id": 11,
+      "name": "炙炎",
+      "description": "斩出火焰两次",
+      "rank": 30,
+      "damage": "20",
+      "amend": "1000,500,3,500",
+      "cost": "40,10",
+      "cooldown": 72,
+      "holdDamage": 50
+    },
+    {
+      "id": 12,
+      "name": "玄冰",
+      "description": "斩出扇形冰柱",
+      "rank": 30,
+      "damage": "50,10,9,20",
+      "amend": "2000",
+      "cost": "40,10",
+      "cooldown": 72,
+      "holdDamage": 50
+    },
+    {
+      "id": 13,
+      "name": "鬼舞",
+      "description": "对敌人连续攻击的技能",
+      "rank": 60,
+      "damage": "40",
+      "amend": "1000,500,3,500",
+      "cost": "50,20",
+      "cooldown": 120,
+      "holdDamage": 50
+    },
+    {
+      "id": 14,
+      "name": "回血",
+      "description": "恢复=技能加成*气血上限+技能补正数额的气血",
+      "rank": 20,
+      "damage": "5",
+      "amend": "500,100,9,600",
+      "cost": "0",
+      "cooldown": 240,
+      "holdDamage": 0
+    },
+    {
+      "id": 15,
+      "name": "回命",
+      "description": "恢复=技能加成*气血上限+技能补正数额的气血",
+      "rank": 40,
+      "damage": "10,1",
+      "amend": "300,200,9,200",
+      "cost": "0",
+      "cooldown": 240,
+      "holdDamage": 0
+    },
+    {
+      "id": 16,
+      "name": "回天",
+      "description": "恢复=技能加成*气血上限+技能补正数额的气血",
+      "rank": 60,
+      "damage": "20,2",
+      "amend": "600,400,9,400",
+      "cost": "0",
+      "cooldown": 240,
+      "holdDamage": 0
+    },
+    {
+      "id": 17,
+      "name": "研剑",
+      "description": "恢复=技能补正数额的武器耐久",
+      "rank": 20,
+      "damage": "0",
+      "amend": "150,20",
+      "cost": "0",
+      "cooldown": 240,
+      "holdDamage": 0
+    },
+    {
+      "id": 18,
+      "name": "养剑",
+      "description": "恢复=技能补正数额的武器耐久",
+      "rank": 40,
+      "damage": "0",
+      "amend": "300,40",
+      "cost": "0",
+      "cooldown": 240,
+      "holdDamage": 0
+    },
+    {
+      "id": 19,
+      "name": "明剑",
+      "description": "恢复=技能补正数额的武器耐久",
+      "rank": 60,
+      "damage": "0",
+      "amend": "500,150",
+      "cost": "0",
+      "cooldown": 240,
+      "holdDamage": 0
+    },
+    {
+      "id": 20,
+      "name": "霸体",
+      "description": "持续时间=技能补正数额的帧数内，受创无硬直",
+      "rank": 40,
+      "damage": "0",
+      "amend": "360,36",
+      "cost": "0",
+      "cooldown": 240,
+      "holdDamage": 0
+    },
+    {
+      "id": 21,
+      "name": "金刚",
+      "description": "持续时间=技能补正数额的帧数内，受创无硬直",
+      "rank": 60,
+      "damage": "0",
+      "amend": "720,72",
+      "cost": "0",
+      "cooldown": 240,
+      "holdDamage": 0
+    },
+    {
+      "id": 22,
+      "name": "葬剑",
+      "description": "0",
+      "rank": 127,
+      "damage": "30",
+      "amend": "1000",
+      "cost": "9999",
+      "cooldown": 0,
+      "holdDamage": 9999
+    },
+    {
+      "id": 23,
+      "name": "归鞘",
+      "description": "0",
+      "rank": 127,
+      "damage": "60",
+      "amend": "2000",
+      "cost": "9999",
+      "cooldown": 0,
+      "holdDamage": 9999
+    },
+    {
+      "id": 24,
+      "name": "灵剑变身",
+      "description": "0",
+      "rank": 127,
+      "damage": "100",
+      "amend": "0",
+      "cost": "-2",
+      "cooldown": 0,
+      "holdDamage": 100
+    },
+    {
+      "id": 25,
+      "name": "超杀击中",
+      "description": "0",
+      "rank": 127,
+      "damage": "100",
+      "amend": "0",
+      "cost": "0",
+      "cooldown": 0,
+      "holdDamage": 9999
+    }
+  ]
+}

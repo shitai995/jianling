@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb3ab722a2214741835d675e99bc225, type: 3}
+  m_Name: training
+  m_EditorClassIdentifier: 
+  scriptId: training
+  displayName: training
+  notes: 
+  instructions:
+  - 'option[2]:'
+  - "option[0]=\"\u64C2\u53F0\u4FEE\u70BC\""
+  - "option[1]=\"\u5251\u51A2\u4FEE\u70BC\""
+  - "x2D(\"\u8BF7\u9009\u62E9\u4FEE\u70BC\u5185\u5BB9\",option,true)"
+  - if(x2E()=-1)
+  - ret
+  - endif
+  - if(x2E()=0)
+  - 'option[3]:'
+  - "option[0]=\"\u67E5\u770B\u8BF4\u660E\""
+  - "option[1]=\"\u662F\""
+  - "option[2]=\"\u5426\""
+  - "x2D(\"\u662F\u5426\u5F00\u59CB\u64C2\u53F0\u4FEE\u70BC\uFF1F\n\u6BCF\u6B21\u4FEE\u70BC\u9700\u8981<c=ffff00,000000,1>20000\u94F6</c>\",option,true)"
+  - if(x2E()=-1)
+  - x20("training.s")
+  - ret
+  - endif
+  - if(x2E()=0)
+  - "x27(\"\u8BF4\u660E\",\"\u8FDB\u5165\u64C2\u53F0\u6253\u8D25\u654C\u4EBA\uFF0C<c=ffff00,000000,1>\u6BCF\u6B215\u5206\u949F</c>\uFF0C\u654C\u4EBA\u65E0\u9650\u5237\u65B0\u3002\u64C2\u53F0\u4FEE\u70BC\u53EF\u83B7\u5F97<c=ffff00,000000,1>\u53CC\u500D\u7ECF\u9A8C</c>\u548C<c=ffff00,000000,1>\u53CC\u500D\u91D1\u94B1</c>\")"
+  - ret
+  - endif
+  - if(x2E()=1)
+  - x50(-20000,true)
+  - x09("sub3",1000)
+  - x20("100.s",true)
+  - ret
+  - endif
+  - if(x2E()=2)
+  - x20("training.s")
+  - ret
+  - endif
+  - endif
+  - if(x2E()=1)
+  - 'option[3]:'
+  - "option[0]=\"\u67E5\u770B\u8BF4\u660E\""
+  - "option[1]=\"\u662F\""
+  - "option[2]=\"\u5426\""
+  - "x2D(\"\u662F\u5426\u5F00\u59CB\u5251\u51A2\u4FEE\u70BC\uFF1F\n\u6BCF\u6B21\u4FEE\u70BC\u9700\u8981<c=ffff00,000000,1>100000\u94F6</c>\",option,true)"
+  - if(x2E()=-1)
+  - x20("training.s")
+  - ret
+  - endif
+  - if(x2E()=0)
+  - "x27(\"\u8BF4\u660E\",\"\u8FDB\u5165\u5251\u51A2<c=ffff00,000000,1>\u8FDE\u7EED\u6311\u62185\u540D\u9996\u9886</c>\uFF0C\u53EF\u80FD\u83B7\u5F97\u5404\u79CD<c=ffff00,000000,1>\u5F3A\u529B\u6B66\u5668</c>\")"
+  - ret
+  - endif
+  - if(x2E()=1)
+  - x50(-100000,true)
+  - x09("sub3",2000)
+  - x20("200.s",true)
+  - ret
+  - endif
+  - if(x2E()=2)
+  - x20("training.s")
+  - ret
+  - endif
+  - endif

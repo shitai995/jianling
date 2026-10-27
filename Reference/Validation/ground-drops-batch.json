@@ -1,0 +1,148 @@
+{
+  "utc": "2026-10-20T04:30:16.992404+00:00",
+  "scope": "Unity Editor saved ground-drop assets, source NPC physics/pickup, production death, and continuous main-story regression",
+  "passed": true,
+  "checks": 50,
+  "reports": [
+    {
+      "name": "ground-drops",
+      "passed": true,
+      "checks": 6,
+      "utc": "2026-10-20T04:23:48.1401870Z",
+      "sha256": "bce64c04c8b60a7c781f0284de865b20e41e622529f606906f23fc8d8f33c821"
+    },
+    {
+      "name": "ground-drops-live",
+      "passed": true,
+      "checks": 1,
+      "utc": "2026-10-20T04:23:56.5581800Z",
+      "sha256": "eed842f75b4512e38bbbb6c8ee16d0d9d44bbd74ae93e55088e8dcabb0903988"
+    },
+    {
+      "name": "rewards",
+      "passed": true,
+      "checks": 6,
+      "utc": "2026-10-20T04:23:48.1535640Z",
+      "sha256": "90505b82e36e4b54e5dd876b288e9d5581a11f523c47f2e97550bcb19ecd5e42"
+    },
+    {
+      "name": "baked-assets",
+      "passed": true,
+      "checks": 7,
+      "utc": "2026-10-20T04:23:48.3333980Z",
+      "sha256": "926ca421a30393dd6e9a119e96a8d5f61c32a3719f24aaf032030de0362d9532"
+    },
+    {
+      "name": "training",
+      "passed": true,
+      "checks": 5,
+      "utc": "2026-10-20T04:23:48.5369280Z",
+      "sha256": "a9412ee904d675241405e26e91832332fde5f1ac24f0ee34e576e66fc2aa5687"
+    },
+    {
+      "name": "editable-workflow",
+      "passed": true,
+      "checks": 5,
+      "utc": "2026-10-20T04:23:48.9650020Z",
+      "sha256": "d8f4a1dfdc98942b7e59e928d700b5198761937a768a6584c0037f93d427d5d0"
+    },
+    {
+      "name": "combat-behaviour",
+      "passed": true,
+      "checks": 9,
+      "utc": "2026-10-20T04:25:57.8722590Z",
+      "sha256": "06bb6c487a2a939a56051d6c1f35323c8968083a4123602311347ef1c6cb3550"
+    },
+    {
+      "name": "full-journey",
+      "passed": true,
+      "checks": 11,
+      "utc": "2026-10-20T04:29:22.3804360Z",
+      "sha256": "803cad6c58382f4c3d01e3ed63ff74394378a2b5be374a445ff3e765576e6ae6"
+    }
+  ],
+  "sources": {
+    "UnityProject/Assets/Scripts/OriginalGroundDrop.cs": "9c0d8e87c8895d9d213db8f7ddcf18e0990ba7d6dc3089fc64a4b856d3c17fb8",
+    "UnityProject/Assets/Scripts/OriginalDrops.cs": "5f6745bed8d037de44533b59eaa1fd6070238716cb2c186929f97eb1073b816f",
+    "UnityProject/Assets/Scripts/OriginalCombat.cs": "d2d70c69d227ad43d64746b03846f58b9af0c5b33546c05d6d10b396592d50fc",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "36b37f39ccdd996d64fb619c07015ceaff0ff28ebf237ee9ff21de8d789f49d5",
+    "UnityProject/Assets/Editor/OriginalAssetBaker.cs": "9708d9cea36385719223bf3d58f15bcb2753efe534467c17d6b8c5e562282b1a",
+    "UnityProject/Assets/Editor/GroundDropValidation.cs": "c33817a5f57bf4003b18f1db2db72aae192a0fd36ed9d0ab55174738f6f292d0",
+    "UnityProject/Assets/Editor/RewardValidation.cs": "7923162f6704d13b0ab6c1889385324c150875d9c9bcacf3ddcf80fd7ffb53fb",
+    "UnityProject/Assets/Editor/OpeningJourneyValidation.cs": "55bb03814cfa717453ff4c662ff8192196f61c93ab1da6025af5453548cce1dc",
+    "UnityProject/Assets/Editor/FullJourneyValidation.cs": "422cdac92d1e9ad3256784f28e7132fddbfe87b16a3c546edd974576e6ab2aca",
+    "UnityProject/Assets/Resources/OriginalAssetCatalog.asset": "923c89a540c768dbdf119050573d7b484e3039c18ccc51ff07e3195465dee4cd",
+    "UnityProject/Assets/Resources/Baked/SpriteLibrary.asset": "5cc611f36ff2fcaa129e1fdaafec573ec1106f4afa69663a1980f555924a152f",
+    "Reference/Decompiled/sources/com/dobetter/client/NPCSprite.java": "b5f36f19cb55425964fb8b6ff9be1fe7127b2399520936044da6181c9ce80dfe",
+    "Reference/Decompiled/sources/com/dobetter/client/GameCanvas.java": "d2a3f5e8085b76f65b1fb41ede376965e5b5375408998c490fb846329bcfebf4"
+  },
+  "savedPrefabs": {
+    "UnityProject/Assets/Resources/Baked/Drops/Coin.prefab": "4c528950b5f9f3d78a0b857f1b4dcce28a8a6297c7ec78fa97b60c9a20b3ed35",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/0.prefab": "d27707d6860e29542750193f9f6953f7a87b4bd49557541f17db2e73a9778376",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/1.prefab": "24388fc9706a8de801aa6490ca3c590dd63dc7bd2f5c341f092307d61fd24d61",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/10.prefab": "22fe87402bbab9c8cf0d3577f619757ba968bcaed9d7f5d610a826d633c03166",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/11.prefab": "742738111a2d532e5ef8f733abded3043a34b0afd58343c5f73b7dc550594311",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/12.prefab": "f6e4d635a9186250e50a0e48ea06918ce8834068447443d3a751767e45eb79b2",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/13.prefab": "9d7825b90e0a53df3edbf28ff6e238324d951cf6bcf90e6be701f6131e10ad4c",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/14.prefab": "ebf7a8006be100c2d0f2eeea67b55a275fff106c43580ea4409305f10f7de2f5",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/15.prefab": "7c6e63b5dd9cc1e8f9c7cea1fd4212f981b7d7ee04d52e09cd047a5a2e68ddb9",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/16.prefab": "c6eb3d7f57cb10470b3ebc6e33ce1230cc7e2c5b5cec8275f15954379f0065f7",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/17.prefab": "f79191d8d375c8d67f7d2579451d3122ff8a456e1c3c09fb3dc5b025a62b4e99",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/18.prefab": "aae587b160ecd58810a1b8335f33ef7b2f5a71718b9e6711adbd8e1c8c71403c",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/19.prefab": "1f30f3550ac919353f740faf20115bdf3bb49e6e627e4f2ffa07af8445eb2bd4",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/2.prefab": "3801e9e01f63f28f27a8119e6837bdd1f2b1cd82d72bc460dbc88bdd0f3b1088",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/20.prefab": "27ea4e43630e6ef1b5db912331b7aa27a55865a3b78cc594c03c7390564dab44",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/21.prefab": "0615b732ab4a3a742a17db43db20bcf76e762206d21f271ca7b679a12589ff47",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/22.prefab": "b21901c22db7b06cd4c4e87bfda648541aa2041816b36204e23f4c458704df41",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/23.prefab": "9d2141bbe7e2354332ce44c5efdbeb7b3dac1531173c4fac67c2ce4191bf60b6",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/3.prefab": "d342762de9eae707f2ef64d00e71afd5b1882e4cb009f5c9598484df8da8212c",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/4.prefab": "cf4a898e0051b65066ed8ec9d9778b0e44bdb03a402feb33b27c5297bb6bfa4d",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/5.prefab": "e25d6f1cb543f2351b80860057eaad2525b7040f3b8cd99d5e18562c19434a67",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/6.prefab": "e003b14c3719a98b713436e772080d4955f5392c1acf189ba76bcbfab3155d59",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/7.prefab": "7d922647b5696e552660bac37def594681378c43a69a0ee1259e897a94d306e5",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/8.prefab": "f6be2825191834aa758ef816b2560c7171b5d89b8f2bbff2ce13613542c90a61",
+    "UnityProject/Assets/Resources/Baked/Drops/Items/9.prefab": "142b889c2c5e81a704843cbdf8dbd1be7ad94c3f7444b333dfb3c0dc94245e6a",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_01.prefab": "71ae0be1f5709e2fb48a512180b55b1c5a3d9967937c94bc206cb59254ab3960",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_02.prefab": "07bc4c187af5233f93414052965497da4fc18ab90b625b9c733479efca86ad3c",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_03.prefab": "d32e3ca1be3bbf857718535b393e51b52e57da836b54ec1ac0544ecd68fa31d8",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_04.prefab": "9778d7ed4b655cb02ddd2be7994ad15a2d81bc3b8b2ab8548aba477306de63e2",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_05.prefab": "d03a84f58148fcee71835dd126a932b44c4fe724917e57a8bb0965313caea0fe",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_06.prefab": "28c2d778258e779cb304aef71cc3f0b010c43b10cba5974d456c282a83e6f1f0",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_08.prefab": "06d4110bcdedba1df8b6ac14072072214fa4582be2ea8f70a6d13733b5024ab4",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_09.prefab": "1256904fc12c7ed6e80c2da91b2d214561bbf966d36a00e640e421b69a435844",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_10.prefab": "ab93992af77d059bee4d942b7da008192430a9c64da5f5dfbf6e1c040189eacb",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_11.prefab": "61abaac7808b89fb4d4c4d69ae9d6e4eb08f82a7df0bfa442de69000a68d95f2",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_12.prefab": "402dc5bdb20cf0ab327db65f12e1f4a31ebe3a263f8892cc5c6136606c6e6a39",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_13.prefab": "9d8b2b1fd040e759ea2fc5e6042a4abb5bf86ff3a2196350581a7052566d4e3c",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_14.prefab": "552c5a9bb7fd9dbdda42ed136b857e1b4b5c7c57846ff94be04036e72c20e3db",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_15.prefab": "719d5919fd4942a4717a2bac8f64203f78c3c91b98a9f0174ce8b1a3076bf2f1",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_51.prefab": "c0fd37507b899031e4aa7b634b9e02cdf60c7843eb53089665f0cde97cf62b4c",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_52.prefab": "642dd0903228a95e6f115f640b82c1640173dd908dcfad0170056672ec4000a8",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_53.prefab": "24237ba656175f0ee458edc527407849bfe64533c2842a39c2be3656fdba1655",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_54.prefab": "bd8479a5437723042835736c39adba64ffd17e8fb0ef58a203afe24ad3c9e698",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_55.prefab": "5e17b91e5a8668b6a7c1c3614f4b6ba1e444c1ddf82a3b1efd3ebdcbb01b2734",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_56.prefab": "8d45fb12416f810152020d44e50f45f91cc9ada90476aa82a7fffa6ab015644c",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_57.prefab": "d0525df5fd448ba95a1bab96bf839bafd43cd4f4752c499b9601b363d6633e1e",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_58.prefab": "f0d18a8aff640143edcb9fb572d10a00be82db67788c6058f2ee7b8d5e8c49d0",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_60.prefab": "a191933064f2ae6e992d2f3435bb15de242ee370eed7166228b84c96e85ddb35",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_62.prefab": "c9ac75b1e647e91a38b1e1727ce929f87d972a5d3c123d565f8293215f974077",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_63.prefab": "0d8d9419cab618a55025aecdde0ee30795bd3e8aa83bec700cf9d002313d23cb",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_64.prefab": "98949c146d17378dd9830394261cf332df9d1147b503d4d6b7791a97cdf50688",
+    "UnityProject/Assets/Resources/Baked/Drops/Weapons/w_65.prefab": "ddb17f55fcbff3cfe51377264727f98c6a23bca248950fd1128bbce326519ea3"
+  },
+  "visuals": {
+    "ground-drops-game.png": "45c8a1530bc39886adcf4bea04121aa7ca75216e7395d18a7bbfac11680d9eb6",
+    "ground-drops-collected.png": "6a9238610d5ca56111a906380527205b28a3e711237e4abdcb96a36becbd76ec"
+  },
+  "consoleErrors": 0,
+  "normalWindowFocused": false,
+  "standaloneApplication": false,
+  "limits": [
+    "Drop rules match source code examples; original-device frame-by-frame visuals are not verified",
+    "Live check uses guaranteed item data, locked movement, and half-speed editor Update; not normal difficulty combat",
+    "GameView captures use fixed positions, paused time, and hidden source actor for visual inspection",
+    "Loot notification text styling/precise timing and original UI fidelity remain under review",
+    "Continuous story uses combat/position fixtures; no proof of normal difficulty full completion",
+    "Existing touch-layout asset has empty direction data and missing button texture references; current display still falls back to generic buttons, pending repair"
+  ]
+}

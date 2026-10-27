@@ -1,0 +1,32 @@
+{
+  "title": "选择框软键确认专项",
+  "date": "2026-10-20",
+  "passed": true,
+  "scope": "Unity 2022.3.62f3后台GameView、生产选择框与VM；未打包",
+  "checks": [
+    "原GameCanvas.handleKey_Choice接受OK键4与软键9；当前选择框两者均提交焦点选项",
+    "代码重编译后，六组选择专项通过，包括默认焦点、不可取消边界、说明布局、80ms滚动、五项翻页及普通确认下VM恢复",
+    "软键9在生产VM等待中提交索引1，VM仅恢复一次",
+    "后台GameView确认前显示两项选择框，软键9确认后界面关闭，LastChoice=0"
+  ],
+  "screenshots": [
+    "Reference/Validation/choice-soft-ok-before.png",
+    "Reference/Validation/choice-soft-ok-after.png"
+  ],
+  "source_locations": [
+    "Reference/Decompiled/sources/com/dobetter/client/GameCanvas.java:3225",
+    "Reference/Decompiled/sources/com/dobetter/common/Common.java:11",
+    "UnityProject/Assets/Scripts/OriginalChoices.cs:34"
+  ],
+  "limitations": [
+    "真实物理软键／触屏注入尚未做设备验收",
+    "原Android字体度量与长选项逐帧滚动仍待对照"
+  ],
+  "sha256": {
+    "UnityProject/Assets/Scripts/OriginalChoices.cs": "8250e6a9034136eaf9dc7aa00ab72489998ea978157799ac5591718af5484628",
+    "Reference/Decompiled/sources/com/dobetter/client/GameCanvas.java": "d2a3f5e8085b76f65b1fb41ede376965e5b5375408998c490fb846329bcfebf4",
+    "Reference/Decompiled/sources/com/dobetter/common/Common.java": "95edee14f9de9246737eff3638a170737e1a9a999cc197e71aa69403dd7f406a",
+    "Reference/Validation/choice-soft-ok-before.png": "76e36b9855e45af312d4123cb8a97cf79ee2d5dbe0768e46c9e95e06f9765ef6",
+    "Reference/Validation/choice-soft-ok-after.png": "f2313cc0ebf57613db27419291ae7ae6c6cf26a36c14114cdc0c4bf6c35cafb7"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-20T15:57:13.434803+00:00",
+  "passed": true,
+  "scope": "Actual Unity GameView black fill, 20px first-line reveal clip, full three-line bounds, original optional-image pixels. Glyph comparison uses the same Unity font; original-device font/raster and physical input remain unverified.",
+  "checks": [
+    {
+      "name": "zero_width_is_completely_black",
+      "passed": true
+    },
+    {
+      "name": "partial_reveal_matches_full_glyphs_inside_original_clip",
+      "passed": true,
+      "source_clip": [
+        10,
+        60,
+        20,
+        28
+      ],
+      "nonblack_bounds": [
+        96,
+        222,
+        161,
+        277
+      ]
+    },
+    {
+      "name": "three_lines_on_black_background_without_other_ui",
+      "passed": true
+    },
+    {
+      "name": "optional_original_image_position_and_pixels",
+      "passed": true,
+      "source_origin": [
+        0,
+        17
+      ],
+      "samples": 2600,
+      "maximum_rgb_difference": 0
+    }
+  ],
+  "errors": [],
+  "sha256": {
+    "Reference/Validation/black-screen-start.png": "1889b0f9df5a4fc19b4b922680af5623bbaf464c658ba2da16a95482ca21efa0",
+    "Reference/Validation/black-screen-partial.png": "f4457c8a7087a5e22489d1cfbe7dca88bd741a0e6a3523af4e7456cfc2c33272",
+    "Reference/Validation/black-screen-complete.png": "a21b5466a028576ff9ca1bfd27b6b50b7bae69a939e7d9c1b4bfafdbdc30f0e6",
+    "Reference/Validation/black-screen-page-image.png": "b17eeca507c92e8e7963e987fa281290d9f2f6fab6cbff57f4a413923fad50b5",
+    "UnityProject/Assets/Resources/Original/pic/t_00.png": "409954c643474eb4bebdddd1a0441be08a8fb216a0d123dce8879e638a2f8727"
+  }
+}

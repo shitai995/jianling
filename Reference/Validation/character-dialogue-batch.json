@@ -1,0 +1,71 @@
+{
+  "title": "人物对话专项验证",
+  "date": "2026-10-20",
+  "passed": true,
+  "environment": {
+    "unity": "2022.3.62f3",
+    "scene": "Assets/Scenes/GuJian.unity",
+    "mode": "Unity GameView only",
+    "window": "background, not focused, not resized",
+    "packaging": false
+  },
+  "checks": [
+    "原版对话框资产保存为268x90，坐标132,230，正文宽236，两行分页，字体18；迁移重复执行幂等且资源字节稳定",
+    "x27人物对白保留颜色、描边和type2阴影，两行分页；确认翻页、取消和方向键均保持模态，末页确认清理状态",
+    "空文本需一次确认关闭；末尾换行不增加额外空行",
+    "六个默认人物头像映射、空名字显式头像、无效显式路径不回退、未知说话人无头像",
+    "混合中英文按当前Unity测量和原版中文宽度预估换行，字符完整保留",
+    "生产VM对白等待阻断两页和取消，末页后只恢复一次，同帧菜单输入不泄漏",
+    "转消息和Begin新游戏清理人物对白分页、样式与等待状态",
+    "破剑演出保留对白期间暂停关系，五个80ms周期后恢复且对白仍可见",
+    "后台GameView实际截图覆盖右头像、左头像、无头像、空名字显式头像和空文本"
+  ],
+  "screenshots": [
+    {
+      "name": "right",
+      "path": "Reference/Validation/character-dialogue-right.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "name": "left",
+      "path": "Reference/Validation/character-dialogue-left.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "name": "none",
+      "path": "Reference/Validation/character-dialogue-none.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "name": "explicit",
+      "path": "Reference/Validation/character-dialogue-explicit.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "name": "empty",
+      "path": "Reference/Validation/character-dialogue-empty.png",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "limitations": [
+    "Unity当前字体度量与原Android Paint栅格尚未证明逐字形一致",
+    "真实键盘、鼠标、触屏输入与完整正常难度主线仍按清单后续验收",
+    "本批为人物对话定向验证，不替代全部Boss、音频和逐帧视觉验收"
+  ],
+  "sha256": {
+    "UnityProject/Assets/Scripts/OriginalDialogueText.cs": "182d7711240435391b1ed23e62f4a2d117ab79bceff0e029150ffc463a7a91ca",
+    "UnityProject/Assets/Scripts/OriginalCharacterDialogue.cs": "059f78d116e012c2e8dbaca4ae1711dbc8794610ae94e690d64a461b7d43d9d1",
+    "UnityProject/Assets/Scripts/OriginalUiLayout.cs": "aeac3211f5037956183c1dfb6b873bc44e52265d33c7be2b2a7998c68e57452e",
+    "UnityProject/Assets/Resources/OriginalUiLayout.asset": "7c747885b3cfba2e0aa53688823ffc171c089856aeddfaff5ef0a13056276079",
+    "Reference/Validation/character-dialogue-right.png": "ea7915ec56a07a012fd291f06f2cdaa08199fd7dc7075970d4fb9ccbb91eee87",
+    "Reference/Validation/character-dialogue-left.png": "fdda14be186d2168b2e84cfb4e451ceec83e262523c9aace444d83b134b1c7b2",
+    "Reference/Validation/character-dialogue-none.png": "87743be45828c76e3826c6dfc644fcb893dce3acff6cc695614386c0dcbd7042",
+    "Reference/Validation/character-dialogue-explicit.png": "6f4487575aed47868ec3854d2fdc9dc8587bf5887debb4f70a9cdf423958d19c",
+    "Reference/Validation/character-dialogue-empty.png": "97bb02d61a696f3869fa7a68a7f0bdad0db368c9103862713247993533c55555"
+  }
+}

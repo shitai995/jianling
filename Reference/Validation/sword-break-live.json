@@ -1,0 +1,10 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T02:02:44.1404560Z",
+    "checks": [
+        "Actual minimized background Update advances break frames while suspending actor frame, HP tail, timer and relative camera; the production VM executes an unblocked queued script independently",
+        "Actual background Update resumes timer, HP-tail and camera after the fifth cycle without external unpause",
+        "Actual menu Update continues global HP-tail ticks while the ordinary break animation advances"
+    ],
+    "error": ""
+}

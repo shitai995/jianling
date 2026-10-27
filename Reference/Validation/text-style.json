@@ -1,0 +1,89 @@
+{
+  "success": true,
+  "message": "Code executed successfully.",
+  "data": {
+    "result": {
+      "passed": true,
+      "checks": [
+        "Nested spans restore foreground, edge color and fontType; each opening resets unspecified fields to source defaults; transparent masks retain all text",
+        "Empty fields use white/default style; fontType0/2, redundant closing, open-ended tags, empty input and invalid literal tags stay defined",
+        "All806 recovered script color tags produce drawable foreground/edge spans",
+        "Actual GameView captures cover flat glyph references at all five source offsets, four-way custom-color outlines, diagonal shadows, mixed message spans and choice explanations"
+      ],
+      "shots": [
+        {
+          "name": "text-style-flat",
+          "width": 1920,
+          "height": 1080,
+          "text": "<color=#FFFFFF>描边样例AB</color>",
+          "heightText": 14.5185184
+        },
+        {
+          "name": "text-style-flat-up",
+          "width": 1920,
+          "height": 1080,
+          "text": "<color=#FFFFFF>描边样例AB</color>",
+          "heightText": 14.5185184
+        },
+        {
+          "name": "text-style-flat-down",
+          "width": 1920,
+          "height": 1080,
+          "text": "<color=#FFFFFF>描边样例AB</color>",
+          "heightText": 14.5185184
+        },
+        {
+          "name": "text-style-flat-left",
+          "width": 1920,
+          "height": 1080,
+          "text": "<color=#FFFFFF>描边样例AB</color>",
+          "heightText": 14.5185184
+        },
+        {
+          "name": "text-style-flat-right",
+          "width": 1920,
+          "height": 1080,
+          "text": "<color=#FFFFFF>描边样例AB</color>",
+          "heightText": 14.5185184
+        },
+        {
+          "name": "text-style-flat-diagonal",
+          "width": 1920,
+          "height": 1080,
+          "text": "<color=#FFFFFF>描边样例AB</color>",
+          "heightText": 14.5185184
+        },
+        {
+          "name": "text-style-outline",
+          "width": 1920,
+          "height": 1080,
+          "text": "<color=#FFFFFF>描边样例AB</color>",
+          "heightText": 14.5185184
+        },
+        {
+          "name": "text-style-shadow",
+          "width": 1920,
+          "height": 1080,
+          "text": "<color=#FFFFFF>描边样例AB</color>",
+          "heightText": 14.5185184
+        },
+        {
+          "name": "text-style-message",
+          "width": 1920,
+          "height": 1080,
+          "text": "普通<color=#FFFF00>四向描边</color> <color=#00FF00>左上阴影</color> <color=#00CCFF>无描边</color>",
+          "heightText": 14.5185184
+        },
+        {
+          "name": "text-style-choice",
+          "width": 1920,
+          "height": 1080,
+          "text": null,
+          "heightText": 0
+        }
+      ]
+    },
+    "compiler": "codedom"
+  },
+  "execute_code": "var g=UnityEngine.Object.FindObjectOfType<GuJian.GuJianGame>();\nvar f=System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic;var s=System.Reflection.BindingFlags.Static|System.Reflection.BindingFlags.NonPublic;\nSystem.Func<string,object> get=n=>g.GetType().GetField(n,f).GetValue(g);\nSystem.Action<string,object> set=(n,v)=>g.GetType().GetField(n,f).SetValue(g,v);\nSystem.Action<bool,string> req=(v,n)=>{if(!v)throw new System.Exception(n);};\nvar checks=new System.Collections.Generic.List<string>();var shots=new System.Collections.Generic.List<object>();\nSystem.Func<string,string> strip=t=>System.Text.RegularExpressions.Regex.Replace(t,\"<[^>]+>\",\"\");\nSystem.Action<string> capture=name=>{var im=(Texture2D)typeof(GuJian.Editor.HudFeedbackValidation).GetMethod(\"Render\",s).Invoke(null,null);try{System.IO.File.WriteAllBytes(\"../Reference/Validation/\"+name+\".png\",im.EncodeToPNG());shots.Add(new{name=name,width=im.width,height=im.height,text=get(\"originalMessageRichText\"),heightText=get(\"originalMessageHeight\")});}finally{UnityEngine.Object.DestroyImmediate(im);}};\ntry{\nTime.timeScale=0;g.Begin();g.Machine.Clear();\nvar runs=GuJian.OriginalTextMarkup.ToDrawRuns(\"白<c=ffff00,ff00ff,2>黄<c=00ff00>绿</c>黄</c>白\");\nreq(runs.Length==5,\"nested run count\");int[] types={1,2,1,2,1};\nfor(int i=0;i<runs.Length;i++){req(runs[i].fontType==types[i],\"nested style type\");req(strip(runs[i].foreground)==\"白黄绿黄白\"&&strip(runs[i].edge)==\"白黄绿黄白\",\"layout mask\");}\nreq(runs[1].foreground.Contains(\"#FFFF00FF>黄\")&&runs[1].edge.Contains(\"#FF00FFFF>黄\")&&runs[2].edge.Contains(\"#000000FF>绿\"),\"color/default edge\");\nchecks.Add(\"Nested spans restore foreground, edge color and fontType; each opening resets unspecified fields to source defaults; transparent masks retain all text\");\nruns=GuJian.OriginalTextMarkup.ToDrawRuns(\"</c><c=,00ccff,0>零<c=ff0000,00ff00,2>影\");\nreq(runs.Length==2&&runs[0].fontType==0&&runs[1].fontType==2&&runs[0].foreground.Contains(\"#FFFFFFFF>零\")&&runs[0].edge.Contains(\"#00CCFFFF>零\"),\"empty fields/open styles\");\nreq(GuJian.OriginalTextMarkup.ToDrawRuns(null).Length==0,\"null\");\nvar bad=GuJian.OriginalTextMarkup.ToDrawRuns(\"<c=invalid>原文\");req(bad.Length==1&&bad[0].foreground.Contains(\"<c=invalid>原文\"),\"invalid text\");\nchecks.Add(\"Empty fields use white/default style; fontType0/2, redundant closing, open-ended tags, empty input and invalid literal tags stay defined\");\nint tags=0;\nforeach(string path in System.IO.Directory.GetFiles(\"Assets/Resources/Original/Scripts\",\"*.json\",System.IO.SearchOption.AllDirectories)){\nforeach(System.Text.RegularExpressions.Match m in System.Text.RegularExpressions.Regex.Matches(System.IO.File.ReadAllText(path),\"<c=[^>]*>\")){\nvar r=GuJian.OriginalTextMarkup.ToDrawRuns(m.Value+\"字\");req(r.Length==1&&strip(r[0].foreground)==\"字\",\"source tag \"+m.Value);tags++;\n}}\nchecks.Add(\"All\"+tags+\" recovered script color tags produce drawable foreground/edge spans\");\ntypeof(GuJian.Editor.ComboValidation).GetMethod(\"Stage\",s).Invoke(null,new object[]{g,false});g.Machine.Clear();set(\"hideUi\",true);g.GetType().GetMethod(\"ResetStageInfo\",f).Invoke(g,null);\nstring text=\"描边样例AB\";\ng.Machine.Command(0x29,new object[]{\"<c=ffffff,ff00ff,0>\"+text+\"</c>\"});capture(\"text-style-flat\");\nvar style=(GUIStyle)get(\"originalMessageStyle\");\nint[,] offsets={{0,-1},{0,1},{-1,0},{1,0},{-1,-1}};\nstring[] names={\"up\",\"down\",\"left\",\"right\",\"diagonal\"};\nfor(int i=0;i<5;i++){style.contentOffset=new Vector2(offsets[i,0],offsets[i,1]);capture(\"text-style-flat-\"+names[i]);}\nstyle.contentOffset=Vector2.zero;g.PressControl(4);\ng.Machine.Command(0x29,new object[]{\"<c=ffffff,ff00ff,1>\"+text+\"</c>\"});capture(\"text-style-outline\");g.PressControl(4);\ng.Machine.Command(0x29,new object[]{\"<c=ffffff,00ccff,2>\"+text+\"</c>\"});capture(\"text-style-shadow\");g.PressControl(4);\ng.Machine.Command(0x28,new object[]{\"普通<c=ffff00,000000,1>四向描边</c> <c=00ff00,ff00ff,2>左上阴影</c> <c=00ccff,000000,0>无描边</c>\",0});capture(\"text-style-message\");g.PressControl(4);\ng.Machine.Command(0x2D,new object[]{\"普通<c=ffff00,000000,1>描边</c>\\n<c=00ff00,ff00ff,2>彩色阴影</c>\",new object[]{\"继续\",\"返回\"},false});capture(\"text-style-choice\");\nchecks.Add(\"Actual GameView captures cover flat glyph references at all five source offsets, four-way custom-color outlines, diagonal shadows, mixed message spans and choice explanations\");\nreturn new{passed=true,checks=checks,shots=shots};\n}finally{var st=(GUIStyle)get(\"originalMessageStyle\");if(st!=null)st.contentOffset=Vector2.zero;g.Begin();g.Machine.Clear();typeof(GuJian.GuJianGame).GetProperty(\"AtTitle\").SetValue(g,true,null);Time.timeScale=1;}"
+}

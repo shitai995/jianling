@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>注销</title>
+<link rel="stylesheet" href="css/g.css" type="text/css">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="YES" />
+</head>
+<body>
+
+<div>
+注销中。。。
+</div>
+
+
+
+  <script type="text/javascript" src='comm_js/util.js'></script>
+  <script type="text/javascript" src='comm_js/game-util.js'></script>
+
+<script type='text/javascript'>
+
+
+	p_util.cookie.del('w_sid');
+
+	if (typeof(window.comtencentwebnetJavaScript) != "undefined" 
+		&& typeof(window.comtencentwebnetJavaScript.IsAndriodSDK) != "undefined") { //来自andoird终端
+		window.comtencentwebnetJavaScript.SetData('sid', ''); //清空终端存储的sid	
+	}
+	else if (p_pkg.isFromIPhoneClient()) {
+		p_util.invokeIPhoneFunc("setData", "sid", "");
+		//p_util.invokeIPhoneFunc("setData", "sid", "wdw");
+	}
+
+	setTimeout(function() {
+		window.location = "browser-profile-self.html";
+	}, 100);
+	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+{
+  "utc": "2026-10-20T15:59:25.223820+00:00",
+  "passed": true,
+  "scope": "x7C durability repair and x5D black-screen narrative in Unity Editor GameView; no normal-difficulty full-game, all-Boss or original-device font claim.",
+  "counts": {
+    "x7C": 6,
+    "black_screen_logic_and_live_Update": 8,
+    "black_screen_pixels": 4,
+    "related_modal_regression": 5,
+    "x78_regression": 3
+  },
+  "final_state": {
+    "playing": true,
+    "compiling": false,
+    "title": true,
+    "timeScale": 1,
+    "scene": "Assets/Scenes/GuJian.unity",
+    "sceneDirty": false,
+    "missingSceneScripts": []
+  },
+  "evidence": {
+    "durability": "opcode-7c.json",
+    "black_screen": "black-screen.json",
+    "pixels": "black-screen-pixels.json",
+    "modal_regression": "black-screen-modal-regression.json",
+    "console": "black-screen-console-errors.json",
+    "x78_console": "black-screen-opcode-console.json"
+  },
+  "limits": [
+    "Glyph comparisons use the same Unity font, not the original Android font/raster.",
+    "Controls use production methods and background GameView rendering; physical keyboard/touch remains pending.",
+    "Existing missing-script and MCP warnings remain; loaded scene scan found no missing components, Assets GUID scan found no unresolved script GUIDs.",
+    "Normal-difficulty mainline, all-Boss battles, remaining optional routes and opcode parameter/state audit remain open."
+  ],
+  "next": [
+    "Audit x93(1) famulus reinitialization against original initData and level/experience/durability behavior.",
+    "Run remaining menu input-state matrix in Unity GameView.",
+    "Audit remaining opcode state/argument branches, audio triggers and normal-stat Boss encounters."
+  ],
+  "sha256": {
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "5a0ee6485f2e9d6ebfbd2a235211fcc3c08896447dd7e828dbb13dcff6e05ee6",
+    "UnityProject/Assets/Scripts/OriginalBlackScreen.cs": "44d61437df1c90df1c45fe1edecc2db6724aa158425684046f1f83b71bcc4128",
+    "UnityProject/Assets/Scripts/OriginalMessages.cs": "d9385db31ba1681f7ac3669c01f46acb94641d2d77baed34c87e917bd68221ea",
+    "UnityProject/Assets/Scripts/OriginalTouchControls.cs": "4b88715235179eba13316555f34962d9ef05789d2d26568f14637611d55dfda7",
+    "UnityProject/Assets/Editor/ReconstructionValidation.cs": "aa6482ebecf2b35110cc6efaeff0f951f9f245073ebcfb066268fdd8a7df40fa",
+    "UnityProject/Assets/Editor/BlackScreenValidation.cs": "f4c1edadcb6539e61df8b235b9256657c492db96f24ab315f9ecb1669cb46182",
+    "Tools/validation/check_black_screen.py": "078ed6116834b7537901df40dfe643ba22adac021bf44ef82e42963fe60c6598",
+    "Reference/Decompiled/sources/com/dobetter/client/GameCanvas.java": "d2a3f5e8085b76f65b1fb41ede376965e5b5375408998c490fb846329bcfebf4",
+    "Reference/Decompiled/sources/com/dobetter/common/Tool.java": "83e655e3f52e29ba955dcdf68c969ac21677d943945111dd81df3d11f26930f7",
+    "Reference/Decompiled/sources/com/dobetter/script/Interpreter.java": "e9f7d3d7f8ed89c706b323aa8b4add94615c045185a32c0f7557e36645a8b8a4",
+    "Reference/还原工作清单.md": "46ed4cfe32d116d0ea4948f876da47fe379432ea4e428d10720b8c2be00325c7",
+    "Reference/还原进度.md": "cf9f2ebf6db52f20accf002d944db80f010d553a7916773c86bab1d6035df440",
+    "Reference/模块差异清单.md": "4f7bad8eed412603736504b87a6696c312b7ae9a29d701506575680aae7bd5d3",
+    "Reference/Validation/opcode-7c.json": "da87aa0da66bda51524c7a9993fd8448cf3b17e697215f06c517b6052fdaa35f",
+    "Reference/Validation/black-screen.json": "f5d397229d8b15d9dea8d3c2b4cd2d8bae58c9ff4b651e048b6b78f4d8f3d0ec",
+    "Reference/Validation/black-screen-pixels.json": "825f4abdf88e59a4107c475008a03fa8a3f9b79c3e38182a15697eee0224df01",
+    "Reference/Validation/black-screen-modal-regression.json": "0e4670a3077eb29a16054ed7c4fa5bdfab7229badc8920d79e0a99f27951624a",
+    "Reference/Validation/black-screen-console-errors.json": "7a6d382e0546cdaf96d527329c3845fae0bb1e6e49ff549b5830fbb5aa051631",
+    "Reference/Validation/black-screen-opcode-console.json": "78e70b3a004195caedef89034c1ce36e0962042a7e8de3307325bfef43072bd0",
+    "Reference/Validation/black-screen-final-state.json": "b2241a844e49f4c0b2de66ee6a2362780c843b7cad202aa8d0c7ac1619046ef0",
+    "Reference/Validation/black-screen-start.png": "1889b0f9df5a4fc19b4b922680af5623bbaf464c658ba2da16a95482ca21efa0",
+    "Reference/Validation/black-screen-partial.png": "f4457c8a7087a5e22489d1cfbe7dca88bd741a0e6a3523af4e7456cfc2c33272",
+    "Reference/Validation/black-screen-complete.png": "a21b5466a028576ff9ca1bfd27b6b50b7bae69a939e7d9c1b4bfafdbdc30f0e6",
+    "Reference/Validation/black-screen-page-image.png": "b17eeca507c92e8e7963e987fa281290d9f2f6fab6cbff57f4a413923fad50b5"
+  }
+}

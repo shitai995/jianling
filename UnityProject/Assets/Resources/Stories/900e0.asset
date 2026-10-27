@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb3ab722a2214741835d675e99bc225, type: 3}
+  m_Name: 900e0
+  m_EditorClassIdentifier: 
+  scriptId: 900e0
+  displayName: 900e0
+  notes: 
+  instructions:
+  - x3A(197,2,9,true,true)
+  - x5E(9)
+  - x3D(-1,1,1)
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u59D1\u5A18\u4EEC\uFF01\u5FEB\u51FA\u6765\u63A5\u5BA2\u4E86\uFF01\uFF01\")"
+  - x3D(48,2,1)
+  - x3D(50,2,1)
+  - "x27(\"\u502D\u5BC7\",\"\u662F\u4F60\uFF1F\")"
+  - x3D(-1,0,1)
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u6211\u9001\u4F60\u4EEC\u4E0A\u8DEF\u8FD8\u4E0D\u6EE1\u610F\u4E48\uFF1F\")"
+  - x09("sub2",0)
+  - x09("event",1182)
+  - "x28(\"\u63A8\u8350\u4E3B\u89D2\u8FBE\u5230<c=ffff00>60\u7EA7</c>\uFF0C\u88C5\u5907<c=ff00ff>\u4E03\u661F+9</c>\uFF0C\u547D\u4E2D<c=ffff00>414</c>\",2400)"
+  - "x28(\"\u63A8\u8350\u5251\u7075\u8FBE\u5230<c=ffff00>38\u7EA7</c>\",2400)"
+  - if(x77()>58)
+  - if(x99()>36)
+  - ret
+  - endif
+  - endif
+  - x78(1)

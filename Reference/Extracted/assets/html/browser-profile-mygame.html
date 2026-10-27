@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>我玩过的游戏_QQ游戏</title>
+<link rel="stylesheet" href="css/g.css" type="text/css">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="YES" />
+
+
+</head>
+<body>
+
+
+
+<script type="text/javascript" src='comm_js/util.js'></script>
+<script type="text/javascript" src='comm_js/game-util.js'></script>
+<script type="text/javascript">
+p_util.loginIfNotHasSid();
+</script>
+
+  <section>
+  <nav class="main-nav" id="main-nav">
+  	<ul>
+
+      <li><a href="#" class="on">我玩过的游戏</a></li>
+          <li><a href="browser-profile-game-commend.html">好友推荐的游戏</a></li>
+    </ul>
+  </nav>
+  
+    <section class="game-category-profile-mygame">
+		<script type='text/tmpl' id='tmpl-ach-list'>
+      	<li>
+        	<figure>
+            	<a class="icon-shine" href="browser-game-item.html?sid=<#= sid #>&cpId=<#= game.cpId #>&gameId=<#= game.gameId #>"><img src="<#= p_util.getLogoUrl(game.logo) #>" alt="<#= game.name #>" width="62" height="62" /></a>
+                <figcaption>
+                	<h1><a href="browser-game-item.html?sid=<#= sid #>&cpId=<#= game.cpId #>&gameId=<#= game.gameId #>"><#= game.name #></a></h1>
+
+				<#if(!p_pkg.isFromIPhoneClient() ){#>
+                  <p>
+					<#if( p_pkg.checkApk(game.pkgName) ){#>
+				  		<a href='#' class="btn-blue" onClick="p_pkg.startGame(<#= game.cpId #>, <#= game.gameId #>,'<#= game.pkgName #>'); return false;" ><# if(p_pkg.isCurGame(game.cpId, game.gameId, game.pkgName)) { #>返回<# }else{ #>开始<# } #></a>
+					<#}else{#>
+				  		<a onClick="p_util.reportAndDownload('<#= game.downUrl#>', '<#= game.name#>', '<#= game.pkgName#>', '<#= game.logo#>');return false;" class="btn-green"><#if(game.downUrl.indexOf(g_qq_domain)<0){#>下载<#}else{#>开始<#}#></a>
+					<#}#>
+				  </p>
+				<#}#>
+
+				  <p>
+					<span class="t-gray">达成<#= (userScoreList.length>0 ? userScoreList[0].achNum : 0) #>个成就(共<#= game.achNum #>个)</span>
+				  </p>
+				  <p>
+					<span class="badge"><#= (userScoreList.length>0 ? userScoreList[0].score : 0) #>分</span>
+				  </p>
+              </figcaption>
+            </figure>
+        </li>
+	  </script>
+      <ul class="game-list">
+      </ul>
+	<section class="nodata-wrapper" style="display: none;">
+      	<p class="warn">您还未体验过游戏</p><br />
+      	<p class="tips"><a href="browser.html">快来QQ游戏挑选您感兴趣的游戏吧</a></p>
+	</section>
+      
+       <div class="get-more">
+		<a class="btn-getmore"  onclick='javascript: return false;'>查看更多</a>
+	  </div>
+  </section>
+      
+  </section>
+
+    <!-- ^^^ 公用js -->
+  <script type="text/javascript" src='comm_js/jquery-1.5.1.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingCircular.js'></script>
+  <script type="text/javascript" src='comm_js/js-tmpl-min.js'></script>
+ <script type="text/javascript" src='comm_js/pkg.js'></script>
+  <script type="text/javascript" src='comm_js/update.js'></script>
+  
+  <script type="text/javascript" src='js/profile-mygame.js'></script>
+  
+  
+  
+  
+</body>
+</html>

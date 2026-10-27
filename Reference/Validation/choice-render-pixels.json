@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-20T10:33:09.731655+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "choice-render-empty-info",
+      "passed": true,
+      "samples": 8696,
+      "maximum_difference": 1
+    },
+    {
+      "name": "choice-render-info",
+      "passed": true,
+      "samples": 26038,
+      "maximum_difference": 1
+    },
+    {
+      "name": "choice-render-last-page",
+      "passed": true,
+      "samples": 26038,
+      "maximum_difference": 1
+    },
+    {
+      "name": "choice_text_foregrounds_and_black_shadow",
+      "passed": true,
+      "pixels": {
+        "white": 969,
+        "unselected": 1017,
+        "black_shadow": 1281
+      }
+    }
+  ],
+  "errors": [],
+  "scope": "Source panel/list rectangle geometry and solid colors excluding glyph rasterization; visible text foreground and black shadow pixels. Font metrics and physical input remain pending.",
+  "inputs_sha256": {
+    "Reference/Validation/choice-render.json": "53f1a5966886c85761d2f9915c221c2e682eb1eae94a252dc8587b10275e5725",
+    "Reference/Validation/choice-render-base.png": "b83412e8927d553fbb05cf251af6e2151f72cf7c9ecb44399a94984e842ac3a0",
+    "Reference/Validation/choice-render-empty-info.png": "a622ec87ecd48e936fed0870df4f1458373b5d887f305cb311fa119055664099",
+    "Reference/Validation/choice-render-info.png": "49f1ac650f79c914284befcdd7bf01749605720b916d6370661d779ba96d4793",
+    "Reference/Validation/choice-render-last-page.png": "6615eb36c6466896838b2aa7c31cd5cfcd36d728262434df8ac30a32ca812296",
+    "UnityProject/Assets/Resources/Original/pic/u_40.png": "16319d57776d0bb22b5e14ac15d6e95c1d636c06e759800fe192c2fc0ab97252"
+  }
+}

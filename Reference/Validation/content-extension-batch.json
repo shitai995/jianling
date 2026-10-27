@@ -1,0 +1,339 @@
+{
+  "name": "地图事件、瓦片地图与内容配置扩建",
+  "utc": "2026-10-22T04:42:16.288525+00:00",
+  "passed": true,
+  "reportCount": 10,
+  "totalCheckGroups": 110,
+  "reports": [
+    {
+      "path": "Reference/Validation/content-extension-editor.json",
+      "passed": true,
+      "checkGroups": 6,
+      "utc": "2026-10-22T04:40:57.6657840Z",
+      "sha256": "a200880e33260bd559014fd24db288b4ce94ece3c78377c419cf5fc66f2a9f19",
+      "error": ""
+    },
+    {
+      "path": "Reference/Validation/content-extension-play.json",
+      "passed": true,
+      "checkGroups": 7,
+      "utc": "2026-10-22T04:39:36.9022660Z",
+      "sha256": "1199af46bcf56f51c2b5c02b2418293f5d35f63706af561b55652068049fa2ab",
+      "error": ""
+    },
+    {
+      "path": "Reference/Validation/map-event-authoring.json",
+      "passed": true,
+      "checkGroups": 12,
+      "utc": "2026-10-22T04:38:55.2230610Z",
+      "sha256": "3c5bdf38001c0abeb6f8f836eece17828767e3f2141d8576946170683f577102",
+      "error": ""
+    },
+    {
+      "path": "Reference/Validation/item-modules.json",
+      "passed": true,
+      "checkGroups": 9,
+      "utc": "2026-10-22T04:40:01.5421890Z",
+      "sha256": "192d6300d8f5a6b602c2ed304f3eb56b21be47d2acc0a355ab4afb74113c42f6",
+      "error": ""
+    },
+    {
+      "path": "Reference/Validation/equipment-modules.json",
+      "passed": true,
+      "checkGroups": 8,
+      "utc": "2026-10-22T04:40:01.5593560Z",
+      "sha256": "5d765040acfe0e701d0329d7f80111d38ea0be2645418c5d9602edb4d529a981",
+      "error": ""
+    },
+    {
+      "path": "Reference/Validation/attack-skills.json",
+      "passed": true,
+      "checkGroups": 13,
+      "utc": "2026-10-22T04:34:32.6310350Z",
+      "sha256": "983d82285e9e17beb07e2ee2b452d3e6a6db64d8fc767d05ea680ddda46da4e7",
+      "error": ""
+    },
+    {
+      "path": "Reference/Validation/support-skills.json",
+      "passed": true,
+      "checkGroups": 9,
+      "utc": "2026-10-22T04:34:33.0531500Z",
+      "sha256": "d9153b267539a192ec7b210bb2cd7c37d7ab83e0b358a6527d5f676575e7a089",
+      "error": ""
+    },
+    {
+      "path": "Reference/Validation/items-shop.json",
+      "passed": true,
+      "checkGroups": 11,
+      "utc": "2026-10-22T04:34:37.0409130Z",
+      "sha256": "3fc557c93329e4f171ca86983d231a1fd00adb6a9fd772bc590568553b1378d8",
+      "error": ""
+    },
+    {
+      "path": "Reference/Validation/boss-families.json",
+      "passed": true,
+      "checkGroups": 25,
+      "utc": "2026-10-22T04:34:36.5926750Z",
+      "sha256": "33d1acb400e4fade549a7db0be87cfe7eaf67382aaefdc26b3ce33a40d128396",
+      "error": ""
+    },
+    {
+      "path": "Reference/Validation/projectiles.json",
+      "passed": true,
+      "checkGroups": 10,
+      "utc": "2026-10-22T04:34:39.1348010Z",
+      "sha256": "c883f45417cbc95c368ca092dffede4bb134c35b04c7b9cfdfa5dcb05af0af87",
+      "error": ""
+    }
+  ],
+  "editorObservation": {
+    "unity": "2022.3.62f3",
+    "playing": false,
+    "compiling": false,
+    "focused": false,
+    "sceneDirty": false,
+    "consoleErrors": 0,
+    "productionConfigIssues": 0,
+    "mapCount": 52,
+    "stageCount": 209
+  },
+  "cleanup": {
+    "temporaryPathsRemaining": [],
+    "databaseAndCatalogRestoredByteForByte": true,
+    "cleanupVerificationWarnings": 0,
+    "cleanupVerificationErrors": 0,
+    "note": "先删除阶段与地图等依赖方，再删除瓦片和数据库测试子资产；已复验，先前测试清理的嵌套Prefab导入警告没有再次产生。"
+  },
+  "playerData": [
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-save.json",
+      "baselineSha256": "0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5",
+      "currentSha256": "0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5",
+      "unchangedSincePriorBatch": true
+    },
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-sms-global.json",
+      "baselineSha256": "a4bf0cc846b6fb6f345f373113aa344b688dd8f128c3587183ca8e098d4813da",
+      "currentSha256": "a4bf0cc846b6fb6f345f373113aa344b688dd8f128c3587183ca8e098d4813da",
+      "unchangedSincePriorBatch": true
+    },
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-sms-global.json.bak",
+      "baselineSha256": "2901ee85c18af000c5bac49d5a98b86b250e114cbcaf11b2c6d6e3c41d3e140c",
+      "currentSha256": "2901ee85c18af000c5bac49d5a98b86b250e114cbcaf11b2c6d6e3c41d3e140c",
+      "unchangedSincePriorBatch": true
+    }
+  ],
+  "mapEventAudit": {
+    "stages": 209,
+    "maps": 42,
+    "exits": 1684,
+    "entries": 424,
+    "interactions": 51,
+    "deaths": 23,
+    "specials": 3,
+    "otherCallbacks": 0,
+    "missingReferences": [
+      {
+        "stage": "1401",
+        "target": "1401_1400.s",
+        "line": 8
+      },
+      {
+        "stage": "1401",
+        "target": "1401_1400.s",
+        "line": 9
+      },
+      {
+        "stage": "1401",
+        "target": "1401_1400.s",
+        "line": 10
+      },
+      {
+        "stage": "1401",
+        "target": "1401_1400.s",
+        "line": 11
+      },
+      {
+        "stage": "1436",
+        "target": "1436_0.s",
+        "line": 8
+      },
+      {
+        "stage": "1436",
+        "target": "1436_0.s",
+        "line": 9
+      },
+      {
+        "stage": "1436",
+        "target": "1436_0.s",
+        "line": 10
+      },
+      {
+        "stage": "1436",
+        "target": "1436_0.s",
+        "line": 11
+      }
+    ]
+  },
+  "sourceSnapshotSha256": {
+    "UnityProject/Assets/Scripts/CombatAttributeCalculator.cs": "8abaa32f0de0a9f748a9248b3438c81d90d9c94d7d60861a36c29fb55aad4cb8",
+    "UnityProject/Assets/Scripts/CombatDamageCalculator.cs": "4b06fcb40969e374a7e13a5b34b489caedaca5753562d533dbacd27cd6d2431b",
+    "UnityProject/Assets/Scripts/EditableTilemap.cs": "dad93c0fe523bfc8ba58fc2a8e05b42c0725c16cf14193f882342597fc2f8078",
+    "UnityProject/Assets/Scripts/EquipmentInventory.cs": "b3a3353780bdd6b13e0fa5c62f514b1c994fdb008324cca200661ed0794aacc2",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "3205f0bc817ec7ff7eb3166da38b1579a79448be7cf0f6923cbf23e9407f7160",
+    "UnityProject/Assets/Scripts/ItemInventory.cs": "c7197fe7071217157713cdf69deff887e89543fe993fee6ea1d0148435466d40",
+    "UnityProject/Assets/Scripts/ItemRules.cs": "a0787f5c55d484af1ef214e4f11affe379a7e4276fdfceda46030d36662f1b69",
+    "UnityProject/Assets/Scripts/ItemTrading.cs": "2994c74ac7d88b2dff72b3e901895e381a7d32db7d21ec409999d1f0060ac645",
+    "UnityProject/Assets/Scripts/OriginalActor.cs": "7d1f2700426c4ac58b2cf71f4dcd77b339c6ce0bc6fce21c6b9e6cc8041aa531",
+    "UnityProject/Assets/Scripts/OriginalAssetCatalog.cs": "faac3110d60537e0314c8025002ff63caa7dabd9f1e7575ae54b8122a6697bdb",
+    "UnityProject/Assets/Scripts/OriginalAtlasEquipmentPanels.cs": "cd53bd07967befb246d7c74a241027ebae10b2d36606ba7506459fa45d0dd74d",
+    "UnityProject/Assets/Scripts/OriginalAtlasMenus.cs": "9ad6616cee2703008681c2833bd73aef3b92821adbdc831898f607a922cddb1f",
+    "UnityProject/Assets/Scripts/OriginalBlackScreen.cs": "44d61437df1c90df1c45fe1edecc2db6724aa158425684046f1f83b71bcc4128",
+    "UnityProject/Assets/Scripts/OriginalCameraEffects.cs": "fd3352c1678c2b8dcc2685b8322ee3210e3270a00defec8ca1a9f8fd59533eb8",
+    "UnityProject/Assets/Scripts/OriginalCharacterDialogue.cs": "059f78d116e012c2e8dbaca4ae1711dbc8794610ae94e690d64a461b7d43d9d1",
+    "UnityProject/Assets/Scripts/OriginalChoices.cs": "8250e6a9034136eaf9dc7aa00ab72489998ea978157799ac5591718af5484628",
+    "UnityProject/Assets/Scripts/OriginalCombat.cs": "b8c8e3d9f02ae4f6b86d69f8cf5d1998739ec59c579b8545ffbee77e4b5d97eb",
+    "UnityProject/Assets/Scripts/OriginalCombatFeedback.cs": "4760eb945d4b96688a7f81656feb7ae5921595a7930d4241b513f006b566f6a8",
+    "UnityProject/Assets/Scripts/OriginalCombo.cs": "185621d629836c2643040b067d8072d0e1c5bba56e46b97e3fd994204efe0194",
+    "UnityProject/Assets/Scripts/OriginalCritical.cs": "4060472a5c4fe42a727b6c789540f6b271cf1e7d296a442c6d2a560695dae4c5",
+    "UnityProject/Assets/Scripts/OriginalData.cs": "530be1b3a0f240172bae8433a1e417477b1abcc8d5f0bf810abccdfa0d86d98c",
+    "UnityProject/Assets/Scripts/OriginalDatabase.cs": "870defd08136f5e7520c6c6e280d4b5a2face8f0880b8dc1fc278d50f7ca7c8b",
+    "UnityProject/Assets/Scripts/OriginalDialogueText.cs": "182d7711240435391b1ed23e62f4a2d117ab79bceff0e029150ffc463a7a91ca",
+    "UnityProject/Assets/Scripts/OriginalDrops.cs": "bb42347ba70da235c194e12c14bd1663121d2b33784eea2a0c6bf54449c807b3",
+    "UnityProject/Assets/Scripts/OriginalEnemyBehaviour.cs": "07dbc4ccddeb4b4d42cedff1f593a1c196efb074be1ab535f43d69d8a08d6133",
+    "UnityProject/Assets/Scripts/OriginalEquipment.cs": "cef6fd31a813db206b3b0118335a721adc2dc61ce28bb6cb1a79b3d2bc6ae8c0",
+    "UnityProject/Assets/Scripts/OriginalFeedback.cs": "1c0232253d9ac826867b179842d707369e7e1938703d2eb64702e00f62ad9f6d",
+    "UnityProject/Assets/Scripts/OriginalGameMenus.cs": "85580094bf7f6b9663fed423e0491e6c9c863d74f26c907edef915eb65a798f7",
+    "UnityProject/Assets/Scripts/OriginalGroundDrop.cs": "51e922bbbb3505f08cfdb2593cfb1c8f8d779b6c449f42d44fb836b195938a70",
+    "UnityProject/Assets/Scripts/OriginalGui.cs": "2915627db1518ef31a286e61625c3215d726f940424080d353ca6e92cc9fc7cf",
+    "UnityProject/Assets/Scripts/OriginalHudFeedback.cs": "6c163cc42668300a3c53b02e7c1f5309cb2301711f500a5860a571347921c0eb",
+    "UnityProject/Assets/Scripts/OriginalItems.cs": "a56896dad015cb01d1ad76a8245a45180e8f9d7128d1f7075abc3398f2275a0a",
+    "UnityProject/Assets/Scripts/OriginalMessages.cs": "a852287bb81ac64a14312a782b8dc3802abdc531ffa7809bf5ff26c460eaaa93",
+    "UnityProject/Assets/Scripts/OriginalMiniMap.cs": "de1a32c611b19e7844bd406c9c2b42a8765bd5e0e86ac03b9a557c4ed7007847",
+    "UnityProject/Assets/Scripts/OriginalMiniMapLayout.cs": "0afb3f1ec7d3b575d32184f182550938ee8238d28736cc99053920ace1f6ad5c",
+    "UnityProject/Assets/Scripts/OriginalMissions.cs": "50b92aec5d47920e6806bafffbcdb1bc5be4beb813cccd5bf4eca8a9f991daaf",
+    "UnityProject/Assets/Scripts/OriginalPlayerControl.cs": "3b7fca089452ca7d96b051ff76339e0e46d9942169fad2b661fa1d4c339d1476",
+    "UnityProject/Assets/Scripts/OriginalPlayerValidation.cs": "f073dc7d4c9b7f7c366699f86879f3c3e3451dda3ca5ff86c9d7908dfbb6617d",
+    "UnityProject/Assets/Scripts/OriginalProjectiles.cs": "4a65d9d279d2abb5bce8b882e72a3d0e401a6d46f18f53d381971fac3ac59666",
+    "UnityProject/Assets/Scripts/OriginalReinforcement.cs": "9091f013277fef0d0cf622a3d710d7119cf375b48d0d84a60248da4bc20dabf2",
+    "UnityProject/Assets/Scripts/OriginalRewardMessages.cs": "2143a682530ceddd5e5883a0ea14fea2c51dd467be182b79f5c627ccd71c7296",
+    "UnityProject/Assets/Scripts/OriginalScenePresentation.cs": "9e2fd960fe8c7e628ea237a25e95f362f16070637eb6e88e8dc5d9744b1c34b5",
+    "UnityProject/Assets/Scripts/OriginalScriptMachine.cs": "2e60d9c9c86e2fa623bc1e1983c189ee7f8d3d496344751a6077a3de55414abd",
+    "UnityProject/Assets/Scripts/OriginalShop.cs": "45ac43922d09890d642a84bbdd7f45eb8dc14d5da8d88476dabbffaa0d5b0eb8",
+    "UnityProject/Assets/Scripts/OriginalSkillPreview.cs": "0cac58102354f8a9295e2489fab84896d78b69f8d97b4a56a4b98319b57ebf30",
+    "UnityProject/Assets/Scripts/OriginalSpirit.cs": "1439b28d95f04ea3da93b7d23e76d4df5dc1cb4c220d61943f260f5ac6f9f7d2",
+    "UnityProject/Assets/Scripts/OriginalSpriteLibrary.cs": "3cefc3dbf49e88a8bee53b4e22b12bcb6678fec37ae8dfd3c29dcfd416dcf937",
+    "UnityProject/Assets/Scripts/OriginalStageInfo.cs": "0903c82d398d51104e9730f8c3cadab2803b9f1a5f3a96019d5484e69450067a",
+    "UnityProject/Assets/Scripts/OriginalStageLayout.cs": "1cc13d6067da4dd548fb98d0f9c63796fcf3b9b7b19c485e4d5fe15b6f7d15fb",
+    "UnityProject/Assets/Scripts/OriginalSupportSkills.cs": "bba120b77dd5e1b84a099b1ac0a595d59fc157e957db5d302164068186bd6f4a",
+    "UnityProject/Assets/Scripts/OriginalSwordBreak.cs": "7f7bbd3e09850fef819974ac269eba2031f392fa50a994041f6a65fff650bdbb",
+    "UnityProject/Assets/Scripts/OriginalSystemMenus.cs": "f1f0cc6b4fb87422e7e5543b96d7d3947702d923e9f39a882d4492418a5e1cf2",
+    "UnityProject/Assets/Scripts/OriginalTextMarkup.cs": "0574490d681f6b6a8707bef9c0a3d1015c42f4feb771968fe9da1ef04e993e2b",
+    "UnityProject/Assets/Scripts/OriginalTouchControls.cs": "3d30471fc1129764c1eca1a6ae48f4af7cdd4c0c8f9b70f9b5928e241959ec75",
+    "UnityProject/Assets/Scripts/OriginalTouchLayout.cs": "966d04c4e500400f043f095cd4f08ca98ab4f9f1a6923b57a7dbab9b6436dda2",
+    "UnityProject/Assets/Scripts/OriginalUiLayout.cs": "068121c25f6e76e4981a9a90472534641783a56512d69854b91d02d09a0897d5",
+    "UnityProject/Assets/Scripts/OriginalUiPresentation.cs": "c5409ad3e75d83d8b995d30ac541fcfb4f8f8f7c26ff8bdc02d9232feb7c0444",
+    "UnityProject/Assets/Scripts/OriginalVisuals.cs": "b7d26b373e321979f547090b4406940c1f332f0dfc967455d6782c03aa6534da",
+    "UnityProject/Assets/Scripts/OriginalWeaponPreview.cs": "5f10a1d51f82162e57ecc49b2e06593ac3eaa898df9574e5550b8ff94fac79b5",
+    "UnityProject/Assets/Scripts/OriginalWorldFeedback.cs": "904c9dace967c6a2e19afa713c52ae6ead4bf9d88b07030e822ff65457deee74",
+    "UnityProject/Assets/Scripts/StorySequence.cs": "2ca160f0f496da70e651f29d0e29589e87ab5d86dcdb968a872948c9d4d8abb9",
+    "UnityProject/Assets/Scripts/WeaponDurability.cs": "fa88fd9ff3eb14ea92f5693d98820ce7a9b0ef58f3ed9432602dc63e95132bcd",
+    "UnityProject/Assets/Editor/AreaTravelValidation.cs": "072e5521a789c45795e19fcb250182952e090cc3871ce52f4136d91ce5270d22",
+    "UnityProject/Assets/Editor/AttackSkillValidation.cs": "f0db1c09dde023ea7aa8e9c22bad580d98cbac50cd4d3539d391355e35f2604c",
+    "UnityProject/Assets/Editor/AttributeModuleValidation.cs": "6f201a012110780c1e05f9cf16803c3e9f9a7765156455a2b95752ef12bfef66",
+    "UnityProject/Assets/Editor/BakedAssetValidation.cs": "425b8dcdc59a9485d50ade21bd6b2a1c73e3376025995651cadc647d44ab4b3c",
+    "UnityProject/Assets/Editor/BlackScreenValidation.cs": "f4c1edadcb6539e61df8b235b9256657c492db96f24ab315f9ecb1669cb46182",
+    "UnityProject/Assets/Editor/BossFamilyValidation.cs": "fdca7976400d6d2fa46554893cb71b390580d3d96feff2076aa711d0a7c53bfd",
+    "UnityProject/Assets/Editor/ChapterValidation.cs": "9603eef834fa94952fb6997f5d5f579f488280f5aa53b1bf0a742d4a8dd35249",
+    "UnityProject/Assets/Editor/CombatBehaviourValidation.cs": "1af8bc8a6197c26d94b3e2f98f252855d78017ade7d7229e56be85fc770dddef",
+    "UnityProject/Assets/Editor/CombatFeedbackValidation.cs": "608b81d1ac6794b1abb596d77049743267256c08d00f98887b714e71e2b40b85",
+    "UnityProject/Assets/Editor/ComboValidation.cs": "bcc82bba2fc6292f0d69109d3d5b55eade0c191268e6f464382b4d22f83e5edf",
+    "UnityProject/Assets/Editor/ConnectLocalBridge.cs": "ff67d8f6d43534ad3ddff2ba4a4911537c78081fd9bc43daabed68f3525bd0a8",
+    "UnityProject/Assets/Editor/ContentConfiguration.cs": "615878dd97a10f3c342735c16b74d22a99eb16b914f9d957b602211091871644",
+    "UnityProject/Assets/Editor/ContentExtensionValidation.cs": "0dfa955c474e290ea090d72f134f0990f448e25272ee858f13853a40655a18ad",
+    "UnityProject/Assets/Editor/ContentWorkbench.cs": "7302fd1bf19220cee7555bc468f455408e46c8eed0560b9947ba018a9de04d4f",
+    "UnityProject/Assets/Editor/ContentWorkflowValidation.cs": "ff4deae01761458219cde2b8fe7e0357095402ba9fa69fe688ece8c9510e59d2",
+    "UnityProject/Assets/Editor/ControlAssetSetup.cs": "5dbebcb95e684497a208d4040c27afefbe6d0276b1672563bbdbec332e8b1a55",
+    "UnityProject/Assets/Editor/ControlPresentationValidation.cs": "c7545dc86db8691acd55640dc6414bf37f1b04529505bb54c57cab684a55bcfa",
+    "UnityProject/Assets/Editor/CriticalHitFeedbackValidation.cs": "0ad9173a2c268005b5856d98bb3aade61865b4c2c646519973e33034757e7134",
+    "UnityProject/Assets/Editor/CriticalHitLiveValidation.cs": "aaa78ee6d5b3b05a10c8942c6636744b8607a3918b649f214221d1db457db5e6",
+    "UnityProject/Assets/Editor/DamageModuleValidation.cs": "cba440c77dfb820464b49219c38cc8f3ac41f53be1681ee831b3a3f7d57f2f02",
+    "UnityProject/Assets/Editor/DurabilityModuleValidation.cs": "f5e4faa4bcf42fb1ff422795c3d3aac2d710eabe79d063e7cb2be2b99060f090",
+    "UnityProject/Assets/Editor/EditableWorkflowValidation.cs": "9aad34280b9ac4037a9f6ec296999646885649f305bf21771d9df2238957c139",
+    "UnityProject/Assets/Editor/EditorReloadValidation.cs": "e752106e12579aa117a04167a23e69954cad8eb43415d23ad731d53df5eddb49",
+    "UnityProject/Assets/Editor/EnemyBackEffectValidation.cs": "7c50f1d7e7e0b6cb65679029ff460adad29e7fdeca138f46354c7e88c45b36c6",
+    "UnityProject/Assets/Editor/EnemyHealthValidation.cs": "fb1e92b723d29e94fa91569db1fc88be9e9ea960196e2585677cf906b60f4b21",
+    "UnityProject/Assets/Editor/EquipmentModuleValidation.cs": "c5bacf0695b27fb9c3747d21e5c079b2c4d2e17b29993f5b9eda15a7c9f24f1a",
+    "UnityProject/Assets/Editor/FullJourneyValidation.cs": "422cdac92d1e9ad3256784f28e7132fddbfe87b16a3c546edd974576e6ab2aca",
+    "UnityProject/Assets/Editor/GroundDropValidation.cs": "c33817a5f57bf4003b18f1db2db72aae192a0fd36ed9d0ab55174738f6f292d0",
+    "UnityProject/Assets/Editor/HudFeedbackValidation.cs": "702f28da158495aa1138dfae7cf5aad27f305239e2d5f80ed9eaed7dea2b3782",
+    "UnityProject/Assets/Editor/ItemModuleValidation.cs": "f79edfc0b05d7aa59bf53e4c4d8f7ed36f57241bc9455b9c83343081a3dd801b",
+    "UnityProject/Assets/Editor/ItemShopValidation.cs": "d947609befd3ab08a8ce9524f0dcd719b40b80256c9c10a4423d2ed94c061eca",
+    "UnityProject/Assets/Editor/LiveCombatValidation.cs": "2d433d9788cb16f0ff8bdd06ad131fb48bea50975f9ab4752403d5ba0996a474",
+    "UnityProject/Assets/Editor/MapCollisionEditor.cs": "1e429fe655d09b0c10432e107895304f15affb7a47764fdfb16bb795c13ac5cd",
+    "UnityProject/Assets/Editor/MapEventCatalog.cs": "4fd73763a38c08e76eb1d4b53653d0147a46280173c22ef20de089c21f635236",
+    "UnityProject/Assets/Editor/MapEventSetup.cs": "b33b886cb4e86e655f7a863b511fa78db82c5bf70db153da347943f90251b582",
+    "UnityProject/Assets/Editor/MapEventValidation.cs": "7248585375e744af73b3bad8f3689fefd21ee19cef15fbad5923702d06aa1b22",
+    "UnityProject/Assets/Editor/MaximumPowerValidation.cs": "a39c5a87e0bac94916b41dba91d15d54b0b769416d2f4258809623a3d2c6ebde",
+    "UnityProject/Assets/Editor/MenuStateValidation.cs": "e749ea73bc9ac214f1b7ac7af27a948849023928c5a7c1e564a9cc6068c14f80",
+    "UnityProject/Assets/Editor/MissionValidation.cs": "a7c1a74a949e21b4ed36c3cabd61de3d964458101fc52a675188be3439197506",
+    "UnityProject/Assets/Editor/OpeningJourneyValidation.cs": "55bb03814cfa717453ff4c662ff8192196f61c93ab1da6025af5453548cce1dc",
+    "UnityProject/Assets/Editor/OriginalAssetBaker.cs": "4fc9c13904c163ec63e7218dd5807c9de3bc9087ebc513f223b96fed10bd53fd",
+    "UnityProject/Assets/Editor/ProgressionValidation.cs": "53d19aa7608eddbe064011d57c04e10c004ee5ab28bbb23465f7988ecfbf6aea",
+    "UnityProject/Assets/Editor/ProjectileValidation.cs": "ca41c5bbf4f7a3e9f308fdc24b63b136c1119f1e553c9c4f49739604c009c4b1",
+    "UnityProject/Assets/Editor/ReconstructionTools.cs": "9876ac2a5470756b652f768b69b6cb61d1a61c0bc9c1bece02813542331f28e8",
+    "UnityProject/Assets/Editor/ReconstructionValidation.cs": "7a038807e688bcb235a90f945552dbec5d58048025d369678e35b559290f6bcf",
+    "UnityProject/Assets/Editor/RemoveSpiritValidation.cs": "1d8603e9a6fd653226ac5b2c64d6c54282093c1ac8c2de9303b7f9a9bb571d16",
+    "UnityProject/Assets/Editor/RewardValidation.cs": "8a12bbd9cb9c4d0a153709e01140138e8ce132d12fdb347ab6c5fc9d637fef74",
+    "UnityProject/Assets/Editor/RoleSkillPreviewValidation.cs": "eaed25179de6c6051cfce410719b0c33c10f77ba7d221236fc87e206f062adaa",
+    "UnityProject/Assets/Editor/ScriptParameterValidation.cs": "08b570c9bb29693feb8b3745b6e3e0267bf2ee4e66e1a8231170eac737f82254",
+    "UnityProject/Assets/Editor/SpiritAbsorptionValidation.cs": "184842a88f90e2049b5b848d5ba9241a1c1b479b27142fa98287b4793124745c",
+    "UnityProject/Assets/Editor/SpiritLevelValidation.cs": "a4cc0a921762dcdb8f10cbf613b8d77564df903c6a33c6d613556404774af1ed",
+    "UnityProject/Assets/Editor/SpiritMenuValidation.cs": "9a7ce43a05d1860f15c269143031276dc1be6084dcd7765f911e90bd37dc2e2a",
+    "UnityProject/Assets/Editor/SpiritValidation.cs": "0cb07e456fe8260903f30d496b6dce98a3d9e218484aacce080317560c25bb14",
+    "UnityProject/Assets/Editor/StageCoverageValidation.cs": "f050802077ed111853637faf6c59e4f3de57b22382c538014159ae6ad12826be",
+    "UnityProject/Assets/Editor/StageInfoValidation.cs": "dd167281a5931a5e4a99f6c1d4f9b0faccb083862e14884fa2f5cd09857a6464",
+    "UnityProject/Assets/Editor/StoryDebugger.cs": "8d1748d17ee0523cba2138d7dbb131272df2a9501063a413ffadf56d70aac844",
+    "UnityProject/Assets/Editor/SupportSkillValidation.cs": "52c1a63304f9c651867b8415a82f5f156a807812008bc26147b61cf5e08bbf2d",
+    "UnityProject/Assets/Editor/SwordBreakValidation.cs": "1661702cf11ac0a5dd4018bf205fd8fbd341205edd0b3e72debf9bc0d44797ba",
+    "UnityProject/Assets/Editor/SystemMenuValidation.cs": "ac30a1d37ded8fde4b8bbbc8bfe00e2db067904f1d1785b96e4491991a32a149",
+    "UnityProject/Assets/Editor/TilemapAuthoring.cs": "aa7984a69ca14650b4212d8a1194f31e702835944bb69cd00121b9b0d72b5313",
+    "UnityProject/Assets/Editor/TouchMapValidation.cs": "116f135e4f0bd996af583d33cc549351bd6a49548d4f0c05780564280ee8090e",
+    "UnityProject/Assets/Editor/TrainingValidation.cs": "8d03080f6270f3d96bc2fe1c2d71bd2035e4d23948cf5736a6b955b2832bb3a3",
+    "UnityProject/Assets/Editor/UiAssetSetup.cs": "ed01f3c9778573d9097182df47561304e519b196f52083b7ffd041e0c6f987b3",
+    "UnityProject/Assets/Editor/WeaponPreviewValidation.cs": "1afd72ebc5d46d2ffaa44a1431796d186981bd87ae214a64e69bb425fb3dad7d",
+    "UnityProject/Assets/Editor/WeaponVisibilityValidation.cs": "220efc1a33239f2997b19efed8b96b6e9ead109896dcf904d68a31520ebdd088",
+    "UnityProject/Assets/Editor/WorldPresentationSetup.cs": "7ddbd94dd4c09796d3ec8e18d3331a4cd01f8e04e6a9fd11101134af8ee1a082",
+    "UnityProject/Assets/Editor/WorldPresentationValidation.cs": "4a68cc948ca75db02834599fb2e0eb9643f23e8cf54d1207dcf12c0c3f99224a"
+  },
+  "productionAssetsSha256": {
+    "UnityProject/Assets/Resources/OriginalDatabase.asset": "37dae2b2d0be8414890d9f970b79d23a6f9050d79171c6b0ec5ae8e434cf70bc",
+    "UnityProject/Assets/Resources/OriginalAssetCatalog.asset": "f37f79b69223c10a90e028b99077d8bcf52b479615606ea87280434ff49bdd06",
+    "UnityProject/Assets/Editor/MapEventCatalog.asset": "5634ed67fe2af7a53d02bf92de45d7d6539230059fe21d4fc28a979ca3824ebb",
+    "UnityProject/Assets/Scenes/GuJian.unity": "f718f22afa70bb23626f2ba1e5cf60657a68529a0f92ec80e4448fc90770b6ee"
+  },
+  "documentationSha256": {
+    "Reference/内容扩建与配置指南.md": "e8a1242cd80d37821d8f7cd5db3023618d4a427ab0e82b9967b3d5c0ff30b7cf",
+    "Reference/还原工作清单.md": "6180b66b76b1ef779a67c0fe0aa73804146a95f141fee75038614efbba1bfc53",
+    "Reference/还原进度.md": "1b44486210bea95d143e41902ec5eb64a28a87807dfaa716716748af29cafc1b",
+    "Reference/工程优化与架构评估.md": "f35ddc7f11bdfebbc1433bca7a4d54e2ee13eb3e48cf2c0283b00e3734aad09b",
+    "Reference/开发使用说明.md": "d16545ef7b3290d045e6bff24567c8bf4dd0c624b18bebb2b02ab5077183bf9d"
+  },
+  "scope": [
+    "基线与扩展表合并查找、引用校验、缺失项导入保护",
+    "新道具效果与商店配置、新武器强化与技能池、新技能与新敌人复用原行为",
+    "新四层Tilemap持久化、碰撞发布、行列扩建、剧情与阶段创建",
+    "地图事件解析、定位、单行写回、陈旧选择保护和Undo",
+    "原攻击、辅助、Boss、弹体、商店及库存装备模块定向回归"
+  ],
+  "boundaries": [
+    "本批未打包、未重跑完整主线、未进行实体输入或全画面验收",
+    "原地图保留三层图像；新地图使用Tilemap",
+    "全新战斗机制与AI仍需代码；新图块、美术与原创动作需要制作资源",
+    "自动用药仍沿用原ID选药策略；新区域小地图及旅行目的地另行配置",
+    "原包8条出口指向2份缺失脚本；未编造补齐",
+    "技能资源/冷却、HP/死亡、金钱、存档协调与部分UI仍有主控耦合",
+    "历史95%还原工作量估算保持，不用本批专项通过率代替完整游戏验收"
+  ]
+}

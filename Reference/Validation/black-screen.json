@@ -1,0 +1,15 @@
+{
+    "passed": true,
+    "utc": "2026-10-20T15:53:59.6231770Z",
+    "checks": [
+        "Original 100e0 x5D runs on production VM, keeps three original lines, starts at y60 and reveals 2px per 80ms with partial/paused/long deltas",
+        "Back is consumed; OK skips intermediate lines, keeps the final line, and all text remains for 20 cycles before close on cycle21; production VM resumes exactly once",
+        "All six x5D parameters: y73, two-line pages, original t_00 image at y17, page terminal confirmation and image cleanup",
+        "No-input natural reveal reaches the measured width boundary, then automatically closes and releases script wait",
+        "isReturn=true returns to scene while preserving the original script pause; a replacement modal clears the old wait and resumes after confirmation",
+        "Mixed CJK/ASCII wraps at the original >=513px rule without dropping any characters",
+        "Begin clears reveal, image and script-pause state without saving test data",
+        "Real Unity Update naturally completes the original 100e0 text at timeScale16; observed 259 editor callbacks, scene actor frame/position and timer stay fixed while visible, then production VM continues exactly once"
+    ],
+    "error": ""
+}

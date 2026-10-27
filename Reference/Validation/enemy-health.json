@@ -1,0 +1,15 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T06:56:47.0317540Z",
+    "checks": [
+        "All twenty integer widths are persistent 21x5 sprites; every saved fighter feedback prefab already contains its health Renderer",
+        "Every action in the real normal-enemy animation obeys source state1: only action2 and actions4..13 show the bar; idle, death, defense, attacks and cinematics hide it",
+        "Actual presentation selects all twenty widths and floors 999/1000 to18 and 1/1000 to0, guards a zero maximum, and creates no runtime node/component/texture",
+        "Bar stays unmirrored at source foot-centered x and edgeRect.y-8, follows actor offsets and frozen poses, remains under miss/numbers, and respects hidden actor/minimap while hide-UI retains it",
+        "Real type11 definition also shows its hurt bar; real Boss232 type10 and the player never show this small bar",
+        "Production attack rectangles deal real damage and enter hurt action2, reveal the bar, then the real action-finished callback returns to idle and hides it",
+        "A real damaging hit that leaves hold intact does not enter hurt state and does not show the small bar",
+        "Starting a new game clears the previous enemy health display and uses the saved feedback prefab"
+    ],
+    "error": ""
+}

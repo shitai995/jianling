@@ -1,0 +1,16 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T07:22:35.4521350Z",
+    "checks": [
+        "Actual UseSkill/attack-box hits: armor resists, normal hurt recovers hold, launcher, airborne follow-ups, heavy hit, break -> moving knockback -> boundary rebound -> idle",
+        "Boss guard hurt -> restored hold/guard duration, break -> action 16 -> recovery, Boss 233 12-tick guard and Boss 232 low-HP knockdown -> critical check",
+        "All 10 Boss cooldowns start ready, remain unavailable through interval - 1, then rearm on the exact 80 ms tick (locked AI still accumulates cooldown)",
+        "Boss 238 gates: full HP, AI lock, distance, cooldown and running script all block initiation; eligible near/low-HP Boss enters action 21 without x7E",
+        "Real Unity Update: autonomous Boss 238 checks actual collision -> intro 22 -> attack 24 -> role unlock and cooldown",
+        "Real Unity Update: distant Boss 235 charges six ticks, plays 25, teleports beside the role with map checks, then plays 26",
+        "Real Unity Update: Boss 242 projectile 24 catches into 25; exactly ten initial-HP/11 hits, eleventh consumes all remaining HP, then projectile/Boss/camera/input restore",
+        "Real Unity Update: the same 11-hit capture respects x9C blood protection, ending at 10% HP and releasing the scene",
+        "Changing stage during Boss critical cancels the sequence and removes temporary effects"
+    ],
+    "error": ""
+}

@@ -1,0 +1,14 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T08:47:26.9706990Z",
+    "checks": [
+        "3325 atlas/full-image Sprites are persistent Unity assets; solid-color frame Sprite is also saved",
+        "52 map Prefabs have three saved sprite layers and serialized, editable collision data in the catalog",
+        "137 actor Prefabs contain enough saved SpriteRenderer nodes for every animation frame; every atlas crop resolves without Sprite.Create",
+        "120 effect/animation Prefabs contain their saved frame nodes, including Boss critical, finalslash, faces and arrows",
+        "209 stage layout Prefabs include nested map Prefabs and 8597 unconditional fixed actors; conditional story actors remain controlled by scripts",
+        "Real script 200 reuses the saved layout actor instances and map renderers; all active frame Sprites still reference persistent assets",
+        "A changed fixed-layout transform survives activation even when x30 provides different original coordinates"
+    ],
+    "error": ""
+}

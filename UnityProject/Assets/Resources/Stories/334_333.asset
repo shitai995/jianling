@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb3ab722a2214741835d675e99bc225, type: 3}
+  m_Name: 334_333
+  m_EditorClassIdentifier: 
+  scriptId: 334_333
+  displayName: 334_333
+  notes: 
+  instructions:
+  - if(x0A("event")=1069)
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u73B0\u5728\u4E0D\u662F\u79BB\u5F00\u7684\u65F6\u5019\uFF0C\u5148\u53BB\u627E\u695A\u5C71\u5357\u4ED6\u4EEC\u5427\uFF01\")"
+  - ret
+  - endif
+  - if(x0A("event")=800)
+  - if(x0A("sub1")=0)
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u5148\u53BB<c=00ff00,000000,1>\u5546\u4E1A\u8857</c>\u627E<c=ffff00,000000,1>\u6742\u8D27\u5546\u59D0\u59D0</c>\u5427\u3002\")"
+  - ret
+  - endif
+  - endif
+  - if(x0A("event")=405)
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u5148\u53BB\u627E\u5C55\u4F2F\u7236\u6C47\u62A5\u4EFB\u52A1\u5427\u3002\")"
+  - ret
+  - endif
+  - if(x0A("taskID")=14)
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u5148\u53BB\u627E\u94C1\u5320\u5927\u53D4\u5427\u3002\")"
+  - ret
+  - endif
+  - if(x0A("taskID")=914)
+  - "x27(\"\u53E4\u5C0F\u5929\",\"\u53BB\u627E\u5C55\u4F2F\u7236\u4EA4\u4EFB\u52A1\u5427\u3002\")"
+  - ret
+  - endif
+  - if(x0A("event")>1050)
+  - x20("333.s",true)
+  - else
+  - x20("worldmap.s",true)
+  - endif

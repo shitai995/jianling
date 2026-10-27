@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "utc": "2026-10-20T06:09:59.096737+00:00",
+  "checks": [
+    "The original golem on source layer1 leaves every player-number pixel visible",
+    "The original golem on source layer2 physically occludes part of the same number in actual GameView pixels",
+    "Hide-UI retains the world miss and the next source tick changes its rendered height",
+    "Every captured feedback state keeps both logical viewport side bars black",
+    "Original map100 bridge rail completely covers every overlapping digit pixel on source layer1; layer2 numbers render above it"
+  ],
+  "metrics": {
+    "visible": 17062,
+    "behind": 17062,
+    "front": 14613,
+    "mapForegroundOverlap": 10356
+  },
+  "error": ""
+}

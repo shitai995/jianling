@@ -1,0 +1,14 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T02:04:13.0890640Z",
+    "checks": [
+        "Nine original skill effect sets and four-action support set reference saved textures; repeated preparation is byte-stable",
+        "Ordinary17 skills use source actions/lengths, retain last frame, finish once, ignore repeated18 and change no HP/money/EP/durability/cooldown/action/position or GameObjects",
+        "Integrated17 skills use source actions/lengths, retain last frame, finish once, ignore repeated18 and change no HP/money/EP/durability/cooldown/action/position or GameObjects",
+        "No-skill displays idle for source action11 duration; shared production UI clock advances at80ms boundary",
+        "Original menu switching retains running preview, independent settings and closed menu pause it, and Begin clears transient state",
+        "18 is limited to role page; actual GameView captures cover attack, projectile and all three support types in ordinary/integrated modes",
+        "Both formal save hashes remain unchanged"
+    ],
+    "error": ""
+}

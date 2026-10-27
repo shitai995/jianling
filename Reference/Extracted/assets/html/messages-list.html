@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>好友消息_QQ游戏</title>
+<link rel="stylesheet" href="css/g.css" type="text/css">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="YES" />
+</head>
+<body>
+  <section>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+            <li><a href="#"  class="on">好友消息</a></li>
+          <li><a href="notice-friend.html">好友请求</a></li>
+        </ul>
+      </nav>
+      <script type='text/tmpl' id='tmpl-messages-list'>
+   	  <li onclick="goToMsg('<#= fromUin #>', '<#= dateTime #>', '<#= msgId #>');">
+       	  <figure>
+           	  <a href="profile.html?sid=<#= sid #>&uin=<#= fromUin #>" class="icon-shine"><img src="<#= p_util.getAvatarUrl(fromAvtar)#>" alt="<#= fromAvtar #>" width="44" height="44"></a>
+              <figcaption>
+           	    <h1><a href="profile.html?sid=<#= sid #>&uin=<#= fromUin #>"><#= fromNickName #></a></h1>
+                <p><#= content #></p>
+                <p class="message-status"><#= msgDate #> <# if ('1' == readFlag) { #> <a class="t-ora">未读</a> <# }else { #> 已读<# } #></p>
+              </figcaption>
+        </figure>
+      </li>
+	</script>
+    <ul class="messages-list">
+    </ul> 
+    <section class="nodata-wrapper" style="display: none;">
+    	<p class="warn">暂无好友发送的消息。</p>
+  	</section>	  
+</section>
+
+<div class="get-more"><a class="btn-getmore">查看更多</a></div>
+
+  
+   
+  <!-- ^^^ 公用js -->
+  <script type="text/javascript" src='comm_js/jquery-1.5.1.js'></script>
+  <script type="text/javascript" src='comm_js/LoadingCircular.js'></script>
+  <script type="text/javascript" src='comm_js/js-tmpl-min.js'></script>
+  <script type="text/javascript" src='comm_js/util.js'></script>
+  <script type="text/javascript" src='comm_js/game-util.js'></script>
+ <script type="text/javascript" src='comm_js/pkg.js'></script>
+  <script type="text/javascript" src='comm_js/update.js'></script>
+  
+  
+  <script type="text/javascript" src='js/messages-list.js'></script>
+  
+  
+  
+  
+
+</body>
+</html>

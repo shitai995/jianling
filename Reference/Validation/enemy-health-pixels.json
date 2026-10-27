@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "utc": "2026-10-20T07:26:47.931086+00:00",
+  "checks": [
+    "Actual GameView bar bounds are 21x5 logical pixels at source foot-centered x and current edgeRect.y-8",
+    "Seven real captures verify exact original background/yellow/highlight/border RGB values, one-pixel borders, transparent corners and all three interior rows",
+    "1 and52 HP share integer width0; 53 HP gains its first fill pixel, half health has9 pixels, 999 HP has18 and full health has19",
+    "Actual enemy mirroring and hide-UI preserve every bar pixel; changes among health values stay inside its source bounds and viewport side bars stay black",
+    "Original map100 foreground alpha obscures all 67 sampled opaque bar pixels and preserves 34 transparent samples; all 101 non-corner samples render in source layer2"
+  ],
+  "error": ""
+}

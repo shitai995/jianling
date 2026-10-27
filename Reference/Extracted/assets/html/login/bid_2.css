@@ -1,0 +1,51 @@
+body,.unilogin,.unilogin div,.unilogin p,.unilogin ul,.unilogin li,.unilogin form,.unilogin input,.unilogin fieldset,.unilogin h1,.unilogin h2,.unilogin h3,.unilogin img{ margin:0;padding:0;font-size:14px; }
+.unilogin input:focus{outline:none;}
+html{height:100%;}
+body{
+	background: -moz-linear-gradient(top, #cfe6f1 0%, #8db6c9 50%, #8db6c9 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cfe6f1), color-stop(50%,#8db6c9), color-stop(100%,#8db6c9)); 
+	font-family:"\5FAE\8F6F\96C5\9ED1",Helvetica;
+	-webkit-user-select: none;
+	-webkit-text-size-adjust: none;
+	height:100%;
+	min-height:480px;}
+body>div:first-child{background:url(login_bg.png) no-repeat top center;height:700px;}
+.bg-shadow{height:100%;width:100%;position:absolute;z-index:1500;top:0;left:0;display:block;background:#000000;opacity:0.6;}
+.unilogin .head{ height:138px; }
+.unilogin .tips-head{ height:37px; }
+.unilogin .bd-bm-bk{ border-bottom:1px solid #157ca5; }
+.unilogin .bd-tp-be{ border-top:1px solid #57abc9; }
+.unilogin .varify-head{ height:15px; }
+.unilogin h1{text-indent:-999em;height:198px;background:none;margin-bottom:5px;}
+.unilogin form{margin:0 auto;width:288px;}
+.unilogin fieldset{width:288px;height:78px;background:#f0f0f0;margin:0 auto;border:1px solid rgba(57, 84, 106, 0.28);-moz-box-shadow:0px 2px 5px rgba(57, 84, 106, 0.28) inset;-webkit-box-shadow:0px 2px 5px rgba(57, 84, 106, 0.28) inset;box-shadow:0px 2px 5px rgba(57, 84, 106, 0.28) inset;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;text-shadow: 0px 1px 1px #b0b1b1;color:#676869;}
+.unilogin fieldset label, .unilogin fieldset input{font-size:16px;color:#676869;height:38px;line-height:38px;padding-left:10px;}
+.unilogin fieldset p{position:relative;}
+.unilogin fieldset p:first-child{border-bottom:1px solid #cdcdcf;}
+.unilogin fieldset p:last-child{border-top:1px solid #fbfbfb;}
+.unilogin fieldset input{border:none;background:url(http://3gimg.qq.com/unilogin/bg_input.png) repeat-x;height:24px;font-size:16px;padding-left:14px;width:180px;line-height:16px;}
+.unilogin a.empty{display: block;width:30px;height: 30px;background:url(http://3gimg.qq.com/unilogin/btn_close.png) no-repeat center center;text-indent: -999em;position:absolute;top:3px;right:0px;}
+.unilogin form > p{margin:10px 0;font-size:14px;overflow:hidden;}
+.unilogin form > p > label{vertical-align:middle;height:24px;line-height:24px;color:#4c4c4c;text-shadow: 0px 1px 1px #797979;}
+.unilogin form > p > input[type="checkbox"]{float:left;margin:0 6px 0 5px;vertical-align:middle;height:24px;line-height:24px;}
+.unilogin .btn-login{border:0 none;background: -moz-linear-gradient(top, #5CBCE9 0%, #176795 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5CBCE9), color-stop(100%,#176795));display:block;font-size:16px;width:288px;text-align:center;cursor:pointer;height:37px;font-size:18px;color:#ffffff;font-weight:bold;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-moz-box-shadow:0px 0px 6px rgba(0, 0, 0, 0.32) inset;-webkit-box-shadow:0px 0px 6px rgba(0, 0, 0, 0.32) inset;box-shadow:0px 0px 6px rgba(0, 0, 0, 0.32) inset;text-shadow: 0px 1px 1px #d8e7ee;}
+.unilogin .help{font-size:16px;overflow:hidden;text-shadow: 0px 1px 1px #8bc0d5;}
+.unilogin .help a{color:#348bdb;text-decoration:none;	}
+.help a:last-child{float:right;}
+.unilogin .common-box{z-index:2000;position:absolute;width:285px;margin:0 auto;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px;background: -moz-linear-gradient(top, #5CBCE9 0%, #166694 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5CBCE9), color-stop(100%,#166694));-moz-box-shadow:0px 2px 5px rgba(57, 84, 106, 0.28) inset;-webkit-box-shadow:0px 2px 5px rgba(57, 84, 106, 0.28) inset;box-shadow:0px 2px 5px rgba(57, 84, 106, 0.28) inset;border:1px solid #318aad;}
+.unilogin .common-box h2{font-size:18px;line-height:46px;height:46px;text-align:center;color:#ffffff;font-weight:normal;text-shadow: 0px 1px 1px #d8e7ee;}
+.unilogin .common-box h3{font-size:14px;line-height:22px;text-align:center;color:#ffffff;font-weight:normal;text-shadow: 0px 1px 1px #d8e7ee;padding-bottom:8px;}
+.unilogin .common-box fieldset{width:264px;	height:67px;}
+.unilogin .common-box fieldset label, .common-box fieldset input{font-size:16px;color:#676869;height:33px;line-height:33px;padding-left:10px;}
+.unilogin .common-box fieldset input{line-height:24px;height:24px;}
+.unilogin .btn-sm input{border:0 none;	display:block;font-size:14px;width:126px;text-align:center;cursor:pointer;height:36px;color:#fefefe;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;float:left;text-decoration:none;line-height:32px;margin:14px 7px 0 7px;text-shadow: 0px 1px 1px #d8e7ee;}
+.unilogin .btn-md input{width:263px;margin:14px auto;color:#ffffff;font-weight:normal;text-shadow: 0px 1px 1px #d8e7ee;}
+.unilogin .btn-sm{height:66px;}
+.unilogin .btn-sm .login{background: -moz-linear-gradient(top, #4ba3cc 0%, #155072 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4ba3cc), color-stop(100%,#155072));-moz-box-shadow:0px 2px 4px rgba(22, 104, 150, 0.32) inset;-webkit-box-shadow:0px 2px 4px rgba(22, 104, 150, 0.32) inset;box-shadow:0px 2px 4px rgba(22, 104, 150, 0.32) inset;border:1px solid #166896;}
+.unilogin .btn-sm .cancel{background: -moz-linear-gradient(top, #4cb1df 0%, #186997 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4cb1df), color-stop(100%,#186997));-moz-box-shadow:0px 0px 6px rgba(0, 0, 0, 0.32) inset;-webkit-box-shadow:0px 0px 6px rgba(0, 0, 0, 0.32) inset;box-shadow:0px 0px 6px rgba(0, 0, 0, 0.32) inset;border:1px solid #166896;}
+.unilogin .login-tips{height:152px;}
+.unilogin .img-varify{width:266px;height:42px;	background:#f0f0f0;margin:0 auto;border:1px solid rgba(57, 84, 106, 0.28);-moz-box-shadow:0px 2px 5px rgba(57, 84, 106, 0.28) inset;-webkit-box-shadow:0px 2px 5px rgba(57, 84, 106, 0.28) inset;box-shadow:0px 2px 5px rgba(57, 84, 106, 0.28) inset;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;}
+.unilogin .img-varify div{-moz-border-radius:6px 0 0 6px;-webkit-border-radius:6px 0 0 6px;border-radius:6px 0 0 6px;background:#ffffff;padding:2px;width:110px;border-right:1px solid #ebebec;float:left;height:38px;}
+.unilogin .img-varify input{float:left;border:none;background:url(http://3gimg.qq.com/unilogin/bg_input2.png) repeat-x;height:24px;font-size:24px;padding-left:4px;width:146px;line-height:42px;height:42px;border-left:1px solid #d4d5d6;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;}
+.unilogin .varify-wrapper{height:45px;width:288px;margin:14px auto 10px;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;background: -moz-linear-gradient(top, #ffffff 0%, #d9dde0 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d9dde0));padding:8px 0;}
+.unilogin .load-box{z-index:2000;position:absolute;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;background:#212527;width:151px;height:52px;margin:0 auto;color:#f2f2f2;font-size:18px;text-shadow: 0px 1px 1px #d8e7ee;text-align:center;padding-top:50px;line-height:30px;text-shadow: 0px 1px 1px #909090;}

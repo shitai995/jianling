@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "utc": "2026-10-21T03:28:41.197385+00:00",
+  "scope": "内容工作台、原生剧情资产与统一读取入口第一批；核心玩法状态降耦仍待完成",
+  "reports": {
+    "content-workflow.json": {
+      "passed": true,
+      "utc": "2026-10-21T03:19:04.2697040Z",
+      "checks": 8
+    },
+    "data-checks.json": {
+      "passed": true,
+      "utc": "2026-10-21T03:19:04.2841140Z",
+      "checks": 5
+    },
+    "opening-playback.json": {
+      "passed": true,
+      "utc": "2026-10-21T03:22:02.1330880Z",
+      "checks": 3
+    },
+    "battle-save.json": {
+      "passed": true,
+      "utc": "2026-10-21T03:24:03.9567630Z",
+      "checks": 4
+    }
+  },
+  "totalReportChecks": 20,
+  "content": {
+    "maps": 52,
+    "stories": 768,
+    "sourceInstructions": 25715,
+    "actors": 137,
+    "nativeAggregateSha256": "5086fa10d1f5bb53ccbbb8091605c6c956ce5fd20437900713c8eff006940055",
+    "originalJsonAggregateSha256": "52e51b3808c49a59bbd638bb76ff02976cf165b0848f42f9cfc99cb1c53f1bda"
+  },
+  "architecture": {
+    "runtimeFiles": 55,
+    "sharedGuJianGameParts": 38,
+    "sharedGuJianGameLines": 7238,
+    "assessment": "核心共享状态耦合偏高；本批改善内容制作入口，不代表核心解耦完成"
+  },
+  "formalSaveSha256": "0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5",
+  "limits": [
+    "首战使用低血量靶子验证集成，不证明正常难度全通或战斗平衡",
+    "剧情步骤仍采用原语法；完整可视化流程编辑尚未完成",
+    "地图事件制作、精灵动作可视化编辑、背包／装备／战斗／存档状态拆分及Prefab界面迁移仍待完成",
+    "本批仅Unity内验证，未打包或启动外部Player"
+  ],
+  "sha256": {
+    "Reference/Validation/content-workflow.json": "d11d975c9158f8f60aac20e6635b6ec2659a289e070cc6ed8577572b11a6b1f0",
+    "Reference/Validation/data-checks.json": "c80b76c0c6ecb46f4370dce3e602807ff2c13c641b925a9d957ecfe2d4a4a293",
+    "Reference/Validation/opening-playback.json": "639342fd072e8ea24332b0b53ef026aae523bbabacd0c1bac518c0245c5609d5",
+    "Reference/Validation/battle-save.json": "f31c13b8b7e5d8724b6a3e0cf751655279335f78c560f3dc930398462897d241",
+    "UnityProject/Assets/Scripts/StorySequence.cs": "a7ebee2827dc9afb4caf59efb42a51339283c17f2e0f5081b960d7f92ad2920c",
+    "UnityProject/Assets/Scripts/OriginalData.cs": "16c28b07c426ec1b6930f4ee66060c1a56937b72c7cab30ccf62640a7b14a738",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "657c3e9b53a47d843f3b51604e3d24d2052955704d13127488c77e60d752320f",
+    "UnityProject/Assets/Editor/ContentWorkbench.cs": "f76022d8c1595d71329818e3c8067ba1a66f8ecf6154410a200bf0cb4779c934",
+    "UnityProject/Assets/Editor/ContentWorkflowValidation.cs": "ff4deae01761458219cde2b8fe7e0357095402ba9fa69fe688ece8c9510e59d2",
+    "UnityProject/Assets/Editor/MapCollisionEditor.cs": "c29a4d9571575146e7d6ae0807c37d9decfac1412dcfe7fecc7dd5df357a86e9",
+    "UnityProject/Assets/Editor/OriginalAssetBaker.cs": "d41a7a87e7b1514026ad4b0ca66c72923cd7bdd20f43b650e11629e9a484722e",
+    "UnityProject/Assets/Editor/StoryDebugger.cs": "8d1748d17ee0523cba2138d7dbb131272df2a9501063a413ffadf56d70aac844",
+    "UnityProject/Assets/Editor/ReconstructionTools.cs": "fc33f2494c959eca3222515750d5b07faf36b6de4c717c60b427d54594c263cf",
+    "UnityProject/Assets/Editor/ReconstructionValidation.cs": "071f37bef3064f4b750adb77ec542014affe78edaaee607cd9b05b043e992c3d"
+  },
+  "finalEditorState": {
+    "project": "/Users/mac/Documents/ChatGPT/古剑/UnityProject/Assets",
+    "playing": true,
+    "focused": true,
+    "compiling": false,
+    "scene": "Assets/Scenes/GuJian.unity",
+    "sceneDirty": false,
+    "atTitle": true,
+    "scale": 1,
+    "save": "gujian-save.json",
+    "lastError": null
+  },
+  "consoleErrors": 0
+}

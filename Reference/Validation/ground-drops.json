@@ -1,0 +1,13 @@
+{
+    "passed": true,
+    "utc": "2026-10-21T05:10:42.0046790Z",
+    "checks": [
+        "52 saved drop prefabs with serialized components and persistent Sprite assets; no runtime sprite/child-node creation",
+        "Item follows -10/-8/-6/-4/-2 rise, matching descent/landing, 41 cycles without pickup, then magnet collects once on cycle 42",
+        "Menus/dialogue pause loot; unreachable item expires on cycle 301 without granting its payload",
+        "Single weapon displays its own sheet, plays original 18-frame landing into action 1, persists beyond 300 cycles, and enters the bag only after role movement touches its feet",
+        "Multi-drop weapon retains original role-sheet visual with actual reward payload; scatter uses unique 3x3 slots and original last-nine emission cap",
+        "Multi-drop positions clamp inside map margins; real Save/Load clears uncollected objects without granting them"
+    ],
+    "error": ""
+}

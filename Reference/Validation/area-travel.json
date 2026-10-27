@@ -1,0 +1,12 @@
+{
+    "passed": true,
+    "utc": "2026-10-20T04:39:45.8648930Z",
+    "checks": [
+        "Actual stage 200 x96 opens Jianzhong; invalid and unvisited destinations reject without changing stage or queue",
+        "x48 enters mandatory world-map choice; shared UI travel leaves map state and loads original city entry coordinates from stageID 1, retaining late-city area index",
+        "City -> visited Jianzhong return and real Save/Load retain visited regions and closed Liejian",
+        "Historical v3 save with current area flag absent repairs only current area; unrelated regions remain closed",
+        "New game clears exploration and rejects travel to previously visited areas until opened again"
+    ],
+    "error": ""
+}

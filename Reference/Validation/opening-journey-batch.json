@@ -1,0 +1,145 @@
+{
+  "passed": true,
+  "utc": "2026-10-19T12:40:14.628767+00:00",
+  "scope": "新档开场至事件300连续剧情、原版收剑显示与攻击限制、存档兼容及Mac独立应用；整体仍约80%工作量估算",
+  "checks": 116,
+  "reports": [
+    {
+      "file": "opening-journey.json",
+      "passed": true,
+      "utc": "2026-10-19T12:31:16.1002640Z",
+      "checks": 4
+    },
+    {
+      "file": "weapon-visibility.json",
+      "passed": true,
+      "utc": "2026-10-19T12:33:35.5090110Z",
+      "checks": 6
+    },
+    {
+      "file": "attack-skills.json",
+      "passed": true,
+      "utc": "2026-10-19T12:34:28.8582400Z",
+      "checks": 13
+    },
+    {
+      "file": "combo-break.json",
+      "passed": true,
+      "utc": "2026-10-19T12:34:29.0508010Z",
+      "checks": 11
+    },
+    {
+      "file": "support-skills.json",
+      "passed": true,
+      "utc": "2026-10-19T12:34:29.2072290Z",
+      "checks": 9
+    },
+    {
+      "file": "spirit.json",
+      "passed": true,
+      "utc": "2026-10-19T12:34:29.3119030Z",
+      "checks": 8
+    },
+    {
+      "file": "items-shop.json",
+      "passed": true,
+      "utc": "2026-10-19T12:34:29.4643240Z",
+      "checks": 10
+    },
+    {
+      "file": "weapon-preview.json",
+      "passed": true,
+      "utc": "2026-10-19T12:34:29.5802410Z",
+      "checks": 6
+    },
+    {
+      "file": "missions.json",
+      "passed": true,
+      "utc": "2026-10-19T12:34:30.9998950Z",
+      "checks": 21
+    },
+    {
+      "file": "progression.json",
+      "passed": true,
+      "utc": "2026-10-19T12:34:43.2821300Z",
+      "checks": 10
+    },
+    {
+      "file": "chapters.json",
+      "passed": true,
+      "utc": "2026-10-19T12:35:52.2359120Z",
+      "checks": 12
+    },
+    {
+      "file": "player-smoke.json",
+      "passed": true,
+      "utc": "2026-10-19T12:39:50.3373310Z",
+      "checks": 6
+    }
+  ],
+  "build": {
+    "result": "succeeded",
+    "unity": "2022.3.62f3",
+    "platform": "StandaloneOSX",
+    "development": true,
+    "output_path": "UnityProject/Builds/macOS/古剑魂梦.app",
+    "duration_seconds": 4.783431,
+    "total_size_mb": 452.27,
+    "errors": 0,
+    "warnings": 0,
+    "started_at": "2026-10-19T12:39:26.229991Z",
+    "completed_at": "2026-10-19T12:39:31.013422Z"
+  },
+  "sources": [
+    {
+      "file": "UnityProject/Assets/Scripts/OriginalActor.cs",
+      "sha256": "cd5590938b647f539e3caf17cf0271dfe8a9d3a0766da7df3c52069159920749"
+    },
+    {
+      "file": "UnityProject/Assets/Scripts/GuJianGame.cs",
+      "sha256": "4627b4d70c30e2788def235999c18ad894468305c1a5ec4e72d56d0b4b51871f"
+    },
+    {
+      "file": "UnityProject/Assets/Scripts/OriginalCombat.cs",
+      "sha256": "f29fc863bcbf478371382ae43736fb6525b560d2e20ac7fc6285110618ed8caf"
+    },
+    {
+      "file": "UnityProject/Assets/Scripts/OriginalCritical.cs",
+      "sha256": "01e60729545157d76e03b65a245601f7f730e3020138d4a9b2132b48d4920953"
+    },
+    {
+      "file": "UnityProject/Assets/Scripts/OriginalGameMenus.cs",
+      "sha256": "e05d466806ef5c309cceefa258ea3af4d8c18f457b510ae7ef5229077b683c7a"
+    },
+    {
+      "file": "UnityProject/Assets/Scripts/OriginalPlayerValidation.cs",
+      "sha256": "aabf6d48aed3ecb7b73b362d0b9facb62b5d8817027614c7b2d04223931326bd"
+    },
+    {
+      "file": "UnityProject/Assets/Editor/OpeningJourneyValidation.cs",
+      "sha256": "19fec806303732515adb268e8202b779caa258abf07e79a1b5bdc5f0e9e09d46"
+    },
+    {
+      "file": "UnityProject/Assets/Editor/WeaponVisibilityValidation.cs",
+      "sha256": "5676d5aaa5f526e6d12ea667347489ad5826f8f29c3537e651ca0edc3f30175d"
+    }
+  ],
+  "editor": {
+    "playing": false,
+    "compiling": false,
+    "scene": "Assets/Scenes/GuJian.unity",
+    "dirty": false,
+    "console_errors": 0
+  },
+  "limitations": [
+    "新档连续测试仅到前往无双城（event300）；锁定敌人AI、靶子气血1、主角护血并使用生产攻击框，不构成正常难度或全主线通关证明。",
+    "12条章节结局路径仍用预置事件及测试伤害；19支线专项的15种击杀任务直接调用生产计数器。",
+    "收剑专项验证确定性状态及旧v3字段兼容；完整原版逐帧演出、全部菜单图集、实战平衡及Android真机仍待验收。"
+  ],
+  "artifacts": [
+    "UnityProject/Builds/macOS/古剑魂梦.app",
+    "Reference/Validation/opening-journey.json",
+    "Reference/Validation/weapon-visibility.json",
+    "Reference/Validation/player-smoke.json"
+  ]
+}

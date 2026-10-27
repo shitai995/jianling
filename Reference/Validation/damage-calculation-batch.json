@@ -1,0 +1,194 @@
+{
+  "name": "伤害数值结算架构优化",
+  "utc": "2026-10-22T02:39:10.240130+00:00",
+  "passed": true,
+  "reportCount": 13,
+  "totalCheckGroups": 133,
+  "reports": [
+    {
+      "path": "Reference/Validation/damage-modules.json",
+      "passed": true,
+      "checkGroups": 6,
+      "utc": "2026-10-22T02:29:37.9170390Z",
+      "sha256": "0530976c15351d475301838f5822fbd8a04c272e486359c060c97fa113e32126"
+    },
+    {
+      "path": "Reference/Validation/data-checks.json",
+      "passed": true,
+      "checkGroups": 5,
+      "utc": "2026-10-22T02:29:37.9380470Z",
+      "sha256": "79dec978dd530a476de887cd0c0b0a81811f4dfae6a79b28196067d0b930528b"
+    },
+    {
+      "path": "Reference/Validation/attack-skills.json",
+      "passed": true,
+      "checkGroups": 13,
+      "utc": "2026-10-22T02:30:15.3345040Z",
+      "sha256": "9953fe2f5a6b799d1e7465c0e13f2c211b721b575979da80853ced5ac8945752"
+    },
+    {
+      "path": "Reference/Validation/combo-break.json",
+      "passed": true,
+      "checkGroups": 11,
+      "utc": "2026-10-22T02:30:15.8364520Z",
+      "sha256": "fc7d8fa1d0d3691f182b8aa7f8c8f4764899841438e28ec9e2ab5b255bc912bd"
+    },
+    {
+      "path": "Reference/Validation/support-skills.json",
+      "passed": true,
+      "checkGroups": 9,
+      "utc": "2026-10-22T02:30:16.2390550Z",
+      "sha256": "52ba58e3ec7837615a19f8c1ac02f8947ea5d1b2f9cd05d18cdcb8069df971a8"
+    },
+    {
+      "path": "Reference/Validation/boss-families.json",
+      "passed": true,
+      "checkGroups": 25,
+      "utc": "2026-10-22T02:30:20.6981490Z",
+      "sha256": "5aada064a279da10a9f135dcf7bf93f409372a99b9d1cf766eae58c2eb1a774b"
+    },
+    {
+      "path": "Reference/Validation/critical-hit-feedback.json",
+      "passed": true,
+      "checkGroups": 13,
+      "utc": "2026-10-22T02:30:25.4280360Z",
+      "sha256": "43b720c88f9cb857722f991e97a0930ee3113a61fd29f9e4f300af37a017bbb1"
+    },
+    {
+      "path": "Reference/Validation/sword-break.json",
+      "passed": true,
+      "checkGroups": 10,
+      "utc": "2026-10-22T02:30:28.4552890Z",
+      "sha256": "a6627c3c2c300fb55bdda8c2970ea9c807d8c606255632914db5e8805311e834"
+    },
+    {
+      "path": "Reference/Validation/combat-feedback.json",
+      "passed": true,
+      "checkGroups": 8,
+      "utc": "2026-10-22T02:30:28.6711690Z",
+      "sha256": "a68523634f74281cac85a1fc2217ba4d8dbe97acad9291c23a6fa5d850c6ef39"
+    },
+    {
+      "path": "Reference/Validation/enemy-health.json",
+      "passed": true,
+      "checkGroups": 8,
+      "utc": "2026-10-22T02:30:28.8618010Z",
+      "sha256": "8e9ebc81a000b22678b26be7918647568763ee12b68edd08174355235321b8b0"
+    },
+    {
+      "path": "Reference/Validation/hud-feedback.json",
+      "passed": true,
+      "checkGroups": 6,
+      "utc": "2026-10-22T02:30:29.0472240Z",
+      "sha256": "0f1b2be3d6d8b4dbd6f64649c71cd8f145ce00694542db3bcfd766f9eb21aca2"
+    },
+    {
+      "path": "Reference/Validation/projectiles.json",
+      "passed": true,
+      "checkGroups": 10,
+      "utc": "2026-10-22T02:33:47.0630870Z",
+      "sha256": "af07327126fac1636e5d730532c4cb7e519875fe5cf294710d406ad7f3de93d3"
+    },
+    {
+      "path": "Reference/Validation/combat-behaviour.json",
+      "passed": true,
+      "checkGroups": 9,
+      "utc": "2026-10-22T02:34:21.4824860Z",
+      "sha256": "bd7629eff9908398a4369d9cd634c14dd1decdf64635af02a3c891f6148a7c02"
+    }
+  ],
+  "backup": "Workbench/ArchitectureBackups/damage-20261022-102702",
+  "scope": [
+    "主角普通／技能与葬剑共用主角基础伤害、随机浮动和暴击结果",
+    "敌人近战／弹体共用敌方基础伤害、攻击模式系数、随机浮动和闪避概率；弹体在发射时快照伤害",
+    "Boss绝杀复用基础伤害与浮动，家族分段、半血、吸血、破剑、捕获和护血仍由OriginalCritical宿主协调",
+    "宿主继续负责几何命中、连击、资源／冷却、霸体、HP、死亡、剧情、声音、特效与表现"
+  ],
+  "architecture": {
+    "runtimeFiles": 60,
+    "partialGameFiles": 38,
+    "partialGameLines": 7128,
+    "calculator": "CombatDamageCalculator",
+    "hostResponsibilities": [
+      "collision and hit geometry",
+      "combo, resource, cooldown and hold state",
+      "HP, death, story, sound and visual effects"
+    ]
+  },
+  "preservedRules": [
+    "RoleBaseDamage uses long intermediate while EnemyBaseDamage keeps original int overflow semantics",
+    "variance uses absolute value/10 and exclusive upper bound; minimum is applied before critical doubling",
+    "skill4 adds ordinary maximum durability times3 and skips variance",
+    "critical is always sampled after variance, including chance0; projectiles do not inherit owner critical",
+    "role dodge clamps10..90 and enemy dodge only clamps upper90"
+  ],
+  "playerData": [
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-save.json",
+      "beforeSha256": "0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5",
+      "afterSha256": "0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-sms-global.json",
+      "beforeSha256": "a4bf0cc846b6fb6f345f373113aa344b688dd8f128c3587183ca8e098d4813da",
+      "afterSha256": "a4bf0cc846b6fb6f345f373113aa344b688dd8f128c3587183ca8e098d4813da",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-sms-global.json.bak",
+      "beforeSha256": "2901ee85c18af000c5bac49d5a98b86b250e114cbcaf11b2c6d6e3c41d3e140c",
+      "afterSha256": "2901ee85c18af000c5bac49d5a98b86b250e114cbcaf11b2c6d6e3c41d3e140c",
+      "unchanged": true
+    }
+  ],
+  "changedSources": [
+    "UnityProject/Assets/Scripts/CombatDamageCalculator.cs",
+    "UnityProject/Assets/Scripts/OriginalCombat.cs",
+    "UnityProject/Assets/Scripts/OriginalProjectiles.cs",
+    "UnityProject/Assets/Scripts/OriginalCritical.cs",
+    "UnityProject/Assets/Editor/DamageModuleValidation.cs",
+    "UnityProject/Assets/Editor/ReconstructionValidation.cs"
+  ],
+  "sourceSha256": {
+    "UnityProject/Assets/Scripts/CombatDamageCalculator.cs": "f4bd1b2fefc01bd5c5b7bae547da52a8b90781e869b23c5ff16f4fd8a1a757a8",
+    "UnityProject/Assets/Scripts/OriginalCombat.cs": "c5e6f35c6c3467cdcfb21dcb0186f714e84a07ad418f90b23f59756e57b01448",
+    "UnityProject/Assets/Scripts/OriginalProjectiles.cs": "3fdabad31579431f248dbdfc8768bf9510159a448333cb56c9e37f76387884ba",
+    "UnityProject/Assets/Scripts/OriginalCritical.cs": "a95b14fd89e439c7318c26f3e012b2aa26b47498f7d77435cae263a8e805857e",
+    "UnityProject/Assets/Editor/DamageModuleValidation.cs": "cba440c77dfb820464b49219c38cc8f3ac41f53be1681ee831b3a3f7d57f2f02",
+    "UnityProject/Assets/Editor/ReconstructionValidation.cs": "7a038807e688bcb235a90f945552dbec5d58048025d369678e35b559290f6bcf"
+  },
+  "documentSha256": {
+    "README.md": "9459671bea6b3ee5222794ac7dad357328e118e4abc9f92dca81d45c93b853d8",
+    "Reference/工程优化与架构评估.md": "f7ab2e2b8c525786fd5b252674a69013cda947a257dacf7523e0d6180628254f",
+    "Reference/开发使用说明.md": "f4b705bb77216122d2cae95ec88b6383e0c16be201810a9135bb6d9528128f31",
+    "Reference/还原进度.md": "6d76cb727ff2243244a8a01ef1bacfbb3656c599b681be34f9efbd24af92ae2a"
+  },
+  "finalEditor": {
+    "project": "/Users/mac/Documents/ChatGPT/古剑/UnityProject",
+    "instance": "UnityProject@df84d794fc72e697",
+    "scene": "Assets/Scenes/GuJian.unity",
+    "playing": true,
+    "atTitle": true,
+    "timeScale": 1,
+    "compiling": false,
+    "sceneDirty": false,
+    "saveFileName": "gujian-save.json",
+    "lastError": null,
+    "vmError": null,
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "consoleCountMethod": "UnityEditor.LogEntries.GetCountsByType"
+  },
+  "limits": [
+    "仅覆盖受影响定向专项，未重跑完整主线、正常难度全程、物理输入、原设备字体和全局音画逐帧验收",
+    "技能资源／冷却、可写装备字段、金钱、存档协调和UI业务仍与主控耦合",
+    "未打包、未启动外部Player、未新增运行时固定资源或第三方依赖"
+  ],
+  "restorationPercentageChanged": false,
+  "validationExecutionNotes": [
+    "弹体首次异步Update与其他fixture交错而超时；独立重跑后10组通过，使用最新UTC报告。",
+    "Unity控制台原生计数错误0、警告0；MCP文本解析将旧Debug.Log中的System.Exception字符串归类为Exception，未将其作为新引擎异常。"
+  ],
+  "nextBatch": "明确技能资源、冷却和效果应用边界，继续按受影响范围定向验证"
+}

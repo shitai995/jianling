@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "utc": "2026-10-20T04:48:39.353790+00:00",
+  "checks": 64,
+  "reports": [
+    {
+      "name": "touch-map",
+      "passed": true,
+      "checks": 7,
+      "utc": "2026-10-20T04:45:56.5923050Z",
+      "sha256": "2e60f07d4e99bc65bd47cc92182a79bebe53d51fc4e171530b84071c27581326"
+    },
+    {
+      "name": "touch-map-setup",
+      "passed": true,
+      "checks": 2,
+      "utc": "2026-10-20T04:45:39.3842180Z",
+      "sha256": "d594c599705d4cfdb633d352534eedb916e394d0b479bdae8d49d5d4adecac94"
+    },
+    {
+      "name": "control-presentation",
+      "passed": true,
+      "checks": 8,
+      "utc": "2026-10-20T04:39:38.3177420Z",
+      "sha256": "2d904550d6da091c4628ce0f760795f75cdc6aeff2f6b0e052c8f1263972808a"
+    },
+    {
+      "name": "area-travel",
+      "passed": true,
+      "checks": 5,
+      "utc": "2026-10-20T04:39:45.8648930Z",
+      "sha256": "ec6063f2a587b4e9886c639c9f36d4d6cb88c98ed8c7f2b9a8eed0549d7c0a8b"
+    },
+    {
+      "name": "baked-assets",
+      "passed": true,
+      "checks": 7,
+      "utc": "2026-10-20T04:39:45.8691040Z",
+      "sha256": "82c1e85d96bf3eeb1f61fd177b00f90a52f0efdd7ddaa0517fcfd127f7f93056"
+    },
+    {
+      "name": "editor-reload",
+      "passed": true,
+      "checks": 2,
+      "utc": "2026-10-20T04:41:38.2981400Z",
+      "sha256": "ba2af5645fb2c7b4a8c11cc1b5c1c51a1ebc43f6ccecf35f9748461b5c845cc7"
+    },
+    {
+      "name": "full-journey",
+      "passed": true,
+      "checks": 11,
+      "utc": "2026-10-20T04:44:54.7206740Z",
+      "sha256": "edbeef3244cfdb97e681dc146cd2c3e4a483bf3eda99eb46e52e12e30e8e3378"
+    },
+    {
+      "name": "attack-skills",
+      "passed": true,
+      "checks": 13,
+      "utc": "2026-10-20T04:45:58.2925550Z",
+      "sha256": "cb5e63c106450b58428f731cdbd23b3f653c13bc23e9b07d2d9ecabec22a56ee"
+    },
+    {
+      "name": "combat-behaviour",
+      "passed": true,
+      "checks": 9,
+      "utc": "2026-10-20T04:46:04.0871170Z",
+      "sha256": "cc002bbfd782dc0723e43dc0fe09dec6e2c17336c51d20fc2f8be6633fa5db4a"
+    }
+  ],
+  "source_sha256": {
+    "Tools/export_minimap.py": "54053d64824e2cb8d0cf3c850cfc8c2eba22fb1a86775dea52392f11dc9c381b",
+    "Reference/minimap.json": "857fd015c0e4dd3efe12210b37ba60adc0daed9db3042a988f5b8957d2a8579b",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "0d309cdd236453925ce8f888df2f5ccb337ee3b983674b972d7cd04ccda3812a",
+    "UnityProject/Assets/Scripts/OriginalTouchLayout.cs": "966d04c4e500400f043f095cd4f08ca98ab4f9f1a6923b57a7dbab9b6436dda2",
+    "UnityProject/Assets/Scripts/OriginalTouchControls.cs": "ea1505b8ccc406e168c58c5bb051fb13f0dc7855b8c7bbd6876186d5eae88c2c",
+    "UnityProject/Assets/Scripts/OriginalUiPresentation.cs": "37564c8e22c5db741ea33cc99ea4a0b65d1ee2f4b7358773d36bbcaa65622f6d",
+    "UnityProject/Assets/Scripts/OriginalMiniMap.cs": "de1a32c611b19e7844bd406c9c2b42a8765bd5e0e86ac03b9a557c4ed7007847",
+    "UnityProject/Assets/Scripts/OriginalMiniMapLayout.cs": "0afb3f1ec7d3b575d32184f182550938ee8238d28736cc99053920ace1f6ad5c",
+    "UnityProject/Assets/Editor/ControlAssetSetup.cs": "5dbebcb95e684497a208d4040c27afefbe6d0276b1672563bbdbec332e8b1a55",
+    "UnityProject/Assets/Editor/TouchMapValidation.cs": "116f135e4f0bd996af583d33cc549351bd6a49548d4f0c05780564280ee8090e",
+    "UnityProject/Assets/Editor/ControlPresentationValidation.cs": "f4bb0f34eae0233705f324e5cc21c2b0b109be16bf9e8083d4d163365679979f",
+    "UnityProject/Assets/Resources/OriginalTouchLayout.asset": "7a1ee2eb5df6fd0a7e89c0546822248637f970b7e3d7943c0eef654bb94a3209",
+    "UnityProject/Assets/Resources/OriginalMiniMapLayout.asset": "b9223a8e0ac5b5c7b2fb708d001b2f054534a5df0854110f429ff9e2f77a5f49",
+    "UnityProject/Assets/Prefabs/GuJianGame.prefab": "890d485d98d6d3662731cf86f57a6959729f4f8e0f51b85dbae474acc5d460fc",
+    "UnityProject/Assets/Scenes/GuJian.unity": "f718f22afa70bb23626f2ba1e5cf60657a68529a0f92ec80e4448fc90770b6ee"
+  },
+  "gameview_review": [
+    "touch-normal.png",
+    "touch-directions-contact.png",
+    "touch-pressed-left.png",
+    "mini-map-qixia.png",
+    "hud-energy-contact.png"
+  ],
+  "conditions": [
+    "Unity GameView only; editor kept minimized and unfocused; no standalone build or launch",
+    "Map screenshot uses stage 802 / area 6 and mission 816 fixture; direction/highlight frames use injected held controls",
+    "HUD screenshots freeze a scene fixture at EP 0 / 1000 / 2000",
+    "Full journey uses AI locks / low-HP targets / protective setup; does not prove normal-difficulty completion",
+    "No original-device frame-by-frame comparison; dialogue/menu control visibility, HUD feedback and audio timing remain open"
+  ],
+  "editor_final": {
+    "playing": true,
+    "at_title": true,
+    "run_in_background": true,
+    "focused": false,
+    "scene_dirty": false,
+    "console_errors": 0
+  }
+}

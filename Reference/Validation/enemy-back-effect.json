@@ -1,0 +1,15 @@
+{
+    "passed": true,
+    "utc": "2026-10-20T07:57:57.2204930Z",
+    "checks": [
+        "Exactly ten type11 actor prefabs contain a saved aura child; original s_36 is one static four-piece frame with persistent atlas crops",
+        "All ten actual production x30 spawns initialize the saved effect, draw its four persistent pieces and use the source signed-shift foot centering",
+        "Mirroring does not flip the aura; opening the menu, hide-UI and freezing its owner preserve the original static aura",
+        "Only player critical hit phases24/25 hide the aura; preparation22 and a real Boss232 critical owner retain it",
+        "Invisible owners, hidden presentation, map screens and moving to source layers0/1/3 suppress the aura without leaving stale renderers",
+        "Aura SortingGroups draw at root between map0 and every source layer1 actor, independently of their owning layer2 actor groups",
+        "Twenty production presentation refreshes and owner moves reuse saved nodes/components/textures",
+        "New game clears all elite actors and aura ownership from the active registry"
+    ],
+    "error": ""
+}

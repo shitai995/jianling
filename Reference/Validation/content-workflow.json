@@ -1,0 +1,15 @@
+{
+    "passed": true,
+    "utc": "2026-10-21T03:19:04.2697040Z",
+    "checks": [
+        "768 native stories preserve all 25715 source instructions and .s aliases through production lookup",
+        "All stage definitions retain valid story, map and saved layout references",
+        "All actor definitions retain saved prefab references",
+        "Saved native story edits reach the independent production VM without modifying JSON or GuJianGame",
+        "Execution snapshots isolate caller mutations from saved story data",
+        "Repeated missing-only import preserves edited instructions and native identity",
+        "Temporary source edit restored byte-for-byte",
+        "Missing source and malformed identifiers are rejected through the shared content interface"
+    ],
+    "error": ""
+}

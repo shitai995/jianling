@@ -1,0 +1,13 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T06:56:38.6079340Z",
+    "checks": [
+        "Source arithmetic: level-1 XP 15, player-level-2 XP 13; training produces 26/27/28 around 27 rather than doubling truncated 13",
+        "XP base cap, 10%/200% level coefficient clamps and inclusive +/-5% endpoints match source examples across low and high levels",
+        "Money variance uses exclusive upper endpoint; tiny reward preserves Tool.getNextRnd(empty)=-1; capped base 100 yields 95..104",
+        "Training retains each coin amount; level gap nine keeps normal coins and gap ten forces ten coins",
+        "Production Damage/death grants sampled XP, creates uncollected coin payloads without changing balance, and consumes drop/scatter RNG before experience RNG",
+        "Ground equipment/item payloads are generated at a nine-level gap and suppressed at ten; uncollected rewards do not enter the bag"
+    ],
+    "error": ""
+}

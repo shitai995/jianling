@@ -1,0 +1,15 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T02:30:28.6711690Z",
+    "checks": [
+        "All four source atlases u33/u34/u35/u36 and miss are persistent Unity asset references",
+        "Real original-frame attacks create ordinary/critical numeric atlas entries on the actual target; ordinary damage leaves source-specific HP tail unchanged",
+        "Five slots are independent per actor, expire after ten actual 80ms actor cycles, freeze with the actor and continue on a completed held pose; no HUD objects generated",
+        "Real production dodge creates the original miss image for ten target cycles without a damage entry or HP change",
+        "Actual capped healing and repair casts display full original calculated 1100/170 amounts with HP/MP atlases, without plus-sign text",
+        "Production half-HP and draining Boss critical hit paths trigger the source white tail; drain also creates a healing number on the Boss",
+        "White tail follows integer maxHP/145*2 decay with fractional accumulation and retains the original low-HP zero-velocity edge; actual HP medicine clears it",
+        "Scene changes clear original actor number/miss slots; new game clears the transient HP tail"
+    ],
+    "error": ""
+}

@@ -1,0 +1,11 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T08:47:52.5731460Z",
+    "checks": [
+        "Native animation import preserves the original JSON and existing edits; gameplay reads the published snapshot, independent of draft edits",
+        "Independent frame copy publishes through the production loader and real actor; 80ms step timing and mirrored attack geometry remain intact, using saved renderer nodes and sprites",
+        "All configured normal weapons and four sword-spirit appearances resolve to persistent sprites for the edited role animation",
+        "Invalid frame references and crop overflow reject before publication; runtime snapshots cannot mutate the persisted animation"
+    ],
+    "error": ""
+}

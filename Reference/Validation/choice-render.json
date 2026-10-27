@@ -1,0 +1,112 @@
+{
+  "success": true,
+  "message": "Code executed successfully.",
+  "data": {
+    "result": {
+      "passed": true,
+      "checks": [
+        "No-info choice uses source120px list centered at x206,y80; auto-height2 rows, default0 and nonclosable return blocked",
+        "Complete choice info bypasses character-dialogue pagination, keeps colors and uses180px/80px explanation clip above3-row list",
+        "80ms accumulator moves selected text2px and long info by source fontHeight/10; fractional cycles and zero delta preserve phase",
+        "Five-item focus clamps without wrapping, scrolls the3-row window in both directions, resets marquee on focus change and allowed return yields-1",
+        "Real VM waits for selected index1 then resumes; close consumes same-frame menu control"
+      ],
+      "shots": [
+        {
+          "name": "choice-render-base",
+          "width": 1920,
+          "height": 1080,
+          "list": [
+            206,
+            214,
+            120,
+            60
+          ],
+          "info": [
+            176,
+            50,
+            180,
+            80
+          ],
+          "fontHeight": 15,
+          "infoHeight": 134,
+          "infoOffset": 0,
+          "focus": 0,
+          "first": 0,
+          "moveTicks": 0
+        },
+        {
+          "name": "choice-render-empty-info",
+          "width": 1920,
+          "height": 1080,
+          "list": [
+            206,
+            80,
+            120,
+            40
+          ],
+          "info": [
+            176,
+            50,
+            180,
+            80
+          ],
+          "fontHeight": 15,
+          "infoHeight": 0,
+          "infoOffset": 0,
+          "focus": 0,
+          "first": 0,
+          "moveTicks": 0
+        },
+        {
+          "name": "choice-render-info",
+          "width": 1920,
+          "height": 1080,
+          "list": [
+            206,
+            214,
+            120,
+            60
+          ],
+          "info": [
+            176,
+            50,
+            180,
+            80
+          ],
+          "fontHeight": 15,
+          "infoHeight": 134,
+          "infoOffset": 15,
+          "focus": 0,
+          "first": 0,
+          "moveTicks": 0
+        },
+        {
+          "name": "choice-render-last-page",
+          "width": 1920,
+          "height": 1080,
+          "list": [
+            206,
+            214,
+            120,
+            60
+          ],
+          "info": [
+            176,
+            50,
+            180,
+            80
+          ],
+          "fontHeight": 15,
+          "infoHeight": 134,
+          "infoOffset": 14,
+          "focus": 4,
+          "first": 2,
+          "moveTicks": 0
+        }
+      ]
+    },
+    "compiler": "codedom"
+  },
+  "execute_code": "var g=UnityEngine.Object.FindObjectOfType<GuJian.GuJianGame>();\nvar f=System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic;\nvar s=System.Reflection.BindingFlags.Static|System.Reflection.BindingFlags.NonPublic;\nSystem.Func<string,object> get=n=>g.GetType().GetField(n,f).GetValue(g);\nSystem.Action<string,object> set=(n,v)=>g.GetType().GetField(n,f).SetValue(g,v);\nSystem.Action<bool,string> require=(v,n)=>{if(!v)throw new System.Exception(n);};\nSystem.Action<float> tick=d=>g.GetType().GetMethod(\"TickOriginalChoice\",f).Invoke(g,new object[]{d});\nSystem.Action<string,string[],bool> open=(info,items,close)=>g.Machine.Command(0x2D,new object[]{info,items,close});\nvar checks=new System.Collections.Generic.List<string>();var shots=new System.Collections.Generic.List<object>();\nSystem.Func<Rect,float[]> rect=r=>new[]{r.x,r.y,r.width,r.height};\nSystem.Action<string> capture=name=>{\nvar image=(Texture2D)typeof(GuJian.Editor.HudFeedbackValidation).GetMethod(\"Render\",s).Invoke(null,null);\ntry{System.IO.File.WriteAllBytes(\"../Reference/Validation/\"+name+\".png\",image.EncodeToPNG());\nshots.Add(new{name=name,width=image.width,height=image.height,list=rect((Rect)get(\"choiceListBounds\")),info=rect((Rect)get(\"choiceInfoBounds\")),fontHeight=get(\"choiceFontHeight\"),infoHeight=get(\"choiceInfoHeight\"),infoOffset=get(\"choiceInfoOffset\"),focus=get(\"choiceFocus\"),first=get(\"choiceFirst\"),moveTicks=get(\"choiceMoveTicks\")});}\nfinally{UnityEngine.Object.DestroyImmediate(image);}};\nvar loader=g.Machine.LoadScript;var command=g.Machine.Command;\ntry{\ntypeof(GuJian.Editor.ComboValidation).GetMethod(\"Stage\",s).Invoke(null,new object[]{g,false});Time.timeScale=0;g.Machine.Clear();set(\"hideUi\",true);g.GetType().GetMethod(\"ResetStageInfo\",f).Invoke(g,null);\ncapture(\"choice-render-base\");\nopen(\"\",new[]{\"第一项\",\"第二项\"},false);capture(\"choice-render-empty-info\");\nvar b=(Rect)get(\"choiceListBounds\");int h=(int)get(\"choiceFontHeight\");\nrequire(b.x==206&&b.y==80&&b.width==120&&b.height==2*(h+5),\"no-info source geometry\");require(get(\"choiceInfoRichText\")==null&&g.LastChoice==-1,\"default selection\");\ng.PressControl(0);require((int)get(\"choiceFocus\")==0,\"upper boundary\");g.PressControl(5);require(g.DialogueVisible,\"nonclosable cancel\");\nchecks.Add(\"No-info choice uses source120px list centered at x206,y80; auto-height2 rows, default0 and nonclosable return blocked\");\nstring info=\"<c=ffff00>选择一项</c>\\n第二行\\n第三行\\n第四行\\n第五行\\n第六行\\n第七行\\n第八行\\n第九行\";\nopen(info,new[]{\"这是需要横向滚动的一个很长很长的选择项目\",\"第二项\",\"第三项\",\"第四项\",\"第五项\"},true);capture(\"choice-render-info\");\nrequire(((string)get(\"dialogue\")).Contains(\"第九行\")&&((System.Collections.ICollection)get(\"dialoguePages\")).Count==0,\"info pagination\");\nrequire(((string)get(\"choiceInfoRichText\")).Contains(\"<color=#FFFF00>\"),\"choice rich text\");b=(Rect)get(\"choiceListBounds\");h=(int)get(\"choiceFontHeight\");\nrequire(b.y==80+(int)get(\"choiceInfoHeight\")&&b.height==3*(h+5),\"source info geometry\");checks.Add(\"Complete choice info bypasses character-dialogue pagination, keeps colors and uses180px/80px explanation clip above3-row list\");\nint before=(int)get(\"choiceMoveTicks\");float off=(float)get(\"choiceInfoOffset\");tick(.04f);require((int)get(\"choiceMoveTicks\")==before,\"fractional cycle\");tick(.04f);require((int)get(\"choiceMoveTicks\")==before+1,\"80ms cycle\");require((float)get(\"choiceInfoOffset\")==off-Mathf.Max(1,h/10),\"info cycle\");\ntick(0);require((int)get(\"choiceMoveTicks\")==before+1,\"freeze\");checks.Add(\"80ms accumulator moves selected text2px and long info by source fontHeight/10; fractional cycles and zero delta preserve phase\");\nfor(int i=0;i<7;i++)g.PressControl(1);require((int)get(\"choiceFocus\")==4&&(int)get(\"choiceFirst\")==2,\"last page\");\nrequire((int)get(\"choiceMoveTicks\")==0,\"focus scroll reset\");capture(\"choice-render-last-page\");\ng.PressControl(0);require((int)get(\"choiceFocus\")==3&&(int)get(\"choiceFirst\")==2,\"page retention\");g.PressControl(0);g.PressControl(0);require((int)get(\"choiceFocus\")==1&&(int)get(\"choiceFirst\")==1,\"back scroll\");\ng.PressControl(5);require(!g.DialogueVisible&&g.LastChoice==-1,\"cancellation\");checks.Add(\"Five-item focus clamps without wrapping, scrolls the3-row window in both directions, resets marquee on focus change and allowed return yields-1\");\nint selected=-99;g.Machine.LoadScript=n=>new[]{\"x2D()\",\"x2E()\",\"end\"};g.Machine.Command=(id,a)=>{if(id==0x2D)return command(id,new object[]{\"选择\",new object[]{\"甲\",\"乙\",\"丙\"},false});var result=command(id,a);if(id==0x2E)selected=System.Convert.ToInt32(result);return result;};\ng.Machine.Enqueue(\"choice-render-fixture\");g.Machine.Tick();require(g.DialogueVisible&&selected==-99,\"VM pause\");g.PressControl(1);g.PressControl(4);g.Machine.Tick();require(!g.Machine.Running&&selected==1,\"VM resume\");\ng.PressControl(5);require(!(bool)get(\"menu\"),\"same-frame menu\");checks.Add(\"Real VM waits for selected index1 then resumes; close consumes same-frame menu control\");\nreturn new{passed=true,checks=checks,shots=shots};\n}finally{g.Machine.LoadScript=loader;g.Machine.Command=command;g.Begin();g.Machine.Clear();typeof(GuJian.GuJianGame).GetProperty(\"AtTitle\").SetValue(g,true,null);Time.timeScale=1;}"
+}

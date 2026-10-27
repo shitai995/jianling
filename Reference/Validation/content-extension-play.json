@@ -1,0 +1,14 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T04:39:36.9022660Z",
+    "checks": [
+        "New potion ID heals by configured amount and consumes inventory via actual gameplay use",
+        "Configured Money effect and whole-stack consumption work on a new ID, independent of legacy item ranges",
+        "New weapon equips saved art and configured stats; new skill ID runs attack-template 5 animation with its own cooldown",
+        "Same new skill ID can select support-template 14 and heal through the production support casting path",
+        "New enemy ID spawns saved actor prefab, retains its own definition and references existing AI behavior 201",
+        "Independent test save/load preserves new equipment and skill IDs",
+        "Custom stage uses production map loader, instantiates four saved Tilemaps, preserves baked collision and registers its original x24 exit"
+    ],
+    "error": ""
+}

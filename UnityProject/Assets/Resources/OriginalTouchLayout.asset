@@ -1,0 +1,729 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96fad8015b8141fd966f9ada373182e, type: 3}
+  m_Name: OriginalTouchLayout
+  m_EditorClassIdentifier: 
+  direction:
+    sheets:
+    - rects:
+      - x: 0
+        y: 0
+        w: 124
+        h: 124
+    - rects:
+      - x: 0
+        y: 0
+        w: 69
+        h: 119
+      - x: 0
+        y: 201
+        w: 121
+        h: 72
+      - x: 69
+        y: 0
+        w: 81
+        h: 118
+      - x: 0
+        y: 119
+        w: 119
+        h: 82
+    frames:
+    - pieces:
+      - image: 0
+        rect: 0
+        transform: 0
+        x: -61
+        y: -62
+        w: 0
+        h: 0
+        color: 0
+      attackRects: []
+      bodyRects: []
+      edgeRect:
+        x: -61
+        y: -62
+        w: 124
+        h: 124
+    - pieces:
+      - image: 0
+        rect: 0
+        transform: 0
+        x: -61
+        y: -62
+        w: 0
+        h: 0
+        color: 0
+      - image: 1
+        rect: 1
+        transform: 0
+        x: -59
+        y: -62
+        w: 0
+        h: 0
+        color: 0
+      attackRects: []
+      bodyRects: []
+      edgeRect:
+        x: -61
+        y: -62
+        w: 124
+        h: 124
+    - pieces:
+      - image: 0
+        rect: 0
+        transform: 0
+        x: -61
+        y: -62
+        w: 0
+        h: 0
+        color: 0
+      - image: 1
+        rect: 3
+        transform: 0
+        x: -58
+        y: -20
+        w: 0
+        h: 0
+        color: 0
+      attackRects: []
+      bodyRects: []
+      edgeRect:
+        x: -61
+        y: -62
+        w: 124
+        h: 124
+    - pieces:
+      - image: 0
+        rect: 0
+        transform: 0
+        x: -61
+        y: -62
+        w: 0
+        h: 0
+        color: 0
+      - image: 1
+        rect: 0
+        transform: 0
+        x: -61
+        y: -60
+        w: 0
+        h: 0
+        color: 0
+      attackRects: []
+      bodyRects: []
+      edgeRect:
+        x: -61
+        y: -62
+        w: 124
+        h: 124
+    - pieces:
+      - image: 0
+        rect: 0
+        transform: 0
+        x: -61
+        y: -62
+        w: 0
+        h: 0
+        color: 0
+      - image: 1
+        rect: 2
+        transform: 0
+        x: -18
+        y: -58
+        w: 0
+        h: 0
+        color: 0
+      attackRects: []
+      bodyRects: []
+      edgeRect:
+        x: -61
+        y: -62
+        w: 124
+        h: 124
+    actions: []
+    footWidth: 0
+    footHeight: 0
+  directionSheets:
+  - {fileID: 2800000, guid: 6967dc95d03ee45e2a1a91c3e0b45745, type: 3}
+  - {fileID: 2800000, guid: 1d47e4794fe574b16a3dae517f6ed210, type: 3}
+  criticalReady:
+    sheets:
+    - rects:
+      - x: 10
+        y: 3
+        w: 62
+        h: 60
+      - x: 74
+        y: 4
+        w: 61
+        h: 60
+      - x: 140
+        y: 4
+        w: 62
+        h: 62
+      - x: 344
+        y: 5
+        w: 62
+        h: 60
+      - x: 206
+        y: 6
+        w: 62
+        h: 60
+      - x: 271
+        y: 6
+        w: 63
+        h: 60
+      - x: 423
+        y: 24
+        w: 22
+        h: 25
+    frames:
+    - pieces:
+      - image: 0
+        rect: 0
+        transform: 0
+        x: -30
+        y: -32
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      attackRects: []
+      bodyRects: []
+      edgeRect:
+        x: -30
+        y: -32
+        w: 62
+        h: 60
+    - pieces:
+      - image: 0
+        rect: 1
+        transform: 0
+        x: -29
+        y: -32
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      attackRects: []
+      bodyRects: []
+      edgeRect:
+        x: -29
+        y: -32
+        w: 61
+        h: 60
+    - pieces:
+      - image: 0
+        rect: 2
+        transform: 0
+        x: -29
+        y: -33
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      attackRects: []
+      bodyRects: []
+      edgeRect:
+        x: -29
+        y: -33
+        w: 62
+        h: 62
+    - pieces:
+      - image: 0
+        rect: 4
+        transform: 0
+        x: -29
+        y: -32
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      attackRects: []
+      bodyRects: []
+      edgeRect:
+        x: -29
+        y: -32
+        w: 62
+        h: 60
+    - pieces:
+      - image: 0
+        rect: 5
+        transform: 0
+        x: -30
+        y: -32
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      attackRects: []
+      bodyRects: []
+      edgeRect:
+        x: -30
+        y: -32
+        w: 63
+        h: 60
+    - pieces:
+      - image: 0
+        rect: 3
+        transform: 0
+        x: -29
+        y: -32
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      - image: 0
+        rect: 6
+        transform: 0
+        x: -10
+        y: -14
+        w: 0
+        h: 0
+        color: 0
+      attackRects: []
+      bodyRects: []
+      edgeRect:
+        x: -29
+        y: -32
+        w: 62
+        h: 60
+    actions:
+    - steps:
+      - frame: 0
+        vx: 0
+        vy: 0
+        attackType: 0
+        attack: 0
+        vulnerable: 1
+      - frame: 1
+        vx: 0
+        vy: 0
+        attackType: 0
+        attack: 0
+        vulnerable: 1
+      - frame: 2
+        vx: 0
+        vy: 0
+        attackType: 0
+        attack: 0
+        vulnerable: 1
+      - frame: 3
+        vx: 0
+        vy: 0
+        attackType: 0
+        attack: 0
+        vulnerable: 1
+      - frame: 4
+        vx: 0
+        vy: 0
+        attackType: 0
+        attack: 0
+        vulnerable: 1
+      - frame: 5
+        vx: 0
+        vy: 0
+        attackType: 0
+        attack: 0
+        vulnerable: 1
+    footWidth: 0
+    footHeight: 0
+  criticalReadySheets:
+  - {fileID: 2800000, guid: ae628bc6325c44a7d9b1c45cb96a8474, type: 3}
+  back: {fileID: 2800000, guid: a533e50957e3a48f5845480f6757625a, type: 3}
+  backPressed: {fileID: 2800000, guid: 04c56be9051d847b9b495299d5740e95, type: 3}
+  presentationVersion: 1
+  directionBounds:
+    serializedVersion: 2
+    x: -1
+    y: 197
+    width: 124
+    height: 124
+  visible: 1
+  opacity: 1
+  controls:
+  - label: "\u2191"
+    bounds:
+      serializedVersion: 2
+      x: 26
+      y: 199
+      width: 70
+      height: 40
+    code: 0
+    normal: {fileID: 0}
+    pressed: {fileID: 0}
+  - label: "\u2193"
+    bounds:
+      serializedVersion: 2
+      x: 26
+      y: 279
+      width: 70
+      height: 40
+    code: 1
+    normal: {fileID: 0}
+    pressed: {fileID: 0}
+  - label: "\u2190"
+    bounds:
+      serializedVersion: 2
+      x: 1
+      y: 239
+      width: 50
+      height: 40
+    code: 2
+    normal: {fileID: 0}
+    pressed: {fileID: 0}
+  - label: "\u2192"
+    bounds:
+      serializedVersion: 2
+      x: 71
+      y: 239
+      width: 50
+      height: 40
+    code: 3
+    normal: {fileID: 0}
+    pressed: {fileID: 0}
+  - label: "\u653B"
+    bounds:
+      serializedVersion: 2
+      x: 462
+      y: 254
+      width: 70
+      height: 60
+    code: 4
+    normal: {fileID: 2800000, guid: 0267af4688ca046b592c85ee7b25cafd, type: 3}
+    pressed: {fileID: 2800000, guid: 67f9ab516e3c2489d9a44f402cfe2913, type: 3}
+  - label: "\u6280"
+    bounds:
+      serializedVersion: 2
+      x: 422
+      y: 279
+      width: 40
+      height: 40
+    code: 7
+    normal: {fileID: 2800000, guid: 65a8749a9c18c47289cd0b821c2c1786, type: 3}
+    pressed: {fileID: 2800000, guid: 4356c94f4a2b64032ad06fe70b4638da, type: 3}
+  - label: "\u5D29"
+    bounds:
+      serializedVersion: 2
+      x: 430
+      y: 213
+      width: 40
+      height: 40
+    code: 8
+    normal: {fileID: 2800000, guid: 83af73defdeac48ae99845947f5f8c90, type: 3}
+    pressed: {fileID: 2800000, guid: aaab31ad2d99e43bf9f03021dc86b1cf, type: 3}
+  - label: "\u5408"
+    bounds:
+      serializedVersion: 2
+      x: 140
+      y: 280
+      width: 120
+      height: 40
+    code: 9
+    normal: {fileID: 0}
+    pressed: {fileID: 0}
+  - label: "\u846C"
+    bounds:
+      serializedVersion: 2
+      x: 492
+      y: 212
+      width: 40
+      height: 40
+    code: 10
+    normal: {fileID: 2800000, guid: f71d1a2f1951c4b4aa5d7253432f724e, type: 3}
+    pressed: {fileID: 2800000, guid: f71d1a2f1951c4b4aa5d7253432f724e, type: 3}
+  - label: "\u83DC\u5355"
+    bounds:
+      serializedVersion: 2
+      x: 431
+      y: 1
+      width: 50
+      height: 50
+    code: 5
+    normal: {fileID: 2800000, guid: 822ca7b8e2bc2444ea4f25366421e445, type: 3}
+    pressed: {fileID: 2800000, guid: 46913034af8414536bfaa66de73c13a5, type: 3}
+  - label: "\u5730\u56FE"
+    bounds:
+      serializedVersion: 2
+      x: 482
+      y: 1
+      width: 50
+      height: 50
+    code: 12
+    normal: {fileID: 2800000, guid: 39abcad7d71f44de79b72a25cf151c71, type: 3}
+    pressed: {fileID: 2800000, guid: ee86a02cb45e24eaca738242ce1dce72, type: 3}

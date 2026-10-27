@@ -1,0 +1,193 @@
+{
+  "name": "背包与道具交易状态抽离",
+  "utc": "2026-10-21T05:01:35.119377+00:00",
+  "passed": true,
+  "reports": [
+    {
+      "path": "Reference/Validation/item-modules.json",
+      "passed": true,
+      "checkGroups": 9,
+      "utc": "2026-10-21T04:55:39.0817580Z",
+      "sha256": "450af7f96cd36ae9055237dad2b93ca4dd38e520e5418a9285184064dc975dcf"
+    },
+    {
+      "path": "Reference/Validation/item-module-integration.json",
+      "passed": true,
+      "checkGroups": 3,
+      "utc": "2026-10-21T04:58:25.8882140Z",
+      "sha256": "57842cb4c99e000122b4a7aeb7da05756c8bf5fc8e9b44a4f04cee49f42c2d6b"
+    },
+    {
+      "path": "Reference/Validation/items-shop.json",
+      "passed": true,
+      "checkGroups": 11,
+      "utc": "2026-10-21T04:55:51.4438380Z",
+      "sha256": "65654f018fe4504d14a11fe96fe340c2128b423ffb213aa7b80917a753eb9f48"
+    },
+    {
+      "path": "Reference/Validation/menu-state.json",
+      "passed": true,
+      "checkGroups": 14,
+      "utc": "2026-10-21T04:56:04.6220010Z",
+      "sha256": "51bb1581eba062634b2789f5bee54ff2cf39a046f823d0861a1081db95de38f9"
+    },
+    {
+      "path": "Reference/Validation/ground-drops.json",
+      "passed": true,
+      "checkGroups": 6,
+      "utc": "2026-10-21T04:56:06.2055740Z",
+      "sha256": "cea643c65cf705540bfc1b11fdc46bcc354d751972f22c51a034bdc2b6cdc876"
+    },
+    {
+      "path": "Reference/Validation/weapon-preview.json",
+      "passed": true,
+      "checkGroups": 6,
+      "utc": "2026-10-21T04:56:08.0066350Z",
+      "sha256": "7c843912efb93b985733b0021d4085f1b108ff98aed5db32a44e375e9f8d8be4"
+    },
+    {
+      "path": "Reference/Validation/sword-break.json",
+      "passed": true,
+      "checkGroups": 10,
+      "utc": "2026-10-21T04:56:35.2066390Z",
+      "sha256": "d5cc78107d400a655c225b7d1b3da2194bee8cd9643549a8addfec292716935f"
+    }
+  ],
+  "totalCheckGroups": 59,
+  "scope": [
+    "ItemInventory owns aggregate counts, 99-item stack projections and inventory snapshots",
+    "ItemTrading owns item quotes, price progression and commerce rules",
+    "Host routes VM commands, drops, rewards, gifts, use/discard, UI and Save/Load through these modules"
+  ],
+  "architecture": {
+    "runtimeFiles": 56,
+    "guJianGamePartialFiles": 38,
+    "guJianGamePartialLines": 7211,
+    "sharedInventoryDictionaryInGame": false,
+    "remainingHostState": [
+      "money",
+      "equipment instances and equipped index",
+      "item effects and stat changes",
+      "combat",
+      "story and menu coordination",
+      "save file orchestration"
+    ]
+  },
+  "saveCompatibility": {
+    "version": 3,
+    "fields": [
+      "itemIds",
+      "itemCounts",
+      "specialItemPurchases"
+    ],
+    "zeroEntriesOmitted": true,
+    "zeroEntriesAndMissingOptionalPriceStateAccepted": true
+  },
+  "playerData": [
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-sms-global.json.bak",
+      "sha256": "2901ee85c18af000c5bac49d5a98b86b250e114cbcaf11b2c6d6e3c41d3e140c",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-save.json",
+      "sha256": "0fa894abf0fcf2a4401f629ea7e58bbbd8c95e256083308cac228b5a29d049a5",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/mac/Library/Application Support/GuJianReconstruction/古剑魂梦/gujian-sms-global.json",
+      "sha256": "a4bf0cc846b6fb6f345f373113aa344b688dd8f128c3587183ca8e098d4813da",
+      "unchanged": true
+    }
+  ],
+  "sourceSha256": {
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "5c06f7c438c89d317ddf4cce0a778a9ac35b28adf51e1c4a9045f5956413f481",
+    "UnityProject/Assets/Scripts/ItemInventory.cs": "c7197fe7071217157713cdf69deff887e89543fe993fee6ea1d0148435466d40",
+    "UnityProject/Assets/Scripts/ItemTrading.cs": "e1fcad41a57ca5c7e84a2ffa0c02c8f6a65415df1a6e9cbc3d8ca6ddafb4f843",
+    "UnityProject/Assets/Scripts/OriginalActor.cs": "79ef581ca5a44e5030ccf0bbd606009638d6413a9cabb43cbe1cbc25de9f132b",
+    "UnityProject/Assets/Scripts/OriginalAssetCatalog.cs": "faac3110d60537e0314c8025002ff63caa7dabd9f1e7575ae54b8122a6697bdb",
+    "UnityProject/Assets/Scripts/OriginalAtlasEquipmentPanels.cs": "f4bf4f4c2929965cd0b144868d3ee44d325d9cf7b10f50c7ca57d5a594fc17e5",
+    "UnityProject/Assets/Scripts/OriginalAtlasMenus.cs": "19fc0f3f3463e27cbda1902bb0913895ab087ae2b55e513dc40b906ac640794d",
+    "UnityProject/Assets/Scripts/OriginalBlackScreen.cs": "44d61437df1c90df1c45fe1edecc2db6724aa158425684046f1f83b71bcc4128",
+    "UnityProject/Assets/Scripts/OriginalCameraEffects.cs": "fd3352c1678c2b8dcc2685b8322ee3210e3270a00defec8ca1a9f8fd59533eb8",
+    "UnityProject/Assets/Scripts/OriginalCharacterDialogue.cs": "059f78d116e012c2e8dbaca4ae1711dbc8794610ae94e690d64a461b7d43d9d1",
+    "UnityProject/Assets/Scripts/OriginalChoices.cs": "8250e6a9034136eaf9dc7aa00ab72489998ea978157799ac5591718af5484628",
+    "UnityProject/Assets/Scripts/OriginalCombat.cs": "88346c3b477ffeb4f07c30edd91107b12b63848591fe59e4829d6fb697bc2720",
+    "UnityProject/Assets/Scripts/OriginalCombatFeedback.cs": "4760eb945d4b96688a7f81656feb7ae5921595a7930d4241b513f006b566f6a8",
+    "UnityProject/Assets/Scripts/OriginalCombo.cs": "87bab44bec93577afdba7bc523c0c0feee35b7b61649557999fe17b860ac9a3b",
+    "UnityProject/Assets/Scripts/OriginalCritical.cs": "baa4efc3af70916ba4f63819c4228c69bf92ca2e991130bc0218851a80d5f34d",
+    "UnityProject/Assets/Scripts/OriginalData.cs": "16c28b07c426ec1b6930f4ee66060c1a56937b72c7cab30ccf62640a7b14a738",
+    "UnityProject/Assets/Scripts/OriginalDatabase.cs": "c99141c3d6c68b03a21719c7c8163d058efda19d7dcdfb34f6d3a7d86eec6938",
+    "UnityProject/Assets/Scripts/OriginalDialogueText.cs": "182d7711240435391b1ed23e62f4a2d117ab79bceff0e029150ffc463a7a91ca",
+    "UnityProject/Assets/Scripts/OriginalDrops.cs": "ff8ec6bffd43eb117af1fc16c9bd5615b01c3bfcfaecc12409ed900b1293908e",
+    "UnityProject/Assets/Scripts/OriginalEnemyBehaviour.cs": "997785ce9f0124cd88f4cd92e6c501948af684e204a597f22286e7d96cd1d3e2",
+    "UnityProject/Assets/Scripts/OriginalEquipment.cs": "5bfa5baee5b73dd31e032f4001ccf0a3b00026c46a17bc5bdb7021be18db0a3f",
+    "UnityProject/Assets/Scripts/OriginalFeedback.cs": "1c0232253d9ac826867b179842d707369e7e1938703d2eb64702e00f62ad9f6d",
+    "UnityProject/Assets/Scripts/OriginalGameMenus.cs": "ef409c080369dfccfc34b114cdabbcea0fd406faf0850d8ed3608bb9dc2ed2e9",
+    "UnityProject/Assets/Scripts/OriginalGroundDrop.cs": "51e922bbbb3505f08cfdb2593cfb1c8f8d779b6c449f42d44fb836b195938a70",
+    "UnityProject/Assets/Scripts/OriginalGui.cs": "2915627db1518ef31a286e61625c3215d726f940424080d353ca6e92cc9fc7cf",
+    "UnityProject/Assets/Scripts/OriginalHudFeedback.cs": "87d88f878b0abbf955cf82a04171ca07b74adf5e007c627d817a519fbf021275",
+    "UnityProject/Assets/Scripts/OriginalItems.cs": "1bae5a2e9cb4dc2dfd9e300bd6505b717ab3fff03e6557f0dbf37ff6efdf4001",
+    "UnityProject/Assets/Scripts/OriginalMessages.cs": "a852287bb81ac64a14312a782b8dc3802abdc531ffa7809bf5ff26c460eaaa93",
+    "UnityProject/Assets/Scripts/OriginalMiniMap.cs": "de1a32c611b19e7844bd406c9c2b42a8765bd5e0e86ac03b9a557c4ed7007847",
+    "UnityProject/Assets/Scripts/OriginalMiniMapLayout.cs": "0afb3f1ec7d3b575d32184f182550938ee8238d28736cc99053920ace1f6ad5c",
+    "UnityProject/Assets/Scripts/OriginalMissions.cs": "50b92aec5d47920e6806bafffbcdb1bc5be4beb813cccd5bf4eca8a9f991daaf",
+    "UnityProject/Assets/Scripts/OriginalPlayerControl.cs": "3b7fca089452ca7d96b051ff76339e0e46d9942169fad2b661fa1d4c339d1476",
+    "UnityProject/Assets/Scripts/OriginalPlayerValidation.cs": "f073dc7d4c9b7f7c366699f86879f3c3e3451dda3ca5ff86c9d7908dfbb6617d",
+    "UnityProject/Assets/Scripts/OriginalProjectiles.cs": "5fc49c70e011db9a6f5c4537b97bfd91cb39419de6179e6c986fa75600c6af94",
+    "UnityProject/Assets/Scripts/OriginalReinforcement.cs": "664ad4fe5a800cd88c026546271a33bc7d3aaca41fd15882f788ec057b51eddd",
+    "UnityProject/Assets/Scripts/OriginalRewardMessages.cs": "bd07e0e6ad25753904dd8d75a42e0b757181d7aa970902ad0e9aad1bbfad6371",
+    "UnityProject/Assets/Scripts/OriginalScenePresentation.cs": "9e2fd960fe8c7e628ea237a25e95f362f16070637eb6e88e8dc5d9744b1c34b5",
+    "UnityProject/Assets/Scripts/OriginalScriptMachine.cs": "2e60d9c9c86e2fa623bc1e1983c189ee7f8d3d496344751a6077a3de55414abd",
+    "UnityProject/Assets/Scripts/OriginalShop.cs": "5bf270fcfc459caef3cd9e440c1493907aa3848bb56b1cfead0e7853301a4183",
+    "UnityProject/Assets/Scripts/OriginalSkillPreview.cs": "bdd076d4638e9c5218b3bdfaa3d5bf4bb5413506a87701f1cfa2c6de89334fef",
+    "UnityProject/Assets/Scripts/OriginalSpirit.cs": "1cb2e72170cf09e4c6ccb922a491a03f5ecf5c54649665823fa538c97f372aae",
+    "UnityProject/Assets/Scripts/OriginalSpriteLibrary.cs": "3cefc3dbf49e88a8bee53b4e22b12bcb6678fec37ae8dfd3c29dcfd416dcf937",
+    "UnityProject/Assets/Scripts/OriginalStageInfo.cs": "0903c82d398d51104e9730f8c3cadab2803b9f1a5f3a96019d5484e69450067a",
+    "UnityProject/Assets/Scripts/OriginalStageLayout.cs": "1cc13d6067da4dd548fb98d0f9c63796fcf3b9b7b19c485e4d5fe15b6f7d15fb",
+    "UnityProject/Assets/Scripts/OriginalSupportSkills.cs": "6feb1e20111d950d53f46478d6af13327fc4479035a81986e5683b0604738460",
+    "UnityProject/Assets/Scripts/OriginalSwordBreak.cs": "eee4ad9a9f9825e1e7d00aa12100e8ee9d41b7a3f677943762b76aea3626acb0",
+    "UnityProject/Assets/Scripts/OriginalSystemMenus.cs": "db120707cc3da61d0d47e4c135acaf3135201d58628474c4e225c11e6d48069f",
+    "UnityProject/Assets/Scripts/OriginalTextMarkup.cs": "0574490d681f6b6a8707bef9c0a3d1015c42f4feb771968fe9da1ef04e993e2b",
+    "UnityProject/Assets/Scripts/OriginalTouchControls.cs": "3d30471fc1129764c1eca1a6ae48f4af7cdd4c0c8f9b70f9b5928e241959ec75",
+    "UnityProject/Assets/Scripts/OriginalTouchLayout.cs": "966d04c4e500400f043f095cd4f08ca98ab4f9f1a6923b57a7dbab9b6436dda2",
+    "UnityProject/Assets/Scripts/OriginalUiLayout.cs": "068121c25f6e76e4981a9a90472534641783a56512d69854b91d02d09a0897d5",
+    "UnityProject/Assets/Scripts/OriginalUiPresentation.cs": "387ce6b57b6df73d531c337d7ef19000ef6979e3e9d3ce635b61fe903fd216bd",
+    "UnityProject/Assets/Scripts/OriginalVisuals.cs": "386dcd5e5570b7f29a8e95de010450ff25ba7080f1afbb05808c04eae95c064b",
+    "UnityProject/Assets/Scripts/OriginalWeaponPreview.cs": "5f10a1d51f82162e57ecc49b2e06593ac3eaa898df9574e5550b8ff94fac79b5",
+    "UnityProject/Assets/Scripts/OriginalWorldFeedback.cs": "904c9dace967c6a2e19afa713c52ae6ead4bf9d88b07030e822ff65457deee74",
+    "UnityProject/Assets/Scripts/StorySequence.cs": "a7ebee2827dc9afb4caf59efb42a51339283c17f2e0f5081b960d7f92ad2920c",
+    "UnityProject/Assets/Editor/ItemModuleValidation.cs": "f79edfc0b05d7aa59bf53e4c4d8f7ed36f57241bc9455b9c83343081a3dd801b",
+    "UnityProject/Assets/Editor/ItemShopValidation.cs": "76e4262600b27f1809f0f5dfd642a0cf70df1bbb4f8d442a35b90e3fe7a7d381",
+    "UnityProject/Assets/Editor/MenuStateValidation.cs": "835836159de4f2f077802b433e6dbd54365a3fb908aaf4bd0483b60dd2140d26",
+    "UnityProject/Assets/Editor/SwordBreakValidation.cs": "7a01b2503bef2a29b117e11c479d214955b285d99ec432fdd06c18dfaaa38e69",
+    "UnityProject/Assets/Editor/AttackSkillValidation.cs": "a90797aa5cd8a16571c12c61f97c2b2881aea70622db7fa46dc79d28841f47fa",
+    "UnityProject/Assets/Editor/GroundDropValidation.cs": "c33817a5f57bf4003b18f1db2db72aae192a0fd36ed9d0ab55174738f6f292d0",
+    "UnityProject/Assets/Editor/WeaponPreviewValidation.cs": "1f0a1e044f198c726ea8054478113b412ff6c67236f02d72b785b6a75d108fab"
+  },
+  "documentSha256": {
+    "README.md": "3c86c6e773edceefb3d61af0e947b961d53131ec26634e2e77001424079ba4db",
+    "Reference/工程优化与架构评估.md": "554844bd179bff916725694f8498eb99720d9d728d7f8ad7b40ae4bf8dc1de0c",
+    "Reference/开发使用说明.md": "00b266df94435c95ca5b7b06d287c666617a94ac56c5bd376bbb546bbb5bccd1",
+    "Reference/还原进度.md": "2290fa884798de3d2a9ea22cc246b9e213039e3b8ca521047189f0da31dc9826"
+  },
+  "finalEditor": {
+    "project": "/Users/mac/Documents/ChatGPT/古剑/UnityProject",
+    "scene": "Assets/Scenes/GuJian.unity",
+    "playing": true,
+    "atTitle": true,
+    "timeScale": 1,
+    "compiling": false,
+    "sceneDirty": false,
+    "saveFileName": "gujian-save.json",
+    "lastError": null,
+    "consoleErrors": 0
+  },
+  "limits": [
+    "Editor checks use controlled fixtures and module calls; they do not establish physical mouse/keyboard input acceptance",
+    "Full normal-difficulty journey and global audio/visual timing are not revalidated by this batch",
+    "Money, equipment commerce and item effects remain in GuJianGame",
+    "No build or external Player was started; no runtime fixed visual asset generation was added"
+  ],
+  "restorationPercentageChanged": false
+}

@@ -1,0 +1,14 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T09:02:33.9087710Z",
+    "checks": [
+        "Saved catalogue collision paint is read by the active production map; matching JSON imports collision only, dimension mismatch rejects without mutation; original cell restored",
+        "Dead and one-shot special-trigger HP lifecycle flags persist through real Save/Load and remain backward-compatible when snapshots are absent",
+        "Real Save/Load restores nested wallet/skill snapshots before legacy fields, retains energy/cooldowns/armor, cancels unfinished casts/recovery, and reads absent or null legacy snapshots",
+        "Paused and running x83 timers survive real Save/Load with fractional seconds; x84/x85 and menu pause retain time; expiry enqueues the original script once; sword-spirit 80ms accumulator and 11-tick cadence persist",
+        "Sword-spirit XP settles in original 80ms / requirement-divided-by-15 steps; 8 ticks grant 8 XP, fast-complete settles remaining XP once and preserves final numerical results",
+        "Editable role, sword-spirit and enemy growth arrays route by table name; saved Inspector HP change affects actual actor attributes, then restores; new games clear JSON cache and the baker can extend saved frame capacity",
+        "All 35 native menu actions reference saved source textures; role, equipment, 99-stack bag, sword-spirit, missions, system and world map share real page actions; no generated sprites/UI objects/textures"
+    ],
+    "error": ""
+}

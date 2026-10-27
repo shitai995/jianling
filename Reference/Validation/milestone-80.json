@@ -1,0 +1,115 @@
+{
+  "estimated_work_percent": 80,
+  "meaning": "Weighted engineering-work estimate; not a playthrough rate or pixel-equivalence score.",
+  "validation_reports": [
+    {
+      "name": "data-checks",
+      "passed": true,
+      "utc": "2026-10-19T11:49:17.1624260Z",
+      "check_entries": 5
+    },
+    {
+      "name": "attack-skills",
+      "passed": true,
+      "utc": "2026-10-19T11:49:33.5965420Z",
+      "check_entries": 13
+    },
+    {
+      "name": "combo-break",
+      "passed": true,
+      "utc": "2026-10-19T11:49:33.8250850Z",
+      "check_entries": 11
+    },
+    {
+      "name": "control-presentation",
+      "passed": true,
+      "utc": "2026-10-19T11:49:34.1167660Z",
+      "check_entries": 8
+    },
+    {
+      "name": "boss-families",
+      "passed": true,
+      "utc": "2026-10-19T11:49:35.7485460Z",
+      "check_entries": 25
+    },
+    {
+      "name": "support-skills",
+      "passed": true,
+      "utc": "2026-10-19T11:49:36.0330000Z",
+      "check_entries": 9
+    },
+    {
+      "name": "spirit",
+      "passed": true,
+      "utc": "2026-10-19T11:49:36.1928250Z",
+      "check_entries": 8
+    },
+    {
+      "name": "items-shop",
+      "passed": true,
+      "utc": "2026-10-19T11:49:36.4247480Z",
+      "check_entries": 10
+    },
+    {
+      "name": "weapon-preview",
+      "passed": true,
+      "utc": "2026-10-19T11:49:36.6238830Z",
+      "check_entries": 6
+    },
+    {
+      "name": "baked-assets",
+      "passed": true,
+      "utc": "2026-10-19T11:49:36.6278170Z",
+      "check_entries": 7
+    },
+    {
+      "name": "stage-coverage",
+      "passed": true,
+      "utc": "2026-10-19T11:42:46.7682230Z",
+      "check_entries": 209
+    },
+    {
+      "name": "chapters",
+      "passed": true,
+      "utc": "2026-10-19T11:46:21.7791320Z",
+      "check_entries": 12
+    },
+    {
+      "name": "opening-playback",
+      "passed": true,
+      "utc": "2026-10-19T11:49:39.7160210Z",
+      "check_entries": 3
+    },
+    {
+      "name": "battle-save",
+      "passed": true,
+      "utc": "2026-10-19T11:50:22.4689580Z",
+      "check_entries": 4
+    },
+    {
+      "name": "player-smoke",
+      "passed": true,
+      "utc": "2026-10-19T11:52:27.4030790Z",
+      "check_entries": 4
+    }
+  ],
+  "build": {
+    "result": "succeeded",
+    "unity": "2022.3.62f3",
+    "platform": "StandaloneOSX",
+    "development": true,
+    "output_path": "UnityProject/Builds/macOS/古剑魂梦.app",
+    "duration_seconds": 29.999871,
+    "total_size_mb": 452.26,
+    "errors": 0,
+    "warnings": 0,
+    "started_at": "2026-10-19T11:50:59.483835Z",
+    "completed_at": "2026-10-19T11:51:29.483706Z"
+  },
+  "remaining": [
+    "Continuous fresh-save main/side quest playthrough",
+    "Full original menu/touch atlas layout",
+    "Battle balance and frame-by-frame audiovisual comparison",
+    "Android device validation"
+  ]
+}

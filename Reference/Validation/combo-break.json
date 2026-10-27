@@ -1,0 +1,18 @@
+{
+    "passed": true,
+    "utc": "2026-10-22T02:30:15.8364520Z",
+    "checks": [
+        "20 actual original-frame hits in each animation bank: count and damage include the current hit's 10/20-hit AP boundary; each hit adds 5 energy",
+        "Preserves recovered formula differences: attribute refresh includes permanent role AP; comboCounter and comboOver exclude it",
+        "Integrated combo multiplier uses spirit base AP while final attack retains swallowed permanent spirit AP",
+        "HP damage resisted by hold/armor retains combo; actual forced hurt resets hit/break counters and AP",
+        "Dodge and empty swings add neither combo nor durability loss",
+        "Ordinary/integrated break: strengthened ordinary maximum x3 fixed damage, active maximum/3 debit once, correct instance, first-hit zero break bonus and chained break +5%",
+        "Breaks launchable/airborne targets and guarded targets even with hold; high hold without guard prevents the break bonus and durability loss",
+        "Infinite durability still grants break bonus; low durability clamps to zero, synchronizes instance and resets equipped skill cooldown; durability gate honors infinite option",
+        "One attack frame counts each target; the last successful target overwrites the original break flag; at most one maximum/3 debit per frame",
+        "Menu and stage clear retain source combo; real Save/Load starts fresh counters and uses a separate validation save",
+        "Full actual critical-kill targeting/actions 22/24/25 finish and count each damage frame before its damage calculation, including 10-hit AP growth"
+    ],
+    "error": ""
+}
