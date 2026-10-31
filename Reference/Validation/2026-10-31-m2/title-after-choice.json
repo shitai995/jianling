@@ -1,0 +1,22 @@
+{
+    "passed": true,
+    "utc": "2026-10-31T06:12:10.6582743Z",
+    "checks": [
+        "Simultaneous movement/attack, arrow, Enter and numpad Enter read actual queued Input System keyboard state",
+        "Holding does not repeat a press edge; releasing clears held state, and unsupported keys are safely ignored",
+        "Pointer position and mouse-button press/release use the same device adapter",
+        "Two independent touches coexist; ended/canceled touches do not remain held, and invalid touch indexes are safe",
+        "Title, original artwork and Input System UI actions are persistent assets, connected in the startup scene",
+        "A fresh game instance provides its shared font outside OnGUI without creating IMGUI styles",
+        "An empty isolated slot disables Continue; submitting the disabled native button does not start or write a game",
+        "Native New Game reaches the shared production operation; title-only and unknown actions cannot reset a running game",
+        "Native Continue enables for a real version3 save and restores stage, 8765 money and three inventory items through production Load",
+        "Typed actions respect nonclosable choice navigation, confirm the selected entry and block same-frame gameplay after closing a modal",
+        "The original numeric tutorial Return control remains accepted by the typed operation gateway",
+        "A queued mouse press/release is raycast by the real InputSystemUIInputModule and starts the production new-game flow",
+        "Queued Down/Enter events navigate and submit through the real UI input module, restoring the isolated save",
+        "Corrupt Continue stays at the title, reports a user-facing error and preserves the unreadable file",
+        "Both formal player slots and their transaction files remain byte-for-byte unchanged"
+    ],
+    "error": ""
+}

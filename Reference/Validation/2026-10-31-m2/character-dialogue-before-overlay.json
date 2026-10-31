@@ -1,0 +1,13 @@
+{
+    "passed": true,
+    "utc": "2026-10-31T05:47:27.1877312Z",
+    "checks": [
+        "Saved native dialogue prefab is connected to the production scene",
+        "Original character command displays the original frame and formatted colored spans in native UI",
+        "Queued pointer press/release passes through the Input System UI raycaster and advances a multipage dialogue",
+        "Final confirmation closes the dialogue and blocks same-frame gameplay leakage",
+        "Original portrait renders on either side with corresponding frame orientation; empty text remains dismissible",
+        "Disabling the native view hides its panel and leaves dialogue state available for the original renderer"
+    ],
+    "error": ""
+}

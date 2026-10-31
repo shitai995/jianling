@@ -110,8 +110,8 @@ namespace GuJian
         private bool PollOriginalMessageKeys()
         {
             if (!originalMessage || dialogue == null) return false;
-            if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)) HandleOriginalMessageControl(4);
-            else if (Input.GetKeyDown(KeyCode.Escape)) HandleOriginalMessageControl(5);
+            if (GameInput.Pressed(KeyCode.J) || GameInput.Pressed(KeyCode.Space) || GameInput.Pressed(KeyCode.Return)) HandleOriginalMessageControl(4);
+            else if (GameInput.Pressed(KeyCode.Escape)) HandleOriginalMessageControl(5);
             return true;
         }
 

@@ -12,7 +12,15 @@ namespace GuJian.Editor
     {
         private const BindingFlags F = BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public;
         private static GuJianGame game;
-        private static object Get(string name) => typeof(GuJianGame).GetField(name, F).GetValue(game);
+        private static object Get(string name)
+        {
+            var type = typeof(GuJianGame);
+            var field = type.GetField(name, F);
+            if (field != null) return field.GetValue(game);
+            var property = type.GetProperty(name, F);
+            if (property != null) return property.GetValue(game, null);
+            throw new MissingMemberException(type.FullName, name);
+        }
         private static void Set(string name, object value) => typeof(GuJianGame).GetField(name, F).SetValue(game, value);
         private static object Call(string name, params object[] args) => typeof(GuJianGame).GetMethod(name, F).Invoke(game, args);
         private static void Key(int code) => Call("HandleOriginalMenuKey", code);
@@ -41,10 +49,16 @@ namespace GuJian.Editor
             game = UnityEngine.Object.FindObjectOfType<GuJianGame>();
             float scale = Time.timeScale; string save = game.saveFileName;
             var random = UnityEngine.Random.state;
+            var nativeInventory = UnityEngine.Object.FindObjectOfType<NativeInventoryView>();
+            var nativeEquipment = UnityEngine.Object.FindObjectOfType<NativeEquipmentView>();
+            bool inventoryEnabled = nativeInventory && nativeInventory.enabled, equipmentEnabled = nativeEquipment && nativeEquipment.enabled;
             var checks = new List<string>(); string error = null;
             Time.timeScale = 0; game.saveFileName = "validation-menu-state.json";
             try
             {
+                // This suite captures and inspects IMGUI scroll state; exercise the supported fallback explicitly.
+                if (nativeInventory) nativeInventory.enabled = false;
+                if (nativeEquipment) nativeEquipment.enabled = false;
                 Stage(1);
                 Key(3); Require((int)Get("menuPage") == 0, "Right from items must skip missing spirit");
                 Key(2); Require((int)Get("menuPage") == 1, "Left from mission must skip missing spirit");
@@ -83,7 +97,9 @@ namespace GuJian.Editor
 
                 Stage(1); Give(0, 2); Key(4); Require((bool)Get("itemConfirming"), "Restart fixture");
                 game.Begin(); game.Machine.Clear();
-                Require(!(bool)Get("itemConfirming") && (int)Get("itemConfirmId") == -1 && (int)Get("itemConfirmStack") == -1, "Begin retained stale item modal");
+                var confirmation = (InventoryItemAction)Get("itemAction");
+                Require(!confirmation.IsOpen && confirmation.ItemId == -1 && confirmation.Stack == -1 && confirmation.Choice == 0,
+                    "Begin retained stale item modal");
                 checks.Add("Begin clears item-confirmation visibility, item identity, stack index and choice");
 
                 Stage(2);
@@ -170,6 +186,8 @@ namespace GuJian.Editor
             {
                 game.Begin(); game.Machine.Clear(); typeof(GuJianGame).GetProperty("AtTitle").SetValue(game, true);
                 game.saveFileName = save; Time.timeScale = scale; UnityEngine.Random.state = random;
+                if (nativeInventory) nativeInventory.enabled = inventoryEnabled;
+                if (nativeEquipment) nativeEquipment.enabled = equipmentEnabled;
             }
             var report = new ReconstructionValidation.Report { passed = error == null, utc = DateTime.UtcNow.ToString("O"), checks = checks.ToArray(), error = error };
             File.WriteAllText("../Reference/Validation/menu-state.json", JsonUtility.ToJson(report, true));

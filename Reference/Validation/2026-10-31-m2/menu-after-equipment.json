@@ -1,0 +1,21 @@
+{
+    "passed": true,
+    "utc": "2026-10-31T06:28:36.6936179Z",
+    "checks": [
+        "No-spirit page navigation skips spirit in both directions, rejects direct spirit-tab selection, and wraps first/last tabs",
+        "With spirit present, item/spirit/mission page order is preserved in both directions",
+        "Item popup starts Use; Left/Right select absolute choices and remain idempotent; Up/Down are modal; original key10 cancels without consumption",
+        "Original keys4/9 both open and confirm; discard removes selected six-item remainder while retaining99; Use consumes medicine and heals through production handler",
+        "Public PressControl routes primary/directions through same production menu handler; abstract5 cancels popup then closes menu, without scene action",
+        "Begin clears item-confirmation visibility, item identity, stack index and choice",
+        "Ten-row equipment list wraps9->0/0->9; actual GameView draw scrolls focused last row into124px viewport and restores top on wrap",
+        "Mission Up/Down choose main/branch explicitly",
+        "Shop Sell-empty original message, Buy/Sell transition, trade opening and soft-back cancellation use shared production handler",
+        "Buy popup Up/Down decrement/increment with1/99 wrap; Left toggles to Cancel without changing quantity; OK on Cancel spends nothing",
+        "Right toggles popup choice twice back to Confirm; soft9 purchases exactly two; sale quantity wraps to owned7 and selling two retains5 with exact credit",
+        "Permanent-medicine/weapon quantities stay1; Buy/Sell select saved original17/18 and19/20 popup frames; soft9 Cancel changes no money/equipment",
+        "Message modal blocks underlying native-menu actions; public confirmation cannot open item popup in same frame after closing message",
+        "Existing tutorial response retains priority over menu routing; normal menu side effects do not consume tutorial direction"
+    ],
+    "error": ""
+}

@@ -73,10 +73,7 @@ namespace GuJian
         {
             var state = new SmsGlobalState { experienceMultiplier = smsExperienceMultiplier, goldAmount = smsGoldAmount,
                 totalSpend = smsTotalSpend, unlimitedDurability = smsUnlimitedDurability, allStagesUnlocked = allStagesUnlocked };
-            string temporary = SmsGlobalStatePath + ".tmp";
-            File.WriteAllText(temporary, JsonUtility.ToJson(state, true));
-            if (File.Exists(SmsGlobalStatePath)) File.Replace(temporary, SmsGlobalStatePath, SmsGlobalStatePath + ".bak");
-            else File.Move(temporary, SmsGlobalStatePath);
+            SaveFileStore.Write(SmsGlobalStatePath, JsonUtility.ToJson(state, true));
         }
 
         private void ImportLegacySmsState(string saveJson)
@@ -118,10 +115,7 @@ namespace GuJian
                 var data = JsonUtility.FromJson<SaveData>(File.ReadAllText(path));
                 if (data == null) return;
                 data.smsGiftTier = Mathf.Clamp(tier, 0, 3);
-                string temporary = path + ".tmp";
-                File.WriteAllText(temporary, JsonUtility.ToJson(data, true));
-                if (File.Exists(path)) File.Replace(temporary, path, path + ".bak");
-                else File.Move(temporary, path);
+                SaveFileStore.Write(path, JsonUtility.ToJson(data, true));
             }
             catch (IOException) { }
             catch (ArgumentException) { }

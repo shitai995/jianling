@@ -65,7 +65,7 @@ namespace GuJian
         {
             if (!WeaponPreviewVisible) return;
             weaponPreviewElapsed += delta;
-            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.Space)) CloseWeaponPreview();
+            if (GameInput.Pressed(KeyCode.Escape) || GameInput.Pressed(KeyCode.Return) || GameInput.Pressed(KeyCode.J) || GameInput.Pressed(KeyCode.Space)) CloseWeaponPreview();
         }
         private static Rect PreviewIdleBounds(OriginalAnimation animation)
         {

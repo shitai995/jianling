@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "editor": "2022.3.62f2c1",
+  "reports": [
+    {
+      "report": "native-inventory.json",
+      "checks": 9,
+      "utc": "2026-10-31T06:22:00.1076279Z"
+    },
+    {
+      "report": "menu-after-inventory.json",
+      "checks": 14,
+      "utc": "2026-10-31T06:22:13.0531852Z"
+    }
+  ],
+  "totalChecks": 23,
+  "sha256": {
+    "UnityProject/Assets/Scripts/OriginalGameMenus.cs": "265ef64b0bc788128b1e7d77a4d96161a1066f4b3c28dc357ef3a66f6d31861d",
+    "UnityProject/Assets/Scripts/OriginalAtlasMenus.cs": "6555c52f319bde5383649ddb66a140d4a2c0e37f106917bd146908167a0ebbf5",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "2a3afd7470368353f33b25f76ad483d04673f5e284c4e3ca49be194800cfee96",
+    "UnityProject/Assets/Scripts/NativeInventoryView.cs": "a1e3e58ef980ff799d42723aeaadc02340ea4f17e3dd7e0b39e1ac9ca90c54e5",
+    "UnityProject/Assets/Scripts/NativeInventoryRow.cs": "25124dde31f80c3cfef696232b7458e4f2f0263c2e73837aeeef9fed1e2b8bb9",
+    "UnityProject/Assets/Editor/NativeInventorySetup.cs": "b48032fa196e5bf4e60578b5c0a6b21aedc1bf29516f394f47ca6d2a611b13b7",
+    "UnityProject/Assets/Editor/NativeInventoryValidation.cs": "1c23abb1b883e3a78c97b70becf8e92fc427f473530cedd90583a669435c71e6",
+    "UnityProject/Assets/Editor/MenuStateValidation.cs": "198a75edd485d9beb75f45c7ad4b77eb4c803d9f023c44e5ebc409257878fe41",
+    "UnityProject/Assets/UI/NativeInventory.prefab": "176bf3f0696dd906be7aaf9d1b4dcbf8c5d953af3fba04afd974f83ff09c9078",
+    "UnityProject/Assets/Scenes/GuJian.unity": "7de1b4dc8b05bf02171e7ce975750439fee6c41eefba022cdf5d7d2d5b8b4af1"
+  },
+  "limitations": [
+    "Input System pointer events are simulated; physical input and Android require device validation.",
+    "Item confirmation and non-inventory pages remain on the original IMGUI renderer.",
+    "Full mission-combat-reward-equipment-save flow remains unverified using the new UI.",
+    "Font, high-resolution layout and atlas animation transforms require comparison on target devices."
+  ]
+}

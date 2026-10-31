@@ -1,0 +1,10 @@
+{
+    "passed": false,
+    "utc": "2026-10-31T06:13:05.1897946Z",
+    "checks": [
+        "Native choice prefab is saved and connected in the production scene",
+        "The native view renders three visible rows and original atlas borders",
+        "Production focus navigation updates the three-row viewport"
+    ],
+    "error": "System.Exception: UI raycast did not select the fourth production option\r\n  at GuJian.Editor.NativeChoiceValidation.Require (System.Boolean value, System.String message) [0x00009] in E:\\jianling\\UnityProject\\Assets\\Editor\\NativeChoiceValidation.cs:18 \r\n  at GuJian.Editor.NativeChoiceValidation+<Steps>d__5.MoveNext () [0x0048a] in E:\\jianling\\UnityProject\\Assets\\Editor\\NativeChoiceValidation.cs:53 \r\n  at GuJian.Editor.NativeChoiceValidation.Tick () [0x00031] in E:\\jianling\\UnityProject\\Assets\\Editor\\NativeChoiceValidation.cs:89 "
+}

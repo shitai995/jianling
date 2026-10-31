@@ -1,0 +1,16 @@
+{
+    "passed": true,
+    "utc": "2026-10-31T06:27:49.3701618Z",
+    "checks": [
+        "Inventory prefab is saved and connected in the production scene",
+        "Native inventory shows original atlas and correctly split 99-item stack rows",
+        "A pointer click through the UI module selects the second item stack",
+        "Native activation opens the original confirmation and yields rendering to it",
+        "Original confirmation consumes one item and applies healing through production rules",
+        "Auto medicine threshold cycles through the production setting",
+        "Disabled native inventory hides and leaves the old atlas renderer available",
+        "Keyboard navigation scrolls the native list to the focused item",
+        "Native tab opens the existing equipment page and native Back closes the menu"
+    ],
+    "error": ""
+}

@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "utc": "2026-10-29T16:59:34.4081510Z",
+  "scope": "Static source APK identity and per-entry verification against existing inventory; not Unity gameplay or build validation",
+  "package": {
+    "path": "E:\\qqhuancun\\古剑魂梦-天剑奇侠.1",
+    "bytes": 4665752,
+    "sha256": "44100d1dbbda773f229fa15e89e7e49e6c9c5d1de644db796a0473c50f010559",
+    "applicationId": "com.ty.jl",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "minimumSdk": 7,
+    "label": "古剑魂梦-天剑奇侠",
+    "launchableActivity": "com.dobetter.client.JL01Activity"
+  },
+  "inventoryPath": "Reference/inventory.json",
+  "inventorySourceSha256": "44100d1dbbda773f229fa15e89e7e49e6c9c5d1de644db796a0473c50f010559",
+  "archiveFiles": 2323,
+  "inventoryFiles": 2323,
+  "matchingFiles": 2323,
+  "differentOrExtraFiles": [],
+  "missingFiles": [],
+  "duplicateEntryPaths": [],
+  "methods": [
+    "PowerShell Get-FileHash SHA256 for whole APK",
+    ".NET ZipFile read-only archive scan; SHA256 and byte size compared for every entry",
+    "Android SDK build-tools 34.0.0 aapt dump badging on temporary byte-identical ASCII-path copy; temporary copy removed"
+  ],
+  "notPerformed": [
+    "Original APK execution",
+    "Re-extraction or overwriting Unity assets",
+    "Unity compilation or gameplay",
+    "Android build or device test"
+  ]
+}

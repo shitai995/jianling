@@ -1,0 +1,9 @@
+{
+    "passed": false,
+    "utc": "2026-10-31T06:29:37.7657468Z",
+    "checks": [
+        "Equipment prefab is saved and connected to the production scene",
+        "Original atlas, reinforced equipment rows and character preview are visible"
+    ],
+    "error": "System.Exception: Second equipment row not selected\r\n  at GuJian.Editor.NativeEquipmentValidation.Require (System.Boolean value, System.String message) [0x00009] in E:\\jianling\\UnityProject\\Assets\\Editor\\NativeEquipmentValidation.cs:19 \r\n  at GuJian.Editor.NativeEquipmentValidation+<Steps>d__8.MoveNext () [0x00387] in E:\\jianling\\UnityProject\\Assets\\Editor\\NativeEquipmentValidation.cs:57 \r\n  at GuJian.Editor.NativeEquipmentValidation.Tick () [0x00031] in E:\\jianling\\UnityProject\\Assets\\Editor\\NativeEquipmentValidation.cs:101 "
+}

@@ -24,12 +24,11 @@ namespace GuJian
             previousTouchHeld.Clear(); foreach (int code in touchHeld) previousTouchHeld.Add(code);
             touchHeld.Clear(); touchMovement = Vector2.zero;
             if (!TouchControlsVisible || !touchLayout || touchLayout.controls == null) return;
-            for (int i = 0; i < Input.touchCount; i++)
+            for (int i = 0; i < GameInput.TouchCount; i++)
             {
-                var touch = Input.GetTouch(i);
-                if (touch.phase != TouchPhase.Ended && touch.phase != TouchPhase.Canceled) ReadTouchPoint(ScreenToGame(touch.position));
+                if (GameInput.ActiveTouch(i, out var position)) ReadTouchPoint(ScreenToGame(position));
             }
-            if (Input.touchCount == 0 && Input.GetMouseButton(0)) ReadTouchPoint(ScreenToGame(Input.mousePosition));
+            if (GameInput.TouchCount == 0 && GameInput.MouseHeld) ReadTouchPoint(ScreenToGame(GameInput.MousePosition));
             touchMovement = new Vector2((touchHeld.Contains(3) ? 1 : 0) - (touchHeld.Contains(2) ? 1 : 0),
                 (touchHeld.Contains(1) ? 1 : 0) - (touchHeld.Contains(0) ? 1 : 0));
             foreach (int code in touchHeld)
@@ -39,22 +38,35 @@ namespace GuJian
         {
             foreach (var control in touchLayout.controls) if (control.bounds.Contains(point)) touchHeld.Add(control.code);
         }
-        public void PressControl(int code)
+        public void PressControl(int code) { SubmitAction((GameAction)code); }
+
+        public bool SubmitAction(GameAction action)
         {
-            if (AtTitle) return;
-            if (HandleOriginalBlackScreenControl(code) || HandleOriginalMessageControl(code) || HandleOriginalChoiceControl(code) || HandleOriginalCharacterControl(code)) return;
-            if (modalInputFrame == Time.frameCount) return;
-            if (miniMapOpen) { if(code==12) CloseMiniMap(); return; }
-            if (tutorialKey >= 0) { RespondTutorial(code); return; }
+            if (!System.Enum.IsDefined(typeof(GameAction), action)) return false;
+            LastActionError = null;
+            if (AtTitle)
+            {
+                if (action == GameAction.NewGame) { Begin(); return true; }
+                if (action != GameAction.ContinueGame || !CanContinue) return false;
+                try { Load(); return true; }
+                catch (System.IO.IOException) { LastActionError = "存档无法读取，请检查存档文件。"; return false; }
+                catch (System.ArgumentException) { LastActionError = "存档内容无效，请检查存档文件。"; return false; }
+            }
+            if (action == GameAction.NewGame || action == GameAction.ContinueGame) return false;
+            int code = (int)action;
+            if (HandleOriginalBlackScreenControl(code) || HandleOriginalMessageControl(code) || HandleOriginalChoiceControl(code) || HandleOriginalCharacterControl(code)) return true;
+            if (modalInputFrame == Time.frameCount) return false;
+            if (miniMapOpen) { if(code==12) CloseMiniMap(); return true; }
+            if (tutorialKey >= 0) { RespondTutorial(code); return true; }
             if (menu)
             {
                 // Abstract control5 is Back; original menu soft-back is key10.
                 if ((code >= 0 && code <= 4) || code == 5 || code == 9 || code == 18) HandleOriginalMenuKey(code == 5 ? 10 : code);
-                return;
+                return true;
             }
-            if (code == 5 && !DialogueVisible && !CriticalActive && !reinforceOpen && !Machine.Running) { menu = !menu; menuPage = 0; return; }
-            if(code==12) { OpenMiniMap(); return; }
-            if (!Role || Role.locked || Role.frozen || Role.hp <= 0 || menu || reinforceOpen || DialogueVisible || Machine.Running || lockInput || CriticalActive) return;
+            if (code == 5 && !DialogueVisible && !CriticalActive && !reinforceOpen && !Machine.Running) { menu = !menu; menuPage = 0; return true; }
+            if(code==12) { OpenMiniMap(); return true; }
+            if (!Role || Role.locked || Role.frozen || Role.hp <= 0 || menu || reinforceOpen || DialogueVisible || Machine.Running || lockInput || CriticalActive) return false;
             switch (code)
             {
                 case 0: case 1: case 2: case 3: TryBackstep(code == 2 ? -1 : code == 3 ? 1 : 0); break;
@@ -65,6 +77,7 @@ namespace GuJian
                 case 10: TryCriticalKill(); break;
                 case 11: Interact(); break;
             }
+            return true;
         }
         private void Interact()
         { TryInteract(); }
@@ -92,16 +105,16 @@ namespace GuJian
             if(touchHeld.Contains(code)) return true;
             switch(code)
             {
-                case 0:return Input.GetKey(KeyCode.W)||Input.GetKey(KeyCode.UpArrow);
-                case 1:return Input.GetKey(KeyCode.S)||Input.GetKey(KeyCode.DownArrow);
-                case 2:return Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.LeftArrow);
-                case 3:return Input.GetKey(KeyCode.D)||Input.GetKey(KeyCode.RightArrow);
-                case 4:return Input.GetKey(KeyCode.J)||Input.GetKey(KeyCode.Space)||Input.GetKey(KeyCode.Return);
-                case 5:return Input.GetKey(KeyCode.Escape);
-                case 7:return Input.GetKey(KeyCode.K);
-                case 8:return Input.GetKey(KeyCode.L);
-                case 10:return Input.GetKey(KeyCode.O);
-                case 12:return Input.GetKey(KeyCode.M);
+                case 0:return GameInput.Held(KeyCode.W)||GameInput.Held(KeyCode.UpArrow);
+                case 1:return GameInput.Held(KeyCode.S)||GameInput.Held(KeyCode.DownArrow);
+                case 2:return GameInput.Held(KeyCode.A)||GameInput.Held(KeyCode.LeftArrow);
+                case 3:return GameInput.Held(KeyCode.D)||GameInput.Held(KeyCode.RightArrow);
+                case 4:return GameInput.Held(KeyCode.J)||GameInput.Held(KeyCode.Space)||GameInput.Held(KeyCode.Return);
+                case 5:return GameInput.Held(KeyCode.Escape);
+                case 7:return GameInput.Held(KeyCode.K);
+                case 8:return GameInput.Held(KeyCode.L);
+                case 10:return GameInput.Held(KeyCode.O);
+                case 12:return GameInput.Held(KeyCode.M);
                 default:return false;
             }
         }

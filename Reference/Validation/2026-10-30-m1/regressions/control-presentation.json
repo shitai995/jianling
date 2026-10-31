@@ -1,0 +1,16 @@
+{
+    "passed": true,
+    "utc": "2026-10-29T18:40:15.1242802Z",
+    "checks": [
+        "20 actual retreat variants: hurt/basic attacks, both directions/banks, original action-4 movement, forward rejection, queued-input cancellation, combo retention and return to correct idle",
+        "Idle/heavy hurt/skills/break/integration and locked actors reject retreat cancellation",
+        "x42 advances axes by exact step per 80 ms, waits without teleporting and x41 returns to saved position",
+        "x40 retains source integer-duration nonblocking motion; x45 shake phases/infinite mode, menu pause, x46 stop and stage cleanup pass",
+        "x6C consumes all requested keys in any order, ignores unrelated keys, keeps waiting, then releases; x6A/x6B single-key correctness and touch responses pass",
+        "11 saved editable touch zones support simultaneous direction/attack, call real attack, hide for menu/dialogue, and generate no GameObjects",
+        "Three persistent AudioSources reference original miss/critical/hit clips; actual hit playback starts without creating audio components",
+        "Basic-attack swing sound starts on action 7-10 frame 0 during the first 80 ms actor tick, not immediately when input is accepted",
+        "Inventory 200 partitions as 99/99/2; selecting final stack consumes exactly 2, invalid stack indices fail and real save/load restores total and stack views"
+    ],
+    "error": ""
+}

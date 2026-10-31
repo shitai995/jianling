@@ -1,0 +1,12 @@
+{
+    "passed": true,
+    "utc": "2026-10-31T06:44:38.5871266Z",
+    "checks": [
+        "Original city NPC -> native character dialogue and two native choices accepts task 1 with original 20-enemy objective and advertised rewards; direct UI event fallback count=0",
+        "Native equipment UI selects and equips a fixture-granted level-27 sword for a level-30 integration character; cumulative direct UI event fallbacks=0",
+        "Level-30 fixture versus level-10 enemies with original HP, damage and active AI: a production primary attack reduced the quest counter to 19 (fixture repositions player)",
+        "Unique-slot production Save/Load restores quest progress, currency and inventory after combat",
+        "Formal player records and global state remain byte-for-byte unchanged"
+    ],
+    "error": ""
+}

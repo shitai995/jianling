@@ -1,5 +1,7 @@
 # 古剑魂梦 · Unity 重建工程
 
+后续开发方向（2026-10-30）：以已核验的原安装包为内容和行为基线，逐步更新运行时 UI、输入、模块边界与存档方案，使工程支持持续扩建。技术设计、迁移批次和修订工期见[还原与持续开发技术方案](Reference/还原与持续开发技术方案-2026-10-30.md)。后台 MCP 已完成首批运行基线及存档写入模块改造，并修正默认 4 倍游戏速度；基线 31 项、改造后 39 项验证通过，见[MCP 后台开发记录](Reference/MCP后台开发记录-2026-10-30.md)。
+
 这是从附件 APK 的原始资源和可读 Java 代码重建的 **Unity 2022.3.62f3** 工程，可编辑并继续开发。历史里程碑为 **95% 工作量估算**；当前逐项还原状态、实测证据和剩余范围见 [还原进度](Reference/还原进度.md)。该百分比不代表原版逐帧相似度或正常难度通关率。
 
 当前逐项状态见[还原工作清单](Reference/还原工作清单.md)。选择框原软键9确认专项见[报告](Reference/Validation/choice-soft-ok-batch.json)；人物对话专项见[9组汇总](Reference/Validation/character-dialogue-batch.json)；最新消息及选择说明文字描边／阴影验收见[38组汇总](Reference/Validation/text-style-batch.json)，四类脚本奖励提示见[50组汇总](Reference/Validation/reward-prompts-batch.json)。音效原版调用点与 Unity 源绑定见[专项核验](Reference/Validation/audio-source-audit.json)。暂不打包，后续继续在现有工程添加功能。

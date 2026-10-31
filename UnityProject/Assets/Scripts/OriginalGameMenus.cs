@@ -213,18 +213,18 @@ namespace GuJian
         {
             if (tutorialKey < 0) return;
             int code = -1;
-            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) code = 0;
-            else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) code = 1;
-            else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) code = 2;
-            else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) code = 3;
-            else if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.Space)) code = 4;
-            else if (Input.GetKeyDown(KeyCode.Escape)) code = 5;
-            else if (Input.GetKeyDown(KeyCode.Return)) code = 6;
-            else if (Input.GetKeyDown(KeyCode.K)) code = 7;
-            else if (Input.GetKeyDown(KeyCode.L)) code = 8;
-            else if (Input.GetKeyDown(KeyCode.I)) code = 9;
-            else if (Input.GetKeyDown(KeyCode.O)) code = 10;
-            else if (Input.GetKeyDown(KeyCode.P)) code = 11;
+            if (GameInput.Pressed(KeyCode.W) || GameInput.Pressed(KeyCode.UpArrow)) code = 0;
+            else if (GameInput.Pressed(KeyCode.S) || GameInput.Pressed(KeyCode.DownArrow)) code = 1;
+            else if (GameInput.Pressed(KeyCode.A) || GameInput.Pressed(KeyCode.LeftArrow)) code = 2;
+            else if (GameInput.Pressed(KeyCode.D) || GameInput.Pressed(KeyCode.RightArrow)) code = 3;
+            else if (GameInput.Pressed(KeyCode.J) || GameInput.Pressed(KeyCode.Space)) code = 4;
+            else if (GameInput.Pressed(KeyCode.Escape)) code = 5;
+            else if (GameInput.Pressed(KeyCode.Return)) code = 6;
+            else if (GameInput.Pressed(KeyCode.K)) code = 7;
+            else if (GameInput.Pressed(KeyCode.L)) code = 8;
+            else if (GameInput.Pressed(KeyCode.I)) code = 9;
+            else if (GameInput.Pressed(KeyCode.O)) code = 10;
+            else if (GameInput.Pressed(KeyCode.P)) code = 11;
             if (code >= 0) RespondTutorial(code);
         }
 
@@ -234,14 +234,14 @@ namespace GuJian
             if (!menu || originalMessage || WeaponPreviewVisible) return;
             menuInputFrame = Time.frameCount;
             int code = -1;
-            if (Input.GetKeyDown(KeyCode.Escape)) code = 10;
-            else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) code = 2;
-            else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) code = 3;
-            else if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) code = 0;
-            else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) code = 1;
-            else if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.Space)) code = 4;
-            else if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) code = 9;
-            else if (Input.GetKeyDown(KeyCode.P)) code = 18;
+            if (GameInput.Pressed(KeyCode.Escape)) code = 10;
+            else if (GameInput.Pressed(KeyCode.A) || GameInput.Pressed(KeyCode.LeftArrow)) code = 2;
+            else if (GameInput.Pressed(KeyCode.D) || GameInput.Pressed(KeyCode.RightArrow)) code = 3;
+            else if (GameInput.Pressed(KeyCode.W) || GameInput.Pressed(KeyCode.UpArrow)) code = 0;
+            else if (GameInput.Pressed(KeyCode.S) || GameInput.Pressed(KeyCode.DownArrow)) code = 1;
+            else if (GameInput.Pressed(KeyCode.J) || GameInput.Pressed(KeyCode.Space)) code = 4;
+            else if (GameInput.Pressed(KeyCode.Return) || GameInput.Pressed(KeyCode.KeypadEnter)) code = 9;
+            else if (GameInput.Pressed(KeyCode.P)) code = 18;
             if (code >= 0) HandleOriginalMenuKey(code);
             TickTradeQuantityRepeat();
         }
@@ -323,6 +323,105 @@ namespace GuJian
                 return;
             }
             if (confirm) ActivateMenuSelection();
+        }
+
+        public sealed class InventoryRowSnapshot
+        {
+            public readonly int ItemId, Stack, Quantity;
+            public readonly string Name, Description;
+            public readonly Sprite Icon;
+            internal InventoryRowSnapshot(int id, int stack, int quantity, ItemDefinition item)
+            { ItemId = id; Stack = stack; Quantity = quantity; Name = item.name; Description = Clean(item.description); Icon = item.iconSprite; }
+        }
+        public sealed class InventoryMenuSnapshot
+        {
+            public readonly InventoryRowSnapshot[] Rows;
+            public readonly int Selection, AutoRecoverPercent;
+            internal InventoryMenuSnapshot(InventoryRowSnapshot[] rows, int selection, int percent)
+            { Rows = rows; Selection = selection; AutoRecoverPercent = percent; }
+        }
+        internal bool NativeInventoryVisible => !AtTitle && !loadingVisible && !originalBlackScreen && !miniMapOpen && menu && menuPage == 1 &&
+            !originalMessage && !itemConfirming && !TradeConfirming && !SpiritFeedAnimating && !WeaponPreviewVisible && !RoleSkillPreviewVisible && tutorialKey < 0 &&
+            originalUi && originalUi.menu != null && originalUi.menu.actions != null && originalUi.menu.actions.Length > 2 &&
+            originalUi.menu.actions[2] != null && originalUi.menu.actions[2].steps != null && originalUi.menu.actions[2].steps.Length > 0 &&
+            originalUi.menu.frames != null && originalUi.menu.sheets != null && originalUi.menuSheets != null;
+        internal InventoryMenuSnapshot InventoryMenuState()
+        {
+            var rows = Inventory.StackRows().Select(row => {
+                var item = OriginalAssets.Table<ItemDefinition>("item").First(i => i.id == row[0]);
+                return new InventoryRowSnapshot(row[0], row[1], ItemStackQuantity(row[0], row[1]), item);
+            }).ToArray();
+            return new InventoryMenuSnapshot(rows, Mathf.Clamp(atlasSelection, 0, Mathf.Max(0, rows.Length - 1)), autoRecoverPercent);
+        }
+        internal int InventoryUiTick => originalUiTicks;
+        internal int InventoryMoney => money;
+        internal bool InventorySelectPage(int page) => NativeInventoryVisible && SelectMenuPage(page);
+        internal bool InventoryClose() => NativeInventoryVisible && SubmitAction(GameAction.Back);
+        internal bool SelectInventoryRow(int index)
+        {
+            if (!NativeInventoryVisible || index < 0 || index >= Inventory.TotalStacks) return false;
+            atlasSelection = index; menuInputFrame = Time.frameCount; return true;
+        }
+        internal bool ActivateInventoryRow()
+        {
+            if (!NativeInventoryVisible || Inventory.TotalStacks == 0) return false;
+            HandleOriginalMenuKey(4); return itemConfirming;
+        }
+        internal bool CycleInventoryAutoRecover()
+        {
+            if (!NativeInventoryVisible) return false;
+            SetAutoRecoverPercent(autoRecoverPercent == 90 ? 10 : autoRecoverPercent + 10); menuInputFrame = Time.frameCount; return true;
+        }
+
+        public sealed class EquipmentRowSnapshot
+        {
+            public readonly string Name, Description, Skill;
+            public readonly int[] Values;
+            public readonly int RequiredLevel;
+            public readonly Sprite Icon;
+            public readonly string LegacyIcon;
+            internal EquipmentRowSnapshot(EquipmentInstance item)
+            {
+                var data = item.Data; Name = data.name + (item.reinforcement > 0 ? " +" + item.reinforcement : "");
+                Description = Clean(data.description); RequiredLevel = data.level; Icon = data.iconSprite; LegacyIcon = data.icon;
+                Values = new[] { item.Hp, item.Attack, item.MaximumDurability, item.Defense, data.hit, data.dodge, data.critical };
+                var skill = item.skillId >= 0 ? OriginalAssets.Table<SkillDefinition>("skill").FirstOrDefault(x => x.id == item.skillId) : null;
+                Skill = skill == null ? "\u65e0\u6280\u80fd" : skill.name + " " + item.skillLevel + "\u7ea7";
+            }
+        }
+        public sealed class EquipmentMenuSnapshot
+        {
+            public readonly EquipmentRowSnapshot[] Rows;
+            public readonly int Selection, Equipped;
+            internal EquipmentMenuSnapshot(EquipmentRowSnapshot[] rows, int selection, int equipped)
+            { Rows = rows; Selection = selection; Equipped = equipped; }
+        }
+        internal bool NativeEquipmentVisible => !AtTitle && !loadingVisible && !originalBlackScreen && !miniMapOpen && menu && menuPage == 2 &&
+            !originalMessage && !itemConfirming && !TradeConfirming && !SpiritFeedAnimating && !WeaponPreviewVisible && !RoleSkillPreviewVisible && tutorialKey < 0 && Role &&
+            originalUi && originalUi.menu != null && originalUi.menu.actions != null && originalUi.menu.actions.Length > 1 && originalUi.menu.actions[1] != null &&
+            originalUi.menu.actions[1].steps != null && originalUi.menu.actions[1].steps.Length > 0 && originalUi.menu.frames != null && originalUi.menu.sheets != null && originalUi.menuSheets != null;
+        internal EquipmentMenuSnapshot EquipmentMenuState() => new EquipmentMenuSnapshot(Equipment.Select(item => new EquipmentRowSnapshot(item)).ToArray(),
+            Mathf.Clamp(atlasSelection, 0, Mathf.Max(0, Equipment.Count - 1)), EquippedIndex);
+        internal bool SelectEquipmentRow(int index)
+        {
+            if (!NativeEquipmentVisible || index < 0 || index >= Equipment.Count) return false;
+            atlasSelection = index; menuInputFrame = Time.frameCount; return true;
+        }
+        internal bool ActivateEquipmentRow()
+        {
+            if (!NativeEquipmentVisible || Equipment.Count == 0) return false;
+            int index = Mathf.Clamp(atlasSelection, 0, Equipment.Count - 1);
+            if (Equipment[index].Data.level > level) { Toast("\u7b49\u7ea7\u4e0d\u8db3"); return false; }
+            HandleOriginalMenuKey(4); return EquippedIndex == index;
+        }
+        internal bool EquipmentSelectPage(int page) => NativeEquipmentVisible && SelectMenuPage(page);
+        internal bool EquipmentClose() => NativeEquipmentVisible && SubmitAction(GameAction.Back);
+        internal OriginalAnimation EquipmentPreviewAnimation => Role ? Role.Animation : null;
+        internal Rect EquipmentPreviewBounds => PreviewIdleBounds(Role.Animation);
+        internal Texture EquipmentPreviewTexture(int image, int index)
+        {
+            if (!Role || index < 0 || index >= Equipment.Count) return null;
+            return OriginalAssets.Texture(image == 4 ? "action/" + Equipment[index].Data.image : Role.Definition.images[image]);
         }
 
         private void OpenItemConfirmation(int id, int stack)

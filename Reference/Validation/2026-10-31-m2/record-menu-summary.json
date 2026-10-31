@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "report": "record-menu.json",
+  "checks": 6,
+  "utc": "2026-10-31T06:50:48.4986350Z",
+  "sha256": {
+    "UnityProject/Assets/Editor/M2RecordMenuValidation.cs": "8b8a0d5f97e75818f4e4a661c33438d57dc4a359e5b5b25737e0deac1ad82505",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "ddcdd32fd5fff0c6aac665f68916261297315de696d59aa0af2931cda6ffffb4",
+    "UnityProject/Assets/Scripts/OriginalSystemMenus.cs": "bbfe45926deda43b8051b0222bbb3b0b21b5c6887f05d60d212236f4f8b11929",
+    "UnityProject/Assets/Scripts/OriginalGameMenus.cs": "cd7464508f0bb82bda6b505e0be1d79d6ad1949de15dbd82f3a3347f2be141d8",
+    "UnityProject/Assets/Scenes/GuJian.unity": "5f5e9dd09c166ecab67562c02a649cddcf02f56989ecad3de301efd671fff7c3",
+    "Reference/Decompiled/sources/com/dobetter/client/GameCanvas.java": "6f26ecaf1d15dfda50e3efff4dfbb148f613253ab7ed0625529f9d056d64abc1",
+    "UnityProject/Assets/Resources/Original/Scripts/335.json": "84f37831eff500137e7ea9c62f0ccccd8588ad45c9fc70fe5153e6ca594d63f3"
+  },
+  "limitations": [
+    "Checkpoint opcode invoked programmatically; the in-world checkpoint interaction was not exercised.",
+    "Records UI uses the existing IMGUI screen and synthetic keyboard events, not physical input.",
+    "Quest progress, inventory and equipment were seeded as fixtures, not all earned in one uninterrupted journey.",
+    "The city fixture opens NPC script 335n0 after load; this follows the decompiled saved-stage call and 335 script branch, but has not been observed in the original app runtime.",
+    "Formal records were checked unchanged; global state was protected and restored after the test."
+  ]
+}

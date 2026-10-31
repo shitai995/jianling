@@ -80,8 +80,8 @@ namespace GuJian
                 tradeRepeatDirection = 0;
                 return;
             }
-            bool up = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow);
-            bool down = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
+            bool up = GameInput.Held(KeyCode.W) || GameInput.Held(KeyCode.UpArrow);
+            bool down = GameInput.Held(KeyCode.S) || GameInput.Held(KeyCode.DownArrow);
             int direction = up == down ? 0 : up ? -1 : 1;
             if (direction == 0) { tradeRepeatDirection = 0; return; }
             if (direction != tradeRepeatDirection)

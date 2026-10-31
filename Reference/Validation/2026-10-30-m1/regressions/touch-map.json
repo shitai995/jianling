@@ -1,0 +1,14 @@
+{
+    "passed": true,
+    "utc": "2026-10-29T18:40:14.4653864Z",
+    "checks": [
+        "Persistent five-frame direction data (zero actions is valid), both sheets, all normal/pressed buttons, back and critical-ready animation",
+        "Original touch hit zones and independent native-size images: attack 77px normal / 85px pressed share (497,284), integer half-size anchor",
+        "Editor setup repairs empty direction and individual missing refs, preserves custom coordinates/textures/opacity and is idempotent",
+        "Editable map asset matches all 13 recovered areas / 174 source rooms, split/external exits and original three persistent marker textures",
+        "All 13 areas open/return through production touch entry; map pauses gameplay and rejects combat, real Update works, no generated GameObjects",
+        "Dialogue/locked state rejects map; new game and stage cleanup close it without leaving menu pause",
+        "Primary touch key triggers real nearby NPC callback before attacking; without interactable NPC it executes the production basic attack"
+    ],
+    "error": ""
+}

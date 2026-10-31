@@ -120,8 +120,8 @@ namespace GuJian
 
         private void PollOriginalBlackScreenKeys()
         {
-            if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return) ||
-                Input.GetKeyDown(KeyCode.KeypadEnter)) HandleOriginalBlackScreenControl(4);
+            if (GameInput.Pressed(KeyCode.J) || GameInput.Pressed(KeyCode.Space) || GameInput.Pressed(KeyCode.Return) ||
+                GameInput.Pressed(KeyCode.KeypadEnter)) HandleOriginalBlackScreenControl(4);
         }
 
         private void DrawOriginalBlackScreen()

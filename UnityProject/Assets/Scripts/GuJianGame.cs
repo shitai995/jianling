@@ -24,6 +24,15 @@ namespace GuJian
         public string[] DialogueChoices => options == null ? null : (string[])options.Clone();
         public int TutorialKey => tutorialKey;
         public bool AtTitle { get; private set; }
+        [SerializeField] private NativeTitleView titleView;
+        [SerializeField] private NativeDialogueView characterDialogueView;
+        [SerializeField] private NativeChoiceView choiceView;
+        [SerializeField] private NativeInventoryView inventoryView;
+        [SerializeField] private NativeEquipmentView equipmentView;
+        public bool CanContinue => File.Exists(SavePath);
+        public string LastActionError { get; private set; }
+        public Font InterfaceFont => font ? font : (font = Font.CreateDynamicFontFromOSFont(
+            new[] { "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", "Arial" }, 16));
         public int LastChoice { get; private set; }
         public Wallet Wallet { get; } = new Wallet();
         public int money { get => Wallet.Balance; set => Wallet.Restore(value); }
@@ -118,6 +127,7 @@ namespace GuJian
 
         private void Awake()
         {
+            GameInput.Initialize();
             Application.runInBackground = true;
             gameCamera = Camera.main;
             if (!gameCamera) throw new InvalidOperationException("Startup scene requires its saved Main Camera");
@@ -162,6 +172,7 @@ namespace GuJian
             ResetCriticalSequences();
             reinforceOpen = reinforceConfirm = false;
             AtTitle = false;
+            if (titleView) titleView.HideForGameplay();
             pendingRestore = null;
             ClearStage();
             foreach (var a in actors.Values.ToArray()) Destroy(a.gameObject);
@@ -324,15 +335,15 @@ namespace GuJian
         private void PollSceneKeys(bool feedingInput, bool previewInput, bool reinforcementInput)
         {
             if (PollOriginalMessageKeys() || PollOriginalChoiceKeys() || PollOriginalCharacterKeys()) return;
-            if(Input.GetKeyDown(KeyCode.M)) { if(miniMapOpen) CloseMiniMap(); else OpenMiniMap(); }
-            if (!feedingInput && !previewInput && Input.GetKeyDown(KeyCode.Escape) && !reinforcementInput && !worldMapOpen && dialogue == null && !Machine.Running && !CriticalActive)
+            if(GameInput.Pressed(KeyCode.M)) { if(miniMapOpen) CloseMiniMap(); else OpenMiniMap(); }
+            if (!feedingInput && !previewInput && GameInput.Pressed(KeyCode.Escape) && !reinforcementInput && !worldMapOpen && dialogue == null && !Machine.Running && !CriticalActive)
             {
                 if(miniMapOpen) CloseMiniMap();
                 else if (TradeConfirming) CancelTrade();
                 else if (SpiritFeedConfirming) CancelSpiritFeed();
                 else if (menuInputFrame != Time.frameCount) { menu = !menu; menuPage = 0; }
             }
-            if (!previewInput && dialogue != null && options == null && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))) ContinueDialogue();
+            if (!previewInput && dialogue != null && options == null && (GameInput.Pressed(KeyCode.Space) || GameInput.Pressed(KeyCode.Return))) ContinueDialogue();
         }
 
         private void ClearStage()
@@ -470,18 +481,18 @@ namespace GuJian
         private void HandleSceneInput(float delta)
         {
             if (!Role || Role.locked || Map == null || Role.hp <= 0) return;
-            float horizontal = touchMovement.x + (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) ? 1 : 0) - (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) ? 1 : 0);
+            float horizontal = touchMovement.x + (GameInput.Held(KeyCode.D) || GameInput.Held(KeyCode.RightArrow) ? 1 : 0) - (GameInput.Held(KeyCode.A) || GameInput.Held(KeyCode.LeftArrow) ? 1 : 0);
             if (TryBackstep(horizontal)) return;
-            if (Input.GetKey(KeyCode.J) || touchHeld.Contains(4)) PrimaryControl();
-            if (Input.GetKeyDown(KeyCode.K) && equippedSkill >= 5) UseSkill(equippedSkill, integrated ? spiritSkillLevel : Equipped.skillLevel);
-            if (Input.GetKeyDown(KeyCode.L)) UseSkill(4);
-            if (Input.GetKeyDown(KeyCode.I)) ToggleIntegrate();
-            if (Input.GetKeyDown(KeyCode.O)) TryCriticalKill();
+            if (GameInput.Held(KeyCode.J) || touchHeld.Contains(4)) PrimaryControl();
+            if (GameInput.Pressed(KeyCode.K) && equippedSkill >= 5) UseSkill(equippedSkill, integrated ? spiritSkillLevel : Equipped.skillLevel);
+            if (GameInput.Pressed(KeyCode.L)) UseSkill(4);
+            if (GameInput.Pressed(KeyCode.I)) ToggleIntegrate();
+            if (GameInput.Pressed(KeyCode.O)) TryCriticalKill();
             if (Role.LogicalAction > 1) return;
-            Vector2 movement = new Vector2((Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) ? 1 : 0) -
-                (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) ? 1 : 0),
-                (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) ? 1 : 0) -
-                (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) ? 1 : 0));
+            Vector2 movement = new Vector2((GameInput.Held(KeyCode.D) || GameInput.Held(KeyCode.RightArrow) ? 1 : 0) -
+                (GameInput.Held(KeyCode.A) || GameInput.Held(KeyCode.LeftArrow) ? 1 : 0),
+                (GameInput.Held(KeyCode.S) || GameInput.Held(KeyCode.DownArrow) ? 1 : 0) -
+                (GameInput.Held(KeyCode.W) || GameInput.Held(KeyCode.UpArrow) ? 1 : 0));
             movement += touchMovement;
             if (movement.sqrMagnitude > 0)
             {
@@ -492,7 +503,7 @@ namespace GuJian
                 if (Map.CanPass(Role.mapPosition.x + Role.Animation.footWidth / 2f, next.y)) Role.mapPosition = new Vector2(Role.mapPosition.x, next.y);
             }
             else if (Role.LogicalAction == 1) Role.Act(Role.actionBank);
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.E)) Interact();
+            if (GameInput.Pressed(KeyCode.Space) || GameInput.Pressed(KeyCode.E)) Interact();
             var cell = new Vector2Int((int)Role.mapPosition.x / Map.cellWidth, (int)Role.mapPosition.y / Map.cellHeight);
             if (cell != lastCell)
             {
@@ -731,10 +742,7 @@ namespace GuJian
                 smsGiftTier = smsGiftTier,
                 itemIds = items.Select(p => p.Key).ToArray(), itemCounts = items.Select(p => p.Value).ToArray(), equipment = EquipmentBag.Capture(), equippedIndex = EquippedIndex, permanentBonuses = (int[])permanentBonuses.Clone(), spiritBonuses = (int[])spiritBonuses.Clone(), specialItemPurchases = ItemTrading.CapturePurchaseCounts(), autoRecoverPercent = autoRecoverPercent, skillCooldownTicks = skillState.skillCooldownTicks, superArmorTicks = skillState.superArmorTicks, superArmorElapsed = skillState.superArmorElapsed, openAreas = (bool[])openAreas.Clone(), spiritDurability = spiritDurability, spiritSkill = spiritSkill, spiritSkillLevel = spiritSkillLevel, missionStageIndex = missionStageIndex, areaIndex = areaIndex,
                 x = Role.mapPosition.x, y = Role.mapPosition.y, recordName = StageName, stage = currentStageScript ?? "100" };
-            string temporary = SavePath + ".tmp";
-            File.WriteAllText(temporary, JsonUtility.ToJson(data, true));
-            if (File.Exists(SavePath)) File.Replace(temporary, SavePath, SavePath + ".bak");
-            else File.Move(temporary, SavePath);
+            SaveFileStore.Write(SavePath, JsonUtility.ToJson(data, true));
             Toast("进度已保存");
         }
 
@@ -837,7 +845,7 @@ namespace GuJian
         private void EnsureStyles()
         {
             if (bodyStyle != null) return;
-            font = Font.CreateDynamicFontFromOSFont(new[] { "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", "Arial" }, 16);
+            font = InterfaceFont;
             bodyStyle = new GUIStyle(GUI.skin.label) { font = font, fontSize = 15, wordWrap = true, richText = false };
             dialogueStyle = new GUIStyle(bodyStyle);
             dialogueStyle.normal.textColor = new Color(.19f,.08f,.035f);
@@ -857,10 +865,11 @@ namespace GuJian
             {
             if (AtTitle)
             {
+                if (titleView && titleView.ReplacesTitle) return;
                 GUI.DrawTexture(new Rect(0, 0, ViewWidth, ViewHeight), OriginalAssets.Texture("pic/t_00"), ScaleMode.ScaleAndCrop);
-                if (GUI.Button(new Rect(190, 185, 153, 32), "开始游戏", buttonStyle)) Begin();
+                if (GUI.Button(new Rect(190, 185, 153, 32), "开始游戏", buttonStyle)) SubmitAction(GameAction.NewGame);
                 GUI.enabled = File.Exists(SavePath);
-                if (GUI.Button(new Rect(190, 228, 153, 32), "继续游戏", buttonStyle)) Load();
+                if (GUI.Button(new Rect(190, 228, 153, 32), "继续游戏", buttonStyle)) SubmitAction(GameAction.ContinueGame);
                 GUI.enabled = true;
                 return;
             }
@@ -887,8 +896,8 @@ namespace GuJian
             // A menu is a modal atlas layer.  Dialogue state can remain queued while
             // a validation fixture or a script transition opens the menu, but the
             // original GameCanvas does not paint the dialogue panel underneath it.
-            if (!menu && characterDialogue && dialogue != null) DrawOriginalCharacterDialogue();
-            else if (!menu && !originalMessage && dialogue != null && options == null)
+            if (!menu && characterDialogue && dialogue != null && (!characterDialogueView || !characterDialogueView.ReplacesDialogue)) DrawOriginalCharacterDialogue();
+            else if (!menu && !characterDialogue && !originalMessage && dialogue != null && options == null)
             {
                 var bounds = storyScreen ? new Rect(35, 85, 463, 160) : DrawOriginalDialogue();
                 if (storyScreen) GUI.Box(bounds, "");
@@ -899,9 +908,9 @@ namespace GuJian
                     if (GUI.Button(new Rect(445, 286, 66, 27), "继续", buttonStyle)) ContinueDialogue();
                 }
             }
-            if (menu && options == null) DrawMenu();
+            if (menu && options == null && (!inventoryView || !inventoryView.ReplacesInventory || !NativeInventoryVisible) && (!equipmentView || !equipmentView.ReplacesEquipment || !NativeEquipmentVisible)) DrawMenu();
             if (reinforceOpen && options == null) DrawReinforce();
-            if (!menu && !originalMessage && dialogue != null && options != null) DrawOriginalChoiceOptions();
+            if (!menu && !originalMessage && dialogue != null && options != null && (!choiceView || !choiceView.ReplacesChoice)) DrawOriginalChoiceOptions();
             if (!menu && originalMessage && dialogue != null) DrawOriginalMessage();
             if (LastError != null)
             {

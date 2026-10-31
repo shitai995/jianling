@@ -40,16 +40,16 @@ namespace GuJian
         }
         private void TickReinforceInput()
         {
-            if (Input.GetKeyDown(KeyCode.Escape) || (tutorialKey == 6 && Input.GetKeyDown(KeyCode.Return)))
+            if (GameInput.Pressed(KeyCode.Escape) || (tutorialKey == 6 && GameInput.Pressed(KeyCode.Return)))
             {
                 if (reinforceConfirm) reinforceConfirm = false; else CloseReinforce();
             }
-            else if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)) ReinforceConfirmOrApply();
-            else if (!reinforceConfirm && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)))
+            else if (GameInput.Pressed(KeyCode.J) || GameInput.Pressed(KeyCode.Space) || GameInput.Pressed(KeyCode.Return)) ReinforceConfirmOrApply();
+            else if (!reinforceConfirm && (GameInput.Pressed(KeyCode.UpArrow) || GameInput.Pressed(KeyCode.W)))
             {
                 reinforceIndex = (reinforceIndex + reinforceCandidates.Length - 1) % reinforceCandidates.Length; RespondTutorial(0);
             }
-            else if (!reinforceConfirm && (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)))
+            else if (!reinforceConfirm && (GameInput.Pressed(KeyCode.DownArrow) || GameInput.Pressed(KeyCode.S)))
             {
                 reinforceIndex = (reinforceIndex + 1) % reinforceCandidates.Length; RespondTutorial(1);
             }

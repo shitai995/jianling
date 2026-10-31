@@ -1,0 +1,12 @@
+{
+    "passed": false,
+    "utc": "2026-10-31T06:04:33.3579450Z",
+    "checks": [
+        "Saved native dialogue prefab is connected to the production scene",
+        "Original character command displays the original frame and formatted colored spans in native UI",
+        "Queued pointer press/release passes through the Input System UI raycaster and advances a multipage dialogue",
+        "Final confirmation closes the dialogue and blocks same-frame gameplay leakage",
+        "Original portrait renders on either side with corresponding frame orientation; empty text remains dismissible"
+    ],
+    "error": "System.Exception: originalBlackScreen did not restore the native panel\r\n  at GuJian.Editor.NativeDialogueValidation.Require (System.Boolean condition, System.String message) [0x00009] in E:\\jianling\\UnityProject\\Assets\\Editor\\NativeDialogueValidation.cs:21 \r\n  at GuJian.Editor.NativeDialogueValidation+<Steps>d__5.MoveNext () [0x009c0] in E:\\jianling\\UnityProject\\Assets\\Editor\\NativeDialogueValidation.cs:91 \r\n  at GuJian.Editor.NativeDialogueValidation.Tick () [0x0003e] in E:\\jianling\\UnityProject\\Assets\\Editor\\NativeDialogueValidation.cs:114 "
+}

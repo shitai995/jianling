@@ -1,0 +1,13 @@
+{
+    "passed": false,
+    "utc": "2026-10-31T06:28:03.3929638Z",
+    "checks": [
+        "No-spirit page navigation skips spirit in both directions, rejects direct spirit-tab selection, and wraps first/last tabs",
+        "With spirit present, item/spirit/mission page order is preserved in both directions",
+        "Item popup starts Use; Left/Right select absolute choices and remain idempotent; Up/Down are modal; original key10 cancels without consumption",
+        "Original keys4/9 both open and confirm; discard removes selected six-item remainder while retaining99; Use consumes medicine and heals through production handler",
+        "Public PressControl routes primary/directions through same production menu handler; abstract5 cancels popup then closes menu, without scene action",
+        "Begin clears item-confirmation visibility, item identity, stack index and choice"
+    ],
+    "error": "System.Exception: Focused equipment is outside actual GameView scroll viewport\r\n  at GuJian.Editor.MenuStateValidation.Require (System.Boolean value, System.String message) [0x00009] in E:\\jianling\\UnityProject\\Assets\\Editor\\MenuStateValidation.cs:27 \r\n  at GuJian.Editor.MenuStateValidation.Run () [0x00624] in E:\\jianling\\UnityProject\\Assets\\Editor\\MenuStateValidation.cs:105 "
+}

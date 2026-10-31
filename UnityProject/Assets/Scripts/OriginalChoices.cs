@@ -16,6 +16,43 @@ namespace GuJian
         private Rect choiceInfoBounds, choiceListBounds;
         private int modalInputFrame = -1;
 
+        // Presentation snapshots are detached from the VM's mutable option array. A
+        // native view can observe state without being able to alter the script result.
+        public sealed class ChoiceSnapshot
+        {
+            public readonly string Information;
+            public readonly string[] Options;
+            public readonly int Focus, FirstVisible, MoveTicks;
+            public readonly float InformationOffset;
+            public readonly bool CanCancel;
+            internal ChoiceSnapshot(string information, string[] values, int focus, int first, bool canCancel, int moveTicks, float informationOffset)
+            {
+                Information = information; Options = (string[])values.Clone();
+                Focus = focus; FirstVisible = first; CanCancel = canCancel; MoveTicks = moveTicks; InformationOffset = informationOffset;
+            }
+        }
+
+        public ChoiceSnapshot CurrentChoice => dialogue != null && options != null
+            ? new ChoiceSnapshot(choiceInfoRichText, options, choiceFocus, choiceFirst, choiceClosable, choiceMoveTicks, choiceInfoOffset) : null;
+
+        internal bool ChoiceVisible => !AtTitle && !loadingVisible && !originalBlackScreen && !miniMapOpen && !menu && !originalMessage && dialogue != null && options != null;
+        internal void ResetChoiceMarquee() { choiceMoveTicks = -61; }
+        internal void ConfigureChoiceLayout(int fontHeight, int infoHeight)
+        {
+            if (choiceLayout) return;
+            choiceFontHeight = Mathf.Max(1, fontHeight); choiceInfoHeight = Mathf.Max(0, infoHeight);
+            choiceInfoOffset = choiceInfoHeight > 80 ? choiceFontHeight : 0; choiceLayout = true;
+        }
+
+        // A row click is only valid while the choice layer is the active input target.
+        public bool SelectChoice(int index)
+        {
+            if (AtTitle || loadingVisible || originalBlackScreen || miniMapOpen || menu || originalMessage ||
+                dialogue == null || options == null || index < 0 || index >= options.Length) return false;
+            CompleteOriginalChoice(index);
+            return true;
+        }
+
         private void OpenOriginalChoice(string info, string[] choices, bool closable)
         {
             Talk("", info, choices: choices);
@@ -65,10 +102,10 @@ namespace GuJian
         private bool PollOriginalChoiceKeys()
         {
             if (dialogue == null || options == null) return false;
-            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) HandleOriginalChoiceControl(0);
-            else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) HandleOriginalChoiceControl(1);
-            if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)) HandleOriginalChoiceControl(4);
-            else if (Input.GetKeyDown(KeyCode.Escape)) HandleOriginalChoiceControl(5);
+            if (GameInput.Pressed(KeyCode.W) || GameInput.Pressed(KeyCode.UpArrow)) HandleOriginalChoiceControl(0);
+            else if (GameInput.Pressed(KeyCode.S) || GameInput.Pressed(KeyCode.DownArrow)) HandleOriginalChoiceControl(1);
+            if (GameInput.Pressed(KeyCode.J) || GameInput.Pressed(KeyCode.Space) || GameInput.Pressed(KeyCode.Return)) HandleOriginalChoiceControl(4);
+            else if (GameInput.Pressed(KeyCode.Escape)) HandleOriginalChoiceControl(5);
             return true;
         }
 
@@ -151,7 +188,7 @@ namespace GuJian
                 choiceItemStyle.normal.textColor = i == choiceFocus ? Color.white : new Color32(212, 210, 76, 255);
                 GUI.Label(new Rect(-offset, 0, Mathf.Max(120, width), choiceFontHeight), text, choiceItemStyle);
                 GUI.EndGroup();
-                if (GUI.Button(new Rect(listX - 5, listY + (i - choiceFirst) * itemHeight, 130, itemHeight), GUIContent.none, GUIStyle.none)) { CompleteOriginalChoice(i); return; }
+                if (GUI.Button(new Rect(listX - 5, listY + (i - choiceFirst) * itemHeight, 130, itemHeight), GUIContent.none, GUIStyle.none)) { SelectChoice(i); return; }
             }
             int listHeight = (int)choiceListBounds.height;
             int blockTotal = listHeight - 2;

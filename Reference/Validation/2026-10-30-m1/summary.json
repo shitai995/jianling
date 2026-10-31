@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "editor": "2022.3.62f2c1",
+  "reports": [
+    {
+      "report": "input-title.json",
+      "checks": 15
+    },
+    {
+      "report": "regressions/menu-state.json",
+      "checks": 14
+    },
+    {
+      "report": "regressions/touch-map.json",
+      "checks": 7
+    },
+    {
+      "report": "regressions/control-presentation.json",
+      "checks": 9
+    }
+  ],
+  "totalChecks": 45,
+  "sha256": {
+    "UnityProject/Assets/Scripts/GameInput.cs": "08287026a607ab1642d3910f219e258963f85e16793d74c38e9949896e86b0a3",
+    "UnityProject/Assets/Scripts/GameAction.cs": "01a8fec9ca0b7519a63d8c81407ef1a017409191ce19cabdb8f6370f6d18592d",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "0d58358f6eda75edc31e336be1ad3e20c57c49e143983c4b40737c0041fbcd9b",
+    "UnityProject/Assets/Scripts/OriginalTouchControls.cs": "8adc61a7a98504dbc3d3f31ad1af1e4279d74691662243aa696a07cb8ab8d7b4",
+    "UnityProject/Assets/Scripts/NativeTitleView.cs": "5e969f7b5bee717dc354f96c225737a40566eae59f1066d7363412a711bd4f65",
+    "UnityProject/Assets/Editor/NativeTitleSetup.cs": "5476f44552189ac8763142a89b4e373a05cafce6285d12dd1a6211a003a45076",
+    "UnityProject/Assets/Editor/NativeTitleValidation.cs": "180d3ec806c386c60518f784efc495f4450e928cd5eb14b81dc4527280d0e8ee",
+    "UnityProject/Assets/Editor/MenuStateValidation.cs": "198a75edd485d9beb75f45c7ad4b77eb4c803d9f023c44e5ebc409257878fe41",
+    "UnityProject/Assets/UI/NativeTitle.prefab": "4d101c171374ac9add29a2e357ac28db94093b991475ca383fa7f5f57b15729f",
+    "UnityProject/Assets/UI/TitleInput.inputactions": "c560bf9eeafc437dd7dddff0fb3af1e80b7bc02d4b869e996c5d25ca8d3ca630",
+    "UnityProject/Assets/Scenes/GuJian.unity": "d100f23a170f32ee341131328fd7e2c8f2b070f8450fee66a9b0c3b4305b1196",
+    "UnityProject/Packages/manifest.json": "bf408a54489dac2697d2066fcce1a3c4e119f2b7b57bbac2a0a12cbbb90cdc92",
+    "UnityProject/ProjectSettings/ProjectSettings.asset": "fb059eab54e8b63b3908ddb6f4b6ce3b54c3b3a82f06ccafbb05e433a5884518"
+  },
+  "limitations": [
+    "Input events simulated; physical devices and Android require later validation.",
+    "Gameplay keyboard handlers retain context-specific routing while device reads use the shared adapter.",
+    "OS font affects glyph appearance."
+  ]
+}

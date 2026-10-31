@@ -58,7 +58,7 @@ namespace GuJian
                 }
                 if (AtlasClick(new Rect(263,211,52,23))) HandleOriginalMenuKey(10);
                 if (menuPage == 2) DrawAtlasEquipment();
-                else if (menuPage == 1) DrawAtlasItems();
+                else if (menuPage == 1 && (!inventoryView || !inventoryView.ReplacesInventory || !NativeInventoryVisible)) DrawAtlasItems();
                 else if (menuPage == 0) DrawAtlasMission();
                 else if (menuPage == 6) DrawAtlasSpirit();
                 else if (menuPage == 5) DrawAtlasShop();

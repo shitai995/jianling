@@ -1,0 +1,9 @@
+{
+    "passed": false,
+    "utc": "2026-10-29T18:40:14.2978904Z",
+    "checks": [
+        "No-spirit page navigation skips spirit in both directions, rejects direct spirit-tab selection, and wraps first/last tabs",
+        "With spirit present, item/spirit/mission page order is preserved in both directions"
+    ],
+    "error": "System.NullReferenceException: Object reference not set to an instance of an object\r\n  at GuJian.Editor.MenuStateValidation.Get (System.String name) [0x00000] in E:\\jianling\\UnityProject\\Assets\\Editor\\MenuStateValidation.cs:15 \r\n  at GuJian.Editor.MenuStateValidation.Run () [0x001e1] in E:\\jianling\\UnityProject\\Assets\\Editor\\MenuStateValidation.cs:62 "
+}

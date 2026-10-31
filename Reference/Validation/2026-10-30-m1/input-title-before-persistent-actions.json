@@ -1,0 +1,11 @@
+{
+    "passed": false,
+    "utc": "2026-10-29T18:29:15.4438351Z",
+    "checks": [
+        "Simultaneous movement/attack, arrow, Enter and numpad Enter read actual queued Input System keyboard state",
+        "Holding does not repeat a press edge; releasing clears held state, and unsupported keys are safely ignored",
+        "Pointer position and mouse-button press/release use the same device adapter",
+        "Two independent touches coexist; ended/canceled touches do not remain held, and invalid touch indexes are safe"
+    ],
+    "error": "System.Exception: Input actions are transient\r\n  at GuJian.Editor.NativeTitleValidation.Require (System.Boolean ok, System.String message) [0x00009] in E:\\jianling\\UnityProject\\Assets\\Editor\\NativeTitleValidation.cs:29 \r\n  at GuJian.Editor.NativeTitleValidation+<Steps>d__14.MoveNext () [0x0012b] in E:\\jianling\\UnityProject\\Assets\\Editor\\NativeTitleValidation.cs:63 \r\n  at GuJian.Editor.NativeTitleValidation.Tick () [0x0003e] in E:\\jianling\\UnityProject\\Assets\\Editor\\NativeTitleValidation.cs:220 "
+}

@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "editor": "2022.3.62f2c1",
+  "reports": [
+    {
+      "report": "native-equipment.json",
+      "checks": 9,
+      "utc": "2026-10-31T06:31:23.5850416Z"
+    },
+    {
+      "report": "inventory-after-equipment.json",
+      "checks": 9,
+      "utc": "2026-10-31T06:27:49.3701618Z"
+    },
+    {
+      "report": "menu-after-equipment.json",
+      "checks": 14,
+      "utc": "2026-10-31T06:28:36.6936179Z"
+    }
+  ],
+  "totalChecks": 32,
+  "sha256": {
+    "UnityProject/Assets/Scripts/NativeAtlasRenderer.cs": "ddada4a6c5be14683057bb42ba266fb151133028c11861dcb7ced41e0c654098",
+    "UnityProject/Assets/Scripts/NativeInventoryView.cs": "d03a58b5f25c6dee5c4713f21243f65e1ad76ded4d15d72ee16161d7ad3b1bae",
+    "UnityProject/Assets/Scripts/NativeEquipmentView.cs": "379fa8655de636516ec909683f5596c288a5b67d65fa2e1371438da00989ddf0",
+    "UnityProject/Assets/Scripts/NativeEquipmentRow.cs": "07eff565ebfd7e8f89130be7873eac64d80a4eba955abd8734d152b664a69045",
+    "UnityProject/Assets/Scripts/OriginalGameMenus.cs": "cd7464508f0bb82bda6b505e0be1d79d6ad1949de15dbd82f3a3347f2be141d8",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "ddcdd32fd5fff0c6aac665f68916261297315de696d59aa0af2931cda6ffffb4",
+    "UnityProject/Assets/Editor/NativeEquipmentSetup.cs": "1256aefc8dc879d903892a86eb785a2214ca86c1e9d94686621a1657f7a5de11",
+    "UnityProject/Assets/Editor/NativeEquipmentValidation.cs": "c47e890c3067dd0792720f427977e9ae268945b0f1044860786a027834171ad8",
+    "UnityProject/Assets/Editor/NativeInventoryValidation.cs": "1c23abb1b883e3a78c97b70becf8e92fc427f473530cedd90583a669435c71e6",
+    "UnityProject/Assets/Editor/MenuStateValidation.cs": "e45bb892d9cb7ead6abf0be81c4be93a45b0325a1c4d4d2c4cbc20a525ff1480",
+    "UnityProject/Assets/UI/NativeEquipment.prefab": "e47e6f963620b38ab12fd30df6a5aced655c606f25b4cbd25787be6e0dbabeb2",
+    "UnityProject/Assets/UI/NativeInventory.prefab": "176bf3f0696dd906be7aaf9d1b4dcbf8c5d953af3fba04afd974f83ff09c9078",
+    "UnityProject/Assets/Scenes/GuJian.unity": "5f5e9dd09c166ecab67562c02a649cddcf02f56989ecad3de301efd671fff7c3"
+  },
+  "limitations": [
+    "Keyboard and pointer device events are simulated; actual input and Android require device acceptance.",
+    "The old menu suite explicitly disables native inventory and equipment views to validate IMGUI fallback.",
+    "Inventory regression predates the final equipment-preview cache fix; that fix does not change inventory code.",
+    "The full task-combat-reward-consumable-equipment-save/load flow remains to be validated.",
+    "Visual comparison across target resolutions, fonts and animation transforms remains pending."
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "utc": "2026-10-29T17:13:54.3918531Z",
+  "scope": "Windows Unity MCP baseline; centralized save-file writes and normal default game speed",
+  "report_count": 10,
+  "check_count": 70.0,
+  "baseline_check_count": 31,
+  "post_change_check_count": 39,
+  "reports": [
+    {
+      "path": "Reference/Validation/2026-10-30-mcp-baseline/architecture-boundaries.json",
+      "passed": true,
+      "checks": 7,
+      "utc": "2026-10-29T17:03:53.669737Z",
+      "sha256": "1a734c7b7d83bc9c6d9b2c97fa21438103e7ad9d5c58ed6b77f483bb197999de"
+    },
+    {
+      "path": "Reference/Validation/2026-10-30-mcp-baseline/battle-save.json",
+      "passed": true,
+      "checks": 4,
+      "utc": "2026-10-29T17:05:24.9072086Z",
+      "sha256": "6ddc283c7040212bcaf1c46d23a302fef8bbf0839fa3e74ada71067def2df517"
+    },
+    {
+      "path": "Reference/Validation/2026-10-30-mcp-baseline/data-checks.json",
+      "passed": true,
+      "checks": 5,
+      "utc": "2026-10-29T17:03:53.1765254Z",
+      "sha256": "fb9b7c829fa46a2fdc2ecfe1a6f9692a603ea97b3389115aaf0fb197f1410f37"
+    },
+    {
+      "path": "Reference/Validation/2026-10-30-mcp-baseline/item-module-integration.json",
+      "passed": true,
+      "checks": 3,
+      "utc": "2026-10-29T17:06:29.9220926Z",
+      "sha256": "3802a4b5e41075aab999b8b7434bdfd24455c00edf5ea938dc3c4fcd6f9195e4"
+    },
+    {
+      "path": "Reference/Validation/2026-10-30-mcp-baseline/item-modules.json",
+      "passed": true,
+      "checks": 9,
+      "utc": "2026-10-29T17:03:53.7712899Z",
+      "sha256": "ade2d35946ec1378db6ab411af63954739adb6e3c57464e8f1a5c14823c34b01"
+    },
+    {
+      "path": "Reference/Validation/2026-10-30-mcp-baseline/opening-playback.json",
+      "passed": true,
+      "checks": 3,
+      "utc": "2026-10-29T17:04:44.8960267Z",
+      "sha256": "b309b7d5b38a89602ced45517f6dacd6341725a6f745075a0542201e582a4484"
+    },
+    {
+      "path": "Reference/Validation/2026-10-30-mcp-baseline/after-save-store/item-module-integration.json",
+      "passed": true,
+      "checks": 3,
+      "utc": "2026-10-29T17:09:28.7653975Z",
+      "sha256": "3b7e0685d59fd963fd5e5a5796bb4860c5efd2b6f2dad0223294872076086ff5"
+    },
+    {
+      "path": "Reference/Validation/2026-10-30-mcp-baseline/after-save-store/opening-normal-speed.json",
+      "passed": true,
+      "checks": 3,
+      "utc": "2026-10-29T17:12:10.8929305Z",
+      "sha256": "0f10abfbd8899d66f4e134328181d33418973029a53450d82bb1943eb870322f"
+    },
+    {
+      "path": "Reference/Validation/2026-10-30-mcp-baseline/after-save-store/save-file-store.json",
+      "passed": true,
+      "checks": 8,
+      "utc": "2026-10-29T17:08:32.9843844Z",
+      "sha256": "3e64e84b0b2cb29b963e8aba8a7b1ea3f1d065e9ec4883b7f8f2f44fb447f3ba"
+    },
+    {
+      "path": "Reference/Validation/2026-10-30-mcp-baseline/after-save-store/system-menu.json",
+      "passed": true,
+      "checks": 25,
+      "utc": "2026-10-29T17:09:29.9932862Z",
+      "sha256": "b353d0a3432244e62eccb47e990595e0a4cf2bf0f31a7a8c73629c1d1903c545"
+    }
+  ],
+  "editor_state": {
+    "unityVersion": "2022.3.62f2c1",
+    "projectPath": "E:/jianling/UnityProject/Assets",
+    "playing": true,
+    "paused": false,
+    "compiling": false,
+    "compileFailed": false,
+    "editorFocused": false,
+    "runInBackground": true,
+    "atTitle": false,
+    "gameError": null,
+    "timeScale": 1.0
+  },
+  "console_error_warning_entries": 0,
+  "source_sha256": {
+    "Tools/unity_mcp_client.py": "cf23e17a79dc64f2aa30ca6fbe7c9893fffe94fbf935ff7f281e506e15c4e299",
+    "UnityProject/Assets/Scripts/SaveFileStore.cs": "d1e37ba8345a8802a5fe93f183707484ade75d63787d495077bede0fd2eada2c",
+    "UnityProject/Assets/Scripts/OriginalSystemMenus.cs": "bbfe45926deda43b8051b0222bbb3b0b21b5c6887f05d60d212236f4f8b11929",
+    "UnityProject/Assets/Editor/SaveFileStoreValidation.cs": "16be608de7c05767fd048b52295b7871beec2bdd23b24e133f353ee166c72a31",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "2782ed20eb926363eb4a41bf3338b9bf08abf5fa89b9f72eb6cb6d044263959e",
+    "UnityProject/ProjectSettings/TimeManager.asset": "6c320ee59ae1e55aa74558f012437f63cb9de59d69fda62fc321c4f1971c52cb"
+  },
+  "limitations": [
+    "Initial battle uses low-HP fixtures and does not prove normal difficulty",
+    "Menu checks call production handlers; physical input and device touch not verified",
+    "Original APK execution, Unity 6.3 migration, Android builds and devices not verified",
+    "Save format remains version 3; corruption recovery and full save orchestration remain future work"
+  ]
+}

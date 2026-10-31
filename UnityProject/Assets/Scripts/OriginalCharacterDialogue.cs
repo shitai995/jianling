@@ -5,6 +5,15 @@ namespace GuJian
 {
     public sealed partial class GuJianGame
     {
+        internal OriginalDialogueText.Line[] CharacterLines => characterLines;
+        internal int CharacterStartLine => characterStartLine;
+        internal int CharacterLineHeight => characterLineHeight;
+        internal int CharacterPageSize => CharacterLinesPerPage;
+        internal int CharacterWidth => CharacterContentWidth;
+        internal bool CharacterVisible => !AtTitle && !loadingVisible && !originalBlackScreen && !miniMapOpen && !menu && characterDialogue && dialogue != null;
+        internal string CharacterSpeaker => speaker;
+        internal bool CharacterPortraitOnLeft => portraitOnLeft;
+        internal OriginalUiLayout CharacterLayout => originalUi;
         private OriginalDialogueText.Line[] characterLines;
         private int characterStartLine, characterLineHeight;
         private GUIStyle characterTextStyle, characterNameStyle;
@@ -51,7 +60,7 @@ namespace GuJian
         private bool PollOriginalCharacterKeys()
         {
             if (!characterDialogue || dialogue == null) return false;
-            if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)) HandleOriginalCharacterControl(4);
+            if (GameInput.Pressed(KeyCode.J) || GameInput.Pressed(KeyCode.Space) || GameInput.Pressed(KeyCode.Return)) HandleOriginalCharacterControl(4);
             return true;
         }
 

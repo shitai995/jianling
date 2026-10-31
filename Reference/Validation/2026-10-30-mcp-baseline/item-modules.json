@@ -1,0 +1,16 @@
+{
+    "passed": true,
+    "utc": "2026-10-29T17:03:53.7712899Z",
+    "checks": [
+        "205 items project to 99/99/7; sorted rows are detached; invalid stack indices cannot overflow; removal respects selected stack",
+        "Snapshots detach state; invalid restore is atomic; legacy duplicate IDs use last value and zero entries vanish; clamped removal and overflow preserve invariants",
+        "Ordinary purchases need strictly greater balance, add exact inventory and deduct exact money; completed quotes cannot transact twice",
+        "Shop0 doubles prices; wrong-shop and foreign-module quotes cannot charge; gold and equipment-shop item purchases are unavailable",
+        "Sales cap at selected stack; inventory shrinking before confirmation invalidates the sale without changing money or remaining items",
+        "Quantity operations wrap 1/99, clamp direct selection, and keep special medicine purchases at one",
+        "Immediate use applies once without bag residue; failed use preserves price/money; a price changed by another purchase invalidates the old quote",
+        "Confirmation rechecks spirit level; progressive medicine price caps at 20000, coefficient 19, with shop0 markup applied afterward",
+        "Price snapshots detach state; restoration clamps coefficients and missing legacy fields restore defaults"
+    ],
+    "error": ""
+}

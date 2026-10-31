@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "editor": "2022.3.62f2c1",
+  "reports": [
+    {
+      "report": "character-dialogue.json",
+      "checks": 7
+    },
+    {
+      "report": "title-regression.json",
+      "checks": 15,
+      "note": "Title regression predates the overlay visibility change"
+    }
+  ],
+  "totalChecks": 22,
+  "sha256": {
+    "UnityProject/Assets/Scripts/NativeDialogueView.cs": "243b530b9abb95bfba0c0e326bb1c5a595baa5c575c96129711912083bb85214",
+    "UnityProject/Assets/Scripts/OriginalCharacterDialogue.cs": "3c29a336c0b3a58c6a5b979688321f9ec39d41a0e7a0708fc161dcf660416ff7",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "683f03f1947f6df72caba7f67860b6f80b795cd083ce8428533a26f96c6651ed",
+    "UnityProject/Assets/Editor/NativeDialogueSetup.cs": "4e200fde1adb6e214de729ba03de4798cf6f7dd4d3cf13f007b9eb40a183ea4e",
+    "UnityProject/Assets/Editor/NativeDialogueValidation.cs": "855f35ac8096254a1106db4d27eccf4e723448580eb483cec0d9450a2e9fdb8e",
+    "UnityProject/Assets/UI/NativeDialogue.prefab": "8b1d1c17b73ea2a90c27a967c240cbcf0e5b2ff65f894e74aee4f191611711db",
+    "UnityProject/Assets/Scenes/GuJian.unity": "082e55dad15db048d645f5fbd632535a57a6292949058472506aa7dd2e83d890"
+  },
+  "limitations": [
+    "Mouse events are synthetic; touch and physical devices require Android validation.",
+    "New view covers character dialogue only; choice, inventory and equipment remain on their existing renderers.",
+    "Text font metrics and outline rendering are not verified pixel-identical to Android.",
+    "Overlay visibility test uses synthetic flags while the game controller is disabled; end-to-end transition coverage is still needed."
+  ]
+}

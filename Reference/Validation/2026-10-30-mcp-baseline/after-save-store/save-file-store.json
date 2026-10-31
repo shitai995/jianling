@@ -1,0 +1,15 @@
+{
+    "passed": true,
+    "utc": "2026-10-29T17:08:32.9843844Z",
+    "checks": [
+        "First write creates missing save directories and preserves exact Unicode JSON bytes without a BOM",
+        "Replacing a save commits the new snapshot and retains the previous complete snapshot in .bak",
+        "Repeated commits retain the immediately preceding snapshot, including when .bak already exists",
+        "A stale temporary file is replaced by a fresh transaction and is never loaded as a save",
+        "A staging-path failure preserves both committed files and propagates the storage error",
+        "Windows replacement against a locked save fails safely, retains both snapshots, and cleans the staged file",
+        "A null snapshot is rejected before touching an existing save",
+        "An empty save path is rejected before file operations"
+    ],
+    "error": ""
+}

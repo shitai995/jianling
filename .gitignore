@@ -29,3 +29,10 @@ UnityProject/sysinfo.txt
 .DS_Store
 Thumbs.db
 __pycache__/
+
+# Local Unity MCP request files and pre-validation backups
+Workbench/staging/mcp-*.json
+Workbench/staging/mcp-baseline/
+
+# Local MCP process logs
+Workbench/staging/mcp-server.*.log

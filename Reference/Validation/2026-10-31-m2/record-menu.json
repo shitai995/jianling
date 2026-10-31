@@ -1,0 +1,13 @@
+{
+    "passed": true,
+    "utc": "2026-10-31T06:50:48.4986350Z",
+    "checks": [
+        "Original checkpoint opcode writes an isolated record containing quest, inventory, equipment and currency fixtures",
+        "Queued keyboard events navigate the original system/records UI and load the isolated record",
+        "Records UI load restores task progress, medicine, the selected reinforced equipment and currency",
+        "City fixture reload enters NPC script 335n0, matching the saved-stage script path in the decompiled original",
+        "Formal player records and their transaction files remain unchanged",
+        "Protected global state and formal records match their pre-test bytes after cleanup"
+    ],
+    "error": ""
+}

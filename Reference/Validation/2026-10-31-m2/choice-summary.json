@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "editor": "2022.3.62f2c1",
+  "reports": [
+    {
+      "report": "native-choice.json",
+      "checks": 6,
+      "utc": "2026-10-31T06:14:11.7736472Z"
+    },
+    {
+      "report": "choice-presentation.json",
+      "checks": 5,
+      "utc": "2026-10-31T06:12:24.2400843Z"
+    },
+    {
+      "report": "dialogue-after-choice.json",
+      "checks": 7,
+      "utc": "2026-10-31T06:11:58.0149591Z"
+    },
+    {
+      "report": "title-after-choice.json",
+      "checks": 15,
+      "utc": "2026-10-31T06:12:10.6582743Z"
+    }
+  ],
+  "totalChecks": 33,
+  "sha256": {
+    "UnityProject/Assets/Scripts/OriginalChoices.cs": "b0745aabd2ecd591cb5382a75b2952d2b2e7a7cdee9f18d392992009c77dd4fe",
+    "UnityProject/Assets/Scripts/NativeChoiceView.cs": "10befbbe7b5b7e2c2d3c225249eac5c917ddbb01815ade18bd5d9e16c3b41aa9",
+    "UnityProject/Assets/Scripts/NativeChoicePanel.cs": "058d884521eb6ad8238cea0b75fcafdb3928e0db6d08eb0272f09fe3e38c0c5a",
+    "UnityProject/Assets/Scripts/NativeChoiceRow.cs": "f32032e57497bd8695ae507f384926de7b28e1f12b620506bd259591b4c03017",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "bda51261dfc424f84bcba26189cadd64b871b07ef3c5e398c48266812ec5316c",
+    "UnityProject/Assets/Editor/NativeChoiceSetup.cs": "2f9329c5a9430da62f566bee54cc8dd291e7f37b09b42927375d2c4af3933d0b",
+    "UnityProject/Assets/Editor/NativeChoiceValidation.cs": "fef77cd3bfdb359c25e9c0d2a79de9c49639b4414f48cb74c2b2d901590cca2e",
+    "UnityProject/Assets/Editor/ChoicePresentationValidation.cs": "2926f91b67a08c0c5c1bac83ed14397f8bf4d8e6e8c79bf262e87adbb2d2b303",
+    "UnityProject/Assets/UI/NativeChoice.prefab": "5f10e5d1e3784429ebe86632ccbe7a2fbb068624cc4ac68c0f0ce49d6000dce5",
+    "UnityProject/Assets/Scenes/GuJian.unity": "78e9806f895cc54425698036d4b5f9e57951a2c3accbfc45c36225b48cc45036"
+  },
+  "limitations": [
+    "Mouse events are simulated; physical mouse and Android touch require device validation.",
+    "Long text rendering, original color-edge styles, resolution and Android fonts need visual comparison.",
+    "Dialogue and title regressions preceded the final defensive choice-view guard; choice test covers the guard.",
+    "Inventory, equipment and the full gameplay/save cycle remain unfinished."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "scope": "historical successful fixture run: NPC task acceptance, equipment fixture, one natural enemy kill and isolated programmatic save/load",
+  "report": "quest-battle-before-cleanup.json",
+  "checks": 5,
+  "utc": "2026-10-31T06:44:38.5871266Z",
+  "sha256": {
+    "UnityProject/Assets/Editor/M2JourneyValidation.cs": "943a143f44d19433d79fd198cf7c2801d483dc22006667af1f6978c4cd66fb07",
+    "UnityProject/Assets/Scripts/GuJianGame.cs": "ddcdd32fd5fff0c6aac665f68916261297315de696d59aa0af2931cda6ffffb4",
+    "UnityProject/Assets/Scripts/OriginalCombat.cs": "34237761a966e845c74dab4db2f0f4a90cd04b2d9fdec8bcfc82965a1679a946",
+    "UnityProject/Assets/Scripts/CombatAttributeCalculator.cs": "10279e1fcb998929765a941b6317525e90c3f4394ce03cd13f5762998116d820",
+    "UnityProject/Assets/Scripts/CombatDamageCalculator.cs": "8ad4e6f4eaf85a4c91adb67d05164758b19e9ff61a159ea236bed46a6e9652a0",
+    "UnityProject/Assets/Scripts/OriginalGameMenus.cs": "cd7464508f0bb82bda6b505e0be1d79d6ad1949de15dbd82f3a3347f2be141d8",
+    "UnityProject/Assets/Scripts/NativeDialogueView.cs": "243b530b9abb95bfba0c0e326bb1c5a595baa5c575c96129711912083bb85214",
+    "UnityProject/Assets/Scripts/NativeChoiceView.cs": "10befbbe7b5b7e2c2d3c225249eac5c917ddbb01815ade18bd5d9e16c3b41aa9",
+    "UnityProject/Assets/Scripts/NativeEquipmentView.cs": "379fa8655de636516ec909683f5596c288a5b67d65fa2e1371438da00989ddf0",
+    "UnityProject/Assets/Scenes/GuJian.unity": "5f5e9dd09c166ecab67562c02a649cddcf02f56989ecad3de301efd671fff7c3"
+  },
+  "limitations": [
+    "Fixture loads city and combat stages and repositions the player; it grants level 30 and a level-27 sword.",
+    "Enemy AI, HP and damage remain enabled and unmodified, but this is not representative chapter difficulty.",
+    "Only one of twenty objective enemies was defeated; quest completion and reward claim are not covered.",
+    "Save and load were invoked programmatically, not through the system-menu UI.",
+    "A separate level-10 iron-sword run ended in player death with the objective still at 20; equipment and tactics were fixture-limited, so no balance conclusion is implied.",
+    "Mouse events are simulated. This passing run used zero direct event fallbacks; prior intermittent synthetic input failures remain recorded.",
+    "A later repeat with the level-30 fixture ended in player death before the objective kill; results are not repeatable evidence of balance or a completed journey.",
+    "Recorded source hashes refer to the successful run before the subsequent cleanup change."
+  ]
+}
